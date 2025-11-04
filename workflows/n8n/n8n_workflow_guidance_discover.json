@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \{\
+  "name": "Guidance \'97 Discover & Fetch (daily)",\
+  "nodes": [\
+    \{\
+      "parameters": \{\
+        "triggerTimes": \{\
+          "item": [\{ "mode": "everyDay", "hour": 9 \}]\
+        \}\
+      \},\
+      "id": "Cron",\
+      "name": "Cron (09:00 daily)",\
+      "type": "n8n-nodes-base.cron",\
+      "typeVersion": 1\
+    \},\
+    \{\
+      "parameters": \{\
+        "functionCode": "const raw = $env.SOURCES_JSON || '[]';\\nlet sources;\\ntry \{ sources = JSON.parse(raw); \} catch \{ sources = []; \}\\nreturn sources.map(s => (\{ json: s \}));"\
+      \},\
+      "id": "SeedSources",\
+      "name": "Seed Sources",\
+      "type": "n8n-nodes-base.function",\
+      "typeVersion": 2\
+    \},\
+    \{\
+      "parameters": \{\
+        "url": "=\{\{$json.url\}\}",\
+        "responseFormat": "string"\
+      \},\
+      "id": "FetchFeed",\
+      "name": "Fetch Feed (HTML/RSS)",\
+      "type": "n8n-nodes-base.httpRequest",\
+      "typeVersion": 4\
+    \},\
+    \{\
+      "parameters": \{\
+        "functionCode": "const html = items[0].json;\\nconst src = $item(0).$node[\\"Seed Sources\\"].json.source;\\nconst re = /href=\\\\\\"([^\\\\\\"]+)\\\\\\"/g;\\nconst links = new Set();\\nlet m;\\nwhile ((m = re.exec(html))) \{\\n  const u = m[1];\\n  if (!u.startsWith('http')) continue;\\n  if (!u.match(/\\\\.(pdf|html|htm)(\\\\?.*)?$/i)) continue;\\n  links.add(u);\\n\}\\nreturn Array.from(links).slice(0, 50).map(url => (\{ json: \{ url, source: src \} \}));"\
+      \},\
+      "id": "ExtractLinks",\
+      "name": "Extract Links",\
+      "type": "n8n-nodes-base.function",\
+      "typeVersion": 2\
+    \},\
+    \{\
+      "parameters": \{\
+        "operation": "getMany",\
+        "filters": \{ "query": "=\{\{[\{ key: $json.url \}]\}\}" \},\
+        "dataStoreId": "guidance-seen"\
+      \},\
+      "id": "SeenLookup",\
+      "name": "Data Store: Seen (lookup)",\
+      "type": "n8n-nodes-base.dataStore",\
+      "typeVersion": 1\
+    \},\
+    \{\
+      "parameters": \{\
+        "conditions": \{\
+          "string": [\{\
+            "value1": "=\{\{$json.data && $json.data.length > 0 ? 'found' : 'missing'\}\}",\
+            "operation": "notEqual",\
+            "value2": "found"\
+          \}]\
+        \}\
+      \},\
+      "id": "IfNew",\
+      "name": "IF new?",\
+      "type": "n8n-nodes-base.if",\
+      "typeVersion": 1\
+    \},\
+    \{\
+      "parameters": \{\
+        "url": "=\{\{$json.url\}\}",\
+        "responseFormat": "file",\
+        "download": true\
+      \},\
+      "id": "DownloadDoc",\
+      "name": "Download Document",\
+      "type": "n8n-nodes-base.httpRequest",\
+      "typeVersion": 4\
+    \},\
+    \{\
+      "parameters": \{\
+        "functionCode": "const crypto = require('crypto');\\nconst url = $json.url;\\nconst now = new Date().toISOString();\\nconst ext = ($binary.data && $binary.data.fileExtension) ? $binary.data.fileExtension : 'bin';\\nconst hash = crypto.createHash('sha256').update(url + '|' + now).digest('hex');\\nreturn [\{ json: \{ url, source: $json.source, storedAt: now, hash, filename: `$\{hash\}.$\{ext\}` \}, binary: \{ data: $binary.data \} \}];"\
+      \},\
+      "id": "TagMeta",\
+      "name": "Tag Meta & Hash",\
+      "type": "n8n-nodes-base.function",\
+      "typeVersion": 2\
+    \},\
+    \{\
+      "parameters": \{\
+        "operation": "upsert",\
+        "keyName": "key",\
+        "fields": "key,url,hash,source,storedAt",\
+        "values": "=\{\{[\{ key: $json.url, url: $json.url, hash: $json.hash, source: $json.source, storedAt: $json.storedAt \}]\}\}",\
+        "dataStoreId": "guidance-seen"\
+      \},\
+      "id": "SeenUpsert",\
+      "name": "Data Store: Seen (upsert)",\
+      "type": "n8n-nodes-base.dataStore",\
+      "typeVersion": 1\
+    \},\
+    \{\
+      "parameters": \{\
+        "url": "=\{\{$execution.mode === 'production' ? $env.N8N_WEBHOOK_URL : 'http://localhost:5678'\}\}/webhook/parse",\
+        "responseFormat": "json",\
+        "options": \{ "sendBinaryData": true \},\
+        "jsonParameters": true,\
+        "sendBody": true,\
+        "bodyParametersJson": "=\{\{ \{ url: $json.url, source: $json.source, hash: $json.hash \} \}\}",\
+        "binaryPropertyName": "data"\
+      \},\
+      "id": "POSTtoParse",\
+      "name": "POST \uc0\u8594  Parse Webhook",\
+      "type": "n8n-nodes-base.httpRequest",\
+      "typeVersion": 4\
+    \}\
+  ],\
+  "connections": \{\
+    "Seed Sources": \{ "main": [[\{ "node": "Fetch Feed (HTML/RSS)", "type": "main", "index": 0 \}]] \},\
+    "Fetch Feed (HTML/RSS)": \{ "main": [[\{ "node": "Extract Links", "type": "main", "index": 0 \}]] \},\
+    "Extract Links": \{ "main": [[\{ "node": "Data Store: Seen (lookup)", "type": "main", "index": 0 \}]] \},\
+    "Data Store: Seen (lookup)": \{ "main": [[\{ "node": "IF new?", "type": "main", "index": 0 \}]] \},\
+    "IF new?": \{ "main": [[\{ "node": "Download Document", "type": "main", "index": 0 \}]] \},\
+    "Download Document": \{ "main": [[\{ "node": "Tag Meta & Hash", "type": "main", "index": 0 \}]] \},\
+    "Tag Meta & Hash": \{ "main": [[\{ "node": "Data Store: Seen (upsert)", "type": "main", "index": 0 \}, \{ "node": "POST \uc0\u8594  Parse Webhook", "type": "main", "index": 0 \}]] \},\
+    "Cron (09:00 daily)": \{ "main": [[\{ "node": "Seed Sources", "type": "main", "index": 0 \}]] \}\
+  \},\
+  "meta": \{ "workflowId": "guidance-discover" \},\
+  "settings": \{ "saveExecutionProgress": true, "executionOrder": "v1" \}\
+\}\
+}
