@@ -1,0 +1,934 @@
+{
+ "schema_version": "cer-draft-0.1",
+ "lifecycle": {
+  "status": "draft",
+  "note": "Draft only: not reviewed; not executable for screening."
+ },
+ "source": {
+  "source_type": "B",
+  "registry": "ClinicalTrials.gov",
+  "nct_id": "NCT04547166",
+  "title": "Serplulimab + Bevacizumab + XELOX in Metastatic Colorectal Cancer",
+  "overall_status": "RECRUITING",
+  "retrieved_at": "2026-10-06T02:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "content_sha256": "da810c71d6e105fa7f0bd6984ad1efa4ae36dcaf2a3bdaf5382e58ee5e558ee4",
+  "protocol_baseline": "registry_excerpt",
+  "demographics": {
+   "minimum_age": "18 Years",
+   "maximum_age": "75 Years",
+   "sex": "ALL",
+   "healthy_volunteers": false
+  },
+  "text_normalized": "Key Inclusion Criteria:\n\n1. Histopathologically confirmed unresectable metastatic/recurrent colorectal adenocarcinoma\n2. Life expectancy ≥ 12 weeks\n3. Have not received any previous systemic anti-tumor drug treatment for metastatic colorectal adenocarcinoma\n4. For participants who have previously received neoadjuvant/adjuvant therapy, the time from the last treatment to recurrence or progression must exceed 12 months.\n5. With at least one measurable lesion as assessed by the IRRC per RECIST v1.1, and the measurable lesion should not have been treated locally such as with radiotherapy (a lesion located in an area subjected to previous radiotherapy can also be regarded as a measurable lesion if PD is confirmed)\n6. Agree to provide sufficient previously preserved tumor tissue specimens or agree to undergo biopsy to collect tumor tissue for some gene test.\n7. Have an ECOG PS score of 0 or 1 within 7 days prior to receiving the first dose of the study drugs\n8. Have Adequate major organ functions.\n\nKey Exclusion Criteria:\n\n1. Have confirmed MSI-H CRC (gene test)\n2. Subjects with oligometastatic liver disease and presenting the potential for becoming resectable\n3. Presence of central nervous system (CNS) or leptomeningeal metastases\n4. Have received radiotherapy within 6 months prior to the initiation of study treatment, except for palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment; radiotherapy covering more than 30% of the bone marrow area within 28 days prior to randomization is not allowed.\n5. With a history of or current interstitial pneumonia, pneumoconiosis, radiation pneumonitis, drug-related pneumonitis, severe pulmonary dysfunction, or any condition that may interfere with the detection and management of suspected drug-related pulmonary toxicity\n6. Have received major surgery within 28 days prior to randomization. A major surgery in this study is defined as a surgery requiring at least 3 weeks of recovery to be able to receive the treatment in this study\n7. Previously received intestinal stent implantation, with the stent remaining in place at the screening period\n8. Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)\n9. With a history of hypertensive crisis or hypertensive encephalopathy\n10. With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization\n11. Requiring long-term treatment with daily administration of nonsteroidal anti-inflammatory drugs (NSAIDs). Occasional use of NSAIDs to relieve medical symptoms such as headache or pyrexia is allowed\n12. With evidence showing the presence of meteorism that cannot be attributed to puncture or recent surgery\n13. Presence of severe, unhealed or split wounds and active ulcers or untreated fractures\n14. Presence of any of the following medical conditions within 6 months prior to randomization:\n\n    1. Abdominal or tracheoesophageal fistula, gastrointestinal perforation or intra-abdominal abscess, massive ascites as judged by the investigator (defined as patients requiring drainage or treatment within two weeks)\n    2. Intestinal obstruction and/or previous clinical signs or symptoms of gastrointestinal obstruction, including incomplete obstruction associated with a preexisting disease or requiring routine parenteral hydration, parenteral nutrition, or tube feeding. 2 months prior to randomization, patients with previous symptoms of incomplete obstruction/obstructive syndrome/signs/symptoms of intestinal obstruction that have improved after treatment may be enrolled in the study as assessed by the investigator\n    3. Severe, uncontrollable intra-abdominal inflammation requiring clinical intervention as judged by the investigator\n    4. Major vascular disease (e.g., aortic aneurysm requiring surgical repair or associated with recent peripheral artery thrombosis)"
+ },
+ "completeness_disclosure": "Registry-based prescreening: the approved protocol and amendments were not available. A registry excerpt is a discovery source, not proof that all enrollment requirements are present.",
+ "ctrp_biomarker_contract": {
+  "status": "not_supplied",
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
+ },
+ "scopes": [
+  []
+ ],
+ "criteria": [
+  {
+   "id": "840f0c7b-f82e-5a6b-876b-574180eca2a1",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "review": {}
+  },
+  {
+   "id": "95298c13-09a3-523a-9ab4-24226107193b",
+   "path": "/demo/max-age",
+   "type": "predicate",
+   "text": "maximumAge: 75 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-max-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": "<=",
+    "value": 75.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "review": {}
+  },
+  {
+   "id": "338cba16-c9c1-5705-a909-4baab5974e02",
+   "path": "/inc/1",
+   "type": "narrative",
+   "text": "Histopathologically confirmed unresectable metastatic/recurrent colorectal adenocarcinoma",
+   "source_span": [
+    25,
+    117
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "3f6056e7-3e21-5e51-8039-7c162ceb887f",
+   "path": "/inc/2",
+   "type": "narrative",
+   "text": "Life expectancy ≥ 12 weeks",
+   "source_span": [
+    118,
+    147
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "7dfce80d-8548-5c0a-9ff2-5f751e078f17",
+   "path": "/inc/3",
+   "type": "narrative",
+   "text": "Have not received any previous systemic anti-tumor drug treatment for metastatic colorectal adenocarcinoma",
+   "source_span": [
+    148,
+    257
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "ce31947a-15fd-5a6d-83c5-ceae1f3f9119",
+   "path": "/inc/4",
+   "type": "narrative",
+   "text": "For participants who have previously received neoadjuvant/adjuvant therapy, the time from the last treatment to recurrence or progression must exceed 12 months.",
+   "source_span": [
+    258,
+    421
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Inc-4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "501b9217-5642-5193-a65e-2935d538e838",
+   "path": "/inc/5",
+   "type": "narrative",
+   "text": "With at least one measurable lesion as assessed by the IRRC per RECIST v1.1, and the measurable lesion should not have been treated locally such as with radiotherapy (a lesion located in an area subjected to previous radiotherapy can also be regarded as a measurable lesion if PD is confirmed)",
+   "source_span": [
+    422,
+    718
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "fc229e37-4c0e-593e-9684-b67d9cb3067f",
+   "path": "/inc/6",
+   "type": "narrative",
+   "text": "Agree to provide sufficient previously preserved tumor tissue specimens or agree to undergo biopsy to collect tumor tissue for some gene test.",
+   "source_span": [
+    719,
+    864
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "specimen / tissue availability",
+   "display_number": "Inc-6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "27c2c067-4bbf-5da7-a767-7810e5a530f2",
+   "path": "/inc/7.g",
+   "text": "Have an ECOG PS score of 0 or 1 within 7 days prior to receiving the first dose of the study drugs",
+   "source_span": [
+    865,
+    966
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "ecog",
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "time_window": {
+    "value": 7,
+    "unit": "day",
+    "anchor": "first dose",
+    "direction": "lookback",
+    "status": "parsed"
+   },
+   "display_number": "Inc-7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "a05cc6f9-b251-5328-8b1b-b9e59b00b989",
+   "path": "/inc/8",
+   "type": "narrative",
+   "text": "Have Adequate major organ functions.",
+   "source_span": [
+    967,
+    1006
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "f68e5817-8c0f-5228-b69a-e617becba9af",
+   "path": "/exc/1",
+   "text": "Have confirmed MSI-H CRC (gene test)",
+   "source_span": [
+    1033,
+    1072
+   ],
+   "flags": [
+    "terminology unmapped -> not executable until bound",
+    "biomarker qualifiers not stated: assay (source says 'gene test'), local vs central",
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "biomarker",
+    "analyte": "MSI",
+    "alteration": "microsatellite instability",
+    "required_state": "high",
+    "qualifier_gaps": [
+     "assay (source says 'gene test')",
+     "local vs central"
+    ],
+    "key": "biomarker:msi",
+    "terminology": {
+     "status": "unmapped"
+    }
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "7340f66f-ceb0-542e-af52-8b6758f77c46",
+   "path": "/exc/2",
+   "type": "narrative",
+   "text": "Subjects with oligometastatic liver disease and presenting the potential for becoming resectable",
+   "source_span": [
+    1073,
+    1172
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "90535f8d-c76f-5af7-bdc7-346aab61e573",
+   "path": "/exc/3",
+   "text": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+   "source_span": [
+    1173,
+    1245
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ANY",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "90535f8d-c76f-5af7-bdc7-346aab61e573#a2",
+     "path": "/exc/3.0",
+     "text": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+     "source_span": [
+      1173,
+      1245
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "CNS metastases",
+      "key": "condition:cns_metastases",
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable"
+    },
+    {
+     "id": "90535f8d-c76f-5af7-bdc7-346aab61e573#a3",
+     "path": "/exc/3.1",
+     "text": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+     "source_span": [
+      1173,
+      1245
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "leptomeningeal metastases",
+      "key": "condition:leptomeningeal_metastases",
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable"
+    }
+   ],
+   "display_number": "Exc-3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "210cf091-eeba-513b-80d8-8d3fa8595c36",
+   "path": "/exc/4",
+   "type": "narrative",
+   "text": "Have received radiotherapy within 6 months prior to the initiation of study treatment, except for palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment; radiotherapy covering more than 30% of the bone marrow area within 28 days prior to randomization is not allowed.",
+   "source_span": [
+    1246,
+    1560
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "time_window": {
+    "value": 6.0,
+    "unit": "month",
+    "direction": "lookback",
+    "anchor": "initiation of study treatment",
+    "anchor_text": "initiation of study treatment",
+    "span": [
+     27,
+     85
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "exceptions": [
+    {
+     "keyword": "except for",
+     "text": "palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment",
+     "span": [
+      85,
+      196
+     ],
+     "status": "unparsed"
+    }
+   ],
+   "display_number": "Exc-4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "24e29c63-a1d6-52f4-ab53-2ea694b49ef7",
+   "path": "/exc/5",
+   "type": "narrative",
+   "text": "With a history of or current interstitial pneumonia, pneumoconiosis, radiation pneumonitis, drug-related pneumonitis, severe pulmonary dysfunction, or any condition that may interfere with the detection and management of suspected drug-related pulmonary toxicity",
+   "source_span": [
+    1561,
+    1826
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "pneumonitis"
+   ],
+   "display_number": "Exc-5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "25f5297e-56a9-5cd2-9a93-1dea53f8179f",
+   "path": "/exc/6",
+   "text": "Have received major surgery within 28 days prior to randomization. A major surgery in this study is defined as a surgery requiring at least 3 weeks of recovery to be able to receive the treatment in this study",
+   "source_span": [
+    1827,
+    2039
+   ],
+   "flags": [
+    "terminology unmapped -> not executable until bound",
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "condition",
+    "concept": "major surgery",
+    "key": "condition:major_surgery",
+    "terminology": {
+     "status": "unmapped"
+    }
+   },
+   "computability": "structured_computable",
+   "time_window": {
+    "value": 28,
+    "unit": "day",
+    "anchor": "randomisation",
+    "direction": "lookback",
+    "status": "parsed"
+   },
+   "display_number": "Exc-6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "455cee13-9dba-5bd0-b9b3-1c44354fb388",
+   "path": "/exc/7",
+   "type": "narrative",
+   "text": "Previously received intestinal stent implantation, with the stent remaining in place at the screening period",
+   "source_span": [
+    2040,
+    2151
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "826e90ee-e3b0-5398-97ca-569f1569bb52",
+   "path": "/exc/8",
+   "text": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+   "source_span": [
+    2152,
+    2298
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ANY",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "826e90ee-e3b0-5398-97ca-569f1569bb52#a2",
+     "path": "/exc/8.0",
+     "text": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+     "source_span": [
+      2152,
+      2298
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "measurement",
+      "analyte": "Systolic blood pressure",
+      "comparator": ">=",
+      "value": 150,
+      "unit": "mm[Hg]",
+      "key": "measurement:systolic_blood_pressure",
+      "uln_multiple": false,
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable"
+    },
+    {
+     "id": "826e90ee-e3b0-5398-97ca-569f1569bb52#a3",
+     "path": "/exc/8.1",
+     "text": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+     "source_span": [
+      2152,
+      2298
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "measurement",
+      "analyte": "Diastolic blood pressure",
+      "comparator": ">=",
+      "value": 100,
+      "unit": "mm[Hg]",
+      "key": "measurement:diastolic_blood_pressure",
+      "uln_multiple": false,
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable"
+    }
+   ],
+   "display_number": "Exc-8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "e4d30f0b-4143-57aa-91ec-0c40a8508ea7",
+   "path": "/exc/9",
+   "type": "narrative",
+   "text": "With a history of hypertensive crisis or hypertensive encephalopathy",
+   "source_span": [
+    2299,
+    2370
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-9",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "20657332-f675-54ec-9028-d8f4079df4bb",
+   "path": "/exc/10",
+   "text": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+   "source_span": [
+    2371,
+    2534
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ANY",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "20657332-f675-54ec-9028-d8f4079df4bb#a2",
+     "path": "/exc/10.0",
+     "text": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+     "source_span": [
+      2371,
+      2534
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "significant/severe hemorrhage",
+      "key": "condition:significant_severe_hemorrhage",
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable",
+     "time_window": {
+      "value": 1,
+      "unit": "month",
+      "anchor": "randomisation",
+      "direction": "lookback",
+      "status": "parsed"
+     }
+    },
+    {
+     "id": "20657332-f675-54ec-9028-d8f4079df4bb#a3",
+     "path": "/exc/10.1",
+     "text": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+     "source_span": [
+      2371,
+      2534
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "blood transfusion",
+      "key": "condition:blood_transfusion",
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable",
+     "time_window": {
+      "value": 2,
+      "unit": "week",
+      "anchor": "randomisation",
+      "direction": "lookback",
+      "status": "parsed"
+     }
+    }
+   ],
+   "display_number": "Exc-10",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "2a81caaa-95b2-58f6-a746-6d928b9c9b7e",
+   "path": "/exc/11",
+   "type": "narrative",
+   "text": "Requiring long-term treatment with daily administration of nonsteroidal anti-inflammatory drugs (NSAIDs). Occasional use of NSAIDs to relieve medical symptoms such as headache or pyrexia is allowed",
+   "source_span": [
+    2535,
+    2736
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Exc-11",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "0115bf82-bbad-5151-98bb-dc40a80edaac",
+   "path": "/exc/12",
+   "type": "narrative",
+   "text": "With evidence showing the presence of meteorism that cannot be attributed to puncture or recent surgery",
+   "source_span": [
+    2737,
+    2844
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-12",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "10ad86a1-df2a-53f1-a212-226652997bef",
+   "path": "/exc/13",
+   "type": "narrative",
+   "text": "Presence of severe, unhealed or split wounds and active ulcers or untreated fractures",
+   "source_span": [
+    2845,
+    2934
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-13",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "43130b17-1e24-5145-a7c5-321e0f534382",
+   "path": "/exc/14",
+   "type": "group",
+   "text": "Presence of any of the following medical conditions within 6 months prior to randomization:",
+   "source_span": [
+    2935,
+    3030
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ANY",
+   "children": [
+    {
+     "id": "ee6c1f9a-a387-5730-a528-1bc4ce4d925f",
+     "path": "/exc/14/1",
+     "type": "narrative",
+     "text": "Abdominal or tracheoesophageal fistula, gastrointestinal perforation or intra-abdominal abscess, massive ascites as judged by the investigator (defined as patients requiring drainage or treatment within two weeks)",
+     "source_span": [
+      3032,
+      3252
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "human_judgment",
+     "subtype": "investigator judgement",
+     "concept_hits": [
+      "ascites"
+     ]
+    },
+    {
+     "id": "3a824ec2-c80f-5d51-8212-8cf662474e17",
+     "path": "/exc/14/2",
+     "type": "narrative",
+     "text": "Intestinal obstruction and/or previous clinical signs or symptoms of gastrointestinal obstruction, including incomplete obstruction associated with a preexisting disease or requiring routine parenteral hydration, parenteral nutrition, or tube feeding. 2 months prior to randomization, patients with previous symptoms of incomplete obstruction/obstructive syndrome/signs/symptoms of intestinal obstruction that have improved after treatment may be enrolled in the study as assessed by the investigator",
+     "source_span": [
+      3253,
+      3760
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "human_judgment",
+     "subtype": "investigator judgement"
+    },
+    {
+     "id": "137ba28d-03db-559d-8912-f9d670ed9d5e",
+     "path": "/exc/14/3",
+     "type": "narrative",
+     "text": "Severe, uncontrollable intra-abdominal inflammation requiring clinical intervention as judged by the investigator",
+     "source_span": [
+      3761,
+      3881
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "human_judgment",
+     "subtype": "investigator judgement"
+    },
+    {
+     "id": "3b743ddd-3dcb-516f-be86-ebad819acf40",
+     "path": "/exc/14/4",
+     "type": "narrative",
+     "text": "Major vascular disease (e.g., aortic aneurysm requiring surgical repair or associated with recent peripheral artery thrombosis)",
+     "source_span": [
+      3882,
+      4016
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "explicit",
+   "lead_in": "Presence of any of the following medical conditions within 6 months prior to randomization:",
+   "time_window": {
+    "value": 6.0,
+    "unit": "month",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     52,
+     67
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Exc-14",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  }
+ ],
+ "scope_items": [],
+ "inventory": {
+  "criteria_total": 24,
+  "inclusion": 10,
+  "exclusion": 14,
+  "leaf_nodes": 28,
+  "leaves_by_computability": {
+   "structured_computable": 3,
+   "text_dependent": 22,
+   "human_judgment": 3
+  },
+  "typed_predicates": 3,
+  "flagged_nodes": 2
+ },
+ "validation": {
+  "structure_ok": true,
+  "problems": [],
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [
+  "Inc-7",
+  "Exc-1",
+  "Exc-3",
+  "Exc-6",
+  "Exc-8",
+  "Exc-10"
+ ],
+ "review_summary": {
+  "criteria": 24,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Demo-max-age",
+   "Inc-1",
+   "Inc-2",
+   "Inc-3",
+   "Inc-4",
+   "Inc-5",
+   "Inc-6",
+   "Inc-7",
+   "Inc-8",
+   "Exc-1",
+   "Exc-2",
+   "Exc-3",
+   "Exc-4",
+   "Exc-5",
+   "Exc-6",
+   "Exc-7",
+   "Exc-8",
+   "Exc-9",
+   "Exc-10",
+   "Exc-11",
+   "Exc-12",
+   "Exc-13",
+   "Exc-14"
+  ]
+ }
+}

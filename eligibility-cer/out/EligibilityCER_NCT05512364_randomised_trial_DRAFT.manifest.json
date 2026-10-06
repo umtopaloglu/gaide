@@ -1,0 +1,155 @@
+{
+ "library": "EligibilityCER_NCT05512364_randomised_trial_DRAFT",
+ "scope": "Randomised trial",
+ "gated": false,
+ "criteria": 19,
+ "executable_typed_leaves": 2,
+ "unsupported": [
+  {
+   "criterion": "Inc-2.b1.b1",
+   "node": "0e8936c9-6410-58ba-8a17-733daa57b488",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctD"
+  },
+  {
+   "criterion": "Inc-2.b1.b1",
+   "node": "0f6f7b60-df11-5ea5-a11d-154cc5131ec9",
+   "reason": "text_dependent: residual text not covered by typed predicates",
+   "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctD"
+  },
+  {
+   "criterion": "Inc-2.b1.b2",
+   "node": "563cc509-03bd-5006-8b6f-75db3aeb4704",
+   "reason": "text_dependent: specimen / tissue availability",
+   "text": "Patients must meet the eligibility criteria for the screening phase, with the exception of"
+  },
+  {
+   "criterion": "Inc-2.b1.b3",
+   "node": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "Patients must receive adjuvant ET at the time of the ctDNA positive test"
+  },
+  {
+   "criterion": "Inc-2.b1.b4",
+   "node": "80129ba9-290f-5e4e-b507-648c4afcaa01",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Absence of locoregional and/or metastatic disease and/or new malignancy, as investigated b"
+  },
+  {
+   "criterion": "Inc-2.b1.b5",
+   "node": "586146af-9dd6-5a18-8d84-b61f0f42d71a",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Mammogram (unilateral in case of mastectomy; not required in patients having undergone bil"
+  },
+  {
+   "criterion": "Inc-2.b1.b6",
+   "node": "5ce80a28-4067-5f4d-9211-6d5f467f0ddd",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "CT thorax and abdomen/pelvis with IV contrast. In case of any contra-indications (medical "
+  },
+  {
+   "criterion": "Inc-2.b1.b7",
+   "node": "f7148bc8-168a-56a8-96c2-925d683e42d9",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Technetium-99m bone scintigraphy"
+  },
+  {
+   "criterion": "Inc-2.b1.b9",
+   "node": "d5715b64-e651-5d05-b16d-b02d1b17897d",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Adequate organ function"
+  },
+  {
+   "criterion": "Inc-2.b1.b10",
+   "node": "62fec048-027a-5646-b4d7-1da11c1f0777",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Women of childbearing potential (WOCBP) must have a negative highly sensitive serum or uri"
+  },
+  {
+   "criterion": "Inc-2.b2.b1",
+   "node": "cf03f16e-1cac-50a5-8ee4-1c480ce359d1",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Any unresolved toxic effect of prior therapies or surgical procedures of Grade ≥ 2 accordi"
+  },
+  {
+   "criterion": "Inc-2.b2.b2",
+   "node": "8e088569-d6bb-5719-afb5-0f8ee4be9ac5",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Unable or unwilling to avoid over-the-counter medications, dietary/herbal supplements, and"
+  },
+  {
+   "criterion": "Inc-2.b2.b3",
+   "node": "4c456042-7062-5879-9747-5a5feab6718b",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Known difficulty in tolerating oral medications or conditions which would impair absorptio"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "649aff05-13d1-56ae-a6a1-52bedffe4954",
+   "reason": "condition 'myocardial infarction' has no terminology binding / evidence-adequacy policy",
+   "text": "myocardial infarction"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "dab4ff71-f9cf-5788-9573-e5e33b446740",
+   "reason": "condition 'stroke' has no terminology binding / evidence-adequacy policy",
+   "text": "stroke"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "9771085a-fa14-524e-817c-5600552d67ab",
+   "reason": "condition 'unstable angina' has no terminology binding / evidence-adequacy policy",
+   "text": "severe/unstable angina"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "001ede3c-a3cd-5b31-ba71-7209359c2640",
+   "reason": "condition 'arrhythmia' has no terminology binding / evidence-adequacy policy",
+   "text": "symptomatic cardiac arrhythmia"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "b026db49-b078-5a57-8e50-5ff473f2055b",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "prolonged QTcF ≥ Grade 3 (i.e., > 500 msec)"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "658484fc-a19d-5bdd-b0de-34e7283bff52",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "heart failure ≥ Class III as defined by the New York Heart Association (NYHA) guidelines"
+  },
+  {
+   "criterion": "Inc-2.b2.b5",
+   "node": "caca954b-c585-522b-b8b4-b7eb72ed3fa2",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "CTCAE version 5.0 grade 3 or 4 dyslipidemia at the time of screening, defined as cholester"
+  },
+  {
+   "criterion": "Inc-2.b2.b6",
+   "node": "07fb197c-972f-5b6d-8541-f494f85d57fc",
+   "reason": "condition 'ild' has no terminology binding / evidence-adequacy policy",
+   "text": "Child-Pugh Score greater than Class A"
+  },
+  {
+   "criterion": "Inc-2.b2.b7",
+   "node": "dc1bc968-a0c8-5844-8633-527279732633",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Uncontrolled significant active infections (≥ grade 3 according to CTCAE version 5), inclu"
+  },
+  {
+   "criterion": "Inc-2.b2.b8",
+   "node": "964d5bc9-f750-5921-85c3-0336e0d208e0",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Coagulopathy or any history of coagulopathy within the past 6 months, including history of"
+  }
+ ],
+ "parameters": [
+  "LabMaxAgeDays",
+  "ScreeningDate"
+ ],
+ "cql_sha256": "67af3adcf34f5645565842b4e4911a9e1523e24946d5de2b6d15f02b3d5d628d",
+ "cer_content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}

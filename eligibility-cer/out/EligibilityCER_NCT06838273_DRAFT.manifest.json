@@ -1,0 +1,269 @@
+{
+ "library": "EligibilityCER_NCT06838273_DRAFT",
+ "scope": null,
+ "gated": false,
+ "criteria": 40,
+ "executable_typed_leaves": 3,
+ "unsupported": [
+  {
+   "criterion": "Inc-1",
+   "node": "90cc09ce-3319-5ddc-a15d-6fc8fa5c4664",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Sign the informed consent form voluntarily and follow the protocol requirements;"
+  },
+  {
+   "criterion": "Inc-3",
+   "node": "8cd1ab60-a9a5-5ef2-b9f3-56b6bf05e845",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Expected survival time ≥3 months;"
+  },
+  {
+   "criterion": "Inc-4",
+   "node": "19577e9c-949c-50e7-807c-9a9c18ad9624",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with unresectable or radical radiotherapy for locally advanced non-small cell lun"
+  },
+  {
+   "criterion": "Inc-5",
+   "node": "1227897b-b13b-5eb0-a09c-fb23e1c74181#a2",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "Documentation of EGFR sensitive mutations detected from tumor tissue or blood samples;"
+  },
+  {
+   "criterion": "Inc-6",
+   "node": "099344a2-d866-5735-9f15-5470dc9fdca3",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "Consent to provide archived tumor tissue samples or fresh tissue samples of primary or met"
+  },
+  {
+   "criterion": "Inc-6",
+   "node": "ba4575aa-cd4f-547e-927f-211fd3cfc5d3",
+   "reason": "text_dependent: residual text not covered by typed predicates",
+   "text": "Consent to provide archived tumor tissue samples or fresh tissue samples of primary or met"
+  },
+  {
+   "criterion": "Inc-7",
+   "node": "2cd30e4e-6a08-5390-ba3e-610e4fbb8e87",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "At least one measurable lesion meeting the RECIST v1.1 definition was required;"
+  },
+  {
+   "criterion": "Inc-9",
+   "node": "07c0ba3c-779a-5b1b-a4db-65ea5896c011",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "The toxicity of previous antineoplastic therapy has returned to ≤ grade 1 as defined by NC"
+  },
+  {
+   "criterion": "Inc-10",
+   "node": "5b93c057-97bb-5902-8fdc-4e320021aec1#a2",
+   "reason": "human_judgment: 'no severe cardiac dysfunction' (undefined)",
+   "text": "No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;"
+  },
+  {
+   "criterion": "Inc-10",
+   "node": "5b93c057-97bb-5902-8fdc-4e320021aec1#a3",
+   "reason": "no LOINC binding for 'LVEF' (terminology unbound)",
+   "text": "No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;"
+  },
+  {
+   "criterion": "Inc-11",
+   "node": "a51f898d-7040-52fb-b261-eff46bd99ec3",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "The organ function level must meet the requirements on the premise that blood transfusion "
+  },
+  {
+   "criterion": "Inc-12",
+   "node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a2",
+   "reason": "no LOINC binding for 'Urinary protein (dipstick)' (terminology unbound)",
+   "text": "Urinary protein ≤2+ or < 1000mg/24h;"
+  },
+  {
+   "criterion": "Inc-12",
+   "node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3",
+   "reason": "no LOINC binding for 'Urinary protein (24h)' (terminology unbound)",
+   "text": "Urinary protein ≤2+ or < 1000mg/24h;"
+  },
+  {
+   "criterion": "Inc-13",
+   "node": "cfb18df7-06b9-5eed-9553-a9f4713bdb3b",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "For premenopausal women of childbearing potential, a pregnancy test must be performed with"
+  },
+  {
+   "criterion": "Exc-1",
+   "node": "ef790db3-63cc-5cb5-a49b-9941f48a3bd1",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Previous histologic or cytological evidence of small cell or mixed small/non-small cell co"
+  },
+  {
+   "criterion": "Exc-2",
+   "node": "6cc147fb-a5c8-5190-9e87-cc3d5d45b6ef",
+   "reason": "condition 'previous systemic therapy' has no terminology binding / evidence-adequacy policy",
+   "text": "Patients with previous systemic therapy;"
+  },
+  {
+   "criterion": "Exc-3",
+   "node": "b0fb0760-1de1-545c-9d20-cdbbca912ba0",
+   "reason": "condition 'prior EGFR-TKI therapy' has no terminology binding / evidence-adequacy policy",
+   "text": "Patients had received EGFR-TKI therapy;"
+  },
+  {
+   "criterion": "Exc-4",
+   "node": "5e3226db-ace2-5609-ba5b-d7a57823fe49",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Studies received radical radiotherapy, major surgery, and large area radiotherapy within 4"
+  },
+  {
+   "criterion": "Exc-5",
+   "node": "57e14932-28b8-5140-b4dc-5519289ce8bf",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "History of severe heart disease and cerebrovascular disease;"
+  },
+  {
+   "criterion": "Exc-6",
+   "node": "7a055c96-3c09-5bbb-96fa-dcb1dd566b10",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Unstable thrombotic events requiring therapeutic intervention within 6 months before scree"
+  },
+  {
+   "criterion": "Exc-7",
+   "node": "de62af5a-6110-5b12-a0f8-4e6d1620271c",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "QT prolongation, complete left bundle branch block, III degree atrioventricular block, fre"
+  },
+  {
+   "criterion": "Exc-8",
+   "node": "7bba3412-15ef-5686-87a3-e3c8c69c42d7",
+   "reason": "condition 'active malignancy' has no terminology binding / evidence-adequacy policy",
+   "text": "Were diagnosed with active malignancy within 3 years before randomization;"
+  },
+  {
+   "criterion": "Exc-9",
+   "node": "fe460644-6327-5f92-997a-2f15e1f5756e",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Hypertension poorly controlled by two antihypertensive drugs (systolic blood pressure > 15"
+  },
+  {
+   "criterion": "Exc-10",
+   "node": "0bdbd669-2f91-5e8b-b3bb-b0bf28e0ffcc",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with poor glycemic control;"
+  },
+  {
+   "criterion": "Exc-11",
+   "node": "90e518ad-256a-531c-abb1-c324cf1d7873",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "A history of ILD requiring steroid therapy, or current ILD or grade ≥2 radiation pneumonit"
+  },
+  {
+   "criterion": "Exc-12",
+   "node": "5ea0aff4-45fa-53ec-b83e-9d72723befdf",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Complicated with pulmonary diseases leading to clinically severe respiratory function impa"
+  },
+  {
+   "criterion": "Exc-13",
+   "node": "56a459d8-73d2-532f-a9b7-0c8dac20db70",
+   "reason": "condition 'active CNS metastasis' has no terminology binding / evidence-adequacy policy",
+   "text": "Patients with active central nervous system metastasis;"
+  },
+  {
+   "criterion": "Exc-14",
+   "node": "424fc492-00cc-593e-b944-a059e13333b9",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Had a severe infection within 4 weeks before randomization;"
+  },
+  {
+   "criterion": "Exc-15",
+   "node": "683a9f7a-0267-5c0f-ba10-c36438bfe36e",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with massive or symptomatic effusions or poorly controlled effusions;"
+  },
+  {
+   "criterion": "Exc-16",
+   "node": "104b80ed-e999-5c3a-a4d9-7c821fa948f9",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Imaging examination showed that the tumor had invaded or enveloped the large blood vessels"
+  },
+  {
+   "criterion": "Exc-17",
+   "node": "100b380f-82f3-57d6-ae43-f88ef5305c25",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Serious unhealed wound, ulcer, or fracture within 4 weeks before signing the informed cons"
+  },
+  {
+   "criterion": "Exc-18",
+   "node": "c9fec08b-f290-51d9-b8f1-912b333da0fe",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Subjects with clinically significant bleeding or obvious bleeding tendency within 4 weeks "
+  },
+  {
+   "criterion": "Exc-19",
+   "node": "c9953a9f-70df-5a70-945a-ff78b8752685",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with a history of inflammatory bowel disease, extensive bowel resection, immune e"
+  },
+  {
+   "criterion": "Exc-20",
+   "node": "9df515ec-ec72-5925-912f-c92a4a1c8373",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with a history of allergy to recombinant humanized antibodies or to any of the ex"
+  },
+  {
+   "criterion": "Exc-21",
+   "node": "52411238-23c1-5bff-965d-184807478f20",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Had autologous or allogeneic stem cell transplantation history;"
+  },
+  {
+   "criterion": "Exc-22",
+   "node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a2",
+   "reason": "condition 'HIV antibody positive' has no terminology binding / evidence-adequacy policy",
+   "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepa"
+  },
+  {
+   "criterion": "Exc-22",
+   "node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3",
+   "reason": "condition 'active hepatitis B infection' has no terminology binding / evidence-adequacy policy",
+   "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepa"
+  },
+  {
+   "criterion": "Exc-22",
+   "node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4",
+   "reason": "condition 'active hepatitis C infection' has no terminology binding / evidence-adequacy policy",
+   "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepa"
+  },
+  {
+   "criterion": "Exc-23",
+   "node": "dffa4538-39bd-566e-8ccc-7767d09f582d",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "A history of severe neurological or psychiatric illness;"
+  },
+  {
+   "criterion": "Exc-24",
+   "node": "247b046c-4407-5d6a-8f2e-e7f85f009252",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Received other unmarketed investigational drugs or treatments within 4 weeks before random"
+  },
+  {
+   "criterion": "Exc-25",
+   "node": "f7ea9da9-0124-5c7b-807a-29572abd85cb",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Subjects scheduled for vaccination or who received live vaccine within 28 days before stud"
+  },
+  {
+   "criterion": "Exc-26",
+   "node": "c48739a0-de74-5f42-a2eb-465a0fad6ce8",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Other circumstances in which the investigator considered it inappropriate to participate i"
+  }
+ ],
+ "parameters": [
+  "LabMaxAgeDays",
+  "ScreeningDate"
+ ],
+ "cql_sha256": "8651c5672ce618c8f8925da9f54160d2cb6d5996b303e858ca1622d9169bfa7b",
+ "cer_content_sha256": "6b43ff31aca3c19b85d2de36d07845c92f3ae56b7e9c1b9e7891aab943747b07",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}

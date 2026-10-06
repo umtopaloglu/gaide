@@ -100,7 +100,15 @@ def eval_predicate(p, ev, max_age=90):
 
 
 def eval_node(n, ev):
-    """-> (truth for the node's *condition*, reason)"""
+    """-> (truth for the node's *condition*, reason).  An exception or temporal anchor that is not
+    executable keeps a positive result unresolved (it could be an excepted / out-of-window case)."""
+    v, why = _eval_core(n, ev)
+    if v is True and (n.get("exceptions") or n.get("time_window", {}).get("status") not in (None, "parsed")):
+        return None, "exception / unresolved temporal anchor not executable -> unresolved. " + why
+    return v, why
+
+
+def _eval_core(n, ev):
     if n.get("applicability"):
         f = ev.get("facts", {}).get(n["applicability"]["key"])
         if f is None:
@@ -117,11 +125,7 @@ def eval_node(n, ev):
     vals = [k[0] for k in kids]
     op = n["op"]
     v = and3(vals) if op == "ALL" else or3(vals) if op == "ANY" else not3(vals[0]) if op == "NOT" else atleast3(vals, n.get("n", 1))
-    why = "; ".join(r for _, r in kids if r)[:300]
-    # exceptions/time windows we could not execute keep the result honest
-    if v is True and (n.get("exceptions") or n.get("time_window", {}).get("status") not in (None, "parsed")):
-        return None, "exception / temporal anchor not executable -> unresolved. " + why
-    return v, why
+    return v, "; ".join(r for _, r in kids if r)[:300]
 
 
 def requirement_outcome(truth, polarity):

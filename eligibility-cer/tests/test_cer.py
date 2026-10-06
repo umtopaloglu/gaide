@@ -95,3 +95,75 @@ class SafetyBehaviour(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AuthoredReviewCql(unittest.TestCase):
+    @staticmethod
+    def full(n, authored=True):
+        import run as R
+        return R.load_cer(n)
+    def test_authored_or_group_and_identity(self):
+        raw = build_cer(load("NCT06520683"))
+        old = {r["display_number"]: r for r in raw["criteria"]}
+        cer = self.full("NCT06520683")
+        r = next(x for x in cer["criteria"] if x["display_number"] == "Inc-b2")
+        self.assertEqual(r["origin"], "authored_proposal")
+        self.assertEqual(r["id"], old["Inc-b2"]["id"])               # identity preserved
+        self.assertEqual(r["polarity"], "inclusion")
+        anyg = next(c for c in r["children"] if c.get("op") == "ANY")
+        self.assertEqual(len(anyg["children"]), 5)
+        self.assertEqual(cer["authored_applied"].count("Inc-b2"), 1)
+    def test_exception_keeps_positive_unresolved(self):
+        cer = self.full("NCT06520683")
+        r = E.evaluate(cer, {"facts": {"condition:other_malignancy": True}})
+        row = next(x for x in r["criteria"] if x["number"] == "Exc-b5")
+        self.assertEqual(row["outcome"], "unresolved")
+    def test_review_requires_both_roles(self):
+        from cer.review import apply_review
+        cer = build_cer(load("NCT06357533"))
+        num = cer["criteria"][0]["display_number"]
+        apply_review(cer, {"decisions": [{"criterion": num, "role": "clinical", "decision": "approve"}]})
+        self.assertEqual(cer["criteria"][0]["review_status"], "partially_reviewed")
+        apply_review(cer, {"decisions": [{"criterion": num, "role": "clinical", "decision": "approve"},
+                                         {"criterion": num, "role": "informatics", "decision": "approve"}]})
+        self.assertEqual(cer["criteria"][0]["review_status"], "validated")
+        self.assertEqual(cer["lifecycle"]["status"], "in_review")      # others still pending
+        apply_review(cer, {"decisions": [{"criterion": num, "role": "clinical", "decision": "approve"},
+                                         {"criterion": num, "role": "informatics", "decision": "needs_change"}]})
+        self.assertEqual(cer["criteria"][0]["review_status"], "changes_requested")
+    def test_release_only_when_everything_validated_and_authorised(self):
+        from cer.review import apply_review
+        cer = build_cer(load("NCT06357533"))
+        dec = [{"criterion": r["display_number"], "role": ro, "decision": "approve"} for r in cer["criteria"] for ro in ("clinical", "informatics")]
+        apply_review(cer, {"decisions": dec})
+        self.assertEqual(cer["lifecycle"]["status"], "validated")
+        apply_review(cer, {"decisions": dec, "release": {"authorized_by": "X", "date": "2026-10-06"}})
+        self.assertEqual(cer["lifecycle"]["status"], "released")
+        self.assertFalse(E.evaluate(cer, {})["disposition"].startswith("DRAFT"))
+    def test_cql_gated_by_default_and_never_silently_drops(self):
+        from cer.cql import compile_cql
+        cer = self.full("NCT06128837")
+        text, man = compile_cql(cer)
+        self.assertEqual(man["executable_typed_leaves"], 0)
+        self.assertIn("NOT VALIDATED", text)
+        self.assertTrue(all(f"\"Req {r['display_number']}\"" in text for r in cer["criteria"]))
+        text, man = compile_cql(cer, allow_draft=True)
+        self.assertGreater(man["executable_typed_leaves"], 5)
+        self.assertIn("AgeInYears() >= 18", text)
+        self.assertIn("not (", text)                                   # exclusion polarity applied once, at the root
+        import re as _re
+        code = _re.sub(r"/\*.*?\*/|//[^\n]*", "", text, flags=_re.S)    # parens inside comments don't count
+        self.assertEqual(code.count("("), code.count(")"))
+        self.assertNotRegex(text, r"//[^\n]*\)\s*\n\s*and")             # no line comment swallowing a ')'
+        narr = []
+        for r in cer["criteria"]:
+            narr += [n for n in flat(r) if n["type"] == "narrative"]
+        reasons = " ".join(u["reason"] for u in man["unsupported"])
+        self.assertIn("human_judgment", reasons); self.assertIn("text_dependent", reasons)
+        self.assertGreaterEqual(len(man["unsupported"]), len(narr))
+        self.assertFalse(man["translator_validated"])
+    def test_cql_missing_anchor_is_parameter_without_default(self):
+        from cer.cql import compile_cql
+        text, _ = compile_cql(self.full("NCT06128837"), allow_draft=True)
+        self.assertRegex(text, r'parameter "ScreeningDate" DateTime\s+//')
+        self.assertNotIn("Now()", text)

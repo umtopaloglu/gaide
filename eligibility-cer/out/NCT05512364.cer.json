@@ -2,7 +2,7 @@
  "schema_version": "cer-draft-0.1",
  "lifecycle": {
   "status": "draft",
-  "note": "Draft only: not clinically or informatically reviewed; not executable for screening."
+  "note": "Draft only: not reviewed; not executable for screening."
  },
  "source": {
   "source_type": "B",
@@ -28,6 +28,7 @@
   "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
  },
  "scopes": [
+  [],
   [
    "Randomised trial"
   ],
@@ -36,6 +37,35 @@
   ]
  ],
  "criteria": [
+  {
+   "id": "9118ad5a-328a-596e-bde9-6cb139e8a1bb",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "review": {}
+  },
   {
    "id": "e035368b-8fea-5cbb-a896-50e741164f5c",
    "path": "/inc/1/b1/b1.g",
@@ -165,7 +195,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "a43bb309-15f9-5acc-bcdc-96f102733321",
@@ -258,7 +289,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "e50b646f-7c83-5d20-bda5-b78bbcbcc174",
@@ -335,7 +367,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "d6e3a8b7-61bd-56ba-9a6a-e71ebe94f1df",
@@ -358,7 +391,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "acb2ba36-840a-5f44-a7b0-087c146c14b8",
@@ -381,7 +415,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "51f7650c-e806-5171-9153-fc17d95ee3fa",
@@ -404,7 +439,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "c7706806-a9ed-5af5-b4fb-477d238cbf81",
@@ -444,7 +480,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "7f5cf59a-9d8a-56fb-855f-80ce04002c8d",
@@ -467,7 +504,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183",
@@ -507,7 +545,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "58466cdb-3836-5e20-941a-fb89113eed81",
@@ -629,7 +668,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "3deb4226-3277-59ae-b7de-e788950b68f3",
@@ -669,7 +709,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "bf6f23b0-5ca0-5e8d-bebe-701acf665be0",
@@ -692,7 +733,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa",
@@ -732,7 +774,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "30fbda21-cee4-53a8-8775-bafd22797fd9",
@@ -854,7 +897,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "b5593eea-5806-5d56-b044-94c033c3ac23",
@@ -877,7 +921,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "dbeda5df-71a7-5a0e-911f-d54922d8ef31",
@@ -900,7 +945,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "81d93a00-d844-5056-ad2a-92ae0b8b7c2e",
@@ -923,7 +969,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "e22209e4-b799-568b-8f1f-c059a4f126f1",
@@ -960,7 +1007,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "d323db21-2216-5378-88f6-380654334965",
@@ -983,7 +1031,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "7dfbe381-bd0d-5ff4-ac01-06c0a34ad363",
@@ -1006,7 +1055,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "a71c94bf-e2d8-57aa-bae3-9c4a7cb6ec6d",
@@ -1032,7 +1082,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "5c1ca295-486e-5953-83d3-c6b329e687cf",
@@ -1106,7 +1157,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "b7615ea4-3d81-5d2c-bb16-dbfd502631e9",
@@ -1129,7 +1181,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "27225a9b-de50-5a8d-b74e-917948d20e11",
@@ -1152,7 +1205,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "604c3772-7cdf-5d24-984a-41c129d0b1cb",
@@ -1175,7 +1229,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "c158fbcd-3a65-5e25-b87f-f320336d9448",
@@ -1198,7 +1253,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "f5b854a5-b88d-567c-8cf3-86682a7b122a",
@@ -1221,7 +1277,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "967b16b2-4eec-5f7c-8445-0276e1514da7",
@@ -1244,7 +1301,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "1fdfb3cf-3eca-5920-9553-a1fbe4ef54ee",
@@ -1267,7 +1325,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "3fe1126e-961a-5629-90bb-462beb18dc4d",
@@ -1290,7 +1349,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "1a2c9ca4-2d22-5375-a32a-4cd6f3603c3b",
@@ -1313,7 +1373,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "c4ee467f-8e7f-5070-ae3b-07ac8e1edd39",
@@ -1360,7 +1421,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "5037890a-7149-5ce5-bc28-aa8d41ff8ce8",
@@ -1386,7 +1448,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "741690e2-e214-5d18-b6d9-8b57d52067cb",
@@ -1409,7 +1472,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "356e5c44-79b4-5b19-857c-02d853fd956c",
@@ -1443,7 +1507,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "7a796cdf-cea0-5bca-9553-e7b23a718afd",
@@ -1478,7 +1543,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "ctDNA screening phase"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "cc844ae0-8234-52aa-986f-3b47932b6492",
@@ -1554,7 +1620,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "563cc509-03bd-5006-8b6f-75db3aeb4704",
@@ -1588,7 +1655,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
@@ -1630,7 +1698,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "80129ba9-290f-5e4e-b507-648c4afcaa01",
@@ -1653,7 +1722,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "586146af-9dd6-5a18-8d84-b61f0f42d71a",
@@ -1676,7 +1746,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "5ce80a28-4067-5f4d-9211-6d5f467f0ddd",
@@ -1699,7 +1770,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "f7148bc8-168a-56a8-96c2-925d683e42d9",
@@ -1722,7 +1794,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97",
@@ -1761,7 +1834,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "d5715b64-e651-5d05-b16d-b02d1b17897d",
@@ -1784,7 +1858,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "62fec048-027a-5646-b4d7-1da11c1f0777",
@@ -1822,7 +1897,8 @@
    "polarity_source": "heading 'Main inclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "cf03f16e-1cac-50a5-8ee4-1c480ce359d1",
@@ -1856,7 +1932,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "8e088569-d6bb-5719-afb5-0f8ee4be9ac5",
@@ -1879,7 +1956,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "4c456042-7062-5879-9747-5a5feab6718b",
@@ -1902,7 +1980,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "17bce57d-eaba-5c4d-aa4f-325680477007",
@@ -2093,7 +2172,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "caca954b-c585-522b-b8b4-b7eb72ed3fa2",
@@ -2116,7 +2196,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "07fb197c-972f-5b6d-8541-f494f85d57fc",
@@ -2151,7 +2232,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "dc1bc968-a0c8-5844-8633-527279732633",
@@ -2180,7 +2262,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   },
   {
    "id": "964d5bc9-f750-5921-85c3-0336e0d208e0",
@@ -2221,7 +2304,8 @@
    "polarity_source": "heading 'Main exclusion criteria:'",
    "scope": [
     "Randomised trial"
-   ]
+   ],
+   "review": {}
   }
  ],
  "scope_items": [
@@ -2269,21 +2353,83 @@
   }
  ],
  "inventory": {
-  "criteria_total": 54,
-  "inclusion": 38,
+  "criteria_total": 55,
+  "inclusion": 39,
   "exclusion": 16,
-  "leaf_nodes": 69,
+  "leaf_nodes": 70,
   "leaves_by_computability": {
-   "structured_computable": 25,
+   "structured_computable": 26,
    "text_dependent": 38,
    "human_judgment": 6
   },
-  "typed_predicates": 25,
+  "typed_predicates": 26,
   "flagged_nodes": 74
  },
  "validation": {
   "structure_ok": true,
   "problems": [],
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [],
+ "review_summary": {
+  "criteria": 55,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc-1.b1.b1",
+   "Inc-1.b1.b2",
+   "Inc-1.b1.b3",
+   "Inc-1.b1.b4",
+   "Inc-1.b1.b5",
+   "Inc-1.b1.b6",
+   "Inc-1.b1.b7",
+   "Inc-1.b1.b8",
+   "Inc-1.b1.b9",
+   "Inc-1.b1.b10",
+   "Inc-1.b1.b11",
+   "Inc-1.b1.b12",
+   "Inc-1.b1.b13",
+   "Inc-1.b1.b14",
+   "Inc-1.b1.b15",
+   "Inc-1.b1.b16",
+   "Inc-1.b1.b17",
+   "Inc-1.b1.b18",
+   "Inc-1.b1.b19",
+   "Inc-1.b1.b20",
+   "Inc-1.b1.b21",
+   "Inc-1.b1.b22",
+   "Inc-1.b1.b23",
+   "Inc-1.b1.b24",
+   "Inc-1.b1.b25",
+   "Inc-1.b1.b26",
+   "Inc-1.b1.b27",
+   "Inc-1.b1.b28",
+   "Inc-1.b2.b1",
+   "Inc-1.b2.b2",
+   "Inc-1.b2.b3",
+   "Inc-1.b2.b4",
+   "Inc-1.b2.b5",
+   "Inc-1.b2.b6",
+   "Inc-1.b2.b7",
+   "Inc-1.b2.b8",
+   "Inc-2.b1.b1",
+   "Inc-2.b1.b2",
+   "Inc-2.b1.b3",
+   "Inc-2.b1.b4",
+   "Inc-2.b1.b5",
+   "Inc-2.b1.b6",
+   "Inc-2.b1.b7",
+   "Inc-2.b1.b8",
+   "Inc-2.b1.b9",
+   "Inc-2.b1.b10",
+   "Inc-2.b2.b1",
+   "Inc-2.b2.b2",
+   "Inc-2.b2.b3",
+   "Inc-2.b2.b4",
+   "Inc-2.b2.b5",
+   "Inc-2.b2.b6",
+   "Inc-2.b2.b7",
+   "Inc-2.b2.b8"
+  ]
  }
 }

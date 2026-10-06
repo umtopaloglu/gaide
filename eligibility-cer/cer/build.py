@@ -226,6 +226,7 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
         c["polarity"] = s["section"] if s["section"] in ("inclusion", "exclusion") else "inclusion"
         c["polarity_source"] = f"section '{s['section']}'" if s["section"] != "preamble" else base["polarity_source"]
         _convert(ctx, s["items"], c, "", roots)
+    roots = _demographics(ctx, em) + roots
     all_nodes = []
     for r in roots:
         _walk(r, all_nodes.append)
@@ -262,6 +263,27 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
     return cer
 
 
+def _demographics(ctx, em):
+    """ct.gov structured age fields are imported deterministically (not parsed from prose)."""
+    out = []
+    for field, cmp_, tag in (("minimumAge", ">=", "min-age"), ("maximumAge", "<=", "max-age")):
+        raw = em.get(field)
+        if not raw:
+            continue
+        m = re.match(r"(\d+)\s*(Years?)\b", raw, re.I)
+        pred = {"kind": "age", "comparator": cmp_, "value": float(m.group(1)), "unit": "a", "key": "age",
+                "terminology": {"status": "n/a"}} if m else None
+        n = _node(ctx, f"/demo/{tag}", "predicate" if pred else "narrative", f"{field}: {raw}", [0, 0],
+                  origin="imported_structured", display_number=f"Demo-{tag}", polarity="inclusion",
+                  polarity_source="ct.gov structured field", scope=[])
+        if pred:
+            n.update(predicate=pred, computability="structured_computable")
+        else:
+            n.update(computability="text_dependent", subtype="age unit not in years")
+        out.append(n)
+    return out
+
+
 def inventory(cer, items):
     leaves = []
     for r in cer["criteria"]:
@@ -293,6 +315,7 @@ def validate(cer, text, items):
     spans = []
     for r in cer["criteria"]:
         _walk(r, lambda n: spans.append(tuple(n["source_span"])))
+    spans = [sp for sp in spans if sp != (0, 0)]
     for sc in cer.get("scope_items", []):
         spans.append(tuple(sc["span"]))
     covered_lines = []

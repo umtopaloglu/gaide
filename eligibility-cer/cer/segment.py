@@ -5,10 +5,11 @@ Deterministic and conservative: it keeps every source line accounted for
 reviewer can see it.  Flat bullet lists carry no real nesting information; where
 we guess, the item is marked `structure_basis="heuristic"`.
 """
+import html
 import re
 from dataclasses import dataclass, field
 
-SECTION_RE = re.compile(r"^(inclusion|exclusion)\s+criteria\s*:?\s*$", re.I)
+SECTION_RE = re.compile(r"^(?:key\s+)?(inclusion|exclusion)\s+criteria\s*:?\s*$", re.I)
 HEAD_NAMED_RE = re.compile(r"^(main\s+)?(inclusion|exclusion)\s+criteria\s*:?\s*$", re.I)
 MARK_RE = re.compile(r"^(?P<ind>[ \t]*)(?P<m>\d+[.)]|[a-z][.)]|[*•\-–])[ \t]+(?P<t>\S.*)$")
 CAPS_TAIL_RE = re.compile(r"(?<=[.;])\s+(FOR\s+[A-Z][A-Z ,/-]{6,})$")
@@ -18,7 +19,7 @@ INLINE_LETTER_RE = re.compile(r"(?:(?<=:)|(?<=;))\s*([a-h])\.\s*(?=[A-Z])")
 def normalize(text: str) -> str:
     """Undo markdown escaping some clients add; unify newlines."""
     text = text.replace("\r\n", "\n").replace("\r", "\n").replace("\t", "   ")
-    return re.sub(r"\\([<>\[\]&*_#~|()])", r"\1", text)
+    return html.unescape(re.sub(r"\\([<>\[\]&*_#~|()])", r"\1", text))
 
 
 @dataclass

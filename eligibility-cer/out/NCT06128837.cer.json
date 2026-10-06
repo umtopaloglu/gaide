@@ -2,7 +2,7 @@
  "schema_version": "cer-draft-0.1",
  "lifecycle": {
   "status": "draft",
-  "note": "Draft only: not clinically or informatically reviewed; not executable for screening."
+  "note": "Draft only: not reviewed; not executable for screening."
  },
  "source": {
   "source_type": "B",
@@ -31,6 +31,35 @@
   []
  ],
  "criteria": [
+  {
+   "id": "e800d2a1-0103-5f8a-8bc6-1c35ce07ef9f",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "review": {}
+  },
   {
    "id": "3d6d2e48-ee34-586d-81df-c43c90e1516b",
    "path": "/inc/1.p0",
@@ -62,7 +91,8 @@
    "display_number": "Inc-1",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "b1fd9e9a-dac7-54d4-9914-31431785600c",
@@ -81,7 +111,8 @@
    "display_number": "Inc-2",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "4fb2b6e8-0fb9-5b2f-b460-1e41240eec67",
@@ -100,7 +131,8 @@
    "display_number": "Inc-3",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "5bb83ae0-5b62-547a-878c-3b5017339e55",
@@ -119,7 +151,8 @@
    "display_number": "Inc-4",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "434a0ea0-090c-5d9d-919a-881478253cab",
@@ -138,7 +171,8 @@
    "display_number": "Inc-5",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "3b482930-cf1f-574e-bb77-6ea47e473e60",
@@ -173,7 +207,8 @@
    "display_number": "Inc-6",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "99060239-f203-58e8-a9d7-47cee6977a14",
@@ -192,7 +227,8 @@
    "display_number": "Inc-7",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "40587813-4ab2-507b-8e66-e6195608fb7d",
@@ -214,7 +250,8 @@
    "display_number": "Inc-8",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "d82c5508-8219-52dd-9c5d-f15db85e2ccc",
@@ -695,7 +732,8 @@
    "display_number": "Inc-9",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "475f0e55-840b-5115-922b-41e4eeaeeafa",
@@ -714,7 +752,8 @@
    "display_number": "Inc-10",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "2ca6766e-600a-5ea1-afec-a6f3f2dd2176",
@@ -750,7 +789,8 @@
    "display_number": "Inc-11",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "f6a151f1-1e06-571d-b425-4c5acb115433",
@@ -769,7 +809,8 @@
    "display_number": "Exc-1",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "d933ec44-ee54-58fd-9934-9ba2408b41b6",
@@ -791,7 +832,8 @@
    "display_number": "Exc-2",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "267f280d-bbd7-50ea-8472-d3ec4b3acb33",
@@ -815,7 +857,8 @@
    "display_number": "Exc-3",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "96b63c73-ccdb-5d89-93d4-b1b7708a5c2c",
@@ -837,7 +880,8 @@
    "display_number": "Exc-4",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "25740300-47a7-57fb-a45e-52e28035c769",
@@ -859,7 +903,8 @@
    "display_number": "Exc-5",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "a5db7f0d-ea41-5224-b565-b5fc0ec8d8c4",
@@ -883,7 +928,8 @@
    "display_number": "Exc-6",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "aaf382c6-a243-5046-bdb5-873382b4c654",
@@ -989,7 +1035,8 @@
    "display_number": "Exc-7",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "e39491dc-6e02-5871-9db1-29ebfa4e3b4d",
@@ -1066,7 +1113,8 @@
    "display_number": "Exc-8",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "cb141b13-a02a-56de-9520-53385f084f13",
@@ -1108,7 +1156,8 @@
    "display_number": "Exc-9",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "874710d4-0306-5bc5-b29d-92c5800f1479",
@@ -1127,7 +1176,8 @@
    "display_number": "Exc-10",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "e64db985-39e8-5cbd-babd-78552dcbabac",
@@ -1146,7 +1196,8 @@
    "display_number": "Exc-11",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "8b73a64f-b760-573d-bc65-cea68a4c87ee",
@@ -1165,7 +1216,8 @@
    "display_number": "Exc-12",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "f71a57f3-49b5-5099-bf01-da0966695eff",
@@ -1184,7 +1236,8 @@
    "display_number": "Exc-13",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "076724b4-a652-5f79-a3ef-f3a562ba14cf",
@@ -1215,7 +1268,8 @@
    "display_number": "Exc-14",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "e2243e65-f121-5ac1-b470-db90847ca2a8",
@@ -1234,7 +1288,8 @@
    "display_number": "Exc-15",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "a335b653-5cf6-5833-ab82-d82343082790",
@@ -1253,7 +1308,8 @@
    "display_number": "Exc-16",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "1754f7a0-8521-503a-877e-143513f49190",
@@ -1283,7 +1339,8 @@
    "display_number": "Exc-17",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "34fa272d-3dca-5d10-a2b2-d25560e30348",
@@ -1305,7 +1362,8 @@
    "display_number": "Exc-18",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "5031ef13-2951-5739-b795-b2df5fe81715",
@@ -1324,7 +1382,8 @@
    "display_number": "Exc-19",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "ab2c3291-5d90-5086-a965-7bc007f69724",
@@ -1343,26 +1402,66 @@
    "display_number": "Exc-20",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   }
  ],
  "scope_items": [],
  "inventory": {
-  "criteria_total": 31,
-  "inclusion": 11,
+  "criteria_total": 32,
+  "inclusion": 12,
   "exclusion": 20,
-  "leaf_nodes": 46,
+  "leaf_nodes": 47,
   "leaves_by_computability": {
-   "structured_computable": 15,
+   "structured_computable": 16,
    "text_dependent": 25,
    "human_judgment": 6
   },
-  "typed_predicates": 15,
+  "typed_predicates": 16,
   "flagged_nodes": 9
  },
  "validation": {
   "structure_ok": true,
   "problems": [],
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [],
+ "review_summary": {
+  "criteria": 32,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc-1",
+   "Inc-2",
+   "Inc-3",
+   "Inc-4",
+   "Inc-5",
+   "Inc-6",
+   "Inc-7",
+   "Inc-8",
+   "Inc-9",
+   "Inc-10",
+   "Inc-11",
+   "Exc-1",
+   "Exc-2",
+   "Exc-3",
+   "Exc-4",
+   "Exc-5",
+   "Exc-6",
+   "Exc-7",
+   "Exc-8",
+   "Exc-9",
+   "Exc-10",
+   "Exc-11",
+   "Exc-12",
+   "Exc-13",
+   "Exc-14",
+   "Exc-15",
+   "Exc-16",
+   "Exc-17",
+   "Exc-18",
+   "Exc-19",
+   "Exc-20"
+  ]
  }
 }

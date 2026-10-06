@@ -2,7 +2,7 @@
  "schema_version": "cer-draft-0.1",
  "lifecycle": {
   "status": "draft",
-  "note": "Draft only: not clinically or informatically reviewed; not executable for screening."
+  "note": "Draft only: not reviewed; not executable for screening."
  },
  "source": {
   "source_type": "B",
@@ -32,6 +32,35 @@
  ],
  "criteria": [
   {
+   "id": "0e9ca6c2-0e73-5e53-8fa9-15f06f024ed7",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "review": {}
+  },
+  {
    "id": "252f3487-0df1-58cf-9494-c5b9ddae4e1b",
    "path": "/inc/b1",
    "type": "narrative",
@@ -48,7 +77,8 @@
    "display_number": "Inc-b1",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "e6e45f02-70d9-5e3b-a637-7901e88c2a2e",
@@ -67,7 +97,8 @@
    "display_number": "Inc-b2",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "10eeb293-ff96-5595-9c9d-e31e36c62366",
@@ -233,7 +264,8 @@
    "display_number": "Inc-b3",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "cc47a04f-18a2-5d88-a3d8-fd61895b5f06",
@@ -252,7 +284,8 @@
    "display_number": "Inc-b4",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "445a1abf-e51b-5f23-9e77-aab88877e13b",
@@ -296,7 +329,8 @@
    "display_number": "Inc-b5",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "5d7d01b4-feb2-5fd2-8134-a96ebedeb5d7",
@@ -315,7 +349,8 @@
    "display_number": "Inc-b6",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "b0deae96-c8dc-5fb5-a4d9-3a20a096ed51",
@@ -350,7 +385,8 @@
    "display_number": "Inc-b7",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "7f0ae0b4-583a-54fe-92f2-826bb88ec53d",
@@ -369,7 +405,8 @@
    "display_number": "Inc-b8",
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "665712cb-9d35-5966-8afb-f247d1057b67",
@@ -388,7 +425,8 @@
    "display_number": "Exc-b1",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "5ec38ea4-e380-578d-bdbe-657489e1d97d",
@@ -407,7 +445,8 @@
    "display_number": "Exc-b2",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "16da3e5a-dedc-52fa-9a23-a9a98592057c",
@@ -440,7 +479,8 @@
    "display_number": "Exc-b3",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "83d1e790-cf8d-5b75-9118-165c73e91820",
@@ -473,7 +513,8 @@
    "display_number": "Exc-b4",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "d381fb7f-b72c-555f-b0f2-66df02c52273",
@@ -492,7 +533,8 @@
    "display_number": "Exc-b5",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "2cc6cf2d-34ff-5456-96ed-dfe8c4956f67",
@@ -514,7 +556,8 @@
    "display_number": "Exc-b6",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "f17cb35f-98be-5a93-98ee-8baebf045f51",
@@ -548,7 +591,8 @@
    "display_number": "Exc-b7",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "3efc976f-7fbb-5916-8f68-1eac728668f2",
@@ -567,7 +611,8 @@
    "display_number": "Exc-b8",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "935f137a-455e-5a4a-9f52-7596649cd8fa",
@@ -601,7 +646,8 @@
    "display_number": "Exc-b9",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "45e3493d-130a-50a1-92a1-e0ddc7163107",
@@ -633,7 +679,8 @@
    "display_number": "Exc-b10",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
@@ -665,7 +712,8 @@
    "display_number": "Exc-b11",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "2944475d-c2cf-5b6b-b712-ac51fd53ccd6",
@@ -687,7 +735,8 @@
    "display_number": "Exc-b12",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   },
   {
    "id": "19ab1039-8efb-5d46-8325-17d1194c087a",
@@ -719,26 +768,56 @@
    "display_number": "Exc-b13",
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
-   "scope": []
+   "scope": [],
+   "review": {}
   }
  ],
  "scope_items": [],
  "inventory": {
-  "criteria_total": 21,
-  "inclusion": 8,
+  "criteria_total": 22,
+  "inclusion": 9,
   "exclusion": 13,
-  "leaf_nodes": 24,
+  "leaf_nodes": 25,
   "leaves_by_computability": {
+   "structured_computable": 9,
    "text_dependent": 14,
-   "structured_computable": 8,
    "human_judgment": 2
   },
-  "typed_predicates": 8,
+  "typed_predicates": 9,
   "flagged_nodes": 10
  },
  "validation": {
   "structure_ok": true,
   "problems": [],
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [],
+ "review_summary": {
+  "criteria": 22,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc-b1",
+   "Inc-b2",
+   "Inc-b3",
+   "Inc-b4",
+   "Inc-b5",
+   "Inc-b6",
+   "Inc-b7",
+   "Inc-b8",
+   "Exc-b1",
+   "Exc-b2",
+   "Exc-b3",
+   "Exc-b4",
+   "Exc-b5",
+   "Exc-b6",
+   "Exc-b7",
+   "Exc-b8",
+   "Exc-b9",
+   "Exc-b10",
+   "Exc-b11",
+   "Exc-b12",
+   "Exc-b13"
+  ]
  }
 }

@@ -1,0 +1,155 @@
+{
+ "library": "EligibilityCER_NCT06357533_DRAFT",
+ "scope": null,
+ "gated": false,
+ "criteria": 22,
+ "executable_typed_leaves": 2,
+ "unsupported": [
+  {
+   "criterion": "Inc-b1",
+   "node": "252f3487-0df1-58cf-9494-c5b9ddae4e1b",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Histologically or cytologically documented non-squamous NSCLC."
+  },
+  {
+   "criterion": "Inc-b2",
+   "node": "e6e45f02-70d9-5e3b-a637-7901e88c2a2e",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Stage IIIB or IIIC or Stage IV metastatic NSCLC (according to Edition 8 of the AJCC stagin"
+  },
+  {
+   "criterion": "Inc-b3",
+   "node": "a5733269-c964-5c4b-ac14-7c41e8cd99ef",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "EGFR mutations"
+  },
+  {
+   "criterion": "Inc-b3",
+   "node": "6c6f797c-b8f7-5612-a143-9fb86ebbefc2",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "ALK and ROS1 rearrangements"
+  },
+  {
+   "criterion": "Inc-b3",
+   "node": "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "ALK and ROS1 rearrangements"
+  },
+  {
+   "criterion": "Inc-b3",
+   "node": "a9e06ae2-ce57-5c62-b8dd-89bb5006bf26",
+   "reason": "text_dependent: residual text not covered by typed predicates",
+   "text": "Absence of sensitising EGFR mutations, and ALK and ROS1 rearrangements, and absence of doc"
+  },
+  {
+   "criterion": "Inc-b4",
+   "node": "cc47a04f-18a2-5d88-a3d8-fd61895b5f06",
+   "reason": "text_dependent: specimen / tissue availability",
+   "text": "Must provide tumor sample to determine PD-L1 status, TROP2 status and other biomarkers."
+  },
+  {
+   "criterion": "Inc-b5",
+   "node": "445a1abf-e51b-5f23-9e77-aab88877e13b",
+   "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy",
+   "text": "Known tumour PD-L1 expression status defined as TC ≥ 50%"
+  },
+  {
+   "criterion": "Inc-b6",
+   "node": "5d7d01b4-feb2-5fd2-8134-a96ebedeb5d7",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "At least one lesion, not previously irradiated that qualifies as a RECIST 1.1 target lesio"
+  },
+  {
+   "criterion": "Inc-b8",
+   "node": "7f0ae0b4-583a-54fe-92f2-826bb88ec53d",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Adequate bone marrow reserve and organ function"
+  },
+  {
+   "criterion": "Exc-b1",
+   "node": "665712cb-9d35-5966-8afb-f247d1057b67",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Prior systemic therapy for advanced/metastatic NSCLC."
+  },
+  {
+   "criterion": "Exc-b2",
+   "node": "5ec38ea4-e380-578d-bdbe-657489e1d97d",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Squamous cell histology, or predominantly squamous cell histology NSCLC; mixed small cell "
+  },
+  {
+   "criterion": "Exc-b3",
+   "node": "16da3e5a-dedc-52fa-9a23-a9a98592057c",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "History of another primary malignancy within 3 years"
+  },
+  {
+   "criterion": "Exc-b4",
+   "node": "83d1e790-cf8d-5b75-9118-165c73e91820",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Active or prior documented autoimmune or inflammatory disorders (with exceptions)"
+  },
+  {
+   "criterion": "Exc-b5",
+   "node": "d381fb7f-b72c-555f-b0f2-66df02c52273",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Any evidence of severe or uncontrolled disease that makes it undesirable for the participa"
+  },
+  {
+   "criterion": "Exc-b6",
+   "node": "2cc6cf2d-34ff-5456-96ed-dfe8c4956f67",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Has clinically significant third-space fluid retention (for example pleural effusion) and "
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "f17cb35f-98be-5a93-98ee-8baebf045f51",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "History of any ILD/pneumonitis, including radiation pneumonitis (apart from radiation pneu"
+  },
+  {
+   "criterion": "Exc-b8",
+   "node": "3efc976f-7fbb-5916-8f68-1eac728668f2",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Has significant pulmonary function compromise, as determined by the investigator"
+  },
+  {
+   "criterion": "Exc-b9",
+   "node": "935f137a-455e-5a4a-9f52-7596649cd8fa",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Spinal cord compression, or brain metastases unless participant treated and no longer symp"
+  },
+  {
+   "criterion": "Exc-b10",
+   "node": "45e3493d-130a-50a1-92a1-e0ddc7163107",
+   "reason": "condition 'leptomeningeal' has no terminology binding / evidence-adequacy policy",
+   "text": "History of leptomeningeal carcinomatosis"
+  },
+  {
+   "criterion": "Exc-b11",
+   "node": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
+   "reason": "condition 'corneal disease' has no terminology binding / evidence-adequacy policy",
+   "text": "Known clinically significant corneal disease"
+  },
+  {
+   "criterion": "Exc-b12",
+   "node": "2944475d-c2cf-5b6b-b712-ac51fd53ccd6",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Active infection with TB, HBV, HCV, Hepatitis A, or known HIV infection that is not well c"
+  },
+  {
+   "criterion": "Exc-b13",
+   "node": "19ab1039-8efb-5d46-8325-17d1194c087a",
+   "reason": "condition 'immunodeficiency' has no terminology binding / evidence-adequacy policy",
+   "text": "History of active primary immunodeficiency"
+  }
+ ],
+ "parameters": [
+  "LabMaxAgeDays",
+  "ScreeningDate"
+ ],
+ "cql_sha256": "e4946af3bfea5322361bdc3c23e526174c2210efc0c6ee0fa536080be5c0643e",
+ "cer_content_sha256": "e9341b774e5cc8adbc6574f0dce5753c0d33cf3f174a3cdcea14beebc48f241c",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}

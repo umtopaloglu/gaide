@@ -1,0 +1,128 @@
+{
+ "library": "EligibilityCER_NCT05512364_randomised_trial",
+ "scope": "Randomised trial",
+ "gated": true,
+ "criteria": 19,
+ "executable_typed_leaves": 0,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "9118ad5a-328a-596e-bde9-6cb139e8a1bb",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 18 Years"
+  },
+  {
+   "criterion": "Inc-2.b1.b1",
+   "node": "cc844ae0-8234-52aa-986f-3b47932b6492",
+   "reason": "not validated (gated)",
+   "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctD"
+  },
+  {
+   "criterion": "Inc-2.b1.b2",
+   "node": "563cc509-03bd-5006-8b6f-75db3aeb4704",
+   "reason": "not validated (gated)",
+   "text": "Patients must meet the eligibility criteria for the screening phase, with the exception of"
+  },
+  {
+   "criterion": "Inc-2.b1.b3",
+   "node": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
+   "reason": "not validated (gated)",
+   "text": "Patients must receive adjuvant ET at the time of the ctDNA positive test"
+  },
+  {
+   "criterion": "Inc-2.b1.b4",
+   "node": "80129ba9-290f-5e4e-b507-648c4afcaa01",
+   "reason": "not validated (gated)",
+   "text": "Absence of locoregional and/or metastatic disease and/or new malignancy, as investigated b"
+  },
+  {
+   "criterion": "Inc-2.b1.b5",
+   "node": "586146af-9dd6-5a18-8d84-b61f0f42d71a",
+   "reason": "not validated (gated)",
+   "text": "Mammogram (unilateral in case of mastectomy; not required in patients having undergone bil"
+  },
+  {
+   "criterion": "Inc-2.b1.b6",
+   "node": "5ce80a28-4067-5f4d-9211-6d5f467f0ddd",
+   "reason": "not validated (gated)",
+   "text": "CT thorax and abdomen/pelvis with IV contrast. In case of any contra-indications (medical "
+  },
+  {
+   "criterion": "Inc-2.b1.b7",
+   "node": "f7148bc8-168a-56a8-96c2-925d683e42d9",
+   "reason": "not validated (gated)",
+   "text": "Technetium-99m bone scintigraphy"
+  },
+  {
+   "criterion": "Inc-2.b1.b8",
+   "node": "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97",
+   "reason": "not validated (gated)",
+   "text": "Eastern Cooperative Oncology Group (ECOG) performance status (PS) 0-1"
+  },
+  {
+   "criterion": "Inc-2.b1.b9",
+   "node": "d5715b64-e651-5d05-b16d-b02d1b17897d",
+   "reason": "not validated (gated)",
+   "text": "Adequate organ function"
+  },
+  {
+   "criterion": "Inc-2.b1.b10",
+   "node": "62fec048-027a-5646-b4d7-1da11c1f0777",
+   "reason": "not validated (gated)",
+   "text": "Women of childbearing potential (WOCBP) must have a negative highly sensitive serum or uri"
+  },
+  {
+   "criterion": "Inc-2.b2.b1",
+   "node": "cf03f16e-1cac-50a5-8ee4-1c480ce359d1",
+   "reason": "not validated (gated)",
+   "text": "Any unresolved toxic effect of prior therapies or surgical procedures of Grade ≥ 2 accordi"
+  },
+  {
+   "criterion": "Inc-2.b2.b2",
+   "node": "8e088569-d6bb-5719-afb5-0f8ee4be9ac5",
+   "reason": "not validated (gated)",
+   "text": "Unable or unwilling to avoid over-the-counter medications, dietary/herbal supplements, and"
+  },
+  {
+   "criterion": "Inc-2.b2.b3",
+   "node": "4c456042-7062-5879-9747-5a5feab6718b",
+   "reason": "not validated (gated)",
+   "text": "Known difficulty in tolerating oral medications or conditions which would impair absorptio"
+  },
+  {
+   "criterion": "Inc-2.b2.b4",
+   "node": "17bce57d-eaba-5c4d-aa4f-325680477007",
+   "reason": "not validated (gated)",
+   "text": "Any of the following cardiovascular disorders within 3 months before enrolment:"
+  },
+  {
+   "criterion": "Inc-2.b2.b5",
+   "node": "caca954b-c585-522b-b8b4-b7eb72ed3fa2",
+   "reason": "not validated (gated)",
+   "text": "CTCAE version 5.0 grade 3 or 4 dyslipidemia at the time of screening, defined as cholester"
+  },
+  {
+   "criterion": "Inc-2.b2.b6",
+   "node": "07fb197c-972f-5b6d-8541-f494f85d57fc",
+   "reason": "not validated (gated)",
+   "text": "Child-Pugh Score greater than Class A"
+  },
+  {
+   "criterion": "Inc-2.b2.b7",
+   "node": "dc1bc968-a0c8-5844-8633-527279732633",
+   "reason": "not validated (gated)",
+   "text": "Uncontrolled significant active infections (≥ grade 3 according to CTCAE version 5), inclu"
+  },
+  {
+   "criterion": "Inc-2.b2.b8",
+   "node": "964d5bc9-f750-5921-85c3-0336e0d208e0",
+   "reason": "not validated (gated)",
+   "text": "Coagulopathy or any history of coagulopathy within the past 6 months, including history of"
+  }
+ ],
+ "parameters": [],
+ "cql_sha256": "1ec78734de97fabb727ea1f706650bc2b027197ad7091b10f0c5408b3fc8207f",
+ "cer_content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}
