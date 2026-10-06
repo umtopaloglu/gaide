@@ -47,6 +47,7 @@ _CASE_SENSITIVE = {"ER staining (% cells)"}
 
 AGE_RE = re.compile(r"\bage\s*(?P<cmp>≥|>=|>|≤|<=|<)\s*(?P<val>\d+)\s*(?:years?)?", re.I)
 ECOG_RE = re.compile(r"\bECOG\b.{0,70}?(?P<cmp>≤|<=|<|≥|>=|>)?\s*\b(?P<a>[0-5])\b(?:\s*(?:-|–|to|or)\s*(?P<b>[0-5])\b)?", re.I)
+PS_RE = re.compile(r"\b(?P<scale>Zubrod|Karnofsky|WHO)\b.{0,40}?(?P<cmp>≤|<=|<|≥|>=|>)?\s*\b(?P<a>\d{1,3})\b(?:\s*(?:-|–|to|or)\s*(?P<b>\d{1,3})\b)?", re.I)
 PDL1_RE = re.compile(r"PD-?L1.{0,60}?(?:(?P<method>TC|TPS|CPS|TAP|IC)\s*)?(?P<cmp>≥|>=|>|≤|<=|<)\s*(?P<val>\d+)\s*%", re.I)
 GENE_LIST = r"(?:EGFR|ALK|ROS1|KRAS|BRAF|HER2|ERBB2|MET|RET|NTRK[123]?|BRCA[12]?)"
 GENE_RE = re.compile(rf"(?P<genes>\b{GENE_LIST}\b(?:\s*(?:,|and|or|/)\s*{GENE_LIST}\b)*)\s*(?P<alt>mutations?|rearrangements?|fusions?|amplification|alterations?|positive|negative|overexpression)?", re.I)
@@ -154,6 +155,22 @@ def extract_predicates(text: str):
         preds.append({"kind": "ecog", "allowed_values": allowed, "key": "ecog", "span": list(em.span()),
                       "scale": "ECOG", "terminology": {"status": "n/a"}})
         spans.append(em.span())
+
+    for sm in PS_RE.finditer(text):
+        sc, a, b = sm.group("scale").title(), int(sm.group("a")), sm.group("b")
+        if sc == "Karnofsky":                                  # 0-100 scale: keep as a comparison, never mapped to ECOG
+            continue
+        c = sm.group("cmp")
+        if c and not b:
+            allowed = [v for v in range(0, 6) if {"<": v < a, "<=": v <= a, "≤": v <= a, ">": v > a, ">=": v >= a, "≥": v >= a}[c]]
+        elif b:
+            allowed = list(range(a, int(b) + 1)) if re.search(r"-|–|to", text[sm.end("a"): sm.start("b")]) else [a, int(b)]
+        else:
+            allowed = [a]
+        preds.append({"kind": "performance_status", "scale": sc, "allowed_values": allowed, "key": f"ps:{sc.lower()}",
+                      "span": list(sm.span()), "terminology": {"status": "n/a"},
+                      "note": "scale-specific: no assumed equivalence to ECOG"})
+        spans.append(sm.span())
 
     pm = PDL1_RE.search(text)
     if pm:

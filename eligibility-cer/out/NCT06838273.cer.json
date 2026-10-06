@@ -6,6 +6,7 @@
  },
  "source": {
   "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT06838273",
   "title": "BL-B01D1 + Osimertinib vs Osimertinib, EGFR-mutated NSCLC (PANKU-Lung04)",
@@ -58,6 +59,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -112,6 +114,7 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": null,
    "review": {}
   },
   {
@@ -181,7 +184,8 @@
      ],
      "flags": [
       "terminology unmapped -> not executable until bound",
-      "biomarker qualifiers not stated: variant list defining 'sensitive', assay, local vs central"
+      "biomarker qualifiers not stated: variant list defining 'sensitive', assay, local vs central",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -202,10 +206,71 @@
       ],
       "key": "biomarker:egfr",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:3236"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "EGFR",
+       "document_span": [
+        267,
+        356
+       ],
+       "criterion_node": "1227897b-b13b-5eb0-a09c-fb23e1c74181#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-egfr",
+       "semantic_role": "biomarker",
+       "label": "EGFR",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "display_number": "Inc-5",
@@ -241,7 +306,8 @@
       530
      ],
      "flags": [
-      "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail"
+      "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -252,7 +318,10 @@
       "required_state": "present",
       "key": "biomarker:egfr",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:3236"
       },
       "qualifier_gaps": [
        "assay",
@@ -266,7 +335,65 @@
       151,
       164
      ],
-     "extraction_coverage": 0.15
+     "extraction_coverage": 0.15,
+     "binding": {
+      "source_evidence": {
+       "phrase": "EGFR",
+       "document_span": [
+        357,
+        530
+       ],
+       "criterion_node": "099344a2-d866-5735-9f15-5470dc9fdca3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-egfr",
+       "semantic_role": "biomarker",
+       "label": "EGFR",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "ba4575aa-cd4f-547e-927f-211fd3cfc5d3",
@@ -332,7 +459,10 @@
     "key": "ecog",
     "scale": "ECOG",
     "terminology": {
-     "status": "n/a"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
     }
    },
    "computability": "structured_computable",
@@ -345,6 +475,64 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      614,
+      629
+     ],
+     "criterion_node": "ddaa28e7-c019-5eb9-b23f-5860956f8c5b",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -408,7 +596,7 @@
       812
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -422,10 +610,49 @@
       "key": "measurement:lvef",
       "uln_multiple": false,
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "LVEF",
+       "document_span": [
+        737,
+        812
+       ],
+       "criterion_node": "5b93c057-97bb-5902-8fdc-4e320021aec1#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "display_number": "Inc-10",
@@ -493,7 +720,7 @@
       1037
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -507,10 +734,49 @@
       "key": "measurement:urinary_protein_dipstick",
       "uln_multiple": false,
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "Urinary protein (dipstick)",
+       "document_span": [
+        997,
+        1037
+       ],
+       "criterion_node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3",
@@ -521,7 +787,7 @@
       1037
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -535,10 +801,49 @@
       "key": "measurement:urinary_protein_24h",
       "uln_multiple": false,
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "Urinary protein (24h)",
+       "document_span": [
+        997,
+        1037
+       ],
+       "criterion_node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "display_number": "Inc-12",
@@ -614,8 +919,8 @@
     1585
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -625,7 +930,8 @@
     "concept": "previous systemic therapy",
     "key": "condition:previous_systemic_therapy",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -634,6 +940,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "previous systemic therapy",
+     "document_span": [
+      1542,
+      1585
+     ],
+     "criterion_node": "6cc147fb-a5c8-5190-9e87-cc3d5d45b6ef",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -645,8 +989,8 @@
     1628
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -656,7 +1000,8 @@
     "concept": "prior EGFR-TKI therapy",
     "key": "condition:prior_egfr_tki_therapy",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -665,6 +1010,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "prior EGFR-TKI therapy",
+     "document_span": [
+      1586,
+      1628
+     ],
+     "criterion_node": "b0fb0760-1de1-545c-9d20-cdbbca912ba0",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -783,8 +1166,8 @@
     2163
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -794,7 +1177,8 @@
     "concept": "active malignancy",
     "key": "condition:active_malignancy",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -810,6 +1194,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active malignancy",
+     "document_span": [
+      2086,
+      2163
+     ],
+     "criterion_node": "7bba3412-15ef-5686-87a3-e3c8c69c42d7",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -908,8 +1330,8 @@
     2637
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -919,7 +1341,8 @@
     "concept": "active CNS metastasis",
     "key": "condition:active_cns_metastasis",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -928,6 +1351,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active CNS metastasis",
+     "document_span": [
+      2578,
+      2637
+     ],
+     "criterion_node": "56a459d8-73d2-532f-a9b7-0c8dac20db70",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -1155,7 +1616,8 @@
       3602
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': protocol often means antibody/PCR positivity; condition concept is broader than a test result"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -1165,10 +1627,92 @@
       "concept": "HIV antibody positive",
       "key": "condition:hiv_antibody_positive",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "86406008"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "HIV antibody positive",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hiv",
+       "semantic_role": "condition",
+       "label": "HIV infection",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "86406008",
+        "display": "Human immunodeficiency virus infection"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "86406008",
+        "display": "Human immunodeficiency virus infection",
+        "valueSet": "vs:cond-hiv"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "protocol often means antibody/PCR positivity; condition concept is broader than a test result"
+      },
+      "value_set": {
+       "id": "vs:cond-hiv",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "86406008"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|86406008"
+        ],
+        "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "protocol often means antibody/PCR positivity; condition concept is broader than a test result",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3",
@@ -1179,7 +1723,8 @@
       3602
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': 'active infection' vs lifetime diagnosis not distinguished by the code"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -1189,10 +1734,92 @@
       "concept": "active hepatitis B infection",
       "key": "condition:active_hepatitis_b_infection",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "66071002"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "active hepatitis B infection",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hepatitis-b",
+       "semantic_role": "condition",
+       "label": "Hepatitis B",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "66071002",
+        "display": "Viral hepatitis type B"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "66071002",
+        "display": "Viral hepatitis type B",
+        "valueSet": "vs:cond-hepatitis-b"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "'active infection' vs lifetime diagnosis not distinguished by the code"
+      },
+      "value_set": {
+       "id": "vs:cond-hepatitis-b",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "66071002"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|66071002"
+        ],
+        "sha256": "351485cabc75d62be158047fed58943bfcbb0fefbeca413f4a6e76b94a97eed2",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "'active infection' vs lifetime diagnosis not distinguished by the code",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4",
@@ -1203,7 +1830,8 @@
       3602
      ],
      "flags": [
-      "terminology unmapped -> not executable until bound"
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': 'active' vs resolved not distinguished by the code"
      ],
      "review_status": "needs_review",
      "origin": "authored_proposal",
@@ -1213,10 +1841,92 @@
       "concept": "active hepatitis C infection",
       "key": "condition:active_hepatitis_c_infection",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "50711007"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "active hepatitis C infection",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hepatitis-c",
+       "semantic_role": "condition",
+       "label": "Hepatitis C",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "50711007",
+        "display": "Viral hepatitis type C"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "50711007",
+        "display": "Viral hepatitis type C",
+        "valueSet": "vs:cond-hepatitis-c"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "'active' vs resolved not distinguished by the code"
+      },
+      "value_set": {
+       "id": "vs:cond-hepatitis-c",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "50711007"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|50711007"
+        ],
+        "sha256": "c67e5002a12240afb7e4958bca38cfc2251a21cd03683b0fc74911955212ce0b",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "'active' vs resolved not distinguished by the code",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "display_number": "Exc-22",
@@ -1279,9 +1989,9 @@
    "review": {}
   },
   {
-   "id": "f7ea9da9-0124-5c7b-807a-29572abd85cb",
-   "path": "/exc/25",
-   "type": "narrative",
+   "id": "962501fb-331f-5fc4-9385-8dc5d8cb20af",
+   "path": "/exc/25.p0",
+   "type": "predicate",
    "text": "Subjects scheduled for vaccination or who received live vaccine within 28 days before study randomization;",
    "source_span": [
     3767,
@@ -1290,8 +2000,24 @@
    "flags": [],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
-   "computability": "text_dependent",
-   "subtype": "unclassified narrative",
+   "predicate": {
+    "kind": "performance_status",
+    "scale": "Who",
+    "allowed_values": [
+     28
+    ],
+    "key": "ps:who",
+    "terminology": {
+     "status": "n/a"
+    },
+    "note": "scale-specific: no assumed equivalence to ECOG"
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    38,
+    73
+   ],
+   "extraction_coverage": 0.54,
    "time_window": {
     "value": 28.0,
     "unit": "day",
@@ -1308,6 +2034,7 @@
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
    "scope": [],
+   "binding": null,
    "review": {}
   },
   {
@@ -1338,11 +2065,11 @@
   "exclusion": 26,
   "leaf_nodes": 42,
   "leaves_by_computability": {
-   "structured_computable": 6,
+   "structured_computable": 7,
    "human_judgment": 5,
-   "text_dependent": 31
+   "text_dependent": 30
   },
-  "typed_predicates": 6,
+  "typed_predicates": 7,
   "flagged_nodes": 6
  },
  "validation": {
@@ -1360,7 +2087,97 @@
   "Exc-13",
   "Exc-22"
  ],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 6,
+   "unmapped": 7,
+   "by_relationship": {
+    "related": 2,
+    "equivalent": 1,
+    "no-map": 7,
+    "inexact": 3
+   }
+  },
+  "value_sets": {
+   "vs:cond-hiv": {
+    "id": "vs:cond-hiv",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "86406008"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|86406008"
+     ],
+     "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-hepatitis-b": {
+    "id": "vs:cond-hepatitis-b",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "66071002"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|66071002"
+     ],
+     "sha256": "351485cabc75d62be158047fed58943bfcbb0fefbeca413f4a6e76b94a97eed2",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-hepatitis-c": {
+    "id": "vs:cond-hepatitis-c",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "50711007"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|50711007"
+     ],
+     "sha256": "c67e5002a12240afb7e4958bca38cfc2251a21cd03683b0fc74911955212ce0b",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   }
+  },
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
  "review_summary": {
+  "open_conflicts": [],
   "criteria": 40,
   "validated": 0,
   "pending": [

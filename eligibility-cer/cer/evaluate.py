@@ -67,6 +67,13 @@ def eval_predicate(p, ev, max_age=90):
         ok, why = _fresh(e, ev, max_age) if isinstance(e, dict) else (True, None)
         v = e["value"] if isinstance(e, dict) else e
         return (None, f"ECOG stale: {why}") if not ok else (v in p["allowed_values"], f"ECOG={v}")
+    if k == "performance_status":
+        e = ev.get("performance_status", {}).get(p["scale"])
+        if e is None:
+            return None, f"no {p['scale']} score documented (other scales are not assumed equivalent)"
+        ok, why = _fresh(e, ev, max_age) if isinstance(e, dict) else (True, None)
+        v = e["value"] if isinstance(e, dict) else e
+        return (None, f"{p['scale']} stale: {why}") if not ok else (v in p["allowed_values"], f"{p['scale']}={v}")
     if k in ("lab", "measurement"):
         e = ev.get("labs", {}).get(p["analyte"])
         if not e:
@@ -157,6 +164,9 @@ def evaluate(cer, ev, scope=None):
         rows.append({"id": r["id"], "number": r.get("display_number"), "polarity": r["polarity"],
                      "text": r["text"][:140], "condition_truth": {True: "true", False: "false", None: "unknown", NA: "n/a"}[truth],
                      "outcome": out, "reason": why,
+                     "applicability": {NA: "not_applicable", None: "unresolved"}.get(truth, "applicable") if truth in (NA, None) and "applicab" in why else "applicable",
+                     "technical_status": "unsupported" if ("narrative evidence review" in why or "human judgement" in why or "unsupported" in why) else "ok",
+                     "review_status": r["review_status"],
                      "computability": r.get("computability") or "composite"})
     violated = [x for x in rows if x["outcome"] == "violated"]
     unresolved = [x for x in rows if x["outcome"] == "unresolved"]
@@ -169,6 +179,9 @@ def evaluate(cer, ev, scope=None):
     if cer["lifecycle"]["status"] != "released":
         disp = "DRAFT-PROVISIONAL: " + disp
     return {"nct_id": cer["source"]["nct_id"], "scope": scope, "disposition": disp,
+            "versions": {"cer_content_sha256": cer["source"]["content_sha256"], "cer_lifecycle": cer["lifecycle"]["status"],
+                         "terminology_bundle_sha256": (cer.get("terminology") or {}).get("sha256"), "evaluator": "cer/evaluate.py",
+                         "data_cutoff": None, "evaluation_anchor": None},
             "determining_criteria": [x["number"] for x in violated],
             "counts": {"satisfied": sum(x["outcome"] == "satisfied" for x in rows), "violated": len(violated),
                        "unresolved": len(unresolved), "not_applicable": sum(x["outcome"] == "not_applicable" for x in rows)},

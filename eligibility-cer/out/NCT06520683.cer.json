@@ -6,6 +6,7 @@
  },
  "source": {
   "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT06520683",
   "title": "Adjuvant PD-1 Blockade for High-risk Stage-II DMMR/MSI-H Colorectal Cancer (SMALLER)",
@@ -58,6 +59,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -87,6 +89,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -130,8 +133,8 @@
         93
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound",
-        "biomarker qualifiers not stated: assay (IHC vs PCR/NGS), local vs central"
+        "biomarker qualifiers not stated: assay (IHC vs PCR/NGS), local vs central",
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -147,10 +150,49 @@
         ],
         "key": "biomarker:mmr",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "MMR",
+         "document_span": [
+          21,
+          93
+         ],
+         "criterion_node": "943a9610-cf13-5460-960f-59cbb18e668d#a3",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "943a9610-cf13-5460-960f-59cbb18e668d#a4",
@@ -161,8 +203,8 @@
         93
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound",
-        "biomarker qualifiers not stated: assay (PCR vs NGS), local vs central"
+        "biomarker qualifiers not stated: assay (PCR vs NGS), local vs central",
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -178,10 +220,49 @@
         ],
         "key": "biomarker:msi",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "MSI",
+         "document_span": [
+          21,
+          93
+         ],
+         "criterion_node": "943a9610-cf13-5460-960f-59cbb18e668d#a4",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ]
     },
@@ -264,7 +345,7 @@
         391
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -274,10 +355,49 @@
         "concept": "T4 tumour (T4a/T4b)",
         "key": "condition:t4_tumour_t4a_t4b",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "T4 tumour (T4a/T4b)",
+         "document_span": [
+          94,
+          391
+         ],
+         "criterion_node": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a4",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a5",
@@ -288,7 +408,7 @@
         391
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -298,10 +418,49 @@
         "concept": "vascular invasion",
         "key": "condition:vascular_invasion",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "vascular invasion",
+         "document_span": [
+          94,
+          391
+         ],
+         "criterion_node": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a5",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a6",
@@ -312,7 +471,7 @@
         391
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -322,10 +481,49 @@
         "concept": "perineural invasion",
         "key": "condition:perineural_invasion",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "perineural invasion",
+         "document_span": [
+          94,
+          391
+         ],
+         "criterion_node": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a6",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a7",
@@ -336,7 +534,7 @@
         391
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -346,10 +544,49 @@
         "concept": "poor differentiation (incl. mucinous, signet-ring)",
         "key": "condition:poor_differentiation_incl_mucinous_signet_ring",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "poor differentiation (incl. mucinous, signet-ring)",
+         "document_span": [
+          94,
+          391
+         ],
+         "criterion_node": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a7",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a8",
@@ -360,7 +597,7 @@
         391
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -370,10 +607,49 @@
         "concept": "pre-operative obstruction and/or perforation",
         "key": "condition:pre_operative_obstruction_and_or_perforation",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "pre-operative obstruction and/or perforation",
+         "document_span": [
+          94,
+          391
+         ],
+         "criterion_node": "2b27921c-7e70-5a2f-afdf-ce536385d64a#a8",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ]
     }
@@ -428,7 +704,10 @@
     "key": "ecog",
     "scale": "ECOG",
     "terminology": {
-     "status": "n/a"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
     }
    },
    "computability": "structured_computable",
@@ -444,6 +723,64 @@
    "polarity_source": "section 'inclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      449,
+      557
+     ],
+     "criterion_node": "a98ab283-0b84-5393-bbb9-d62bba81e6fd",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -485,7 +822,8 @@
        "status": "n/a"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": null
     },
     {
      "id": "3d58c612-fdcf-538d-a985-e2907766723b#a3",
@@ -509,7 +847,8 @@
        "status": "n/a"
       }
      },
-     "computability": "structured_computable"
+     "computability": "structured_computable",
+     "binding": null
     }
    ],
    "display_number": "Inc-b5",
@@ -560,7 +899,7 @@
         701
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -570,10 +909,49 @@
         "concept": "prior medical therapy for current cancer (chemo/immuno/biologic/targeted)",
         "key": "condition:prior_medical_therapy_for_current_cancer_chemo_immuno_biologic_targeted",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "prior medical therapy for current cancer (chemo/immuno/biologic/targeted)",
+         "document_span": [
+          571,
+          701
+         ],
+         "criterion_node": "e8414591-ca32-511b-8623-371d7e35aa78#a3",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "e8414591-ca32-511b-8623-371d7e35aa78#a4",
@@ -584,7 +962,7 @@
         701
        ],
        "flags": [
-        "terminology unmapped -> not executable until bound"
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "authored_proposal",
@@ -594,10 +972,49 @@
         "concept": "prior radiation therapy for current cancer",
         "key": "condition:prior_radiation_therapy_for_current_cancer",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         }
        },
-       "computability": "structured_computable"
+       "computability": "structured_computable",
+       "binding": {
+        "source_evidence": {
+         "phrase": "prior radiation therapy for current cancer",
+         "document_span": [
+          571,
+          701
+         ],
+         "criterion_node": "e8414591-ca32-511b-8623-371d7e35aa78#a4",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ]
     }
@@ -640,7 +1057,8 @@
    "flags": [
     "terminology unmapped -> not executable until bound",
     "temporal anchor missing -> evaluate as unknown until resolved",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "mapping relationship 'inexact': protocol qualifiers (active, systemic treatment) not carried"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -650,7 +1068,10 @@
     "concept": "active autoimmune disease requiring systemic treatment",
     "key": "condition:active_autoimmune_disease_requiring_systemic_treatment",
     "terminology": {
-     "status": "unmapped"
+     "status": "proposed_unreviewed",
+     "relationship": "inexact",
+     "system": "SNOMED CT",
+     "code": "85828009"
     }
    },
    "computability": "structured_computable",
@@ -666,6 +1087,85 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active autoimmune disease requiring systemic treatment",
+     "document_span": [
+      750,
+      830
+     ],
+     "criterion_node": "4a5c2ce0-d143-5386-bdbc-a44ededd7ddc",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:cond-autoimmune",
+     "semantic_role": "condition",
+     "label": "Autoimmune disease",
+     "primary": {
+      "system": "SNOMED CT",
+      "code": "85828009",
+      "display": "Autoimmune disease"
+     },
+     "code_system_uri": "http://snomed.info/sct"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://snomed.info/sct",
+      "code": "85828009",
+      "display": "Autoimmune disease",
+      "valueSet": "vs:cond-autoimmune"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "inexact",
+     "direction": "source_to_target",
+     "context": "protocol qualifiers (active, systemic treatment) not carried"
+    },
+    "value_set": {
+     "id": "vs:cond-autoimmune",
+     "version": "0.1.0",
+     "compose": [
+      {
+       "system": "SNOMED CT",
+       "codes": [
+        "85828009"
+       ]
+      }
+     ],
+     "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+     "frozen_expansion": {
+      "members": [
+       "SNOMED CT|85828009"
+      ],
+      "sha256": "cc60190435a7e50d57db7b525bc3fffd2685dd08720225f6f38df6733c334294",
+      "date": "2026-10-06"
+     },
+     "excluded": []
+    },
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "low",
+     "rationale": "protocol qualifiers (active, systemic treatment) not carried",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -677,8 +1177,8 @@
     875
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -688,7 +1188,8 @@
     "concept": "positive surgical margin (R1/R2)",
     "key": "condition:positive_surgical_margin_r1_r2",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -697,6 +1198,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "positive surgical margin (R1/R2)",
+     "document_span": [
+      831,
+      875
+     ],
+     "criterion_node": "915bcdfd-8c41-54c8-9711-b095396068c4",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -728,8 +1267,8 @@
     992
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -739,7 +1278,8 @@
     "concept": "active infection requiring systemic therapy",
     "key": "condition:active_infection_requiring_systemic_therapy",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -748,6 +1288,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active infection requiring systemic therapy",
+     "document_span": [
+      947,
+      992
+     ],
+     "criterion_node": "ac7ccdfd-2aec-52c4-a6da-65eb642fbb66",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -759,9 +1337,9 @@
     1173
    ],
    "flags": [
-    "terminology unmapped -> not executable until bound",
     "temporal anchor missing -> evaluate as unknown until resolved",
-    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "authored_proposal",
@@ -771,7 +1349,8 @@
     "concept": "other malignancy",
     "key": "condition:other_malignancy",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -804,6 +1383,44 @@
    "polarity_source": "section 'exclusion'",
    "scope": [],
    "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "other malignancy",
+     "document_span": [
+      993,
+      1173
+     ],
+     "criterion_node": "cd80dc68-aa74-5f88-8cb6-beece73291e0",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   }
  ],
@@ -836,7 +1453,54 @@
   "Exc-b4",
   "Exc-b5"
  ],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 2,
+   "unmapped": 12,
+   "by_relationship": {
+    "no-map": 12,
+    "equivalent": 1,
+    "inexact": 1
+   }
+  },
+  "value_sets": {
+   "vs:cond-autoimmune": {
+    "id": "vs:cond-autoimmune",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "85828009"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|85828009"
+     ],
+     "sha256": "cc60190435a7e50d57db7b525bc3fffd2685dd08720225f6f38df6733c334294",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   }
+  },
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
  "review_summary": {
+  "open_conflicts": [],
   "criteria": 14,
   "validated": 0,
   "pending": [

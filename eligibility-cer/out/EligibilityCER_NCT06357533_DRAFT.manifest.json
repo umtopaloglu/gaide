@@ -1,5 +1,133 @@
 {
  "library": "EligibilityCER_NCT06357533_DRAFT",
+ "capability": {
+  "trial_backend_label": "partial",
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "nodes": {
+   "supported": 2,
+   "conditionally_supported": 0,
+   "unsupported": 25
+  },
+  "leaves": {
+   "supported": 2,
+   "conditionally_supported": 0,
+   "unsupported": 23
+  },
+  "per_node": {
+   "0e9ca6c2-0e73-5e53-8fa9-15f06f024ed7": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "252f3487-0df1-58cf-9494-c5b9ddae4e1b": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "e6e45f02-70d9-5e3b-a637-7901e88c2a2e": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "a5733269-c964-5c4b-ac14-7c41e8cd99ef": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "6c6f797c-b8f7-5612-a143-9fb86ebbefc2": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "242d1ace-ec1e-57ad-bc57-3d6e895e1ceb": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "a9e06ae2-ce57-5c62-b8dd-89bb5006bf26": {
+    "status": "unsupported",
+    "reason": "text_dependent: residual text not covered by typed predicates"
+   },
+   "10eeb293-ff96-5595-9c9d-e31e36c62366": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "cc47a04f-18a2-5d88-a3d8-fd61895b5f06": {
+    "status": "unsupported",
+    "reason": "text_dependent: specimen / tissue availability"
+   },
+   "445a1abf-e51b-5f23-9e77-aab88877e13b": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "5d7d01b4-feb2-5fd2-8134-a96ebedeb5d7": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "b0deae96-c8dc-5fb5-a4d9-3a20a096ed51": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "7f0ae0b4-583a-54fe-92f2-826bb88ec53d": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "665712cb-9d35-5966-8afb-f247d1057b67": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "5ec38ea4-e380-578d-bdbe-657489e1d97d": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "16da3e5a-dedc-52fa-9a23-a9a98592057c": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "83d1e790-cf8d-5b75-9118-165c73e91820": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "d381fb7f-b72c-555f-b0f2-66df02c52273": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "2cc6cf2d-34ff-5456-96ed-dfe8c4956f67": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "f17cb35f-98be-5a93-98ee-8baebf045f51": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "3efc976f-7fbb-5916-8f68-1eac728668f2": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "935f137a-455e-5a4a-9f52-7596649cd8fa": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "45e3493d-130a-50a1-92a1-e0ddc7163107": {
+    "status": "unsupported",
+    "reason": "condition 'leptomeningeal' has no terminology binding"
+   },
+   "0baf13e7-5ccd-54c4-8a01-58b168fd5761": {
+    "status": "unsupported",
+    "reason": "condition 'corneal disease' has no terminology binding"
+   },
+   "2944475d-c2cf-5b6b-b712-ac51fd53ccd6": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "19ab1039-8efb-5d46-8325-17d1194c087a": {
+    "status": "unsupported",
+    "reason": "condition 'immunodeficiency' has no terminology binding"
+   }
+  },
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "overall_assertion_allowed": false,
+  "approval": null,
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."
+ },
  "scope": null,
  "gated": false,
  "criteria": 22,
@@ -122,13 +250,13 @@
   {
    "criterion": "Exc-b10",
    "node": "45e3493d-130a-50a1-92a1-e0ddc7163107",
-   "reason": "condition 'leptomeningeal' has no terminology binding / evidence-adequacy policy",
+   "reason": "condition 'leptomeningeal' has no terminology binding",
    "text": "History of leptomeningeal carcinomatosis"
   },
   {
    "criterion": "Exc-b11",
    "node": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
-   "reason": "condition 'corneal disease' has no terminology binding / evidence-adequacy policy",
+   "reason": "condition 'corneal disease' has no terminology binding",
    "text": "Known clinically significant corneal disease"
   },
   {
@@ -140,7 +268,7 @@
   {
    "criterion": "Exc-b13",
    "node": "19ab1039-8efb-5d46-8325-17d1194c087a",
-   "reason": "condition 'immunodeficiency' has no terminology binding / evidence-adequacy policy",
+   "reason": "condition 'immunodeficiency' has no terminology binding",
    "text": "History of active primary immunodeficiency"
   }
  ],
@@ -148,7 +276,7 @@
   "LabMaxAgeDays",
   "ScreeningDate"
  ],
- "cql_sha256": "e4946af3bfea5322361bdc3c23e526174c2210efc0c6ee0fa536080be5c0643e",
+ "cql_sha256": "fbd6435db3ec2740c8ba98100c79b3c0c8af8b88ae0e680c3a1e92d8bf619e8c",
  "cer_content_sha256": "e9341b774e5cc8adbc6574f0dce5753c0d33cf3f174a3cdcea14beebc48f241c",
  "translator_validated": false,
  "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"

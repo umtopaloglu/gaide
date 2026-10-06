@@ -4,9 +4,14 @@ library EligibilityCER_NCT06838273_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
+code "HIV infection (86406008)": '86406008' from "SNOMED CT" display 'Human immunodeficiency virus infection'
+code "Hepatitis B (66071002)": '66071002' from "SNOMED CT" display 'Viral hepatitis type B'
+code "Hepatitis C (50711007)": '50711007' from "SNOMED CT" display 'Viral hepatitis type C'
 parameter "ScreeningDate" DateTime  // no default on purpose: a missing anchor is unknown, not today
 parameter "LabMaxAgeDays" Integer default 90  // site evidence-freshness policy
+parameter "ConditionCoverageComplete" Boolean default false  // site asserts the Condition record is complete enough that absence = false
 context Patient
 
 
@@ -15,6 +20,15 @@ define "ECOG latest":
     where O.status.value in {'final', 'amended', 'corrected'}
       and days between FHIRHelpers.ToDateTime(O.effective as FHIR.dateTime) and "ScreeningDate" in Interval[0, "LabMaxAgeDays"]
     sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime))
+
+define "HIV infection recorded":
+  exists ([Condition: "HIV infection (86406008)"])
+
+define "Hepatitis B recorded":
+  exists ([Condition: "Hepatitis B (66071002)"])
+
+define "Hepatitis C recorded":
+  exists ([Condition: "Hepatitis C (50711007)"])
 
 define "Req Demo-min-age":  // inclusion; minimumAge: 18 Years
   (AgeInYears() >= 18)
@@ -50,14 +64,14 @@ define "Req Inc-9":  // inclusion; The toxicity of previous antineoplastic thera
 
 define "Req Inc-10":  // inclusion; No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;
   ((null as Boolean /* UNSUPPORTED: human_judgment: 'no severe cardiac dysfunction' (undefined) */)
-     and (null as Boolean /* UNSUPPORTED: no LOINC binding for 'LVEF' (terminology unbound) */))
+     and (null as Boolean /* UNSUPPORTED: no LOINC binding for 'LVEF' (terminology unavailable/unbound) */))
 
 define "Req Inc-11":  // inclusion; The organ function level must meet the requirements on the premise that blood transfusion and colony
   (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Inc-12":  // inclusion; Urinary protein ≤2+ or < 1000mg/24h;
-  ((null as Boolean /* UNSUPPORTED: no LOINC binding for 'Urinary protein (dipstick)' (terminology unbound) */)
-     or (null as Boolean /* UNSUPPORTED: no LOINC binding for 'Urinary protein (24h)' (terminology unbound) */))
+  ((null as Boolean /* UNSUPPORTED: no LOINC binding for 'Urinary protein (dipstick)' (terminology unavailable/unbound) */)
+     or (null as Boolean /* UNSUPPORTED: no LOINC binding for 'Urinary protein (24h)' (terminology unavailable/unbound) */))
 
 define "Req Inc-13":  // inclusion; For premenopausal women of childbearing potential, a pregnancy test must be performed within 7 days 
   (null as Boolean /* UNSUPPORTED: human_judgment: consent / contraception / pregnancy workflow */)
@@ -66,10 +80,10 @@ define "Req Exc-1":  // exclusion; Previous histologic or cytological evidence o
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-2":  // exclusion; Patients with previous systemic therapy;
-  not (null as Boolean /* UNSUPPORTED: condition 'previous systemic therapy' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'previous systemic therapy' has no terminology binding */)
 
 define "Req Exc-3":  // exclusion; Patients had received EGFR-TKI therapy;
-  not (null as Boolean /* UNSUPPORTED: condition 'prior EGFR-TKI therapy' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'prior EGFR-TKI therapy' has no terminology binding */)
 
 define "Req Exc-4":  // exclusion; Studies received radical radiotherapy, major surgery, and large area radiotherapy within 4 weeks bef
   not (null as Boolean /* UNSUPPORTED: text_dependent: prior therapy / medication */)
@@ -84,7 +98,7 @@ define "Req Exc-7":  // exclusion; QT prolongation, complete left bundle branch 
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
 
 define "Req Exc-8":  // exclusion; Were diagnosed with active malignancy within 3 years before randomization;
-  not (null as Boolean /* UNSUPPORTED: condition 'active malignancy' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'active malignancy' has no terminology binding */)
 
 define "Req Exc-9":  // exclusion; Hypertension poorly controlled by two antihypertensive drugs (systolic blood pressure > 150 mmHg or 
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
@@ -99,7 +113,7 @@ define "Req Exc-12":  // exclusion; Complicated with pulmonary diseases leading 
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-13":  // exclusion; Patients with active central nervous system metastasis;
-  not (null as Boolean /* UNSUPPORTED: condition 'active CNS metastasis' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'active CNS metastasis' has no terminology binding */)
 
 define "Req Exc-14":  // exclusion; Had a severe infection within 4 weeks before randomization;
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
@@ -126,9 +140,9 @@ define "Req Exc-21":  // exclusion; Had autologous or allogeneic stem cell trans
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
 
 define "Req Exc-22":  // exclusion; Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C vi
-  not ((null as Boolean /* UNSUPPORTED: condition 'HIV antibody positive' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'active hepatitis B infection' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'active hepatitis C infection' has no terminology binding / evidence-adequacy policy */))
+  not ((if "HIV infection recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (if "Hepatitis B recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (if "Hepatitis C recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean)))
 
 define "Req Exc-23":  // exclusion; A history of severe neurological or psychiatric illness;
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
@@ -137,7 +151,7 @@ define "Req Exc-24":  // exclusion; Received other unmarketed investigational dr
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-25":  // exclusion; Subjects scheduled for vaccination or who received live vaccine within 28 days before study randomiz
-  not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
+  not (null as Boolean /* UNSUPPORTED: Who performance status has no approved coded representation (no ECOG equivalence assumed) */)
 
 define "Req Exc-26":  // exclusion; Other circumstances in which the investigator considered it inappropriate to participate in the tria
   not (null as Boolean /* UNSUPPORTED: human_judgment: investigator judgement */)

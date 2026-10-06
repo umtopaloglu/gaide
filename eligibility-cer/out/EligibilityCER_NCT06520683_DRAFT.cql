@@ -4,6 +4,7 @@ library EligibilityCER_NCT06520683_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
 parameter "StudyStartDate" DateTime  // anchor 'study start'; no default
 context Patient
@@ -28,11 +29,11 @@ define "Req Inc-b1":  // inclusion; dMMR and/or MSI-H colorectal carcinoma that 
 
 define "Req Inc-b2":  // inclusion; Pathologically confirmed as stage II (T3-4,N0), with at least one of the following risk factors: 1) 
   ((null as Boolean /* UNSUPPORTED: text_dependent: pathologic stage II (T3-4,N0) */)
-     and ((null as Boolean /* UNSUPPORTED: condition 'T4 tumour (T4a/T4b)' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'vascular invasion' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'perineural invasion' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'poor differentiation (incl. mucinous, signet-ring)' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'pre-operative obstruction and/or perforation' has no terminology binding / evidence-adequacy policy */)))
+     and ((null as Boolean /* UNSUPPORTED: condition 'T4 tumour (T4a/T4b)' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'vascular invasion' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'perineural invasion' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'poor differentiation (incl. mucinous, signet-ring)' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'pre-operative obstruction and/or perforation' has no terminology binding */)))
 
 define "Req Inc-b3":  // inclusion; Perioperative CT/MR/PET-CT find no signs of metastases
   (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
@@ -46,8 +47,8 @@ define "Req Inc-b5":  // inclusion; Aged 18-80
      and (AgeInYears() <= 80))
 
 define "Req Inc-b6":  // inclusion; No prior medical therapy (chemotherapy, immunotherapy, biologic or targeted therapy) or radiation th
-  (not ((null as Boolean /* UNSUPPORTED: condition 'prior medical therapy for current cancer (chemo/immuno/biologic/targeted)' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'prior radiation therapy for current cancer' has no terminology binding / evidence-adequacy policy */)))
+  (not ((null as Boolean /* UNSUPPORTED: condition 'prior medical therapy for current cancer (chemo/immuno/biologic/targeted)' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'prior radiation therapy for current cancer' has no terminology binding */)))
 
 define "Req Inc-b7":  // inclusion; Adequate organ function
   (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
@@ -56,13 +57,13 @@ define "Req Exc-b1":  // exclusion; Active autoimmune disease that has required 
   not (null as Boolean /* UNSUPPORTED: temporal anchor missing/unresolved */)
 
 define "Req Exc-b2":  // exclusion; Positive surgical margin (R1/R2 resection)
-  not (null as Boolean /* UNSUPPORTED: condition 'positive surgical margin (R1/R2)' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'positive surgical margin (R1/R2)' has no terminology binding */)
 
 define "Req Exc-b3":  // exclusion; Presence of post-operative complications that may preclude treatment
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-b4":  // exclusion; Active infection requiring systemic therapy
-  not (null as Boolean /* UNSUPPORTED: condition 'active infection requiring systemic therapy' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'active infection requiring systemic therapy' has no terminology binding */)
 
 define "Req Exc-b5":  // exclusion; Any other malignant disease within the preceding 5 years with the exception of non-melanomatous skin
   not (null as Boolean /* UNSUPPORTED: temporal anchor missing/unresolved */)

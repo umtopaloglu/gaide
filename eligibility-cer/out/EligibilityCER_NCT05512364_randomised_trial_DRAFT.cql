@@ -4,9 +4,14 @@ library EligibilityCER_NCT05512364_randomised_trial_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
+code "Myocardial infarction (22298006)": '22298006' from "SNOMED CT" display 'Myocardial infarction'
+code "Stroke / cerebrovascular accident (230690007)": '230690007' from "SNOMED CT" display 'Cerebrovascular accident'
+code "Interstitial lung disease (233703007)": '233703007' from "SNOMED CT" display 'Interstitial lung disease'
 parameter "ScreeningDate" DateTime  // no default on purpose: a missing anchor is unknown, not today
 parameter "LabMaxAgeDays" Integer default 90  // site evidence-freshness policy
+parameter "ConditionCoverageComplete" Boolean default false  // site asserts the Condition record is complete enough that absence = false
 context Patient
 
 
@@ -15,6 +20,15 @@ define "ECOG latest":
     where O.status.value in {'final', 'amended', 'corrected'}
       and days between FHIRHelpers.ToDateTime(O.effective as FHIR.dateTime) and "ScreeningDate" in Interval[0, "LabMaxAgeDays"]
     sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime))
+
+define "Myocardial infarction recorded":
+  exists ([Condition: "Myocardial infarction (22298006)"])
+
+define "Stroke / cerebrovascular accident recorded":
+  exists ([Condition: "Stroke / cerebrovascular accident (230690007)"])
+
+define "Interstitial lung disease recorded":
+  exists ([Condition: "Interstitial lung disease (233703007)"])
 
 define "Req Demo-min-age":  // inclusion; minimumAge: 18 Years
   (AgeInYears() >= 18)
@@ -61,15 +75,15 @@ define "Req Inc-2.b2.b3":  // exclusion; Known difficulty in tolerating oral med
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Inc-2.b2.b4":  // exclusion; Any of the following cardiovascular disorders within 3 months before enrolment:
-  not (if ((null as Boolean /* UNSUPPORTED: condition 'myocardial infarction' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'stroke' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'unstable angina' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding / evidence-adequacy policy */)
+  not (if ((if "Myocardial infarction recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (if "Stroke / cerebrovascular accident recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (null as Boolean /* UNSUPPORTED: condition 'unstable angina' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding */)
      or (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
-     or (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)) is true then null as Boolean else ((null as Boolean /* UNSUPPORTED: condition 'myocardial infarction' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'stroke' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'unstable angina' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding / evidence-adequacy policy */)
+     or (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)) is true then null as Boolean else ((if "Myocardial infarction recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (if "Stroke / cerebrovascular accident recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
+     or (null as Boolean /* UNSUPPORTED: condition 'unstable angina' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding */)
      or (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
      or (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)))
 
@@ -77,7 +91,7 @@ define "Req Inc-2.b2.b5":  // exclusion; CTCAE version 5.0 grade 3 or 4 dyslipid
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Inc-2.b2.b6":  // exclusion; Child-Pugh Score greater than Class A
-  not (null as Boolean /* UNSUPPORTED: condition 'ild' has no terminology binding / evidence-adequacy policy */)
+  not (if "Interstitial lung disease recorded" then true else (if "ConditionCoverageComplete" then false else null as Boolean))
 
 define "Req Inc-2.b2.b7":  // exclusion; Uncontrolled significant active infections (≥ grade 3 according to CTCAE version 5), including activ
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)

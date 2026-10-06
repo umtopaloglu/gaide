@@ -1,0 +1,883 @@
+{
+ "bundle_id": "seed-terminology",
+ "bundle_version": "0.1.0",
+ "built": "2026-10-06",
+ "status": "UNREVIEWED_SEED",
+ "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+ "code_systems": {
+  "LOINC": {
+   "uri": "http://loinc.org",
+   "version": null,
+   "license": "LOINC licence (free, attribution)"
+  },
+  "SNOMED CT": {
+   "uri": "http://snomed.info/sct",
+   "version": null,
+   "license": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary"
+  },
+  "HGNC": {
+   "uri": "http://www.genenames.org",
+   "version": null,
+   "license": "CC0"
+  },
+  "UCUM": {
+   "uri": "http://unitsofmeasure.org",
+   "version": null,
+   "license": "UCUM licence (free)"
+  }
+ },
+ "concepts": [
+  {
+   "id": "cm:lab-anc",
+   "label": "ANC",
+   "role": "observation",
+   "patterns": [
+    "ANC"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "751-8",
+    "display": "ANC"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-platelets",
+   "label": "Platelets",
+   "role": "observation",
+   "patterns": [
+    "Platelets"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "777-3",
+    "display": "Platelets"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-hemoglobin",
+   "label": "Hemoglobin",
+   "role": "observation",
+   "patterns": [
+    "Hemoglobin"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "718-7",
+    "display": "Hemoglobin"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-total-bilirubin",
+   "label": "Total bilirubin",
+   "role": "observation",
+   "patterns": [
+    "Total bilirubin"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "1975-2",
+    "display": "Total bilirubin"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-ast",
+   "label": "AST",
+   "role": "observation",
+   "patterns": [
+    "AST"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "1920-8",
+    "display": "AST"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-alt",
+   "label": "ALT",
+   "role": "observation",
+   "patterns": [
+    "ALT"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "1742-6",
+    "display": "ALT"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-albumin",
+   "label": "Albumin",
+   "role": "observation",
+   "patterns": [
+    "Albumin"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "1751-7",
+    "display": "Albumin"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-creatinine-clearance",
+   "label": "Creatinine clearance",
+   "role": "observation",
+   "patterns": [
+    "Creatinine clearance"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "2164-2",
+    "display": "Creatinine clearance"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-creatinine",
+   "label": "Creatinine",
+   "role": "observation",
+   "patterns": [
+    "Creatinine"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "2160-0",
+    "display": "Creatinine"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:lab-inr",
+   "label": "INR",
+   "role": "observation",
+   "patterns": [
+    "INR"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "6301-6",
+    "display": "INR"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:ecog",
+   "label": "ECOG performance status",
+   "role": "observation",
+   "patterns": [
+    "ECOG"
+   ],
+   "primary": {
+    "system": "LOINC",
+    "code": "89247-1",
+    "display": "ECOG Performance Status score"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "named ECOG scale",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-hiv",
+   "label": "HIV infection",
+   "role": "condition",
+   "patterns": [
+    "HIV",
+    "human immunodeficiency virus"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "86406008",
+    "display": "Human immunodeficiency virus infection"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "protocol often means antibody/PCR positivity; condition concept is broader than a test result",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-hepatitis-b",
+   "label": "Hepatitis B",
+   "role": "condition",
+   "patterns": [
+    "hepatitis B",
+    "HBV",
+    "HBsAg"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "66071002",
+    "display": "Viral hepatitis type B"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "'active infection' vs lifetime diagnosis not distinguished by the code",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-hepatitis-c",
+   "label": "Hepatitis C",
+   "role": "condition",
+   "patterns": [
+    "hepatitis C",
+    "HCV"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "50711007",
+    "display": "Viral hepatitis type C"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "'active' vs resolved not distinguished by the code",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-myocardial-infarction",
+   "label": "Myocardial infarction",
+   "role": "condition",
+   "patterns": [
+    "myocardial infarction"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "22298006",
+    "display": "Myocardial infarction"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "direct",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-stroke",
+   "label": "Stroke / cerebrovascular accident",
+   "role": "condition",
+   "patterns": [
+    "stroke",
+    "cerebral infarction"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "230690007",
+    "display": "Cerebrovascular accident"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "cerebral infarction is narrower than CVA",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-dvt",
+   "label": "Deep vein thrombosis",
+   "role": "condition",
+   "patterns": [
+    "deep vein thrombosis"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "128053003",
+    "display": "Deep venous thrombosis"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "direct",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-pe",
+   "label": "Pulmonary embolism",
+   "role": "condition",
+   "patterns": [
+    "pulmonary embolism"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "59282003",
+    "display": "Pulmonary embolism"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "direct",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-tb",
+   "label": "Tuberculosis",
+   "role": "condition",
+   "patterns": [
+    "tuberculosis"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "56717001",
+    "display": "Tuberculosis"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "direct",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-ild",
+   "label": "Interstitial lung disease",
+   "role": "condition",
+   "patterns": [
+    "interstitial lung disease",
+    "ILD"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "233703007",
+    "display": "Interstitial lung disease"
+   },
+   "relationship": "equivalent",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "direct",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-hypertension",
+   "label": "Hypertension",
+   "role": "condition",
+   "patterns": [
+    "hypertension"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "38341003",
+    "display": "Hypertensive disorder, systemic arterial"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "'uncontrolled/poorly controlled' is a qualifier the code does not carry",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-heart-failure",
+   "label": "Heart failure",
+   "role": "condition",
+   "patterns": [
+    "heart failure"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "84114007",
+    "display": "Heart failure"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "NYHA class qualifier not carried",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:cond-autoimmune",
+   "label": "Autoimmune disease",
+   "role": "condition",
+   "patterns": [
+    "autoimmune"
+   ],
+   "primary": {
+    "system": "SNOMED CT",
+    "code": "85828009",
+    "display": "Autoimmune disease"
+   },
+   "relationship": "inexact",
+   "direction": "source_to_target",
+   "confidence": "low",
+   "rationale": "protocol qualifiers (active, systemic treatment) not carried",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-egfr",
+   "label": "EGFR",
+   "role": "biomarker",
+   "patterns": [
+    "EGFR"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:3236",
+    "display": "EGFR"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-alk",
+   "label": "ALK",
+   "role": "biomarker",
+   "patterns": [
+    "ALK"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:427",
+    "display": "ALK"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-ros1",
+   "label": "ROS1",
+   "role": "biomarker",
+   "patterns": [
+    "ROS1"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:10261",
+    "display": "ROS1"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-kras",
+   "label": "KRAS",
+   "role": "biomarker",
+   "patterns": [
+    "KRAS"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:6407",
+    "display": "KRAS"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-braf",
+   "label": "BRAF",
+   "role": "biomarker",
+   "patterns": [
+    "BRAF"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:1097",
+    "display": "BRAF"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-erbb2",
+   "label": "ERBB2",
+   "role": "biomarker",
+   "patterns": [
+    "ERBB2",
+    "HER2"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:3430",
+    "display": "ERBB2"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-met",
+   "label": "MET",
+   "role": "biomarker",
+   "patterns": [
+    "MET"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:7029",
+    "display": "MET"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  },
+  {
+   "id": "cm:gene-ret",
+   "label": "RET",
+   "role": "biomarker",
+   "patterns": [
+    "RET"
+   ],
+   "primary": {
+    "system": "HGNC",
+    "code": "HGNC:9967",
+    "display": "RET"
+   },
+   "relationship": "related",
+   "direction": "source_to_target",
+   "confidence": "medium",
+   "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+   "cross_links": {
+    "NCIt": null,
+    "UMLS_CUI": null
+   }
+  }
+ ],
+ "value_sets": [
+  {
+   "id": "vs:cond-hiv",
+   "concept": "cm:cond-hiv",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "86406008"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-hepatitis-b",
+   "concept": "cm:cond-hepatitis-b",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "66071002"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-hepatitis-c",
+   "concept": "cm:cond-hepatitis-c",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "50711007"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-myocardial-infarction",
+   "concept": "cm:cond-myocardial-infarction",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "22298006"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-stroke",
+   "concept": "cm:cond-stroke",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "230690007"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-dvt",
+   "concept": "cm:cond-dvt",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "128053003"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-pe",
+   "concept": "cm:cond-pe",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "59282003"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-tb",
+   "concept": "cm:cond-tb",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "56717001"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-ild",
+   "concept": "cm:cond-ild",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "233703007"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-hypertension",
+   "concept": "cm:cond-hypertension",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "38341003"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-heart-failure",
+   "concept": "cm:cond-heart-failure",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "84114007"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  },
+  {
+   "id": "vs:cond-autoimmune",
+   "concept": "cm:cond-autoimmune",
+   "version": "0.1.0",
+   "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+   "compose": [
+    {
+     "system": "SNOMED CT",
+     "codes": [
+      "85828009"
+     ]
+    }
+   ],
+   "excluded": [],
+   "active_only": true
+  }
+ ]
+}

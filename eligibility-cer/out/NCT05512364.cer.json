@@ -6,6 +6,7 @@
  },
  "source": {
   "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT05512364",
   "title": "Elacestrant for Treating ER+/HER2- Breast Cancer Patients With ctDNA Relapse (TREAT ctDNA)",
@@ -64,6 +65,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -109,7 +111,8 @@
         263
        ],
        "flags": [
-        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central"
+        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+        "terminology unmapped (no-map) -> not executable until bound"
        ],
        "review_status": "needs_review",
        "origin": "interpreted_rule_based",
@@ -120,7 +123,8 @@
         "required_state": "present",
         "key": "biomarker:er",
         "terminology": {
-         "status": "unmapped"
+         "status": "unmapped",
+         "relationship": "no-map"
         },
         "qualifier_gaps": [
          "assay/scoring method",
@@ -132,7 +136,45 @@
        "sub_span": [
         85,
         96
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "ER",
+         "document_span": [
+          77,
+          263
+         ],
+         "criterion_node": "39534205-be54-56f0-a02f-8e4507c6b1ad",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "mapping_semantics": {
+         "relationship": "no-map",
+         "direction": "source_to_target",
+         "context": "no seeded concept"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match",
+         "confidence": null,
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "b073560d-1960-521f-8851-6c32ff5bbead",
@@ -144,7 +186,8 @@
         263
        ],
        "flags": [
-        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central"
+        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
        ],
        "review_status": "needs_review",
        "origin": "interpreted_rule_based",
@@ -155,7 +198,10 @@
         "required_state": "absent",
         "key": "biomarker:her2",
         "terminology": {
-         "status": "unmapped"
+         "status": "proposed_unreviewed",
+         "relationship": "related",
+         "system": "HGNC",
+         "code": "HGNC:3430"
         },
         "qualifier_gaps": [
          "assay/scoring method",
@@ -167,7 +213,65 @@
        "sub_span": [
         117,
         130
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "HER2",
+         "document_span": [
+          77,
+          263
+         ],
+         "criterion_node": "b073560d-1960-521f-8851-6c32ff5bbead",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:gene-erbb2",
+         "semantic_role": "biomarker",
+         "label": "ERBB2",
+         "primary": {
+          "system": "HGNC",
+          "code": "HGNC:3430",
+          "display": "ERBB2"
+         },
+         "code_system_uri": "http://www.genenames.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://www.genenames.org",
+          "code": "HGNC:3430",
+          "display": "ERBB2"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "related",
+         "direction": "source_to_target",
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ],
      "logic_basis": "assumed_conjunction",
@@ -224,7 +328,8 @@
       361
      ],
      "flags": [
-      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central"
+      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -235,7 +340,8 @@
       "required_state": "present",
       "key": "biomarker:er",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       },
       "qualifier_gaps": [
        "assay/scoring method",
@@ -247,7 +353,45 @@
      "sub_span": [
       0,
       11
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "ER",
+       "document_span": [
+        264,
+        361
+       ],
+       "criterion_node": "3d8336a3-9aa9-5954-b201-577bd44b9da5",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "3c2055a2-c976-51f3-be9f-0f474f5af42b",
@@ -259,7 +403,7 @@
       361
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -272,14 +416,53 @@
       "uln_multiple": false,
       "key": "measurement:allred_proportion_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       66,
       92
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "Allred proportion score",
+       "document_span": [
+        264,
+        361
+       ],
+       "criterion_node": "3c2055a2-c976-51f3-be9f-0f474f5af42b",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "logic_basis": "inferred_from_connector",
@@ -319,7 +502,8 @@
       584
      ],
      "flags": [
-      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central"
+      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -330,7 +514,10 @@
       "required_state": "absent",
       "key": "biomarker:her2",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:3430"
       },
       "qualifier_gaps": [
        "assay/scoring method",
@@ -343,7 +530,65 @@
       0,
       13
      ],
-     "extraction_coverage": 0.13
+     "extraction_coverage": 0.13,
+     "binding": {
+      "source_evidence": {
+       "phrase": "HER2",
+       "document_span": [
+        362,
+        584
+       ],
+       "criterion_node": "2dd90b83-4fa1-51a0-a873-d5c7a1e4ab24",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-erbb2",
+       "semantic_role": "biomarker",
+       "label": "ERBB2",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:3430",
+        "display": "ERBB2"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:3430",
+        "display": "ERBB2"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "c3245096-0199-5fae-bf22-4f92c674af49",
@@ -452,8 +697,8 @@
     905
    ],
    "flags": [
-    "terminology unmapped",
-    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -466,7 +711,8 @@
     "uln_multiple": false,
     "key": "measurement:tumour_size",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -481,6 +727,46 @@
    "scope": [
     "ctDNA screening phase"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "Tumour size",
+     "document_span": [
+      875,
+      905
+     ],
+     "criterion_node": "c7706806-a9ed-5af5-b4fb-477d238cbf81",
+     "source_code": null,
+     "inherited_context": [
+      "ctDNA screening phase"
+     ]
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -517,8 +803,8 @@
     957
    ],
    "flags": [
-    "terminology unmapped",
-    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -531,7 +817,8 @@
     "uln_multiple": false,
     "key": "measurement:ki_67",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -546,6 +833,46 @@
    "scope": [
     "ctDNA screening phase"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "Ki-67",
+     "document_span": [
+      937,
+      957
+     ],
+     "criterion_node": "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183",
+     "source_code": null,
+     "inherited_context": [
+      "ctDNA screening phase"
+     ]
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -574,7 +901,7 @@
       1095
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -587,14 +914,53 @@
       "uln_multiple": false,
       "key": "measurement:oncotype_dx_recurrence_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       29,
       62
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "Oncotype DX recurrence score",
+       "document_span": [
+        958,
+        1095
+       ],
+       "criterion_node": "a2ad012c-efd9-53ab-afd9-acc7feede0de",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "878d843d-be91-5c82-ba7e-263e50a7e6cb",
@@ -606,7 +972,7 @@
       1095
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -619,14 +985,53 @@
       "uln_multiple": false,
       "key": "measurement:prosigna_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       86,
       104
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "Prosigna score",
+       "document_span": [
+        958,
+        1095
+       ],
+       "criterion_node": "878d843d-be91-5c82-ba7e-263e50a7e6cb",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "6c697789-3079-5142-8275-fb634e8e277b",
@@ -638,7 +1043,7 @@
       1095
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -651,14 +1056,53 @@
       "uln_multiple": false,
       "key": "measurement:epclin_risk_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       108,
       131
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "EPclin risk score",
+       "document_span": [
+        958,
+        1095
+       ],
+       "criterion_node": "6c697789-3079-5142-8275-fb634e8e277b",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "logic_basis": "inferred_from_connector",
@@ -681,8 +1125,8 @@
     1176
    ],
    "flags": [
-    "terminology unmapped",
-    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -695,7 +1139,8 @@
     "uln_multiple": false,
     "key": "measurement:tumour_size",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -710,6 +1155,46 @@
    "scope": [
     "ctDNA screening phase"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "Tumour size",
+     "document_span": [
+      1096,
+      1176
+     ],
+     "criterion_node": "3deb4226-3277-59ae-b7de-e788950b68f3",
+     "source_code": null,
+     "inherited_context": [
+      "ctDNA screening phase"
+     ]
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -746,8 +1231,8 @@
     1230
    ],
    "flags": [
-    "terminology unmapped",
-    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -760,7 +1245,8 @@
     "uln_multiple": false,
     "key": "measurement:ki_67",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -775,6 +1261,46 @@
    "scope": [
     "ctDNA screening phase"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "Ki-67",
+     "document_span": [
+      1210,
+      1230
+     ],
+     "criterion_node": "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa",
+     "source_code": null,
+     "inherited_context": [
+      "ctDNA screening phase"
+     ]
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -803,7 +1329,7 @@
       1368
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -816,14 +1342,53 @@
       "uln_multiple": false,
       "key": "measurement:oncotype_dx_recurrence_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       29,
       62
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "Oncotype DX recurrence score",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "criterion_node": "34c3af87-fff7-598a-ad29-fdd22f73bfef",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "24800ceb-f9c2-50db-b2b4-cccaf4c171ae",
@@ -835,7 +1400,7 @@
       1368
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -848,14 +1413,53 @@
       "uln_multiple": false,
       "key": "measurement:prosigna_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       86,
       104
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "Prosigna score",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "criterion_node": "24800ceb-f9c2-50db-b2b4-cccaf4c171ae",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "5fe34165-a7b6-5944-b29e-c6924e0371e4",
@@ -867,7 +1471,7 @@
       1368
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -880,14 +1484,53 @@
       "uln_multiple": false,
       "key": "measurement:epclin_risk_score",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       108,
       131
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "EPclin risk score",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "criterion_node": "5fe34165-a7b6-5944-b29e-c6924e0371e4",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "logic_basis": "inferred_from_connector",
@@ -1008,6 +1651,7 @@
    "scope": [
     "ctDNA screening phase"
    ],
+   "binding": null,
    "review": {}
   },
   {
@@ -1112,7 +1756,7 @@
       2596
      ],
      "flags": [
-      "terminology unmapped"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -1125,7 +1769,8 @@
       "uln_multiple": false,
       "key": "measurement:tumour_content",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
@@ -1133,7 +1778,45 @@
       65,
       87
      ],
-     "extraction_coverage": 0.23
+     "extraction_coverage": 0.23,
+     "binding": {
+      "source_evidence": {
+       "phrase": "Tumour content",
+       "document_span": [
+        2388,
+        2596
+       ],
+       "criterion_node": "8b98ca5f-bdda-5a31-8c27-0a514b722911",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "7bb4d585-0966-542f-91f8-e17b9b9e00a1",
@@ -1573,7 +2256,8 @@
       4196
      ],
      "flags": [
-      "biomarker qualifiers not stated in text: assay (protocol names Signatera), sampling time"
+      "biomarker qualifiers not stated in text: assay (protocol names Signatera), sampling time",
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -1584,7 +2268,8 @@
       "required_state": "present",
       "key": "biomarker:ctdna",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       },
       "qualifier_gaps": [
        "assay (protocol names Signatera)",
@@ -1596,7 +2281,45 @@
       0,
       14
      ],
-     "extraction_coverage": 0.22
+     "extraction_coverage": 0.22,
+     "binding": {
+      "source_evidence": {
+       "phrase": "ctDNA",
+       "document_span": [
+        4062,
+        4196
+       ],
+       "criterion_node": "0e8936c9-6410-58ba-8a17-733daa57b488",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "0f6f7b60-df11-5ea5-a11d-154cc5131ec9",
@@ -1669,7 +2392,8 @@
    ],
    "flags": [
     "biomarker qualifiers not stated in text: assay (protocol names Signatera), sampling time",
-    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -1680,7 +2404,8 @@
     "required_state": "present",
     "key": "biomarker:ctdna",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     },
     "qualifier_gaps": [
      "assay (protocol names Signatera)",
@@ -1699,6 +2424,46 @@
    "scope": [
     "Randomised trial"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ctDNA",
+     "document_span": [
+      4322,
+      4396
+     ],
+     "criterion_node": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
+     "source_code": null,
+     "inherited_context": [
+      "Randomised trial"
+     ]
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -1820,7 +2585,10 @@
     "key": "ecog",
     "scale": "ECOG",
     "terminology": {
-     "status": "n/a"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
     }
    },
    "computability": "structured_computable",
@@ -1835,6 +2603,66 @@
    "scope": [
     "Randomised trial"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      4924,
+      4995
+     ],
+     "criterion_node": "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97",
+     "source_code": null,
+     "inherited_context": [
+      "Randomised trial"
+     ]
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -2019,14 +2847,96 @@
       "concept": "myocardial infarction",
       "key": "condition:myocardial_infarction",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "equivalent",
+       "system": "SNOMED CT",
+       "code": "22298006"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       0,
       21
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "myocardial infarction",
+       "document_span": [
+        5873,
+        5896
+       ],
+       "criterion_node": "649aff05-13d1-56ae-a6a1-52bedffe4954",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-myocardial-infarction",
+       "semantic_role": "condition",
+       "label": "Myocardial infarction",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "22298006",
+        "display": "Myocardial infarction"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "22298006",
+        "display": "Myocardial infarction",
+        "valueSet": "vs:cond-myocardial-infarction"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "equivalent",
+       "direction": "source_to_target",
+       "context": "direct"
+      },
+      "value_set": {
+       "id": "vs:cond-myocardial-infarction",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "22298006"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|22298006"
+        ],
+        "sha256": "dd8cee64bca6915484ad018c8d93ec19648719880b10f3234a53df1ffe175647",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "direct",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "dab4ff71-f9cf-5788-9573-e5e33b446740",
@@ -2039,7 +2949,8 @@
      ],
      "flags": [
       "condition predicate has no terminology binding yet -> not executable until bound",
-      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "mapping relationship 'inexact': cerebral infarction is narrower than CVA"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -2048,14 +2959,96 @@
       "concept": "stroke",
       "key": "condition:stroke",
       "terminology": {
-       "status": "unmapped"
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "230690007"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       0,
       6
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "stroke",
+       "document_span": [
+        5897,
+        5905
+       ],
+       "criterion_node": "dab4ff71-f9cf-5788-9573-e5e33b446740",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-stroke",
+       "semantic_role": "condition",
+       "label": "Stroke / cerebrovascular accident",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "230690007",
+        "display": "Cerebrovascular accident"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "230690007",
+        "display": "Cerebrovascular accident",
+        "valueSet": "vs:cond-stroke"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "cerebral infarction is narrower than CVA"
+      },
+      "value_set": {
+       "id": "vs:cond-stroke",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "230690007"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|230690007"
+        ],
+        "sha256": "0ecc5f4c8d41ec80bbd7a76240f1c7288ca9501c2d0e132da4d577587ae5c651",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "cerebral infarction is narrower than CVA",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "9771085a-fa14-524e-817c-5600552d67ab",
@@ -2067,8 +3060,8 @@
       5930
      ],
      "flags": [
-      "condition predicate has no terminology binding yet -> not executable until bound",
-      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -2077,14 +3070,53 @@
       "concept": "unstable angina",
       "key": "condition:unstable_angina",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       0,
       22
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "unstable angina",
+       "document_span": [
+        5906,
+        5930
+       ],
+       "criterion_node": "9771085a-fa14-524e-817c-5600552d67ab",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "001ede3c-a3cd-5b31-ba71-7209359c2640",
@@ -2096,8 +3128,8 @@
       5963
      ],
      "flags": [
-      "condition predicate has no terminology binding yet -> not executable until bound",
-      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -2106,14 +3138,53 @@
       "concept": "arrhythmia",
       "key": "condition:arrhythmia",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       0,
       30
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "arrhythmia",
+       "document_span": [
+        5931,
+        5963
+       ],
+       "criterion_node": "001ede3c-a3cd-5b31-ba71-7209359c2640",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "b026db49-b078-5a57-8e50-5ff473f2055b",
@@ -2219,7 +3290,10 @@
     "concept": "ild",
     "key": "condition:ild",
     "terminology": {
-     "status": "unmapped"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "SNOMED CT",
+     "code": "233703007"
     }
    },
    "computability": "structured_computable",
@@ -2233,6 +3307,87 @@
    "scope": [
     "Randomised trial"
    ],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ild",
+     "document_span": [
+      6270,
+      6309
+     ],
+     "criterion_node": "07fb197c-972f-5b6d-8541-f494f85d57fc",
+     "source_code": null,
+     "inherited_context": [
+      "Randomised trial"
+     ]
+    },
+    "canonical_binding": {
+     "concept_id": "cm:cond-ild",
+     "semantic_role": "condition",
+     "label": "Interstitial lung disease",
+     "primary": {
+      "system": "SNOMED CT",
+      "code": "233703007",
+      "display": "Interstitial lung disease"
+     },
+     "code_system_uri": "http://snomed.info/sct"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://snomed.info/sct",
+      "code": "233703007",
+      "display": "Interstitial lung disease",
+      "valueSet": "vs:cond-ild"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "direct"
+    },
+    "value_set": {
+     "id": "vs:cond-ild",
+     "version": "0.1.0",
+     "compose": [
+      {
+       "system": "SNOMED CT",
+       "codes": [
+        "233703007"
+       ]
+      }
+     ],
+     "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+     "frozen_expansion": {
+      "members": [
+       "SNOMED CT|233703007"
+      ],
+      "sha256": "1aed8e01032457c62e442353c4748c07c0ae80ed27a76612a4dee27552c4966f",
+      "date": "2026-10-06"
+     },
+     "excluded": []
+    },
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "direct",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -2371,7 +3526,97 @@
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
  },
  "authored_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 6,
+   "unmapped": 18,
+   "by_relationship": {
+    "no-map": 18,
+    "related": 2,
+    "equivalent": 3,
+    "inexact": 1
+   }
+  },
+  "value_sets": {
+   "vs:cond-myocardial-infarction": {
+    "id": "vs:cond-myocardial-infarction",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "22298006"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|22298006"
+     ],
+     "sha256": "dd8cee64bca6915484ad018c8d93ec19648719880b10f3234a53df1ffe175647",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-stroke": {
+    "id": "vs:cond-stroke",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "230690007"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|230690007"
+     ],
+     "sha256": "0ecc5f4c8d41ec80bbd7a76240f1c7288ca9501c2d0e132da4d577587ae5c651",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-ild": {
+    "id": "vs:cond-ild",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "233703007"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|233703007"
+     ],
+     "sha256": "1aed8e01032457c62e442353c4748c07c0ae80ed27a76612a4dee27552c4966f",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   }
+  },
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
  "review_summary": {
+  "open_conflicts": [],
   "criteria": 55,
   "validated": 0,
   "pending": [

@@ -1,0 +1,57 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix cer:  <https://cer.example.org/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+# SHACL Core only. Checks STRUCTURE; clinical semantics are checked by fixtures + the reference evaluator.
+# (NOT-arity = exactly 1 operand and list non-emptiness are not expressible in Core -> enforced in tests/test_graph.py)
+
+cer:ReleaseShape a sh:NodeShape ; sh:targetClass cer:Release ;
+  sh:property [ sh:path cer:contentHash ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path cer:lifecycleStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("draft" "in_review" "validated" "released") ] ;
+  sh:property [ sh:path cer:criteria ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path prov:wasDerivedFrom ; sh:minCount 1 ] .
+
+cer:CriterionShape a sh:NodeShape ; sh:targetClass cer:Criterion ;
+  sh:property [ sh:path cer:polarity ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("inclusion" "exclusion") ] ;
+  sh:property [ sh:path cer:displayNumber ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+cer:NodeShape a sh:NodeShape ; sh:targetClass cer:ExpressionNode ;
+  sh:property [ sh:path cer:identifier ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path cer:nodeType ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("group" "predicate" "narrative") ] ;
+  sh:property [ sh:path cer:sourceText ; sh:minCount 1 ] ;
+  sh:property [ sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:node cer:SpanShape ] ;
+  sh:property [ sh:path cer:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ;
+                sh:in ("needs_review" "partially_reviewed" "changes_requested" "validated") ] ;
+  sh:property [ sh:path cer:origin ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+cer:SpanShape a sh:NodeShape ; sh:targetClass cer:SourceSpan ;
+  sh:property [ sh:path cer:start ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ] ;
+  sh:property [ sh:path cer:end ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ] .
+
+cer:GroupShape a sh:NodeShape ;
+  sh:targetSubjectsOf cer:operand ;
+  sh:property [ sh:path cer:operator ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("ALL" "ANY" "NOT" "ATLEAST") ] ;
+  sh:property [ sh:path cer:operand ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path cer:nodeType ; sh:hasValue "group" ] .
+
+cer:GroupTypeShape a sh:NodeShape ; sh:targetClass cer:ExpressionNode ;
+  sh:or ( [ sh:property [ sh:path cer:nodeType ; sh:in ("predicate" "narrative") ] ]
+          [ sh:property [ sh:path cer:operand ; sh:minCount 1 ] ] ) .
+
+cer:PredicateNodeShape a sh:NodeShape ; sh:targetSubjectsOf cer:predicate ;
+  sh:property [ sh:path cer:predicate ; sh:maxCount 1 ; sh:node cer:PredicateShape ] ;
+  sh:property [ sh:path cer:computability ; sh:minCount 1 ; sh:in ("structured_computable") ] .
+
+cer:PredicateShape a sh:NodeShape ; sh:targetClass cer:Predicate ;
+  sh:property [ sh:path cer:kind ; sh:minCount 1 ; sh:maxCount 1 ;
+                sh:in ("age" "ecog" "performance_status" "lab" "measurement" "biomarker" "condition") ] .
+
+cer:NarrativeShape a sh:NodeShape ; sh:targetClass cer:ExpressionNode ;
+  sh:or ( [ sh:property [ sh:path cer:nodeType ; sh:in ("group" "predicate") ] ]
+          [ sh:property [ sh:path cer:computability ; sh:minCount 1 ; sh:in ("text_dependent" "human_judgment") ] ] ) .
+
+cer:MappingShape a sh:NodeShape ; sh:targetClass cer:MappingAssertion ;
+  sh:property [ sh:path cer:relationship ; sh:minCount 1 ; sh:maxCount 1 ;
+                sh:in ("equivalent" "broader" "narrower" "inexact" "related" "context-dependent" "no-map") ] .

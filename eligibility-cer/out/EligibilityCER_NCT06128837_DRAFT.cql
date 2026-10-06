@@ -4,6 +4,7 @@ library EligibilityCER_NCT06128837_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
 code "ANC (751-8)": '751-8' from "LOINC" display 'ANC'
 code "Platelets (777-3)": '777-3' from "LOINC" display 'Platelets'
@@ -163,7 +164,7 @@ define "Req Exc-6":  // exclusion; Extensive radiation pneumonitis, pulmonary em
 
 define "Req Exc-7":  // exclusion; Patients with the following cardiovascular and cerebrovascular diseases or history:
   not ((null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
-     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding / evidence-adequacy policy */)
+     or (null as Boolean /* UNSUPPORTED: condition 'arrhythmia' has no terminology binding */)
      or (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */))
 
 define "Req Exc-8":  // exclusion; Patients with any of the following conditions:

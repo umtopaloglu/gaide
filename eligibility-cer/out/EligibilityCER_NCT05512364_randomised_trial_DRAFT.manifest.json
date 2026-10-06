@@ -1,9 +1,137 @@
 {
  "library": "EligibilityCER_NCT05512364_randomised_trial_DRAFT",
+ "capability": {
+  "trial_backend_label": "partial",
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "nodes": {
+   "supported": 2,
+   "conditionally_supported": 4,
+   "unsupported": 21
+  },
+  "leaves": {
+   "supported": 2,
+   "conditionally_supported": 3,
+   "unsupported": 20
+  },
+  "per_node": {
+   "9118ad5a-328a-596e-bde9-6cb139e8a1bb": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "0e8936c9-6410-58ba-8a17-733daa57b488": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "0f6f7b60-df11-5ea5-a11d-154cc5131ec9": {
+    "status": "unsupported",
+    "reason": "text_dependent: residual text not covered by typed predicates"
+   },
+   "cc844ae0-8234-52aa-986f-3b47932b6492": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "563cc509-03bd-5006-8b6f-75db3aeb4704": {
+    "status": "unsupported",
+    "reason": "text_dependent: specimen / tissue availability"
+   },
+   "aa22ffa9-e798-521e-8ded-9eeaad92d0ce": {
+    "status": "unsupported",
+    "reason": "biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy"
+   },
+   "80129ba9-290f-5e4e-b507-648c4afcaa01": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "586146af-9dd6-5a18-8d84-b61f0f42d71a": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "5ce80a28-4067-5f4d-9211-6d5f467f0ddd": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "f7148bc8-168a-56a8-96c2-925d683e42d9": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "d5715b64-e651-5d05-b16d-b02d1b17897d": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "62fec048-027a-5646-b4d7-1da11c1f0777": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   },
+   "cf03f16e-1cac-50a5-8ee4-1c480ce359d1": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "8e088569-d6bb-5719-afb5-0f8ee4be9ac5": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   },
+   "4c456042-7062-5879-9747-5a5feab6718b": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "649aff05-13d1-56ae-a6a1-52bedffe4954": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "dab4ff71-f9cf-5788-9573-e5e33b446740": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "9771085a-fa14-524e-817c-5600552d67ab": {
+    "status": "unsupported",
+    "reason": "condition 'unstable angina' has no terminology binding"
+   },
+   "001ede3c-a3cd-5b31-ba71-7209359c2640": {
+    "status": "unsupported",
+    "reason": "condition 'arrhythmia' has no terminology binding"
+   },
+   "b026db49-b078-5a57-8e50-5ff473f2055b": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "658484fc-a19d-5bdd-b0de-34e7283bff52": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "17bce57d-eaba-5c4d-aa4f-325680477007": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, unsupported"
+   },
+   "caca954b-c585-522b-b8b4-b7eb72ed3fa2": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "07fb197c-972f-5b6d-8541-f494f85d57fc": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "dc1bc968-a0c8-5844-8633-527279732633": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "964d5bc9-f750-5921-85c3-0336e0d208e0": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   }
+  },
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "overall_assertion_allowed": false,
+  "approval": null,
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."
+ },
  "scope": "Randomised trial",
  "gated": false,
  "criteria": 19,
- "executable_typed_leaves": 2,
+ "executable_typed_leaves": 5,
  "unsupported": [
   {
    "criterion": "Inc-2.b1.b1",
@@ -85,26 +213,14 @@
   },
   {
    "criterion": "Inc-2.b2.b4",
-   "node": "649aff05-13d1-56ae-a6a1-52bedffe4954",
-   "reason": "condition 'myocardial infarction' has no terminology binding / evidence-adequacy policy",
-   "text": "myocardial infarction"
-  },
-  {
-   "criterion": "Inc-2.b2.b4",
-   "node": "dab4ff71-f9cf-5788-9573-e5e33b446740",
-   "reason": "condition 'stroke' has no terminology binding / evidence-adequacy policy",
-   "text": "stroke"
-  },
-  {
-   "criterion": "Inc-2.b2.b4",
    "node": "9771085a-fa14-524e-817c-5600552d67ab",
-   "reason": "condition 'unstable angina' has no terminology binding / evidence-adequacy policy",
+   "reason": "condition 'unstable angina' has no terminology binding",
    "text": "severe/unstable angina"
   },
   {
    "criterion": "Inc-2.b2.b4",
    "node": "001ede3c-a3cd-5b31-ba71-7209359c2640",
-   "reason": "condition 'arrhythmia' has no terminology binding / evidence-adequacy policy",
+   "reason": "condition 'arrhythmia' has no terminology binding",
    "text": "symptomatic cardiac arrhythmia"
   },
   {
@@ -126,12 +242,6 @@
    "text": "CTCAE version 5.0 grade 3 or 4 dyslipidemia at the time of screening, defined as cholester"
   },
   {
-   "criterion": "Inc-2.b2.b6",
-   "node": "07fb197c-972f-5b6d-8541-f494f85d57fc",
-   "reason": "condition 'ild' has no terminology binding / evidence-adequacy policy",
-   "text": "Child-Pugh Score greater than Class A"
-  },
-  {
    "criterion": "Inc-2.b2.b7",
    "node": "dc1bc968-a0c8-5844-8633-527279732633",
    "reason": "text_dependent: clinical condition (terminology unbound)",
@@ -145,10 +255,11 @@
   }
  ],
  "parameters": [
+  "ConditionCoverageComplete",
   "LabMaxAgeDays",
   "ScreeningDate"
  ],
- "cql_sha256": "67af3adcf34f5645565842b4e4911a9e1523e24946d5de2b6d15f02b3d5d628d",
+ "cql_sha256": "e6d2164f7c6762c5c1914920589857f110e2322f1d4b472ad1f013b8fb71d131",
  "cer_content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
  "translator_validated": false,
  "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"

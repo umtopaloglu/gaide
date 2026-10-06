@@ -30,9 +30,19 @@ def apply_review(cer, sidecar):
         r["review"] = {role: latest.get((num, role)) for role in ROLES if latest.get((num, role))}
         if r["review_status"] != "validated":
             pending.append(num)
-    cer["review_summary"] = {"criteria": len(cer["criteria"]), "validated": validated, "pending": pending}
+    res = {x["conflict"]: x for x in sidecar.get("conflict_resolutions", [])}
+    open_conf = []
+    for c in cer.get("conflicts", []):
+        r = res.get(c["id"])
+        if r and r.get("outcome") and r.get("adjudicator"):
+            c["status"] = "resolved"; c["adjudication"].update(outcome=r["outcome"], clinical_owner=r["adjudicator"])
+        elif c["blocks_release"]:
+            open_conf.append(c["id"])
+    cer["review_summary"] = {"open_conflicts": open_conf, "criteria": len(cer["criteria"]), "validated": validated, "pending": pending}
     status = "draft"
-    if validated == len(cer["criteria"]):
+    if validated == len(cer["criteria"]) and open_conf:
+        status = "in_review"                                      # material open registry conflict blocks release
+    elif validated == len(cer["criteria"]):
         status = "validated"
         if sidecar.get("release", {}).get("authorized_by"):
             status = "released"; cer["lifecycle"]["release"] = sidecar["release"]
@@ -41,7 +51,7 @@ def apply_review(cer, sidecar):
     cer["lifecycle"]["status"] = status
     cer["lifecycle"]["note"] = {"released": "Released by an explicit authorization record.",
         "validated": "All criteria dual-approved; awaiting release authorization (not yet executable for screening).",
-        "in_review": "Review in progress.", "draft": "Draft only: not reviewed; not executable for screening."}[status]
+        "in_review": "Review in progress" + (" (blocked by open registry conflict)." if open_conf else "."), "draft": "Draft only: not reviewed; not executable for screening."}[status]
     return cer
 
 

@@ -17,7 +17,6 @@ import re
 
 from .extract import LABS, slug
 
-ECOG_LOINC = ("89247-1", "ECOG Performance Status score")   # proposed_unreviewed
 STATUSES = "{'final', 'amended', 'corrected'}"
 UNIT_OK = re.compile(r"^[A-Za-z0-9*/%.\[\]()+\-^]+$")
 
@@ -36,6 +35,8 @@ class Compiler:
         self.defs, self.helpers, self.codes, self.params = [], {}, {}, {}
         self.unsupported, self.executable, self.n = [], 0, 0
         self.helper_defs = []
+        self.node_status = {}          # node id -> (status, reason)   status: supported | conditionally_supported | unsupported
+        self.sctcodes = {}
 
     # -- helpers -------------------------------------------------------------------------------
     def _code(self, name, loinc, display):
@@ -44,7 +45,7 @@ class Compiler:
         return cname
 
     def _latest(self, analyte, loinc, display, anchor=None, window=None):
-        key = (analyte, anchor, tuple(window) if window else None)
+        key = (analyte, loinc, anchor, tuple(window) if window else None)
         if key in self.helpers:
             return self.helpers[key]
         cname = self._code(analyte, loinc, display)
@@ -60,6 +61,27 @@ class Compiler:
             f"define \"{name}\":\n  Last([Observation: \"{cname}\"] O\n    where O.status.value in {STATUSES}\n      and {when}\n    sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime))")
         self.helpers[key] = name
         return name
+
+    def _cond_present(self, n, b):
+        vs = b.get("value_set")
+        fh = b["execution_binding"]["fhir"]
+        if not vs or fh["system"] != "http://snomed.info/sct":
+            raise _Unsupported("condition has no SNOMED value-set binding")
+        names = []
+        for m in vs["frozen_expansion"]["members"]:
+            sysname, code = m.split("|", 1)
+            cname = f"{b['canonical_binding']['label']} ({code})"
+            self.codes[cname] = f"code \"{cname}\": '{code}' from \"SNOMED CT\" display '{b['canonical_binding']['primary']['display']}'"
+            names.append(cname)
+        self.params.setdefault("ConditionCoverageComplete",
+                               "parameter \"ConditionCoverageComplete\" Boolean default false  // site asserts the Condition record is complete enough that absence = false")
+        key = f"cond:{vs['id']}"
+        if key not in self.helpers:
+            retr = "\n    union ".join(f"[Condition: \"{c}\"]" for c in names)
+            self.helper_defs.append(f"define \"{b['canonical_binding']['label']} recorded\":\n  exists ({retr})")
+            self.helpers[key] = f"{b['canonical_binding']['label']} recorded"
+        d = self.helpers[key]
+        return f"if \"{d}\" then true else (if \"ConditionCoverageComplete\" then false else null as Boolean)"
 
     def _anchor_param(self, anchor):
         pname = f"{slug(anchor).title().replace('_', '')}Date"
@@ -82,17 +104,19 @@ class Compiler:
             anchor = None
         if k == "age":
             return f"AgeInYears() {_cmp(p['comparator'])} {int(p['value'])}"
+        b = n.get("binding")
         if k == "ecog":
-            lat = self._latest("ECOG", *ECOG_LOINC, anchor=anchor, window=window)
+            if not (b and b.get("canonical_binding") and b["execution_binding"]["fhir"]["system"] == "http://loinc.org"):
+                raise _Unsupported("no LOINC binding for ECOG (terminology unavailable/unbound)")
+            lat = self._latest("ECOG", b["execution_binding"]["fhir"]["code"], b["canonical_binding"]["primary"]["display"], anchor=anchor, window=window)
             vals = ", ".join(str(v) for v in p["allowed_values"])
             return f"if \"{lat}\" is null then null\n    else FHIRHelpers.ToInteger(\"{lat}\".value as FHIR.integer) in {{{vals}}}"
         if k in ("lab", "measurement"):
-            t = p.get("terminology", {})
-            if t.get("system") != "LOINC":
-                raise _Unsupported(f"no LOINC binding for '{p['analyte']}' (terminology unbound)")
+            if not (b and b.get("canonical_binding") and b["execution_binding"]["fhir"]["system"] == "http://loinc.org"):
+                raise _Unsupported(f"no LOINC binding for '{p['analyte']}' (terminology unavailable/unbound)")
             if window:
                 raise _Unsupported("lab with explicit window not in the tested subset")
-            lat = self._latest(p["analyte"], t["code"], p["analyte"], None, None)
+            lat = self._latest(p["analyte"], b["execution_binding"]["fhir"]["code"], p["analyte"], None, None)
             if p.get("uln_multiple"):
                 rr = f"\"{lat}\".referenceRange[0].high.value"
                 return (f"if \"{lat}\" is null or {rr} is null then null\n    else FHIRHelpers.ToDecimal((\"{lat}\".value as FHIR.Quantity).value)"
@@ -104,7 +128,13 @@ class Compiler:
         if k == "biomarker":
             raise _Unsupported("biomarker: needs site genomic mapping / molecular matcher with assay & specimen adequacy")
         if k == "condition":
-            raise _Unsupported(f"condition '{p['concept']}' has no terminology binding / evidence-adequacy policy")
+            if not (b and b.get("canonical_binding")):
+                raise _Unsupported(f"condition '{p['concept']}' has no terminology binding")
+            if window:
+                raise _Unsupported("condition with a look-back window needs an onset-date / evidence-selection policy")
+            return self._cond_present(n, b)
+        if k == "performance_status":
+            raise _Unsupported(f"{p['scale']} performance status has no approved coded representation (no ECOG equivalence assumed)")
         raise _Unsupported(f"predicate kind '{k}'")
 
     # -- tree ----------------------------------------------------------------------------------
@@ -115,10 +145,18 @@ class Compiler:
             raise _Unsupported(f"{n['computability']}: {n.get('subtype') or 'narrative'}")
         if n["type"] == "predicate":
             e = self._leaf(n)
+            cond = ("ScreeningDate" in e or "ConditionCoverageComplete" in e or "referenceRange" in e or bool(n.get("time_window")))
+            self.node_status[n["id"]] = ("conditionally_supported" if cond or guard else "supported",
+                                         "needs site parameter / result reference range / evidence adequacy" if cond else
+                                         ("exception/temporal guard keeps positives unresolved" if guard else "ok"))
         else:
             kids = []
             for c in n["children"]:
                 kids.append(self._child(c, tag))
+            sub = [self.node_status.get(c["id"], ("unsupported", "?"))[0] for c in n["children"]]
+            self.node_status[n["id"]] = (("unsupported" if all(x == "unsupported" for x in sub) else
+                                          "supported" if all(x == "supported" for x in sub) else "conditionally_supported"),
+                                         "group over operands: " + ", ".join(sorted(set(sub))))
             if n["op"] == "NOT":
                 e = f"not ({kids[0]})"
             elif n["op"] in ("ALL", "ANY"):
@@ -136,6 +174,7 @@ class Compiler:
             self.executable += 1 if c["type"] == "predicate" else 0
             return e
         except _Unsupported as u:
+            self.node_status[c["id"]] = ("unsupported", str(u))
             self.unsupported.append({"criterion": tag, "node": c["id"], "reason": str(u), "text": c["text"][:90]})
             return "null as Boolean /* UNSUPPORTED: " + str(u).replace("\n", " ").replace("*/", "") + " */"
 
@@ -168,14 +207,40 @@ class Compiler:
                 f"CER sha256 {self.cer['source']['content_sha256'][:12]}; lifecycle {self.cer['lifecycle']['status']}",
                 f"library {lib} version '0.1.0-{'draft' if self.allow_draft else 'gated'}'", "using FHIR version '4.0.1'",
                 "include FHIRHelpers version '4.0.1' called FHIRHelpers",
-                'codesystem "LOINC": \'http://loinc.org\'', *self.codes.values(), *self.params.values(),
+                'codesystem "LOINC": \'http://loinc.org\'', 'codesystem "SNOMED CT": \'http://snomed.info/sct\'', *self.codes.values(), *self.params.values(),
                 "context Patient", ""]
         tail = [f"define \"All Requirements Satisfied\":  // ALL over requirement results; null = unresolved\n  "
                 + ("\n    and ".join(f"\"Req {n}\"" for n in req_names) or "true"),
                 f"define \"Requirement Outcomes\":\n  {{ {outcomes} }}",
                 "define \"Any Requirement Violated\":\n  exists (\"Requirement Outcomes\" O where O.outcome = 'violated')"]
         text = "\n".join(head) + "\n\n" + "\n\n".join(self.helper_defs + self.defs + tail) + "\n"
-        manifest = {"library": lib, "scope": self.scope, "gated": not self.allow_draft,
+        for r in roots:                                           # account for every node, incl. gated roots
+            def acc(n):
+                if n["id"] not in self.node_status:
+                    self.node_status[n["id"]] = ("unsupported", "gated (not validated)" if not self.allow_draft and r["review_status"] != "validated"
+                                                 else ("narrative: " + n.get("computability", "?")) if n["type"] == "narrative" else "not compiled")
+                for k in n.get("children", []):
+                    acc(k)
+            acc(r)
+        cnt = {"supported": 0, "conditionally_supported": 0, "unsupported": 0}
+        leaves = {"supported": 0, "conditionally_supported": 0, "unsupported": 0}
+        for r in roots:
+            def tally(n):
+                cnt[self.node_status[n["id"]][0]] += 1
+                if n["type"] != "group":
+                    leaves[self.node_status[n["id"]][0]] += 1
+                for k in n.get("children", []):
+                    tally(k)
+            tally(r)
+        runnable = leaves["supported"] + leaves["conditionally_supported"]
+        label = "unavailable" if runnable == 0 else ("full" if leaves["unsupported"] == 0 else "partial")
+        capability = {"trial_backend_label": label, "backend": "CQL/ELM (FHIR 4.0.1)", "nodes": cnt, "leaves": leaves,
+                      "per_node": {k: {"status": v[0], "reason": v[1]} for k, v in self.node_status.items()},
+                      "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+                      "overall_assertion_allowed": label == "full" and not self.allow_draft,
+                      "approval": None,
+                      "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."}
+        manifest = {"library": lib, "capability": capability, "scope": self.scope, "gated": not self.allow_draft,
                     "criteria": len(roots), "executable_typed_leaves": self.executable,
                     "unsupported": self.unsupported, "parameters": sorted(self.params),
                     "cql_sha256": hashlib.sha256(text.encode()).hexdigest(),

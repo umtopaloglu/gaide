@@ -1,0 +1,76 @@
+{
+ "independent": false,
+ "adjudicators": [],
+ "note": "Authored by the proposal author for plumbing tests only. Replace with an independently adjudicated reference.",
+ "criteria": [
+  {
+   "criterion": "Inc-b4",
+   "polarity": "inclusion",
+   "op": null,
+   "leaves": [
+    {
+     "kind": "ecog",
+     "allowed_values": [
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "criterion": "Inc-b5",
+   "polarity": "inclusion",
+   "op": "ALL",
+   "leaves": [
+    {
+     "kind": "age",
+     "comparator": ">=",
+     "value": 18
+    },
+    {
+     "kind": "age",
+     "comparator": "<=",
+     "value": 80
+    }
+   ]
+  },
+  {
+   "criterion": "Inc-b2",
+   "polarity": "inclusion",
+   "op": "ALL",
+   "leaves": [
+    {
+     "kind": "condition",
+     "concept": "T4 tumour (T4a/T4b)"
+    },
+    {
+     "kind": "condition",
+     "concept": "vascular invasion"
+    },
+    {
+     "kind": "condition",
+     "concept": "perineural invasion"
+    },
+    {
+     "kind": "condition",
+     "concept": "poor differentiation (incl. mucinous, signet-ring)"
+    },
+    {
+     "kind": "condition",
+     "concept": "pre-operative obstruction and/or perforation"
+    }
+   ]
+  },
+  {
+   "criterion": "Exc-b2",
+   "polarity": "exclusion",
+   "op": null,
+   "leaves": [
+    {
+     "kind": "condition",
+     "concept": "positive surgical margin (R1/R2)"
+    }
+   ]
+  }
+ ]
+}

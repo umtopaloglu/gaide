@@ -6,6 +6,7 @@
  },
  "source": {
   "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT06357533",
   "title": "Phase III, Open-label, Study of First-line Dato-DXd in Combination With Rilvegostomig for Advanced Non-squamous NSCLC With High PD-L1 Expression (TC ≥ 50%) and Without Actionable Genomic Alterations",
@@ -58,6 +59,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -142,7 +144,8 @@
         489
        ],
        "flags": [
-        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail"
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
        ],
        "review_status": "needs_review",
        "origin": "interpreted_rule_based",
@@ -153,7 +156,10 @@
         "required_state": "absent",
         "key": "biomarker:egfr",
         "terminology": {
-         "status": "unmapped"
+         "status": "proposed_unreviewed",
+         "relationship": "related",
+         "system": "HGNC",
+         "code": "HGNC:3236"
         },
         "qualifier_gaps": [
          "assay",
@@ -166,7 +172,65 @@
        "sub_span": [
         23,
         37
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "EGFR",
+         "document_span": [
+          251,
+          489
+         ],
+         "criterion_node": "a5733269-c964-5c4b-ac14-7c41e8cd99ef",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:gene-egfr",
+         "semantic_role": "biomarker",
+         "label": "EGFR",
+         "primary": {
+          "system": "HGNC",
+          "code": "HGNC:3236",
+          "display": "EGFR"
+         },
+         "code_system_uri": "http://www.genenames.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://www.genenames.org",
+          "code": "HGNC:3236",
+          "display": "EGFR"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "related",
+         "direction": "source_to_target",
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "6c6f797c-b8f7-5612-a143-9fb86ebbefc2",
@@ -178,7 +242,8 @@
         489
        ],
        "flags": [
-        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail"
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
        ],
        "review_status": "needs_review",
        "origin": "interpreted_rule_based",
@@ -189,7 +254,10 @@
         "required_state": "absent",
         "key": "biomarker:alk",
         "terminology": {
-         "status": "unmapped"
+         "status": "proposed_unreviewed",
+         "relationship": "related",
+         "system": "HGNC",
+         "code": "HGNC:427"
         },
         "qualifier_gaps": [
          "assay",
@@ -202,7 +270,65 @@
        "sub_span": [
         43,
         70
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "ALK",
+         "document_span": [
+          251,
+          489
+         ],
+         "criterion_node": "6c6f797c-b8f7-5612-a143-9fb86ebbefc2",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:gene-alk",
+         "semantic_role": "biomarker",
+         "label": "ALK",
+         "primary": {
+          "system": "HGNC",
+          "code": "HGNC:427",
+          "display": "ALK"
+         },
+         "code_system_uri": "http://www.genenames.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://www.genenames.org",
+          "code": "HGNC:427",
+          "display": "ALK"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "related",
+         "direction": "source_to_target",
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8",
@@ -214,7 +340,8 @@
         489
        ],
        "flags": [
-        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail"
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
        ],
        "review_status": "needs_review",
        "origin": "interpreted_rule_based",
@@ -225,7 +352,10 @@
         "required_state": "absent",
         "key": "biomarker:ros1",
         "terminology": {
-         "status": "unmapped"
+         "status": "proposed_unreviewed",
+         "relationship": "related",
+         "system": "HGNC",
+         "code": "HGNC:10261"
         },
         "qualifier_gaps": [
          "assay",
@@ -238,7 +368,65 @@
        "sub_span": [
         43,
         70
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "ROS1",
+         "document_span": [
+          251,
+          489
+         ],
+         "criterion_node": "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:gene-ros1",
+         "semantic_role": "biomarker",
+         "label": "ROS1",
+         "primary": {
+          "system": "HGNC",
+          "code": "HGNC:10261",
+          "display": "ROS1"
+         },
+         "code_system_uri": "http://www.genenames.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://www.genenames.org",
+          "code": "HGNC:10261",
+          "display": "ROS1"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "related",
+         "direction": "source_to_target",
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ],
      "logic_basis": "assumed_conjunction",
@@ -297,7 +485,8 @@
     638
    ],
    "flags": [
-    "biomarker qualifiers not stated in text: assay/antibody clone, specimen/tumour context, local vs central"
+    "biomarker qualifiers not stated in text: assay/antibody clone, specimen/tumour context, local vs central",
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -312,7 +501,8 @@
     "unit": "%",
     "key": "biomarker:pd_l1",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     },
     "qualifier_gaps": [
      "assay/antibody clone",
@@ -330,6 +520,44 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "PD-L1",
+     "document_span": [
+      580,
+      638
+     ],
+     "criterion_node": "445a1abf-e51b-5f23-9e77-aab88877e13b",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -373,7 +601,10 @@
     "key": "ecog",
     "scale": "ECOG",
     "terminology": {
-     "status": "n/a"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
     }
    },
    "computability": "structured_computable",
@@ -386,6 +617,64 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      745,
+      780
+     ],
+     "criterion_node": "b0deae96-c8dc-5fb5-a4d9-3a20a096ed51",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -659,7 +948,7 @@
     2075
    ],
    "flags": [
-    "condition predicate has no terminology binding yet -> not executable until bound"
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -668,7 +957,8 @@
     "concept": "leptomeningeal",
     "key": "condition:leptomeningeal",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -680,6 +970,44 @@
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "leptomeningeal",
+     "document_span": [
+      2033,
+      2075
+     ],
+     "criterion_node": "45e3493d-130a-50a1-92a1-e0ddc7163107",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -692,7 +1020,7 @@
     2122
    ],
    "flags": [
-    "condition predicate has no terminology binding yet -> not executable until bound"
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -701,7 +1029,8 @@
     "concept": "corneal disease",
     "key": "condition:corneal_disease",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -713,6 +1042,44 @@
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "corneal disease",
+     "document_span": [
+      2076,
+      2122
+     ],
+     "criterion_node": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -748,7 +1115,7 @@
     2269
    ],
    "flags": [
-    "condition predicate has no terminology binding yet -> not executable until bound"
+    "terminology unmapped (no-map) -> not executable until bound"
    ],
    "review_status": "needs_review",
    "origin": "interpreted_rule_based",
@@ -757,7 +1124,8 @@
     "concept": "immunodeficiency",
     "key": "condition:immunodeficiency",
     "terminology": {
-     "status": "unmapped"
+     "status": "unmapped",
+     "relationship": "no-map"
     }
    },
    "computability": "structured_computable",
@@ -769,6 +1137,44 @@
    "polarity": "exclusion",
    "polarity_source": "section 'exclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "immunodeficiency",
+     "document_span": [
+      2225,
+      2269
+     ],
+     "criterion_node": "19ab1039-8efb-5d46-8325-17d1194c087a",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   }
  ],
@@ -792,7 +1198,32 @@
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
  },
  "authored_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 4,
+   "unmapped": 4,
+   "by_relationship": {
+    "related": 3,
+    "no-map": 4,
+    "equivalent": 1
+   }
+  },
+  "value_sets": {},
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
  "review_summary": {
+  "open_conflicts": [],
   "criteria": 22,
   "validated": 0,
   "pending": [

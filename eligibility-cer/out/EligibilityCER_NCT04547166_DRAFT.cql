@@ -4,6 +4,7 @@ library EligibilityCER_NCT04547166_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
 parameter "FirstDoseDate" DateTime  // anchor 'first dose'; no default
 context Patient
@@ -53,8 +54,8 @@ define "Req Exc-2":  // exclusion; Subjects with oligometastatic liver disease a
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-3":  // exclusion; Presence of central nervous system (CNS) or leptomeningeal metastases
-  not ((null as Boolean /* UNSUPPORTED: condition 'CNS metastases' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'leptomeningeal metastases' has no terminology binding / evidence-adequacy policy */))
+  not ((null as Boolean /* UNSUPPORTED: condition 'CNS metastases' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'leptomeningeal metastases' has no terminology binding */))
 
 define "Req Exc-4":  // exclusion; Have received radiotherapy within 6 months prior to the initiation of study treatment, except for pa
   not (null as Boolean /* UNSUPPORTED: text_dependent: prior therapy / medication */)
@@ -63,21 +64,21 @@ define "Req Exc-5":  // exclusion; With a history of or current interstitial pne
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
 
 define "Req Exc-6":  // exclusion; Have received major surgery within 28 days prior to randomization. A major surgery in this study is 
-  not (null as Boolean /* UNSUPPORTED: condition 'major surgery' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'major surgery' has no terminology binding */)
 
 define "Req Exc-7":  // exclusion; Previously received intestinal stent implantation, with the stent remaining in place at the screenin
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-8":  // exclusion; Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg 
-  not ((null as Boolean /* UNSUPPORTED: no LOINC binding for 'Systolic blood pressure' (terminology unbound) */)
-     or (null as Boolean /* UNSUPPORTED: no LOINC binding for 'Diastolic blood pressure' (terminology unbound) */))
+  not ((null as Boolean /* UNSUPPORTED: no LOINC binding for 'Systolic blood pressure' (terminology unavailable/unbound) */)
+     or (null as Boolean /* UNSUPPORTED: no LOINC binding for 'Diastolic blood pressure' (terminology unavailable/unbound) */))
 
 define "Req Exc-9":  // exclusion; With a history of hypertensive crisis or hypertensive encephalopathy
   not (null as Boolean /* UNSUPPORTED: text_dependent: unclassified narrative */)
 
 define "Req Exc-10":  // exclusion; With a history of significant/severe hemorrhage within 1 month prior to randomization, or have recei
-  not ((null as Boolean /* UNSUPPORTED: condition 'significant/severe hemorrhage' has no terminology binding / evidence-adequacy policy */)
-     or (null as Boolean /* UNSUPPORTED: condition 'blood transfusion' has no terminology binding / evidence-adequacy policy */))
+  not ((null as Boolean /* UNSUPPORTED: condition 'significant/severe hemorrhage' has no terminology binding */)
+     or (null as Boolean /* UNSUPPORTED: condition 'blood transfusion' has no terminology binding */))
 
 define "Req Exc-11":  // exclusion; Requiring long-term treatment with daily administration of nonsteroidal anti-inflammatory drugs (NSA
   not (null as Boolean /* UNSUPPORTED: text_dependent: prior therapy / medication */)

@@ -121,7 +121,7 @@ def _convert(ctx, items, c, path_prefix, out):
         marker = it.marker.rstrip(".)") if it.marker and it.marker not in "*•-–" else ""
         path = f"{path_prefix}/{marker or ('b' + str(i + 1))}"
         if not path_prefix:
-            path = f"/{c['section'][:3]}{path}"
+            path = f"/{c['tag'].lower()}{path}"
         if it.kind == "hint":
             c["hint"] = it.text
             continue
@@ -140,7 +140,8 @@ def _convert(ctx, items, c, path_prefix, out):
             continue
         head, inline_parts = split_inline_letters(it)
         is_scope = (it.colon and it.children and SCOPE_WORDS.search(it.text) and "following" not in it.text.lower()
-                    and not inline_parts)
+                    and not inline_parts and len(it.text.split()) <= 8
+                    and not re.search(r"\b(must|should|shall|have|has|had|received|require[sd]?|no|not)\b", it.text, re.I))
         if is_scope:
             sub = dict(c)
             sub["scope"] = c["scope"] + [it.text.rstrip(":")]
@@ -149,7 +150,7 @@ def _convert(ctx, items, c, path_prefix, out):
             continue
         span = [it.start, it.end]
         node = _requirement(ctx, it, head, inline_parts, c, path, span)
-        node["display_number"] = f"{c['section'][:3].title()}-{path.lstrip('/').split('/', 1)[1].replace('/', '.')}"
+        node["display_number"] = f"{c['tag']}-{path.lstrip('/').split('/', 1)[1].replace('/', '.')}"
         node["polarity"] = c["polarity"]
         node["polarity_source"] = c.get("polarity_source", f"section '{c['section']}'")
         node["scope"] = list(c["scope"])
@@ -213,16 +214,23 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
     sec_items, cur = [], None
     for t in tree:
         if t.kind == "section":
-            cur = {"section": t.section, "items": []}
+            q = re.sub(r"^(?:key\s+)?(?:inclusion|exclusion)\s+criteria", "", t.text, flags=re.I).strip(" :[]")
+            cur = {"section": t.section, "items": [], "qualifier": q or None}
             sec_items.append(cur)
         else:
             if cur is None:
                 cur = {"section": "preamble", "items": []}
                 sec_items.append(cur)
             cur["items"].append(t)
+    seen = {}
+    for s in sec_items:
+        seen[s["section"]] = seen.get(s["section"], 0) + 1
+        s["ord"] = seen[s["section"]]
     for s in sec_items:
         c = dict(base)
         c["section"] = s["section"]
+        c["tag"] = s["section"][:3].title() + (str(s["ord"]) if seen[s["section"]] > 1 else "")
+        c["scope"] = [s["qualifier"]] if s.get("qualifier") else []
         c["polarity"] = s["section"] if s["section"] in ("inclusion", "exclusion") else "inclusion"
         c["polarity_source"] = f"section '{s['section']}'" if s["section"] != "preamble" else base["polarity_source"]
         _convert(ctx, s["items"], c, "", roots)
@@ -237,7 +245,8 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
         "schema_version": SCHEMA_VERSION,
         "lifecycle": {"status": "draft", "note": "Draft only: not clinically or informatically reviewed; not executable for screening."},
         "source": {
-            "source_type": "B", "registry": "ClinicalTrials.gov", "nct_id": nct,
+            "source_type": "B", "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
+            "registry": "ClinicalTrials.gov", "nct_id": nct,
             "title": ps["identificationModule"].get("briefTitle"),
             "overall_status": ps.get("statusModule", {}).get("overallStatus"),
             "retrieved_at": prov.get("retrieved_at") or (source_meta or {}).get("retrieved_at"),

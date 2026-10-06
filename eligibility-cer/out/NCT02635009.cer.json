@@ -1,0 +1,1248 @@
+{
+ "schema_version": "cer-draft-0.1",
+ "lifecycle": {
+  "status": "draft",
+  "note": "Draft only: not reviewed; not executable for screening."
+ },
+ "source": {
+  "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
+  "registry": "ClinicalTrials.gov",
+  "nct_id": "NCT02635009",
+  "title": "Whole-Brain Radiation Therapy With or Without Hippocampal Avoidance in Limited Stage or Extensive Stage Small Cell Lung Cancer",
+  "overall_status": "COMPLETED",
+  "retrieved_at": "2026-10-06T03:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "content_sha256": "5c49cfbd66c16fe37501a0b5d5f4a3e939753da3c81778c23e82d736c66e3ef5",
+  "protocol_baseline": "registry_excerpt",
+  "demographics": {
+   "minimum_age": "18 Years",
+   "maximum_age": null,
+   "sex": "ALL",
+   "healthy_volunteers": "No"
+  },
+  "text_normalized": "Inclusion Criteria [prior to Step 1 registration]:\n\n* Histologic proof or unequivocal cytologic proof (fine needle aspiration, biopsy or two positive sputa) of SCLC within 250 days prior to Step 1 registration\n\n  * High-grade neuroendocrine carcinoma or combined SCLC and NSCLC is permitted.\n* Patients must have received chemotherapy and be registered to Step 1 registration no earlier than 7 days and no later than 56 days after completing chemotherapy. Note:\n\n  * Post-chemotherapy restaging imaging must be completed no more than 56 days prior to Step 1 registration.\n  * For patients with extensive-stage small cell lung cancer who are being considered for consolidative thoracic radiotherapy after chemotherapy, concomitant administration of consolidative thoracic radiotherapy and protocol-specified prophylactic cranial irradiation with or without hippocampal avoidance is permitted.\n* Patients must have a gadolinium contrast-enhanced three-dimensional (3D), spoiled gradient (SPGR), magnetization-prepared rapid gradient echo (MP-RAGE), or turbo field echo (TFE) MRI scan. To yield acceptable image quality, the gadolinium contrast-enhanced three-dimensional SPGR, MP-RAGE or TFE axial MRI scan must use the smallest possible axial slice thickness not exceeding 1.5 mm.\n\n  * This MRI must be obtained within 56 days prior to Step 1 registration. Note: The MRI study is mandatory irrespective of randomization to the experimental or control arm of this study.\n* Prior to chemotherapy +/- thoracic radiotherapy, patients must be defined as limited-stage or extensive-stage SCLC after clinical staging evaluation involving the following:\n\n  1. History/physical examination;\n  2. CT of the chest and abdomen with contrast (does not have to be done if the patient has had a positron emission tomography (PET) / CT scan prior to initiating chemotherapy or thoracic radiotherapy);\n  3. MRI of the brain with contrast or diagnostic head CT with contrast;\n  4. For patients without evidence of extensive-stage SCLC on chest and abdomen CT and brain MRI or head CT, a PET/CT or bone scan is required to confirm limited-stage SCLC.\n* After chemotherapy, patients must be restaged prior to Step 1 registration using the same diagnostic work-up as required pre-chemotherapy. Repeat PET/CT or bone scan is not required. Patients must have:\n\n  * History/physical examination within 30 days of Step 1 registration;\n  * No CNS metastases (Repeat MRI required) within 56 days prior to Step 1 registration;\n  * No progression in any site;\n  * Radiographic partial or complete response to chemotherapy in at least one disease site within 56 days prior to Step 1 registration.\n\n    1. If PET/CT was obtained prior to chemotherapy, either a repeat PET/CT or CT of the chest and abdomen with contrast can be obtained for response assessment.\n    2. Patients who underwent resection for limited-stage SCLC prior to chemotherapy and have no radiographically evident disease for response assessment remain eligible if post-chemotherapy imaging demonstrates no progression.\n* Zubrod performance status 0-2 within 30 days prior to Step 1 registration.\n* Women of childbearing potential must have a negative qualitative serum pregnancy test =< 14 days prior to Step 1 registration.\n* Patients who are primary English or French speakers are eligible\n* Patients must sign a study-specific informed consent prior to study entry\n\nInclusion Criteria [prior to Step 2 registration]:\n\n* The following baseline neurocognitive assessments must be completed and uploaded within 10 calendar days after or at the time of Step 1 registration: HVLT-R (recall, delayed recall, and recognition), TMT (Parts A and B), and COWA. The neurocognitive assessments will be uploaded into the NRG Oncology Rave System for evaluation by Neurocognitive Co-Chair. Once the upload is complete, within 3 business days, a notification email will be sent to the site to proceed to Step 2 registration. At minimum, the HVLT-R delayed recall must be able to be scored (i.e. completed without error) in order to be eligible.\n* Patients must have a baseline raw score greater than 2 on the HVLT-R delayed recall as determined by central assessment by the Neurocognitive Co-Chair.\n\nExclusion Criteria:\n\n* Prior radiotherapy to the head or neck (except for T1 glottic cancer), resulting in overlap of radiation fields\n* Radiographic evidence of central nervous system (CNS) metastases\n* Radiographic evidence of hydrocephalus or other architectural distortion of the ventricular system, including placement of external ventricular drain or ventriculoperitoneal shunt\n* Planned concurrent chemotherapy during PCI\n\n  * Concurrent atezolizumab permitted\n* Concomitant invasive malignancy or invasive malignancy within the past five years other than non-melanomatous skin cancer; history of in situ carcinoma (e.g. ductal carcinoma in situ of breast, in situ carcinoma of the cervix, vulva or larynx) is permitted\n* Contraindication to MR imaging, such as implanted metal devices or foreign bodies or severe claustrophobia\n* Severe, active comorbidity, defined as follows:\n\n  * Unstable angina and/or congestive heart failure requiring hospitalization within the last 6 months\n  * Transmural myocardial infarction within the last 6 months\n  * Acute bacterial or fungal infection requiring intravenous antibiotics at the time of registration\n  * Hepatic insufficiency resulting in clinical jaundice and/or coagulation defects\n  * Chronic obstructive pulmonary disease exacerbation or other respiratory illness requiring hospitalization or precluding study therapy at the time of registration\n  * Uncontrolled, clinically significant cardiac arrhythmias\n  * HIV positive with CD4 count < 200 cells/microliter;\n\n    1. Note: Patients who are HIV positive are eligible, provided they are under treatment with highly active antiretroviral therapy (HAART) and have a CD4 count ≥ 200 cells/microliter within 30 days prior to Step 1 registration.\n    2. Note: HIV testing is not required for eligibility for this protocol.\n* Pregnant or lactating women or women of childbearing potential and male participants who are sexually active and not willing/able to use medically acceptable forms of contraception; this exclusion is necessary because the radiation treatment involved in this study may be significantly teratogenic."
+ },
+ "completeness_disclosure": "Registry-based prescreening: the approved protocol and amendments were not available. A registry excerpt is a discovery source, not proof that all enrollment requirements are present.",
+ "ctrp_biomarker_contract": {
+  "status": "not_supplied",
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
+ },
+ "scopes": [
+  [],
+  [
+   "prior to Step 1 registration"
+  ],
+  [
+   "prior to Step 2 registration"
+  ]
+ ],
+ "criteria": [
+  {
+   "id": "e2a9bc30-b34b-519b-9599-ea03f1daa3fa",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "ffe37b83-7e1e-5c10-bf65-25dd03fbed44",
+   "path": "/inc1/b1",
+   "type": "group",
+   "text": "Histologic proof or unequivocal cytologic proof (fine needle aspiration, biopsy or two positive sputa) of SCLC within 250 days prior to Step 1 registration",
+   "source_span": [
+    52,
+    209
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "a99f44e4-e1dd-5e23-be7c-485b6dee6768",
+     "path": "/inc1/b1/b1",
+     "type": "narrative",
+     "text": "High-grade neuroendocrine carcinoma or combined SCLC and NSCLC is permitted.",
+     "source_span": [
+      211,
+      291
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Histologic proof or unequivocal cytologic proof (fine needle aspiration, biopsy or two positive sputa) of SCLC within 250 days prior to Step 1 registration",
+   "time_window": {
+    "value": 250.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     111,
+     126
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc1-b1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "ab6e2db1-4120-5f58-8856-bbaf08922610",
+   "path": "/inc1/b2",
+   "type": "group",
+   "text": "Patients must have received chemotherapy and be registered to Step 1 registration no earlier than 7 days and no later than 56 days after completing chemotherapy. Note:",
+   "source_span": [
+    292,
+    461
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "48944197-0490-5afb-a2ef-d49b025379ea",
+     "path": "/inc1/b2/b1",
+     "type": "narrative",
+     "text": "Post-chemotherapy restaging imaging must be completed no more than 56 days prior to Step 1 registration.",
+     "source_span": [
+      463,
+      571
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "3b6438c0-7d5f-5fc4-a854-fe22a9c1b1e6",
+     "path": "/inc1/b2/b2",
+     "type": "narrative",
+     "text": "For patients with extensive-stage small cell lung cancer who are being considered for consolidative thoracic radiotherapy after chemotherapy, concomitant administration of consolidative thoracic radiotherapy and protocol-specified prophylactic cranial irradiation with or without hippocampal avoidance is permitted.",
+     "source_span": [
+      572,
+      891
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Patients must have received chemotherapy and be registered to Step 1 registration no earlier than 7 days and no later than 56 days after completing chemotherapy. Note:",
+   "display_number": "Inc1-b2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "355c41dc-8c1a-5efa-ad6b-6875bf0500fe",
+   "path": "/inc1/b3",
+   "type": "group",
+   "text": "Patients must have a gadolinium contrast-enhanced three-dimensional (3D), spoiled gradient (SPGR), magnetization-prepared rapid gradient echo (MP-RAGE), or turbo field echo (TFE) MRI scan. To yield acceptable image quality, the gadolinium contrast-enhanced three-dimensional SPGR, MP-RAGE or TFE axial MRI scan must use the smallest possible axial slice thickness not exceeding 1.5 mm.",
+   "source_span": [
+    892,
+    1279
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "a11235ac-b4b8-5e0f-97c6-22b1c131c0c0",
+     "path": "/inc1/b3/b1",
+     "type": "narrative",
+     "text": "This MRI must be obtained within 56 days prior to Step 1 registration. Note: The MRI study is mandatory irrespective of randomization to the experimental or control arm of this study.",
+     "source_span": [
+      1281,
+      1468
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative",
+     "time_window": {
+      "value": 56.0,
+      "unit": "day",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       26,
+       40
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Patients must have a gadolinium contrast-enhanced three-dimensional (3D), spoiled gradient (SPGR), magnetization-prepared rapid gradient echo (MP-RAGE), or turbo field echo (TFE) MRI scan. To yield acceptable image quality, the gadolinium contrast-enhanced three-dimensional SPGR, MP-RAGE or TFE axial MRI scan must use the smallest possible axial slice thickness not exceeding 1.5 mm.",
+   "display_number": "Inc1-b3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "433a5951-49a2-5180-b6f9-907960b7c889",
+   "path": "/inc1/b4",
+   "type": "group",
+   "text": "Prior to chemotherapy +/- thoracic radiotherapy, patients must be defined as limited-stage or extensive-stage SCLC after clinical staging evaluation involving the following:",
+   "source_span": [
+    1469,
+    1644
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "b570dd3c-1c9f-5997-86a2-08caedfdfec9",
+     "path": "/inc1/b4/1",
+     "type": "narrative",
+     "text": "History/physical examination;",
+     "source_span": [
+      1646,
+      1680
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "22c3cd29-84b0-500d-bd76-3f19f0521ed0",
+     "path": "/inc1/b4/2",
+     "type": "narrative",
+     "text": "CT of the chest and abdomen with contrast (does not have to be done if the patient has had a positron emission tomography (PET) / CT scan prior to initiating chemotherapy or thoracic radiotherapy);",
+     "source_span": [
+      1681,
+      1883
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "cbb26d10-96b1-5ecd-8361-e01496aee0b0",
+     "path": "/inc1/b4/3",
+     "type": "narrative",
+     "text": "MRI of the brain with contrast or diagnostic head CT with contrast;",
+     "source_span": [
+      1884,
+      1956
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "b44bc32f-c1bf-55a7-ad7c-5614df6c1502",
+     "path": "/inc1/b4/4",
+     "type": "narrative",
+     "text": "For patients without evidence of extensive-stage SCLC on chest and abdomen CT and brain MRI or head CT, a PET/CT or bone scan is required to confirm limited-stage SCLC.",
+     "source_span": [
+      1957,
+      2130
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Prior to chemotherapy +/- thoracic radiotherapy, patients must be defined as limited-stage or extensive-stage SCLC after clinical staging evaluation involving the following:",
+   "display_number": "Inc1-b4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "46cd482c-fb59-5edb-a845-669a2755e578",
+   "path": "/inc1/b5",
+   "type": "group",
+   "text": "After chemotherapy, patients must be restaged prior to Step 1 registration using the same diagnostic work-up as required pre-chemotherapy. Repeat PET/CT or bone scan is not required. Patients must have:",
+   "source_span": [
+    2131,
+    2335
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "a23ba3ad-d8e0-56d9-8e4c-9d4e0c019110",
+     "path": "/inc1/b5/b1",
+     "type": "narrative",
+     "text": "History/physical examination within 30 days of Step 1 registration;",
+     "source_span": [
+      2337,
+      2408
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative",
+     "time_window": {
+      "value": 30.0,
+      "unit": "day",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       29,
+       43
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    },
+    {
+     "id": "2b0146ba-27f1-553c-bbcc-c949fe7fd264",
+     "path": "/inc1/b5/b2",
+     "type": "narrative",
+     "text": "No CNS metastases (Repeat MRI required) within 56 days prior to Step 1 registration;",
+     "source_span": [
+      2409,
+      2497
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative",
+     "time_window": {
+      "value": 56.0,
+      "unit": "day",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       40,
+       54
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    },
+    {
+     "id": "d98caf3b-e9fe-5c69-afb1-d7594466a664",
+     "path": "/inc1/b5/b3",
+     "type": "narrative",
+     "text": "No progression in any site;",
+     "source_span": [
+      2498,
+      2529
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "d80acac2-cac3-5501-9782-4d62fdf1d815",
+     "path": "/inc1/b5/b4",
+     "type": "group",
+     "text": "Radiographic partial or complete response to chemotherapy in at least one disease site within 56 days prior to Step 1 registration.",
+     "source_span": [
+      2530,
+      2665
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "op": "ALL",
+     "children": [
+      {
+       "id": "779c638e-1f82-5d3f-800f-6dc2892c3046",
+       "path": "/inc1/b5/b4/1",
+       "type": "narrative",
+       "text": "If PET/CT was obtained prior to chemotherapy, either a repeat PET/CT or CT of the chest and abdomen with contrast can be obtained for response assessment.",
+       "source_span": [
+        2667,
+        2828
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "computability": "text_dependent",
+       "subtype": "unclassified narrative"
+      },
+      {
+       "id": "f24e8dd8-8446-50f3-b285-58bda941d320",
+       "path": "/inc1/b5/b4/2",
+       "type": "narrative",
+       "text": "Patients who underwent resection for limited-stage SCLC prior to chemotherapy and have no radiographically evident disease for response assessment remain eligible if post-chemotherapy imaging demonstrates no progression.",
+       "source_span": [
+        2829,
+        3056
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "computability": "text_dependent",
+       "subtype": "unclassified narrative"
+      }
+     ],
+     "logic_basis": "assumed",
+     "lead_in": "Radiographic partial or complete response to chemotherapy in at least one disease site within 56 days prior to Step 1 registration.",
+     "time_window": {
+      "value": 56.0,
+      "unit": "day",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       87,
+       101
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "After chemotherapy, patients must be restaged prior to Step 1 registration using the same diagnostic work-up as required pre-chemotherapy. Repeat PET/CT or bone scan is not required. Patients must have:",
+   "display_number": "Inc1-b5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "df5fdb3f-2050-59f4-88b0-345bccfd7d4c",
+   "path": "/inc1/b6.p0",
+   "type": "predicate",
+   "text": "Zubrod performance status 0-2 within 30 days prior to Step 1 registration.",
+   "source_span": [
+    3057,
+    3133
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "performance_status",
+    "scale": "Zubrod",
+    "allowed_values": [
+     0,
+     1,
+     2
+    ],
+    "key": "ps:zubrod",
+    "terminology": {
+     "status": "n/a"
+    },
+    "note": "scale-specific: no assumed equivalence to ECOG"
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    0,
+    29
+   ],
+   "extraction_coverage": 0.38,
+   "time_window": {
+    "value": 30.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     30,
+     44
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc1-b6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "2d3db587-a8fa-558b-94bf-db46c0978b04",
+   "path": "/inc1/b7",
+   "type": "narrative",
+   "text": "Women of childbearing potential must have a negative qualitative serum pregnancy test =< 14 days prior to Step 1 registration.",
+   "source_span": [
+    3134,
+    3262
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc1-b7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "d4f0faec-36f2-5323-8463-c80ca10a5826",
+   "path": "/inc1/b8",
+   "type": "narrative",
+   "text": "Patients who are primary English or French speakers are eligible",
+   "source_span": [
+    3263,
+    3329
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc1-b8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "7643192b-ab3a-5869-ae9f-7714240be4c6",
+   "path": "/inc1/b9",
+   "type": "narrative",
+   "text": "Patients must sign a study-specific informed consent prior to study entry",
+   "source_span": [
+    3330,
+    3405
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Inc1-b9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 1 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "ac8e6242-1005-5ded-8ed6-064470fb4c6c",
+   "path": "/inc2/b1",
+   "type": "narrative",
+   "text": "The following baseline neurocognitive assessments must be completed and uploaded within 10 calendar days after or at the time of Step 1 registration: HVLT-R (recall, delayed recall, and recognition), TMT (Parts A and B), and COWA. The neurocognitive assessments will be uploaded into the NRG Oncology Rave System for evaluation by Neurocognitive Co-Chair. Once the upload is complete, within 3 business days, a notification email will be sent to the site to proceed to Step 2 registration. At minimum, the HVLT-R delayed recall must be able to be scored (i.e. completed without error) in order to be eligible.",
+   "source_span": [
+    3459,
+    4070
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc2-b1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 2 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "285a2917-817c-521e-a41a-9312f0ae1949",
+   "path": "/inc2/b2",
+   "type": "narrative",
+   "text": "Patients must have a baseline raw score greater than 2 on the HVLT-R delayed recall as determined by central assessment by the Neurocognitive Co-Chair.",
+   "source_span": [
+    4071,
+    4224
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Inc2-b2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [
+    "prior to Step 2 registration"
+   ],
+   "review": {}
+  },
+  {
+   "id": "3b180955-5013-51a7-9fc2-853db758d411",
+   "path": "/exc/b1",
+   "type": "narrative",
+   "text": "Prior radiotherapy to the head or neck (except for T1 glottic cancer), resulting in overlap of radiation fields",
+   "source_span": [
+    4247,
+    4360
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "exceptions": [
+    {
+     "keyword": "except for",
+     "text": "T1 glottic cancer",
+     "span": [
+      39,
+      69
+     ],
+     "status": "unparsed"
+    }
+   ],
+   "display_number": "Exc-b1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "c5538dbd-b3f2-577f-92e0-94deb38bde5a",
+   "path": "/exc/b2",
+   "type": "narrative",
+   "text": "Radiographic evidence of central nervous system (CNS) metastases",
+   "source_span": [
+    4361,
+    4427
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-b2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "b9a95056-6cb1-5bd3-98f1-d748d3d242ac",
+   "path": "/exc/b3",
+   "type": "narrative",
+   "text": "Radiographic evidence of hydrocephalus or other architectural distortion of the ventricular system, including placement of external ventricular drain or ventriculoperitoneal shunt",
+   "source_span": [
+    4428,
+    4609
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-b3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "48c30d17-a9aa-5062-be57-5153f653c3fa",
+   "path": "/exc/b4",
+   "type": "group",
+   "text": "Planned concurrent chemotherapy during PCI",
+   "source_span": [
+    4610,
+    4654
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "48718212-29fb-5f17-947a-d9c68288e9c1",
+     "path": "/exc/b4/b1",
+     "type": "narrative",
+     "text": "Concurrent atezolizumab permitted",
+     "source_span": [
+      4656,
+      4693
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Planned concurrent chemotherapy during PCI",
+   "display_number": "Exc-b4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "37306c4c-0b70-5252-abf0-956954a6f7fb",
+   "path": "/exc/b5",
+   "type": "narrative",
+   "text": "Concomitant invasive malignancy or invasive malignancy within the past five years other than non-melanomatous skin cancer; history of in situ carcinoma (e.g. ductal carcinoma in situ of breast, in situ carcinoma of the cervix, vulva or larynx) is permitted",
+   "source_span": [
+    4694,
+    4952
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "exceptions": [
+    {
+     "keyword": "other than",
+     "text": "non-melanomatous skin cancer",
+     "span": [
+      81,
+      121
+     ],
+     "status": "unparsed"
+    }
+   ],
+   "display_number": "Exc-b5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "eb184992-b3a0-5628-99e2-7015e98fddde",
+   "path": "/exc/b6",
+   "type": "narrative",
+   "text": "Contraindication to MR imaging, such as implanted metal devices or foreign bodies or severe claustrophobia",
+   "source_span": [
+    4953,
+    5061
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-b6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "667a1572-5e25-5de4-ae72-0a78c546effd",
+   "path": "/exc/b7",
+   "type": "group",
+   "text": "Severe, active comorbidity, defined as follows:",
+   "source_span": [
+    5062,
+    5111
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "462cc110-8f12-53a9-8518-2acfe1450b43",
+     "path": "/exc/b7/b1",
+     "type": "narrative",
+     "text": "Unstable angina and/or congestive heart failure requiring hospitalization within the last 6 months",
+     "source_span": [
+      5113,
+      5215
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "heart failure",
+      "unstable angina"
+     ],
+     "time_window": {
+      "value": 6.0,
+      "unit": "month",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       74,
+       98
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    },
+    {
+     "id": "18574456-704d-5918-bb6f-fbccbf48a690",
+     "path": "/exc/b7/b2",
+     "type": "narrative",
+     "text": "Transmural myocardial infarction within the last 6 months",
+     "source_span": [
+      5216,
+      5277
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "myocardial infarction"
+     ],
+     "time_window": {
+      "value": 6.0,
+      "unit": "month",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       33,
+       57
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    },
+    {
+     "id": "da02252f-94f3-521b-a96b-28adac928bf7",
+     "path": "/exc/b7/b3",
+     "type": "narrative",
+     "text": "Acute bacterial or fungal infection requiring intravenous antibiotics at the time of registration",
+     "source_span": [
+      5278,
+      5379
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "25026dca-5c7b-5676-a930-7174b026ce44",
+     "path": "/exc/b7/b4",
+     "type": "narrative",
+     "text": "Hepatic insufficiency resulting in clinical jaundice and/or coagulation defects",
+     "source_span": [
+      5380,
+      5463
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "6d9773df-0746-5085-b8b3-fe38ccf58ad5",
+     "path": "/exc/b7/b5",
+     "type": "narrative",
+     "text": "Chronic obstructive pulmonary disease exacerbation or other respiratory illness requiring hospitalization or precluding study therapy at the time of registration",
+     "source_span": [
+      5464,
+      5629
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "8447b856-ad09-5f7c-b6de-5a0c33318ee0",
+     "path": "/exc/b7/b6",
+     "type": "narrative",
+     "text": "Uncontrolled, clinically significant cardiac arrhythmias",
+     "source_span": [
+      5630,
+      5690
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "arrhythmia"
+     ]
+    },
+    {
+     "id": "e7bf4128-2445-5683-874b-a7037b24c009",
+     "path": "/exc/b7/b7",
+     "type": "group",
+     "text": "HIV positive with CD4 count < 200 cells/microliter;",
+     "source_span": [
+      5691,
+      5746
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "op": "ALL",
+     "children": [
+      {
+       "id": "ab80a5c4-cbd8-5750-abdb-7a1b7a241286",
+       "path": "/exc/b7/b7/1",
+       "type": "narrative",
+       "text": "Note: Patients who are HIV positive are eligible, provided they are under treatment with highly active antiretroviral therapy (HAART) and have a CD4 count ≥ 200 cells/microliter within 30 days prior to Step 1 registration.",
+       "source_span": [
+        5748,
+        5977
+       ],
+       "flags": [
+        "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+       ],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "computability": "text_dependent",
+       "subtype": "prior therapy / medication",
+       "concept_hits": [
+        "hiv"
+       ],
+       "time_window": {
+        "value": 30.0,
+        "unit": "day",
+        "direction": "lookback",
+        "anchor": "unspecified",
+        "anchor_text": null,
+        "span": [
+         178,
+         192
+        ],
+        "status": "anchor_missing_or_unrecognised"
+       }
+      },
+      {
+       "id": "96b4f838-61d8-59e7-97c2-97ba652f354c",
+       "path": "/exc/b7/b7/2",
+       "type": "predicate",
+       "text": "Note: HIV testing is not required for eligibility for this protocol.",
+       "source_span": [
+        5978,
+        6053
+       ],
+       "flags": [
+        "condition predicate has no terminology binding yet -> not executable until bound",
+        "mapping relationship 'inexact': protocol often means antibody/PCR positivity; condition concept is broader than a test result"
+       ],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "condition",
+        "concept": "hiv",
+        "key": "condition:hiv",
+        "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "inexact",
+         "system": "SNOMED CT",
+         "code": "86406008"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        0,
+        68
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "hiv",
+         "document_span": [
+          5978,
+          6053
+         ],
+         "criterion_node": "96b4f838-61d8-59e7-97c2-97ba652f354c",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:cond-hiv",
+         "semantic_role": "condition",
+         "label": "HIV infection",
+         "primary": {
+          "system": "SNOMED CT",
+          "code": "86406008",
+          "display": "Human immunodeficiency virus infection"
+         },
+         "code_system_uri": "http://snomed.info/sct"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://snomed.info/sct",
+          "code": "86406008",
+          "display": "Human immunodeficiency virus infection",
+          "valueSet": "vs:cond-hiv"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "inexact",
+         "direction": "source_to_target",
+         "context": "protocol often means antibody/PCR positivity; condition concept is broader than a test result"
+        },
+        "value_set": {
+         "id": "vs:cond-hiv",
+         "version": "0.1.0",
+         "compose": [
+          {
+           "system": "SNOMED CT",
+           "codes": [
+            "86406008"
+           ]
+          }
+         ],
+         "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+         "frozen_expansion": {
+          "members": [
+           "SNOMED CT|86406008"
+          ],
+          "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+          "date": "2026-10-06"
+         },
+         "excluded": []
+        },
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "low",
+         "rationale": "protocol often means antibody/PCR positivity; condition concept is broader than a test result",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
+      }
+     ],
+     "logic_basis": "assumed",
+     "lead_in": "HIV positive with CD4 count < 200 cells/microliter;"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Severe, active comorbidity, defined as follows:",
+   "display_number": "Exc-b7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "a4e46c66-7d9d-5e4b-aeba-812bf27aa51d",
+   "path": "/exc/b8",
+   "type": "narrative",
+   "text": "Pregnant or lactating women or women of childbearing potential and male participants who are sexually active and not willing/able to use medically acceptable forms of contraception; this exclusion is necessary because the radiation treatment involved in this study may be significantly teratogenic.",
+   "source_span": [
+    6054,
+    6354
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Exc-b8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  }
+ ],
+ "scope_items": [],
+ "inventory": {
+  "criteria_total": 20,
+  "inclusion": 12,
+  "exclusion": 8,
+  "leaf_nodes": 35,
+  "leaves_by_computability": {
+   "structured_computable": 3,
+   "text_dependent": 28,
+   "human_judgment": 4
+  },
+  "typed_predicates": 3,
+  "flagged_nodes": 17
+ },
+ "validation": {
+  "structure_ok": true,
+  "problems": [],
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 1,
+   "unmapped": 0,
+   "by_relationship": {
+    "inexact": 1
+   }
+  },
+  "value_sets": {
+   "vs:cond-hiv": {
+    "id": "vs:cond-hiv",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "86406008"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|86406008"
+     ],
+     "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   }
+  },
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
+ "review_summary": {
+  "open_conflicts": [],
+  "criteria": 20,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc1-b1",
+   "Inc1-b2",
+   "Inc1-b3",
+   "Inc1-b4",
+   "Inc1-b5",
+   "Inc1-b6",
+   "Inc1-b7",
+   "Inc1-b8",
+   "Inc1-b9",
+   "Inc2-b1",
+   "Inc2-b2",
+   "Exc-b1",
+   "Exc-b2",
+   "Exc-b3",
+   "Exc-b4",
+   "Exc-b5",
+   "Exc-b6",
+   "Exc-b7",
+   "Exc-b8"
+  ]
+ }
+}

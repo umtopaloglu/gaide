@@ -9,7 +9,7 @@ import html
 import re
 from dataclasses import dataclass, field
 
-SECTION_RE = re.compile(r"^(?:key\s+)?(inclusion|exclusion)\s+criteria\s*:?\s*$", re.I)
+SECTION_RE = re.compile(r"^(?:key\s+)?(inclusion|exclusion)\s+criteria\b[^:\n]{0,70}:?\s*$", re.I)
 HEAD_NAMED_RE = re.compile(r"^(main\s+)?(inclusion|exclusion)\s+criteria\s*:?\s*$", re.I)
 MARK_RE = re.compile(r"^(?P<ind>[ \t]*)(?P<m>\d+[.)]|[a-z][.)]|[*•\-–])[ \t]+(?P<t>\S.*)$")
 CAPS_TAIL_RE = re.compile(r"(?<=[.;])\s+(FOR\s+[A-Z][A-Z ,/-]{6,})$")

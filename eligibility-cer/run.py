@@ -4,6 +4,7 @@
   python run.py fetch NCT06128837 NCT06357533      # needs ct.gov network access
   python run.py search "lung cancer" --n 5          # list candidate NCT ids
   python run.py build [NCT...]                      # data/raw/*.json -> out/*.cer.json + out/*.html
+  python run.py graph NCT06520683                   # out/graph/*.jsonld (+ round-trip + SHACL check)
   python run.py review NCT06520683                  # review worklist (+ review/NCT*.json sidecar applied)
   python run.py cql NCT06128837 [--scope S] [--allow-draft]   # -> out/*.cql + manifest
   python run.py evaluate NCT05512364 evidence/x.json --scope "Randomised trial"
@@ -21,6 +22,9 @@ from cer.render import render            # noqa: E402
 from cer.authored import apply_authored  # noqa: E402
 from cer.review import apply_review, worklist  # noqa: E402
 from cer.cql import compile_cql          # noqa: E402
+from cer.terminology import bind_cer     # noqa: E402
+from cer.conflicts import detect         # noqa: E402
+from cer import graph as G               # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW, OUT = os.path.join(HERE, "data", "raw"), os.path.join(HERE, "out")
@@ -36,6 +40,8 @@ def load_cer(nct):
     cer = build_cer(load(nct))
     ap = os.path.join(HERE, "authored", f"{nct}.json")
     cer["authored_applied"] = apply_authored(cer, json.load(open(ap, encoding="utf-8"))) if os.path.exists(ap) else []
+    bind_cer(cer)
+    cer["conflicts"] = detect(cer)
     rp = os.path.join(HERE, "review", f"{nct}.json")
     return apply_review(cer, json.load(open(rp, encoding="utf-8")) if os.path.exists(rp) else {})
 
@@ -46,6 +52,7 @@ def main(argv=None):
     f = sub.add_parser("fetch"); f.add_argument("ncts", nargs="+")
     s = sub.add_parser("search"); s.add_argument("condition"); s.add_argument("--n", type=int, default=10); s.add_argument("--phase")
     b = sub.add_parser("build"); b.add_argument("ncts", nargs="*")
+    gp = sub.add_parser("graph"); gp.add_argument("nct")
     w = sub.add_parser("review"); w.add_argument("nct")
     c = sub.add_parser("cql"); c.add_argument("nct"); c.add_argument("--scope"); c.add_argument("--allow-draft", action="store_true")
     v = sub.add_parser("evaluate"); v.add_argument("nct"); v.add_argument("evidence"); v.add_argument("--scope")
@@ -75,8 +82,22 @@ def main(argv=None):
             print(f"{n}: {i['criteria_total']} criteria ({i['inclusion']} inc / {i['exclusion']} exc), "
                   f"{i['typed_predicates']} typed predicates, leaves={i['leaves_by_computability']}, "
                   f"flagged={i['flagged_nodes']}, structure_ok={cer['validation']['structure_ok']}")
+    elif a.cmd == "graph":
+        cer = load_cer(a.nct)
+        txt, h, gid = G.to_jsonld(cer)
+        os.makedirs(os.path.join(OUT, "graph"), exist_ok=True)
+        path = os.path.join(OUT, "graph", f"{a.nct}.release.jsonld")
+        open(path, "w", encoding="utf-8").write(txt)
+        back = G.from_jsonld(txt)
+        rt = json.dumps(back, sort_keys=True) == json.dumps(cer, sort_keys=True)
+        ok, rep = G.validate_shacl(txt)
+        print(f"{a.nct}: wrote {path}  canonical_hash={h[:16]}  round_trip_lossless={rt}  shacl_conforms={ok}")
+        if not ok:
+            print(rep)
     elif a.cmd == "review":
         cer = load_cer(a.nct)
+        for c in cer.get("conflicts", []):
+            print(f"CONFLICT [{c['status']}] {c['assertions'][0]['field']} {c['assertions'][0]['value']} vs narrative {c['assertions'][1]['value']}")
         print(f"{a.nct}  lifecycle={cer['lifecycle']['status']}  validated={cer['review_summary']['validated']}/{cer['review_summary']['criteria']}")
         for r in worklist(cer):
             print(f"{r['criterion']:<14}{r['polarity'][:3]} {r['origin']:<20}{r['status']:<18}preds={r['typed_predicates']} flags={r['flagged_nodes']}  {r['text']}")

@@ -1,5 +1,225 @@
 {
  "library": "EligibilityCER_NCT06838273",
+ "capability": {
+  "trial_backend_label": "unavailable",
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "nodes": {
+   "supported": 0,
+   "conditionally_supported": 0,
+   "unsupported": 50
+  },
+  "leaves": {
+   "supported": 0,
+   "conditionally_supported": 0,
+   "unsupported": 45
+  },
+  "per_node": {
+   "04b85c18-e913-5bed-a6e8-b23c145194bb": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "90cc09ce-3319-5ddc-a15d-6fc8fa5c4664": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "9cb65054-7f18-5f50-b149-bb2842605e31": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "8cd1ab60-a9a5-5ef2-b9f3-56b6bf05e845": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "19577e9c-949c-50e7-807c-9a9c18ad9624": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "1227897b-b13b-5eb0-a09c-fb23e1c74181": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "1227897b-b13b-5eb0-a09c-fb23e1c74181#a2": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "f6a440da-855d-5265-9ac0-cee990e9d8ee": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "099344a2-d866-5735-9f15-5470dc9fdca3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "ba4575aa-cd4f-547e-927f-211fd3cfc5d3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "2cd30e4e-6a08-5390-ba3e-610e4fbb8e87": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "ddaa28e7-c019-5eb9-b23f-5860956f8c5b": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "07c0ba3c-779a-5b1b-a4db-65ea5896c011": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "5b93c057-97bb-5902-8fdc-4e320021aec1": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "5b93c057-97bb-5902-8fdc-4e320021aec1#a2": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "5b93c057-97bb-5902-8fdc-4e320021aec1#a3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "a51f898d-7040-52fb-b261-eff46bd99ec3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a2": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "cfb18df7-06b9-5eed-9553-a9f4713bdb3b": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "ef790db3-63cc-5cb5-a49b-9941f48a3bd1": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "6cc147fb-a5c8-5190-9e87-cc3d5d45b6ef": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "b0fb0760-1de1-545c-9d20-cdbbca912ba0": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "5e3226db-ace2-5609-ba5b-d7a57823fe49": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "57e14932-28b8-5140-b4dc-5519289ce8bf": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "7a055c96-3c09-5bbb-96fa-dcb1dd566b10": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "de62af5a-6110-5b12-a0f8-4e6d1620271c": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "7bba3412-15ef-5686-87a3-e3c8c69c42d7": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "fe460644-6327-5f92-997a-2f15e1f5756e": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "0bdbd669-2f91-5e8b-b3bb-b0bf28e0ffcc": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "90e518ad-256a-531c-abb1-c324cf1d7873": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "5ea0aff4-45fa-53ec-b83e-9d72723befdf": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "56a459d8-73d2-532f-a9b7-0c8dac20db70": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "424fc492-00cc-593e-b944-a059e13333b9": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "683a9f7a-0267-5c0f-ba10-c36438bfe36e": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "104b80ed-e999-5c3a-a4d9-7c821fa948f9": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "100b380f-82f3-57d6-ae43-f88ef5305c25": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "c9fec08b-f290-51d9-b8f1-912b333da0fe": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "c9953a9f-70df-5a70-945a-ff78b8752685": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "9df515ec-ec72-5925-912f-c92a4a1c8373": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "52411238-23c1-5bff-965d-184807478f20": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "0a94ccba-7fa9-5868-a769-bfea7db42cd8": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a2": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "dffa4538-39bd-566e-8ccc-7767d09f582d": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "247b046c-4407-5d6a-8f2e-e7f85f009252": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "962501fb-331f-5fc4-9385-8dc5d8cb20af": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   },
+   "c48739a0-de74-5f42-a2eb-465a0fad6ce8": {
+    "status": "unsupported",
+    "reason": "gated (not validated)"
+   }
+  },
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "overall_assertion_allowed": false,
+  "approval": null,
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."
+ },
  "scope": null,
  "gated": true,
  "criteria": 40,
@@ -235,7 +455,7 @@
   },
   {
    "criterion": "Exc-25",
-   "node": "f7ea9da9-0124-5c7b-807a-29572abd85cb",
+   "node": "962501fb-331f-5fc4-9385-8dc5d8cb20af",
    "reason": "not validated (gated)",
    "text": "Subjects scheduled for vaccination or who received live vaccine within 28 days before stud"
   },
@@ -247,7 +467,7 @@
   }
  ],
  "parameters": [],
- "cql_sha256": "f244af58ffcdae1549db136e59d416a2b9a2a5699f78d79671db538cda7d32aa",
+ "cql_sha256": "5265a3841926f829ca707b2d8d89b758cdf6c1f6076ef2db024353354d49c021",
  "cer_content_sha256": "6b43ff31aca3c19b85d2de36d07845c92f3ae56b7e9c1b9e7891aab943747b07",
  "translator_validated": false,
  "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"

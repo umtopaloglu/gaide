@@ -6,6 +6,7 @@
  },
  "source": {
   "source_type": "B",
+  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT06128837",
   "title": "Study of LY01610 in Patients With Recurrent Small Cell Lung Cancer",
@@ -58,6 +59,7 @@
     }
    },
    "computability": "structured_computable",
+   "binding": null,
    "review": {}
   },
   {
@@ -92,6 +94,7 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": null,
    "review": {}
   },
   {
@@ -195,7 +198,10 @@
     "key": "ecog",
     "scale": "ECOG",
     "terminology": {
-     "status": "n/a"
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
     }
    },
    "computability": "structured_computable",
@@ -208,6 +214,64 @@
    "polarity": "inclusion",
    "polarity_source": "section 'inclusion'",
    "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      590,
+      645
+     ],
+     "criterion_node": "3b482930-cf1f-574e-bb77-6ea47e473e60",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
    "review": {}
   },
   {
@@ -306,16 +370,76 @@
         "uln_multiple": false,
         "key": "lab:anc",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "751-8",
-         "status": "proposed_unreviewed"
+         "code": "751-8"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         15,
         45
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "ANC",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "b42d05f8-d3a7-509a-afbf-ce78b9fd2948",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-anc",
+         "semantic_role": "observation",
+         "label": "ANC",
+         "primary": {
+          "system": "LOINC",
+          "code": "751-8",
+          "display": "ANC"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "751-8",
+          "display": "ANC",
+          "ucum_unit": "10*9/L"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "ccda739d-675f-5a5c-b623-bc068e1c3262",
@@ -338,16 +462,76 @@
         "uln_multiple": false,
         "key": "lab:platelets",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "777-3",
-         "status": "proposed_unreviewed"
+         "code": "777-3"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         47,
         75
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Platelets",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "ccda739d-675f-5a5c-b623-bc068e1c3262",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-platelets",
+         "semantic_role": "observation",
+         "label": "Platelets",
+         "primary": {
+          "system": "LOINC",
+          "code": "777-3",
+          "display": "Platelets"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets",
+          "ucum_unit": "10*9/L"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "a4f132d3-9281-5fc2-a406-d0b0b47c1686",
@@ -370,16 +554,76 @@
         "uln_multiple": false,
         "key": "lab:hemoglobin",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "718-7",
-         "status": "proposed_unreviewed"
+         "code": "718-7"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         77,
         101
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Hemoglobin",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "a4f132d3-9281-5fc2-a406-d0b0b47c1686",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-hemoglobin",
+         "semantic_role": "observation",
+         "label": "Hemoglobin",
+         "primary": {
+          "system": "LOINC",
+          "code": "718-7",
+          "display": "Hemoglobin"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin",
+          "ucum_unit": "g/L"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ],
      "logic_basis": "assumed_conjunction",
@@ -422,16 +666,76 @@
         "uln_multiple": true,
         "key": "lab:total_bilirubin",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1975-2",
-         "status": "proposed_unreviewed"
+         "code": "1975-2"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         16,
         74
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Total bilirubin",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "2abf7f13-8d0f-561a-9606-68f9a48a24b0",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-total-bilirubin",
+         "semantic_role": "observation",
+         "label": "Total bilirubin",
+         "primary": {
+          "system": "LOINC",
+          "code": "1975-2",
+          "display": "Total bilirubin"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1975-2",
+          "display": "Total bilirubin",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c",
@@ -454,16 +758,76 @@
         "uln_multiple": true,
         "key": "lab:ast",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1920-8",
-         "status": "proposed_unreviewed"
+         "code": "1920-8"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         76,
         155
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "AST",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-ast",
+         "semantic_role": "observation",
+         "label": "AST",
+         "primary": {
+          "system": "LOINC",
+          "code": "1920-8",
+          "display": "AST"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1920-8",
+          "display": "AST",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f",
@@ -486,16 +850,76 @@
         "uln_multiple": true,
         "key": "lab:alt",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1742-6",
-         "status": "proposed_unreviewed"
+         "code": "1742-6"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         76,
         155
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "ALT",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-alt",
+         "semantic_role": "observation",
+         "label": "ALT",
+         "primary": {
+          "system": "LOINC",
+          "code": "1742-6",
+          "display": "ALT"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1742-6",
+          "display": "ALT",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
@@ -520,9 +944,10 @@
         "uln_multiple": true,
         "key": "lab:ast",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1920-8",
-         "status": "proposed_unreviewed"
+         "code": "1920-8"
         }
        },
        "computability": "structured_computable",
@@ -534,6 +959,65 @@
         "status": "unresolved",
         "condition": "liver metastases",
         "key": "fact:liver_metastases"
+       },
+       "binding": {
+        "source_evidence": {
+         "phrase": "AST",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-ast",
+         "semantic_role": "observation",
+         "label": "AST",
+         "primary": {
+          "system": "LOINC",
+          "code": "1920-8",
+          "display": "AST"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1920-8",
+          "display": "AST",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
        }
       },
       {
@@ -559,9 +1043,10 @@
         "uln_multiple": true,
         "key": "lab:alt",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1742-6",
-         "status": "proposed_unreviewed"
+         "code": "1742-6"
         }
        },
        "computability": "structured_computable",
@@ -573,6 +1058,65 @@
         "status": "unresolved",
         "condition": "liver metastases",
         "key": "fact:liver_metastases"
+       },
+       "binding": {
+        "source_evidence": {
+         "phrase": "ALT",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "203edb5a-ee0d-59bd-a61a-6379a6427ff9",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-alt",
+         "semantic_role": "observation",
+         "label": "ALT",
+         "primary": {
+          "system": "LOINC",
+          "code": "1742-6",
+          "display": "ALT"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1742-6",
+          "display": "ALT",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
        }
       },
       {
@@ -596,16 +1140,76 @@
         "uln_multiple": false,
         "key": "lab:albumin",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "1751-7",
-         "status": "proposed_unreviewed"
+         "code": "1751-7"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         201,
         223
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Albumin",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "81d8071f-6c74-5f1e-8862-a8f1108492b1",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-albumin",
+         "semantic_role": "observation",
+         "label": "Albumin",
+         "primary": {
+          "system": "LOINC",
+          "code": "1751-7",
+          "display": "Albumin"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "1751-7",
+          "display": "Albumin",
+          "ucum_unit": "g/L"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ],
      "logic_basis": "assumed_conjunction",
@@ -646,16 +1250,76 @@
         "uln_multiple": true,
         "key": "lab:creatinine",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "2160-0",
-         "status": "proposed_unreviewed"
+         "code": "2160-0"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         16,
         44
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Creatinine",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "343260a4-f48d-5992-b152-5c9c98bc8214",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-creatinine",
+         "semantic_role": "observation",
+         "label": "Creatinine",
+         "primary": {
+          "system": "LOINC",
+          "code": "2160-0",
+          "display": "Creatinine"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "2160-0",
+          "display": "Creatinine",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       },
       {
        "id": "51ad51fe-4cd7-536b-a55f-dea0ada244d9",
@@ -678,16 +1342,76 @@
         "uln_multiple": false,
         "key": "lab:creatinine_clearance",
         "terminology": {
+         "status": "proposed_unreviewed",
+         "relationship": "equivalent",
          "system": "LOINC",
-         "code": "2164-2",
-         "status": "proposed_unreviewed"
+         "code": "2164-2"
         }
        },
        "computability": "structured_computable",
        "sub_span": [
         48,
         80
-       ]
+       ],
+       "binding": {
+        "source_evidence": {
+         "phrase": "Creatinine clearance",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "criterion_node": "51ad51fe-4cd7-536b-a55f-dea0ada244d9",
+         "source_code": null,
+         "inherited_context": []
+        },
+        "canonical_binding": {
+         "concept_id": "cm:lab-creatinine-clearance",
+         "semantic_role": "observation",
+         "label": "Creatinine clearance",
+         "primary": {
+          "system": "LOINC",
+          "code": "2164-2",
+          "display": "Creatinine clearance"
+         },
+         "code_system_uri": "http://loinc.org"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "system": "http://loinc.org",
+          "code": "2164-2",
+          "display": "Creatinine clearance",
+          "ucum_unit": "mL/min"
+         },
+         "omop": {
+          "status": "requires site vocabulary snapshot",
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+         }
+        },
+        "mapping_semantics": {
+         "relationship": "equivalent",
+         "direction": "source_to_target",
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+        },
+        "value_set": null,
+        "provenance": {
+         "tool": "eligibility-cer/terminology 0.1.0",
+         "mapper": "pattern match (seed bundle)",
+         "confidence": "medium",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed"
+        },
+        "lifecycle": {
+         "valid_from": "2026-10-06",
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true
+        }
+       }
       }
      ],
      "logic_basis": "inferred_from_connector",
@@ -714,9 +1438,10 @@
       "uln_multiple": false,
       "key": "lab:inr",
       "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "equivalent",
        "system": "LOINC",
-       "code": "6301-6",
-       "status": "proposed_unreviewed"
+       "code": "6301-6"
       }
      },
      "computability": "structured_computable",
@@ -724,7 +1449,65 @@
       73,
       86
      ],
-     "extraction_coverage": 0.38
+     "extraction_coverage": 0.38,
+     "binding": {
+      "source_evidence": {
+       "phrase": "INR",
+       "document_span": [
+        1348,
+        1916
+       ],
+       "criterion_node": "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:lab-inr",
+       "semantic_role": "observation",
+       "label": "INR",
+       "primary": {
+        "system": "LOINC",
+        "code": "6301-6",
+        "display": "INR"
+       },
+       "code_system_uri": "http://loinc.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://loinc.org",
+        "code": "6301-6",
+        "display": "INR"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "equivalent",
+       "direction": "source_to_target",
+       "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     }
    ],
    "logic_basis": "assumed",
@@ -975,7 +1758,7 @@
       3963
      ],
      "flags": [
-      "condition predicate has no terminology binding yet -> not executable until bound"
+      "terminology unmapped (no-map) -> not executable until bound"
      ],
      "review_status": "needs_review",
      "origin": "interpreted_rule_based",
@@ -984,14 +1767,53 @@
       "concept": "arrhythmia",
       "key": "condition:arrhythmia",
       "terminology": {
-       "status": "unmapped"
+       "status": "unmapped",
+       "relationship": "no-map"
       }
      },
      "computability": "structured_computable",
      "sub_span": [
       0,
       41
-     ]
+     ],
+     "binding": {
+      "source_evidence": {
+       "phrase": "arrhythmia",
+       "document_span": [
+        3916,
+        3963
+       ],
+       "criterion_node": "23fd1405-12d9-545d-8046-7b57dd897655",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
     },
     {
      "id": "8b557516-ead0-5980-a8cb-833bbd7660ba",
@@ -1426,7 +2248,31 @@
   "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
  },
  "authored_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c",
+  "status": "UNREVIEWED_SEED",
+  "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+  "stats": {
+   "bound": 13,
+   "unmapped": 1,
+   "by_relationship": {
+    "equivalent": 13,
+    "no-map": 1
+   }
+  },
+  "value_sets": {},
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
  "review_summary": {
+  "open_conflicts": [],
   "criteria": 32,
   "validated": 0,
   "pending": [

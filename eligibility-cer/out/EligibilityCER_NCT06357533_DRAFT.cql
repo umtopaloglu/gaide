@@ -4,6 +4,7 @@ library EligibilityCER_NCT06357533_DRAFT version '0.1.0-draft'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED CT": 'http://snomed.info/sct'
 code "ECOG (89247-1)": '89247-1' from "LOINC" display 'ECOG Performance Status score'
 parameter "ScreeningDate" DateTime  // no default on purpose: a missing anchor is unknown, not today
 parameter "LabMaxAgeDays" Integer default 90  // site evidence-freshness policy
@@ -75,16 +76,16 @@ define "Req Exc-b9":  // exclusion; Spinal cord compression, or brain metastases
   not (null as Boolean /* UNSUPPORTED: text_dependent: prior therapy / medication */)
 
 define "Req Exc-b10":  // exclusion; History of leptomeningeal carcinomatosis
-  not (null as Boolean /* UNSUPPORTED: condition 'leptomeningeal' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'leptomeningeal' has no terminology binding */)
 
 define "Req Exc-b11":  // exclusion; Known clinically significant corneal disease
-  not (null as Boolean /* UNSUPPORTED: condition 'corneal disease' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'corneal disease' has no terminology binding */)
 
 define "Req Exc-b12":  // exclusion; Active infection with TB, HBV, HCV, Hepatitis A, or known HIV infection that is not well controlled
   not (null as Boolean /* UNSUPPORTED: text_dependent: clinical condition (terminology unbound) */)
 
 define "Req Exc-b13":  // exclusion; History of active primary immunodeficiency
-  not (null as Boolean /* UNSUPPORTED: condition 'immunodeficiency' has no terminology binding / evidence-adequacy policy */)
+  not (null as Boolean /* UNSUPPORTED: condition 'immunodeficiency' has no terminology binding */)
 
 define "All Requirements Satisfied":  // ALL over requirement results; null = unresolved
   "Req Demo-min-age"
