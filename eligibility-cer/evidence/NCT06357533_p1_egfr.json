@@ -1,0 +1,2 @@
+{"_patient":"NSCLC-1: EGFR mutation present, PD-L1 TC 60 -> branch failure supported","age":66,"ecog":{"value":1,"date":"2026-09-25"},"as_of":"2026-10-06",
+ "biomarkers":{"EGFR":{"state":"present","adequate":true},"ALK":{"state":"absent","adequate":true},"ROS1":{"state":"absent","adequate":true},"PD-L1":{"state":"present","score":60}}}

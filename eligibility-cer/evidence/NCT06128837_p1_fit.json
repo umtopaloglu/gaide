@@ -1,0 +1,5 @@
+{"_patient":"SCLC-1: 61y, ECOG 1, normal labs, no coded conditions","age":61,"ecog":{"value":1,"date":"2026-09-20"},"as_of":"2026-10-06",
+ "labs":{"ANC":{"value":2.4,"date":"2026-09-28"},"Platelets":{"value":210,"date":"2026-09-28"},"Hemoglobin":{"value":112,"date":"2026-09-28"},
+ "Total bilirubin":{"value":0.8,"uln":1.2,"date":"2026-09-28"},"AST":{"value":28,"uln":40,"date":"2026-09-28"},"ALT":{"value":30,"uln":40,"date":"2026-09-28"},
+ "Albumin":{"value":38,"date":"2026-09-28"},"Creatinine":{"value":0.9,"uln":1.2,"date":"2026-09-28"},"INR":{"value":1.0,"date":"2026-09-28"}},
+ "facts":{"fact:liver_metastases":false}}

@@ -1,0 +1,1 @@
+{"_patient":"SCLC-3: only age known; stale ECOG -> everything else unknown, nothing removed","age":55,"ecog":{"value":1,"date":"2025-01-02"},"as_of":"2026-10-06","labs":{"Hemoglobin":{"value":120,"date":"2026-09-01","status":"preliminary"}}}

@@ -1,0 +1,1368 @@
+{
+ "schema_version": "cer-draft-0.1",
+ "lifecycle": {
+  "status": "draft",
+  "note": "Draft only: not clinically or informatically reviewed; not executable for screening."
+ },
+ "source": {
+  "source_type": "B",
+  "registry": "ClinicalTrials.gov",
+  "nct_id": "NCT06128837",
+  "title": "Study of LY01610 in Patients With Recurrent Small Cell Lung Cancer",
+  "overall_status": "RECRUITING",
+  "retrieved_at": "2026-10-06T01:30:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "content_sha256": "4a73219730ffaf2a1b918d9426bc7b5da1d433fc2c0375c70253d04881da4510",
+  "protocol_baseline": "registry_excerpt",
+  "demographics": {
+   "minimum_age": "18 Years",
+   "maximum_age": null,
+   "sex": "ALL",
+   "healthy_volunteers": true
+  },
+  "text_normalized": "Inclusion Criteria:\n\n1. Age ≥ 18 years, male or female;\n2. Patients with histologically and/or cytologically confirmed small cell lung cancer;\n3. Disease progression (CTFI ≥ 30 days and ≤ 6 months) occurred after at least 4 cycles of first-line etoposide + platinum two-drug chemotherapy-based treatment, regardless of whether the primary tumor was treated with radiotherapy; the stage of patients with limited stage SCLC should meet more than T1-2, N0, or not suitable for surgery;\n4. At least one evaluable lesion (according to RECIST 1.1 criteria);\n5. Expected survival time ≥ 3 months;\n6. Eastern Cooperative Oncology Group (ECOG) score < 2;\n7. Patients who received no liver metastasis; or the number of liver metastases was ≤ 3 and the longest diameter of a single lesion was ≤ 1.5 cm; or although the longest diameter of a single lesion was > 1.5 cm, the imaging was stable for at least 3 weeks after local treatment control;\n8. Patients with brain metastasis at baseline should meet all the following conditions: lesions not involving the brainstem, the number of brain metastases ≤ 2 (but patients with only intracranial target lesions should be excluded), imaging stability for at least 3 weeks after local treatment control, and no application of dehydration drugs and hormones before screening,Without any symptoms of brain metastasis;\n9. Organ function meeting the following criteria at screening: a.Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L; b.Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L; c.Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min; d.Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5;\n10. Has fully understood and voluntarily signed a written informed consent form for this study and is able to comply with the requirements and restrictions listed in the informed consent form;\n11. Female subjects of childbearing potential and male subjects with partners of childbearing potential agree to use reliable contraceptive measures during the study and within 6 months after the infusion of study drug.\n\nExclusion Criteria:\n\n1. Pathological diagnosis of compound small cell lung cancer;\n2. Patients with meningeal metastasis, spinal cord tumor invasion, spinal cord compression syndrome;\n3. Superior vena cava syndrome with symptoms or significantly aggravated imaging, which may require radiotherapy/surgery/endoscopic therapy/intervention and other non-medical treatment; the presence of large amount of pleural effusion, ascites and/or pericardial effusion with local treatment and unstable control;\n4. Active infection (including tuberculosis infection) requiring systemic anti-bacterial, antifungal, antiviral and other treatments during screening;\n5. Recurrent symptomatic poorly controlled chronic obstructive pulmonary disease, extensive interstitial lung disease (including interstitial pneumonia, pulmonary interstitial fibrosis, etc.) at screening,\n6. Extensive radiation pneumonitis, pulmonary embolism or active massive hemoptysis; Patients with severe gastrointestinal diseases or gastrointestinal disorders (such as gastrointestinal bleeding, gastrointestinal obstruction, unhealed peptic ulcer, immune enteritis, ulcerative colitis, Crohn's disease, ischemic necrotizing enteritis, diarrhea > grade 1, other gastrointestinal diseases that may affect the tolerance of chemotherapy) at screening;\n7. Patients with the following cardiovascular and cerebrovascular diseases or history:\n\n   1. patients with unstable hypertension (systolic blood pressure ≥ 160 mmHg and/or diastolic blood pressure ≥ 100 mmHg) or a history of hypertensive crisis or hypertensive encephalopathy;\n   2. patients with unstable severe arrhythmia;\n   3. patients with the following cardiovascular and cerebrovascular diseases within 6 months: myocardial infarction, unstable angina, coronary revascularization/angioplasty, coronary artery bypass grafting, coronary artery stenting, New York Heart Association (NYHA) class ≥ 2 cardiac insufficiency, severe unstable arrhythmia, deep vein thrombosis, pulmonary embolism history, active cerebral infarction, active cerebral hemorrhage;\n8. Patients with any of the following conditions:\n\n   1. positive hepatitis B virus surface antigen (HBsAg) test,And peripheral blood hepatitis B virus deoxyribonucleic acid (HBV-DNA) detection ≥ 1000 IU/mL;\n   2. hepatitis C virus antibody (HCV-Ab) positive, and hepatitis C virus ribonucleic acid (HCV-RNA) detection ≥ 100 IU/mL;\n   3. human immunodeficiency virus antibody (HIV-Ab) detection positive;\n9. Other malignancies within 5 years before screening (except cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ);\n10. Patients with primary diseases of other important organs (such as nervous system, cardiovascular and cerebrovascular system, urinary system, digestive system, respiratory system or metabolic endocrine system diseases) and the researchers believe that it is not suitable for participants, or for other reasons the researchers believe that it is not suitable for participants;\n11. Previous treatment with irinotecan or irinotecan modified, topotecan or other topoisomerase I inhibitors;\n12. Known hypersensitivity to irinotecan hydrochloride liposomes or its excipients, structurally similar compounds (such as camptothecin compounds), other liposomal drugs, and topotecan;\n13. Those who have been vaccinated with live vaccine or live attenuated vaccine before screening;\n14. Patients who have received systemic anti-tumor therapy in 4 weeks before randomization;\n15. Patients who have applied other clinical trial drugs/devices before randomization;\n16. Patients who have used strong inducers or strong inhibitors of CYP3A4 and strong inhibitors of UGT1A1 before randomization;\n17. Adverse reactions caused by previous anti-tumor treatment are not recovered to grade 1 or lower (except alopecia and peripheral neuropathy);\n18. History of drug abuse, drug abuse and/or alcoholism;\n19. Pregnant or lactating women;\n20. Other conditions (including but not limited to unstable nervous system diseases and mental disorders) that are considered unsuitable for inclusion in this trial by the investigator."
+ },
+ "completeness_disclosure": "Registry-based prescreening: the approved protocol and amendments were not available. A registry excerpt is a discovery source, not proof that all enrollment requirements are present.",
+ "ctrp_biomarker_contract": {
+  "status": "not_supplied",
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
+ },
+ "scopes": [
+  []
+ ],
+ "criteria": [
+  {
+   "id": "3d6d2e48-ee34-586d-81df-c43c90e1516b",
+   "path": "/inc/1.p0",
+   "type": "predicate",
+   "text": "Age ≥ 18 years, male or female;",
+   "source_span": [
+    21,
+    55
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    0,
+    14
+   ],
+   "extraction_coverage": 1.0,
+   "display_number": "Inc-1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "b1fd9e9a-dac7-54d4-9914-31431785600c",
+   "path": "/inc/2",
+   "type": "narrative",
+   "text": "Patients with histologically and/or cytologically confirmed small cell lung cancer;",
+   "source_span": [
+    56,
+    142
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "4fb2b6e8-0fb9-5b2f-b460-1e41240eec67",
+   "path": "/inc/3",
+   "type": "narrative",
+   "text": "Disease progression (CTFI ≥ 30 days and ≤ 6 months) occurred after at least 4 cycles of first-line etoposide + platinum two-drug chemotherapy-based treatment, regardless of whether the primary tumor was treated with radiotherapy; the stage of patients with limited stage SCLC should meet more than T1-2, N0, or not suitable for surgery;",
+   "source_span": [
+    143,
+    482
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Inc-3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "5bb83ae0-5b62-547a-878c-3b5017339e55",
+   "path": "/inc/4",
+   "type": "narrative",
+   "text": "At least one evaluable lesion (according to RECIST 1.1 criteria);",
+   "source_span": [
+    483,
+    551
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "434a0ea0-090c-5d9d-919a-881478253cab",
+   "path": "/inc/5",
+   "type": "narrative",
+   "text": "Expected survival time ≥ 3 months;",
+   "source_span": [
+    552,
+    589
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "3b482930-cf1f-574e-bb77-6ea47e473e60",
+   "path": "/inc/6.p0",
+   "type": "predicate",
+   "text": "Eastern Cooperative Oncology Group (ECOG) score < 2;",
+   "source_span": [
+    590,
+    645
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "ecog",
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    36,
+    51
+   ],
+   "extraction_coverage": 1.0,
+   "display_number": "Inc-6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "99060239-f203-58e8-a9d7-47cee6977a14",
+   "path": "/inc/7",
+   "type": "narrative",
+   "text": "Patients who received no liver metastasis; or the number of liver metastases was ≤ 3 and the longest diameter of a single lesion was ≤ 1.5 cm; or although the longest diameter of a single lesion was > 1.5 cm, the imaging was stable for at least 3 weeks after local treatment control;",
+   "source_span": [
+    646,
+    932
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "40587813-4ab2-507b-8e66-e6195608fb7d",
+   "path": "/inc/8",
+   "type": "narrative",
+   "text": "Patients with brain metastasis at baseline should meet all the following conditions: lesions not involving the brainstem, the number of brain metastases ≤ 2 (but patients with only intracranial target lesions should be excluded), imaging stability for at least 3 weeks after local treatment control, and no application of dehydration drugs and hormones before screening,Without any symptoms of brain metastasis;",
+   "source_span": [
+    933,
+    1347
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "brain metastas"
+   ],
+   "display_number": "Inc-8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "d82c5508-8219-52dd-9c5d-f15db85e2ccc",
+   "path": "/inc/9",
+   "type": "group",
+   "text": "Organ function meeting the following criteria at screening: a.Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L; b.Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L; c.Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min; d.Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5;",
+   "source_span": [
+    1348,
+    1916
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "d3efe146-58eb-5774-abdd-0a3a4b1748e6",
+     "path": "/inc/9/a",
+     "type": "group",
+     "text": "Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "op": "ALL",
+     "children": [
+      {
+       "id": "b42d05f8-d3a7-509a-afbf-ce78b9fd2948",
+       "path": "/inc/9/a.p0",
+       "type": "predicate",
+       "text": "neutrophil (ANC) ≥ 1.5 × 109/L",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "ANC",
+        "comparator": ">=",
+        "value": 1.5,
+        "unit": "10*9/L",
+        "uln_multiple": false,
+        "key": "lab:anc",
+        "terminology": {
+         "system": "LOINC",
+         "code": "751-8",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        15,
+        45
+       ]
+      },
+      {
+       "id": "ccda739d-675f-5a5c-b623-bc068e1c3262",
+       "path": "/inc/9/a.p1",
+       "type": "predicate",
+       "text": "platelet (PLT) ≥ 100 × 109/L",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Platelets",
+        "comparator": ">=",
+        "value": 100.0,
+        "unit": "10*9/L",
+        "uln_multiple": false,
+        "key": "lab:platelets",
+        "terminology": {
+         "system": "LOINC",
+         "code": "777-3",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        47,
+        75
+       ]
+      },
+      {
+       "id": "a4f132d3-9281-5fc2-a406-d0b0b47c1686",
+       "path": "/inc/9/a.p2",
+       "type": "predicate",
+       "text": "hemoglobin (Hb) ≥ 90 g/L",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Hemoglobin",
+        "comparator": ">=",
+        "value": 90.0,
+        "unit": "g/L",
+        "uln_multiple": false,
+        "key": "lab:hemoglobin",
+        "terminology": {
+         "system": "LOINC",
+         "code": "718-7",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        77,
+        101
+       ]
+      }
+     ],
+     "logic_basis": "assumed_conjunction",
+     "extraction_coverage": 1.0
+    },
+    {
+     "id": "7ccb9a12-be2d-5f9c-a0e9-a0b6be147e0f",
+     "path": "/inc/9/b",
+     "type": "group",
+     "text": "Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "op": "ALL",
+     "children": [
+      {
+       "id": "2abf7f13-8d0f-561a-9606-68f9a48a24b0",
+       "path": "/inc/9/b.p0",
+       "type": "predicate",
+       "text": "total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN)",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Total bilirubin",
+        "comparator": "<=",
+        "value": 1.0,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:total_bilirubin",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1975-2",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        16,
+        74
+       ]
+      },
+      {
+       "id": "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c",
+       "path": "/inc/9/b.p1",
+       "type": "predicate",
+       "text": "aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "AST",
+        "comparator": "<=",
+        "value": 2.0,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:ast",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1920-8",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        76,
+        155
+       ]
+      },
+      {
+       "id": "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f",
+       "path": "/inc/9/b.p2",
+       "type": "predicate",
+       "text": "aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "ALT",
+        "comparator": "<=",
+        "value": 2.0,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:alt",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1742-6",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        76,
+        155
+       ]
+      },
+      {
+       "id": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
+       "path": "/inc/9/b.p3",
+       "type": "predicate",
+       "text": "AST and ALT ≤ 3 × ULN",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [
+        "conditional_applicability: threshold applies only if condition is true; may override a stricter sibling threshold -> needs clinical review"
+       ],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "AST",
+        "comparator": "<=",
+        "value": 3.0,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:ast",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1920-8",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        178,
+        199
+       ],
+       "applicability": {
+        "status": "unresolved",
+        "condition": "liver metastases",
+        "key": "fact:liver_metastases"
+       }
+      },
+      {
+       "id": "203edb5a-ee0d-59bd-a61a-6379a6427ff9",
+       "path": "/inc/9/b.p4",
+       "type": "predicate",
+       "text": "AST and ALT ≤ 3 × ULN",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [
+        "conditional_applicability: threshold applies only if condition is true; may override a stricter sibling threshold -> needs clinical review"
+       ],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "ALT",
+        "comparator": "<=",
+        "value": 3.0,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:alt",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1742-6",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        178,
+        199
+       ],
+       "applicability": {
+        "status": "unresolved",
+        "condition": "liver metastases",
+        "key": "fact:liver_metastases"
+       }
+      },
+      {
+       "id": "81d8071f-6c74-5f1e-8862-a8f1108492b1",
+       "path": "/inc/9/b.p5",
+       "type": "predicate",
+       "text": "serum albumin ≥ 30 g/L",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Albumin",
+        "comparator": ">=",
+        "value": 30.0,
+        "unit": "g/L",
+        "uln_multiple": false,
+        "key": "lab:albumin",
+        "terminology": {
+         "system": "LOINC",
+         "code": "1751-7",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        201,
+        223
+       ]
+      }
+     ],
+     "logic_basis": "assumed_conjunction",
+     "extraction_coverage": 0.92
+    },
+    {
+     "id": "1e756cbb-f140-59e1-939c-ce57f9d6a7cd",
+     "path": "/inc/9/c",
+     "type": "group",
+     "text": "Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "op": "ANY",
+     "children": [
+      {
+       "id": "343260a4-f48d-5992-b152-5c9c98bc8214",
+       "path": "/inc/9/c.p0",
+       "type": "predicate",
+       "text": "serum creatinine ≤ 1.5 × ULN",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Creatinine",
+        "comparator": "<=",
+        "value": 1.5,
+        "unit": "x ULN",
+        "uln_multiple": true,
+        "key": "lab:creatinine",
+        "terminology": {
+         "system": "LOINC",
+         "code": "2160-0",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        16,
+        44
+       ]
+      },
+      {
+       "id": "51ad51fe-4cd7-536b-a55f-dea0ada244d9",
+       "path": "/inc/9/c.p1",
+       "type": "predicate",
+       "text": "creatinine clearance ≥ 40 mL/min",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "flags": [],
+       "review_status": "needs_review",
+       "origin": "interpreted_rule_based",
+       "predicate": {
+        "kind": "lab",
+        "analyte": "Creatinine clearance",
+        "comparator": ">=",
+        "value": 40.0,
+        "unit": "mL/min",
+        "uln_multiple": false,
+        "key": "lab:creatinine_clearance",
+        "terminology": {
+         "system": "LOINC",
+         "code": "2164-2",
+         "status": "proposed_unreviewed"
+        }
+       },
+       "computability": "structured_computable",
+       "sub_span": [
+        48,
+        80
+       ]
+      }
+     ],
+     "logic_basis": "inferred_from_connector",
+     "extraction_coverage": 1.0
+    },
+    {
+     "id": "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0",
+     "path": "/inc/9/d.p0",
+     "type": "predicate",
+     "text": "Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "predicate": {
+      "kind": "lab",
+      "analyte": "INR",
+      "comparator": "<",
+      "value": 1.5,
+      "unit": null,
+      "uln_multiple": false,
+      "key": "lab:inr",
+      "terminology": {
+       "system": "LOINC",
+       "code": "6301-6",
+       "status": "proposed_unreviewed"
+      }
+     },
+     "computability": "structured_computable",
+     "sub_span": [
+      73,
+      86
+     ],
+     "extraction_coverage": 0.38
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Organ function meeting the following criteria at screening:",
+   "display_number": "Inc-9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "475f0e55-840b-5115-922b-41e4eeaeeafa",
+   "path": "/inc/10",
+   "type": "narrative",
+   "text": "Has fully understood and voluntarily signed a written informed consent form for this study and is able to comply with the requirements and restrictions listed in the informed consent form;",
+   "source_span": [
+    1917,
+    2109
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Inc-10",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "2ca6766e-600a-5ea1-afec-a6f3f2dd2176",
+   "path": "/inc/11",
+   "type": "narrative",
+   "text": "Female subjects of childbearing potential and male subjects with partners of childbearing potential agree to use reliable contraceptive measures during the study and within 6 months after the infusion of study drug.",
+   "source_span": [
+    2110,
+    2329
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "concept_hits": [
+    "ild"
+   ],
+   "time_window": {
+    "value": 6.0,
+    "unit": "month",
+    "direction": "forward",
+    "anchor": "infusion of study drug",
+    "anchor_text": "infusion of study drug",
+    "span": [
+     166,
+     214
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-11",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": []
+  },
+  {
+   "id": "f6a151f1-1e06-571d-b425-4c5acb115433",
+   "path": "/exc/1",
+   "type": "narrative",
+   "text": "Pathological diagnosis of compound small cell lung cancer;",
+   "source_span": [
+    2352,
+    2413
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "d933ec44-ee54-58fd-9934-9ba2408b41b6",
+   "path": "/exc/2",
+   "type": "narrative",
+   "text": "Patients with meningeal metastasis, spinal cord tumor invasion, spinal cord compression syndrome;",
+   "source_span": [
+    2414,
+    2514
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "spinal cord compression"
+   ],
+   "display_number": "Exc-2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "267f280d-bbd7-50ea-8472-d3ec4b3acb33",
+   "path": "/exc/3",
+   "type": "narrative",
+   "text": "Superior vena cava syndrome with symptoms or significantly aggravated imaging, which may require radiotherapy/surgery/endoscopic therapy/intervention and other non-medical treatment; the presence of large amount of pleural effusion, ascites and/or pericardial effusion with local treatment and unstable control;",
+   "source_span": [
+    2515,
+    2829
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "ascites",
+    "pleural effusion",
+    "superior vena cava syndrome"
+   ],
+   "display_number": "Exc-3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "96b63c73-ccdb-5d89-93d4-b1b7708a5c2c",
+   "path": "/exc/4",
+   "type": "narrative",
+   "text": "Active infection (including tuberculosis infection) requiring systemic anti-bacterial, antifungal, antiviral and other treatments during screening;",
+   "source_span": [
+    2830,
+    2980
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "tuberculosis"
+   ],
+   "display_number": "Exc-4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "25740300-47a7-57fb-a45e-52e28035c769",
+   "path": "/exc/5",
+   "type": "narrative",
+   "text": "Recurrent symptomatic poorly controlled chronic obstructive pulmonary disease, extensive interstitial lung disease (including interstitial pneumonia, pulmonary interstitial fibrosis, etc.) at screening,",
+   "source_span": [
+    2981,
+    3186
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "interstitial lung disease"
+   ],
+   "display_number": "Exc-5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "a5db7f0d-ea41-5224-b565-b5fc0ec8d8c4",
+   "path": "/exc/6",
+   "type": "narrative",
+   "text": "Extensive radiation pneumonitis, pulmonary embolism or active massive hemoptysis; Patients with severe gastrointestinal diseases or gastrointestinal disorders (such as gastrointestinal bleeding, gastrointestinal obstruction, unhealed peptic ulcer, immune enteritis, ulcerative colitis, Crohn's disease, ischemic necrotizing enteritis, diarrhea > grade 1, other gastrointestinal diseases that may affect the tolerance of chemotherapy) at screening;",
+   "source_span": [
+    3187,
+    3637
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "hemoptysis",
+    "pneumonitis",
+    "pulmonary embolism"
+   ],
+   "display_number": "Exc-6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "aaf382c6-a243-5046-bdb5-873382b4c654",
+   "path": "/exc/7",
+   "type": "group",
+   "text": "Patients with the following cardiovascular and cerebrovascular diseases or history:",
+   "source_span": [
+    3638,
+    3724
+   ],
+   "flags": [
+    "group operator ANY assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ANY",
+   "children": [
+    {
+     "id": "437a0205-2faf-52b8-9880-a0df0a2652fc",
+     "path": "/exc/7/1",
+     "type": "narrative",
+     "text": "patients with unstable hypertension (systolic blood pressure ≥ 160 mmHg and/or diastolic blood pressure ≥ 100 mmHg) or a history of hypertensive crisis or hypertensive encephalopathy;",
+     "source_span": [
+      3726,
+      3915
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "hypertension"
+     ]
+    },
+    {
+     "id": "23fd1405-12d9-545d-8046-7b57dd897655",
+     "path": "/exc/7/2",
+     "type": "predicate",
+     "text": "patients with unstable severe arrhythmia;",
+     "source_span": [
+      3916,
+      3963
+     ],
+     "flags": [
+      "condition predicate has no terminology binding yet -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "predicate": {
+      "kind": "condition",
+      "concept": "arrhythmia",
+      "key": "condition:arrhythmia",
+      "terminology": {
+       "status": "unmapped"
+      }
+     },
+     "computability": "structured_computable",
+     "sub_span": [
+      0,
+      41
+     ]
+    },
+    {
+     "id": "8b557516-ead0-5980-a8cb-833bbd7660ba",
+     "path": "/exc/7/3",
+     "type": "narrative",
+     "text": "patients with the following cardiovascular and cerebrovascular diseases within 6 months: myocardial infarction, unstable angina, coronary revascularization/angioplasty, coronary artery bypass grafting, coronary artery stenting, New York Heart Association (NYHA) class ≥ 2 cardiac insufficiency, severe unstable arrhythmia, deep vein thrombosis, pulmonary embolism history, active cerebral infarction, active cerebral hemorrhage;",
+     "source_span": [
+      3964,
+      4398
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "arrhythmia",
+      "deep vein thrombosis",
+      "myocardial infarction",
+      "pulmonary embolism",
+      "unstable angina"
+     ],
+     "time_window": {
+      "value": 6.0,
+      "unit": "month",
+      "direction": "lookback",
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "span": [
+       72,
+       87
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Patients with the following cardiovascular and cerebrovascular diseases or history:",
+   "display_number": "Exc-7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "e39491dc-6e02-5871-9db1-29ebfa4e3b4d",
+   "path": "/exc/8",
+   "type": "group",
+   "text": "Patients with any of the following conditions:",
+   "source_span": [
+    4399,
+    4448
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ANY",
+   "children": [
+    {
+     "id": "66b3e1e0-995f-5f0f-819a-e8a92f6aa90f",
+     "path": "/exc/8/1",
+     "type": "narrative",
+     "text": "positive hepatitis B virus surface antigen (HBsAg) test,And peripheral blood hepatitis B virus deoxyribonucleic acid (HBV-DNA) detection ≥ 1000 IU/mL;",
+     "source_span": [
+      4450,
+      4606
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "hepatitis b"
+     ]
+    },
+    {
+     "id": "f489c7a4-c9af-5bef-85c2-ada538c3193e",
+     "path": "/exc/8/2",
+     "type": "narrative",
+     "text": "hepatitis C virus antibody (HCV-Ab) positive, and hepatitis C virus ribonucleic acid (HCV-RNA) detection ≥ 100 IU/mL;",
+     "source_span": [
+      4607,
+      4730
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "hepatitis c"
+     ]
+    },
+    {
+     "id": "a6845d16-1730-59fc-a5b1-9978cadb7423",
+     "path": "/exc/8/3",
+     "type": "narrative",
+     "text": "human immunodeficiency virus antibody (HIV-Ab) detection positive;",
+     "source_span": [
+      4731,
+      4803
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "clinical condition (terminology unbound)",
+     "concept_hits": [
+      "hiv",
+      "immunodeficiency"
+     ]
+    }
+   ],
+   "logic_basis": "explicit",
+   "lead_in": "Patients with any of the following conditions:",
+   "display_number": "Exc-8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "cb141b13-a02a-56de-9520-53385f084f13",
+   "path": "/exc/9",
+   "type": "narrative",
+   "text": "Other malignancies within 5 years before screening (except cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ);",
+   "source_span": [
+    4804,
+    4988
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 5.0,
+    "unit": "year",
+    "direction": "lookback",
+    "anchor": "screening",
+    "anchor_text": "screening",
+    "span": [
+     19,
+     50
+    ],
+    "status": "parsed"
+   },
+   "exceptions": [
+    {
+     "keyword": "except",
+     "text": "cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ",
+     "span": [
+      51,
+      180
+     ],
+     "status": "unparsed"
+    }
+   ],
+   "display_number": "Exc-9",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "874710d4-0306-5bc5-b29d-92c5800f1479",
+   "path": "/exc/10",
+   "type": "narrative",
+   "text": "Patients with primary diseases of other important organs (such as nervous system, cardiovascular and cerebrovascular system, urinary system, digestive system, respiratory system or metabolic endocrine system diseases) and the researchers believe that it is not suitable for participants, or for other reasons the researchers believe that it is not suitable for participants;",
+   "source_span": [
+    4989,
+    5367
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Exc-10",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "e64db985-39e8-5cbd-babd-78552dcbabac",
+   "path": "/exc/11",
+   "type": "narrative",
+   "text": "Previous treatment with irinotecan or irinotecan modified, topotecan or other topoisomerase I inhibitors;",
+   "source_span": [
+    5368,
+    5477
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Exc-11",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "8b73a64f-b760-573d-bc65-cea68a4c87ee",
+   "path": "/exc/12",
+   "type": "narrative",
+   "text": "Known hypersensitivity to irinotecan hydrochloride liposomes or its excipients, structurally similar compounds (such as camptothecin compounds), other liposomal drugs, and topotecan;",
+   "source_span": [
+    5478,
+    5664
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-12",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "f71a57f3-49b5-5099-bf01-da0966695eff",
+   "path": "/exc/13",
+   "type": "narrative",
+   "text": "Those who have been vaccinated with live vaccine or live attenuated vaccine before screening;",
+   "source_span": [
+    5665,
+    5762
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Exc-13",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "076724b4-a652-5f79-a3ef-f3a562ba14cf",
+   "path": "/exc/14",
+   "type": "narrative",
+   "text": "Patients who have received systemic anti-tumor therapy in 4 weeks before randomization;",
+   "source_span": [
+    5763,
+    5854
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     55,
+     86
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-14",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "e2243e65-f121-5ac1-b470-db90847ca2a8",
+   "path": "/exc/15",
+   "type": "narrative",
+   "text": "Patients who have applied other clinical trial drugs/devices before randomization;",
+   "source_span": [
+    5855,
+    5941
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-15",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "a335b653-5cf6-5833-ab82-d82343082790",
+   "path": "/exc/16",
+   "type": "narrative",
+   "text": "Patients who have used strong inducers or strong inhibitors of CYP3A4 and strong inhibitors of UGT1A1 before randomization;",
+   "source_span": [
+    5942,
+    6069
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Exc-16",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "1754f7a0-8521-503a-877e-143513f49190",
+   "path": "/exc/17",
+   "type": "narrative",
+   "text": "Adverse reactions caused by previous anti-tumor treatment are not recovered to grade 1 or lower (except alopecia and peripheral neuropathy);",
+   "source_span": [
+    6070,
+    6214
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "exceptions": [
+    {
+     "keyword": "except",
+     "text": "alopecia and peripheral neuropathy",
+     "span": [
+      96,
+      139
+     ],
+     "status": "unparsed"
+    }
+   ],
+   "display_number": "Exc-17",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "34fa272d-3dca-5d10-a2b2-d25560e30348",
+   "path": "/exc/18",
+   "type": "narrative",
+   "text": "History of drug abuse, drug abuse and/or alcoholism;",
+   "source_span": [
+    6215,
+    6271
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "alcoholism"
+   ],
+   "display_number": "Exc-18",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "5031ef13-2951-5739-b795-b2df5fe81715",
+   "path": "/exc/19",
+   "type": "narrative",
+   "text": "Pregnant or lactating women;",
+   "source_span": [
+    6272,
+    6304
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Exc-19",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  },
+  {
+   "id": "ab2c3291-5d90-5086-a965-7bc007f69724",
+   "path": "/exc/20",
+   "type": "narrative",
+   "text": "Other conditions (including but not limited to unstable nervous system diseases and mental disorders) that are considered unsuitable for inclusion in this trial by the investigator.",
+   "source_span": [
+    6305,
+    6490
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Exc-20",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": []
+  }
+ ],
+ "scope_items": [],
+ "inventory": {
+  "criteria_total": 31,
+  "inclusion": 11,
+  "exclusion": 20,
+  "leaf_nodes": 46,
+  "leaves_by_computability": {
+   "structured_computable": 15,
+   "text_dependent": 25,
+   "human_judgment": 6
+  },
+  "typed_predicates": 15,
+  "flagged_nodes": 9
+ },
+ "validation": {
+  "structure_ok": true,
+  "problems": [],
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ }
+}
