@@ -1,0 +1,46 @@
+{
+ "release_id": "9253f5f95fbfe0aec38fad6a0c9f0f21ea189da791adfbf58def6b147d3c4c89",
+ "nct_id": "NCT06838273",
+ "status": "candidate",
+ "usable_for_screening": false,
+ "blocking_reasons": [
+  "lifecycle is 'draft', not 'released'",
+  "40 criteria not dual-approved",
+  "terminology bundle is an unreviewed seed"
+ ],
+ "cer_content_sha256": "6b43ff31aca3c19b85d2de36d07845c92f3ae56b7e9c1b9e7891aab943747b07",
+ "lifecycle": "draft",
+ "graph_canonical_sha256": "32bcd21610184a53fc7675ec59764fcbfbba435a0f109ff73bd95758a35e5321",
+ "backend_capability": {
+  "EligibilityCER_NCT06838273": "unavailable"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "status": "UNREVIEWED_SEED",
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "previous_release_id": null,
+ "rollback_target": null,
+ "effective_interval": {
+  "from": null,
+  "to": null
+ },
+ "created": "2026-10-07T02:43:22+00:00",
+ "files": {
+  "cer.json": "11aa97eb52af9496b31715ad8e0b239f5904d6639f712e99d952392eaf6d1af1",
+  "cql/EligibilityCER_NCT06838273.cql": "5265a3841926f829ca707b2d8d89b758cdf6c1f6076ef2db024353354d49c021",
+  "cql/EligibilityCER_NCT06838273.manifest.json": "bfad8b873281c2b905df316da825091e991680a9ac9206482702af9967f5eee2",
+  "graph.release.jsonld": "2e428f9e7d18a2f8347618e9262de0b792e86ce0f796303af247d2907b0c7b3e",
+  "proposals/authored.json": "e4d2f216a1dd517bf3f576a22ba0885dc5c4f4b749fc16073244425c886979b3",
+  "source/ctgov.json": "dede8f89cbfc0437f816129933181e36be85706c07c9300bd06fc8fe2e7e4707",
+  "terminology/bundle.json": "48518465a3a151c852a8a0402a4504e191fd6db83f8a771d43c006b2c1280238"
+ },
+ "note": "Files are immutable; any change produces a new release id. Patient data is never included."
+}

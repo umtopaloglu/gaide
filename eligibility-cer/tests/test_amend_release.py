@@ -97,3 +97,13 @@ class Release(unittest.TestCase):
         from cer.release import build_release
         d, m, _ = build_release(R.load_cer("NCT06128837"), out_root=self.tmp)
         self.assertFalse(any("evidence" in p for p in m["files"]))
+
+
+class Determinism(unittest.TestCase):
+    def test_graph_bytes_identical_across_processes_and_hash_seeds(self):
+        import subprocess
+        code = ("import sys,hashlib; sys.path.insert(0,%r); import run as R; from cer import graph as G; "
+                "print(hashlib.sha256(G.to_jsonld(R.load_cer('NCT06520683'))[0].encode()).hexdigest())") % HERE
+        outs = {subprocess.run([sys.executable, "-c", code], env={**os.environ, "PYTHONHASHSEED": s}, capture_output=True,
+                               text=True, check=True).stdout.strip() for s in ("1", "2", "3")}
+        self.assertEqual(len(outs), 1)

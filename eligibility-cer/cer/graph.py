@@ -175,8 +175,20 @@ def to_jsonld(cer):
     g2 = out.graph(gid)
     for t in sorted(to_canonical_graph(ds.graph(gid))):
         g2.add(t)
-    txt = out.serialize(format="json-ld", context=CONTEXT, indent=1)
+    txt = _stable(out.serialize(format="json-ld", context=CONTEXT, indent=1))
     return txt, h, gid
+
+
+def _stable(txt):
+    """Sort unordered JSON-LD arrays (never @list, which carries operand order) for byte-stable output."""
+    def norm(x, ordered=False):
+        if isinstance(x, dict):
+            return {k: norm(v, ordered=(k == "@list")) for k, v in x.items()}
+        if isinstance(x, list):
+            items = [norm(i) for i in x]
+            return items if ordered else sorted(items, key=lambda i: json.dumps(i, sort_keys=True, ensure_ascii=False))
+        return x
+    return json.dumps(norm(json.loads(txt)), sort_keys=True, ensure_ascii=False, indent=1)
 
 
 def _scal(g, u, p):

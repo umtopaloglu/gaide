@@ -1,0 +1,3027 @@
+{
+ "@context": {
+  "cer": "https://cer.example.org/vocab#",
+  "prov": "http://www.w3.org/ns/prov#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#"
+ },
+ "@graph": [
+  {
+   "@id": "_:cb104108c2e76ce28361080f9c11c842f1b8afdf070fc293fb65216e7f09f718f0a",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1199,
+   "cer:start": 982
+  },
+  {
+   "@id": "_:cb115d7601c585310afbd8890a9f74adee08e0df870fb597371b60a660df1e689a0",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2398,
+   "cer:start": 2193
+  },
+  {
+   "@id": "_:cb1235544d216be4f489830cd8e980288a88984a1cfb38aa0a19146904c8590d6be",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2192,
+   "cer:start": 1989
+  },
+  {
+   "@id": "_:cb1289791a5be5d30073045200b9666fec17f0bfa65df568e3320a0ff815bd201e6",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3592,
+   "cer:start": 3211
+  },
+  {
+   "@id": "_:cb12c5e6d68ee22338fa6bcaa8a87ce1862bf30bd69e430bd6b0edfc23be3c6b1e2",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8774,
+   "cer:start": 8710
+  },
+  {
+   "@id": "_:cb12daa5e32fec9f53d1f4912a09a9f45c50b6dae13f3e51e7eaa910cdd363e8a00",
+   "@type": "cer:SourceSpan",
+   "cer:end": 6439,
+   "cer:start": 6311
+  },
+  {
+   "@id": "_:cb1348fa2254b2398cbe4b8d531bd861e89d3601bdb8b48e37c373926f24c88af22",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9077,
+   "cer:start": 8925
+  },
+  {
+   "@id": "_:cb137f8d1a64081f1f2f00ea4d29314b07ccbdeffa314caded499be469b50f9156f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1909,
+   "cer:start": 1818
+  },
+  {
+   "@id": "_:cb14178c67c9854568df51c62bb643da877988e9c16c7ca805f9ec5ad390c97651a",
+   "@type": "cer:SourceSpan",
+   "cer:end": 4325,
+   "cer:start": 4222
+  },
+  {
+   "@id": "_:cb147e43acd1015d0f31195733df727b9dd97e9a9860062442ad894e4c9ec7d9afe",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8546,
+   "cer:start": 8476
+  },
+  {
+   "@id": "_:cb157f72a9d3d2d929063bbf0c31fe9a34142908be830fd4ab94abd6a59d7bcad1f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2830,
+   "cer:start": 2628
+  },
+  {
+   "@id": "_:cb15a289577e5cbfdeffd948bea86afd1b5d5da3623ad3ed9ff2319a90391ff6b4c",
+   "@type": "cer:SourceSpan",
+   "cer:end": 7262,
+   "cer:start": 7175
+  },
+  {
+   "@id": "_:cb15f880d37e31d371188c6f4dfbe880581d77e3fb0848c818a5c79725ee6de7467",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9077,
+   "cer:start": 8925
+  },
+  {
+   "@id": "_:cb1647bbcc21bb693943f82589ec0a8bf765968d7b4760abbae233d6cf7263fae82",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9077,
+   "cer:start": 8925
+  },
+  {
+   "@id": "_:cb16ad5ef6bd79ce80bb8daa5e40dc2ee870e11305f498ae47d261f1db8fd057cbf",
+   "@type": "cer:SourceSpan",
+   "cer:end": 6989,
+   "cer:start": 6678
+  },
+  {
+   "@id": "_:cb178ae6521b4af2c71d1b662bc1f189e4dfb3c5a362ce6d182a26e7a65c34a2471",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9077,
+   "cer:start": 8925
+  },
+  {
+   "@id": "_:cb1799a1a7d3f98a5b877fce084af22a86b8ab8d850e41ecfc27191e6b5b6361d16",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8709,
+   "cer:start": 8636
+  },
+  {
+   "@id": "_:cb17bbbbd1549a1c7d91210a4726829ea5f8cb0fc9c1883ea347c77cca14421767f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8924,
+   "cer:start": 8775
+  },
+  {
+   "@id": "_:cb17d8a7d980a497d10b70605a32d7f3cd5d9d8bd6ea52198138b946d7325d4428e",
+   "@type": "cer:SourceSpan",
+   "cer:end": 6310,
+   "cer:start": 6167
+  },
+  {
+   "@id": "_:cb17e379ab5400d87bf590859f98a2769fc163ad2eb927e3f1d96fb2cadfbe3879c",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1656,
+   "cer:start": 1452
+  },
+  {
+   "@id": "_:cb18b61554db436a9538fff7248dd8ba915d6123ce08a4ed55119febbf4eab7d203",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "1975-2",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:lab-total-bilirubin\", \"label\": \"Total bilirubin\", \"primary\": {\"code\": \"1975-2\", \"display\": \"Total bilirubin\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"1975-2\", \"display\": \"Total bilirubin\", \"system\": \"http://loinc.org\", \"ucum_unit\": \"x ULN\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"26254d1f-5808-510e-9f0e-0470cb75ec7f\", \"document_span\": [8925, 9077], \"inherited_context\": [], \"phrase\": \"Total bilirubin\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb1976ab6d74614131546e4a5303140b7332737cec211b146576f496c0b0d782b27",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8087,
+   "cer:start": 7373
+  },
+  {
+   "@id": "_:cb19acd027eac85497615bf39e5e27aa75681e08c9bb0d8e56654de89fbf7425ac7",
+   "@type": "cer:SourceSpan",
+   "cer:end": 587,
+   "cer:start": 231
+  },
+  {
+   "@id": "_:cb1a6644fce32a6d812736eb65140eb4b35bc2c86a5a3058d2a8589a04502490bc7",
+   "@type": "cer:SourceSpan",
+   "cer:end": 6677,
+   "cer:start": 6440
+  },
+  {
+   "@id": "_:cb1b455d47583aff84245547c17a115861979544ee4bd6c93825a844cce9fa58faa",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3650,
+   "cer:start": 3594
+  },
+  {
+   "@id": "_:cb1b465ac531f05a586ada1dd69eaab3cea70f8be19d121c3af716f8860ee934518",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8924,
+   "cer:start": 8775
+  },
+  {
+   "@id": "_:cb1bbcfd06d0af7db8b7fe930f5f1f07b8501cb928a4a32a48a2ec194d98ea602be",
+   "@type": "cer:SourceSpan",
+   "cer:end": 4576,
+   "cer:start": 4326
+  },
+  {
+   "@id": "_:cb1bc4a027727b29557994bc75eb34a0b3cc9106b41d04bb551fa1dd333c06cc10d",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8924,
+   "cer:start": 8775
+  },
+  {
+   "@id": "_:cb1be2360ad381425051605b1abe67527487f415413d4d80d35d80219c0d7b9f123",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8087,
+   "cer:start": 7373
+  },
+  {
+   "@id": "_:cb1c716a613ed367d730ebb2d5c455c45bd6012db5e583aa3a8a7644e23f27b5e7f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9077,
+   "cer:start": 8925
+  },
+  {
+   "@id": "_:cb1c8385e4a0ccc367bf139686a109fe972789ca76256cbabbeb7f52a2f50511361",
+   "@type": "cer:SourceSpan",
+   "cer:end": 62,
+   "cer:start": 21
+  },
+  {
+   "@id": "_:cb1caeea8f6e77ab8aca8490ee48fdd20bc2c1ce7ba5b419397be530b5fd7b77a36",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2924,
+   "cer:start": 2831
+  },
+  {
+   "@id": "_:cb1cc141fb7369d766b1a4af20a470c74888d645194eebdaee5976cb043227ad153",
+   "@type": "cer:SourceSpan",
+   "cer:end": 4221,
+   "cer:start": 3991
+  },
+  {
+   "@id": "_:cb1d30ed1ffbe808e6cadc90c8ffb57b1647cc58ba8212c9da8bf106f773be87807",
+   "@type": "cer:SourceSpan",
+   "cer:end": 230,
+   "cer:start": 63
+  },
+  {
+   "@id": "_:cb1da8e5a186230936cfb511f4aec2ed895a340f3494dd9a51b70a5fb2e627049a2",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3818,
+   "cer:start": 3691
+  },
+  {
+   "@id": "_:cb1dbdb748c5b86074860c0cec1486c5d38b1ef369f762c94c81c5e3d051b22e171",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1817,
+   "cer:start": 1657
+  },
+  {
+   "@id": "_:cb1dfc5a068ca9316c11af1c0b5952d760196cc7227b40bf13d07b8a2578766445c",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8635,
+   "cer:start": 8547
+  },
+  {
+   "@id": "_:cb1dff669c2740ec2739d9a9a7524902332813424729c0a2ba93c27ef47b4d30fba",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1451,
+   "cer:start": 1201
+  },
+  {
+   "@id": "_:cb1e42a9046239be66f4f1706041b856d4c488d0f3b6fe4d21b9547dbbcce1aff90",
+   "@type": "cer:SourceSpan",
+   "cer:end": 5940,
+   "cer:start": 5882
+  },
+  {
+   "@id": "_:cb1ed98dc47ec04bae2485aad87daa4f62039b67777eac601e8afa2b40b2a25b725",
+   "@type": "cer:SourceSpan",
+   "cer:end": 5608,
+   "cer:start": 5403
+  },
+  {
+   "@id": "_:cb1f0197f8fa02c4c573788899e7b1de46edbf21ee0db3be8aa72bf7b943988022d",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "777-3",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:lab-platelets\", \"label\": \"Platelets\", \"primary\": {\"code\": \"777-3\", \"display\": \"Platelets\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"777-3\", \"display\": \"Platelets\", \"system\": \"http://loinc.org\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"a6b2967a-23b3-58a5-8f1d-a5ed898d69e1\", \"document_span\": [8636, 8709], \"inherited_context\": [], \"phrase\": \"Platelets\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb1f4d7702b46e74e81d97eff488f858d8788ff4e10afc1acc6f4055b1d071835ea",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2627,
+   "cer:start": 2399
+  },
+  {
+   "@id": "_:cb1f5d6fe68a12ec3b30a2b1ee3560504c02b82721503aaa96e5253334d4d83e45d",
+   "@type": "cer:SourceSpan",
+   "cer:end": 5020,
+   "cer:start": 4642
+  },
+  {
+   "@id": "_:cb1f91840055d8f8073b60300377b2e90d8be979dfb357b3555ba43e91217649e31",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3690,
+   "cer:start": 3652
+  },
+  {
+   "@id": "_:cb1f92e301a6d1648978b22f0ae29ad2abf4a54a8c940de98951ef091c8f6f4f81f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 5881,
+   "cer:start": 5609
+  },
+  {
+   "@id": "_:cb1fdaafcf80785626b03441ee45ace1d097c1b75385bd0b57deb8b99a87b71a10a",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3210,
+   "cer:start": 3035
+  },
+  {
+   "@id": "_:cb205c6a61540838a43fc31b85d4a4f320f5a9b3f1a1bf94a107e58850abfbf1ff6",
+   "@type": "cer:SourceSpan",
+   "cer:end": 643,
+   "cer:start": 589
+  },
+  {
+   "@id": "_:cb20a173edddb1a03972c4a8743f4a60247b1b9929b2e76dd0b3b96e4e09725958b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3033,
+   "cer:start": 2925
+  },
+  {
+   "@id": "_:cb20dbc97bf8c6f37f3c1bd1baeb18c8122e470a90bf964bc8988b2ca1dbcd4365f",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1988,
+   "cer:start": 1911
+  },
+  {
+   "@id": "_:cb212ec5e43fcf1286e023849ab22f852aaaf7d893b5bfb7f914b6fdb9a0b7aba7b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 7073,
+   "cer:start": 6990
+  },
+  {
+   "@id": "_:cb21736b43113a994ae2663d723b89aca03457278811c2aea83e314db96e84b442d",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8475,
+   "cer:start": 8088
+  },
+  {
+   "@id": "_:cb21a20191aca79cc9d589c4a84ef07eee6075b166c70b56ddc6f21bd2eb3d077e4",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "751-8",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:lab-anc\", \"label\": \"ANC\", \"primary\": {\"code\": \"751-8\", \"display\": \"ANC\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"751-8\", \"display\": \"ANC\", \"system\": \"http://loinc.org\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"2c933c85-e6e0-5050-913a-c797cc1bca5f\", \"document_span\": [8547, 8635], \"inherited_context\": [], \"phrase\": \"ANC\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb22334d8a80d6942d7e76a8f3718dfd8a9f5715b05105b226a3599188e22294a00",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3897,
+   "cer:start": 3819
+  },
+  {
+   "@id": "_:cb225ea4cb008bec0d516803b27de673bec9d818910980cb1b14dfe52b183e6b3ef",
+   "@type": "cer:SourceSpan",
+   "cer:end": 9200,
+   "cer:start": 9078
+  },
+  {
+   "@id": "_:cb2260b473c82bbf125f97802309e74ce6f4af9c4cecb805742bb4055accf06b597",
+   "@type": "cer:SourceSpan",
+   "cer:end": 980,
+   "cer:start": 795
+  },
+  {
+   "@id": "_:cb22c4d2daef3975feb901af15d9e93d791959e370e73cfd4820999316c9043becf",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "unspecified",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "day",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"unspecified\", \"anchor_text\": null, \"direction\": \"lookback\", \"span\": [295, 309], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"day\", \"value\": 14.0}"
+   }
+  },
+  {
+   "@id": "_:cb22fece50f29a72b49bb6a06fdb2764765271057dc2c7a3d04e7c9a097976488f4",
+   "@type": "cer:SourceSpan",
+   "cer:end": 5401,
+   "cer:start": 5021
+  },
+  {
+   "@id": "_:cb239f3750b3b30007d0907699ad9091cc7a4e60372e671f285c6c1ee589a85dda4",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "last dose of nivolumab",
+   "cer:t_direction": "forward",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"last dose of nivolumab\", \"anchor_text\": \"last dose of nivolumab\", \"direction\": \"forward\", \"span\": [340, 385], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"month\", \"value\": 5.0}"
+   }
+  },
+  {
+   "@id": "_:cb2488889c484bae3d222c362c3834aacb4e956e1022ac94229e266e5dcb0dd5b46",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "current diagnosis",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"current diagnosis\", \"anchor_text\": \"current diagnosis\", \"direction\": \"lookback\", \"span\": [153, 199], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"month\", \"value\": 6.0}"
+   }
+  },
+  {
+   "@id": "_:cb24d2f1482d318fb218b7fc6a33315db4a876a9343bc518ad20c729f201567150c",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "primary tumor resection",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"primary tumor resection\", \"anchor_text\": \"primary tumor resection\", \"direction\": \"lookback\", \"span\": [100, 146], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"week\", \"value\": 12.0}"
+   }
+  },
+  {
+   "@id": "_:cb250df296d9bf31fc0cd4e864b97a7f01ac6fbcccc56b6d0b4b25b4b78a6bb323b",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "89247-1",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:ecog\", \"label\": \"ECOG performance status\", \"primary\": {\"code\": \"89247-1\", \"display\": \"ECOG Performance Status score\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"89247-1\", \"display\": \"ECOG Performance Status score\", \"system\": \"http://loinc.org\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"named ECOG scale\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"named ECOG scale\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"aae82df4-3e7a-531e-80cf-7db1d4f9df18\", \"document_span\": [2831, 2924], \"inherited_context\": [], \"phrase\": \"ECOG\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb25580545e812811fb0c225951ef685dca76ae622ee9cb1b655f8926abb30b8a1c",
+   "@type": "cer:SourceSpan",
+   "cer:end": 8087,
+   "cer:start": 7373
+  },
+  {
+   "@id": "_:cb2621a334832850b28b6fa45e7742f4392214e507bae02f7f1170aeca557d1d8e7",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [112, 149], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb283b9cb26e475e5bf0dfa0ae652bbd64b06954104bdd8318d82a8380956715235",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "unspecified",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"unspecified\", \"anchor_text\": null, \"direction\": \"lookback\", \"span\": [222, 236], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"week\", \"value\": 2.0}"
+   }
+  },
+  {
+   "@id": "_:cb2a9694877ae117f3c3a2426439f0438862e1597ff24f8d0c874217c65d442d3bf",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [82, 119], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb2a96c839d490d4be83f3ca39d6f3b15d5964e5617846c7094cca64ca35b7bf21b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 0,
+   "cer:start": 0
+  },
+  {
+   "@id": "_:cb2d1d04367d40a82daac674d37a26d6ea9187122c74dcd8940ce1cac47a1aae8a1",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [109, 146], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb2df75d962c7005134901e3a280d07b70613519fcb5a9ef0db7999b67cb9021c1a",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "718-7",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:lab-hemoglobin\", \"label\": \"Hemoglobin\", \"primary\": {\"code\": \"718-7\", \"display\": \"Hemoglobin\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"718-7\", \"display\": \"Hemoglobin\", \"system\": \"http://loinc.org\", \"ucum_unit\": \"g/dL\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"692a88df-816b-5de9-bc58-883bc330310a\", \"document_span\": [8710, 8774], \"inherited_context\": [], \"phrase\": \"Hemoglobin\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb2e1a4dd5f2edddb21f69671a49289783031f895ace6a8110df2ed604d76a6870c",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "2164-2",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:lab-creatinine-clearance\", \"label\": \"Creatinine clearance\", \"primary\": {\"code\": \"2164-2\", \"display\": \"Creatinine clearance\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"2164-2\", \"display\": \"Creatinine clearance\", \"system\": \"http://loinc.org\", \"ucum_unit\": \"mL/min\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"83980e92-6b81-5378-8c65-aed30adf0966\", \"document_span\": [8775, 8924], \"inherited_context\": [], \"phrase\": \"Creatinine clearance\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "_:cb2e27dfb139d27b07c384d54c51161109a47081ef0c165939c0e1af6dfc8526aba",
+   "@type": "cer:SourceSpan",
+   "cer:end": 7372,
+   "cer:start": 7263
+  },
+  {
+   "@id": "_:cb2fc0b0ab1d7ecc3515470588b3d4742123070e5ddef4eaa6125d201bf188713f6",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [48, 85], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb309c61e03b30b9082258a04d889436fec96e08f0c6bb392db9086e35c9be9d98b",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [185, 222], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb30e1e7225a8d66a10e85735304e3012eb3dd4bf4204e68a2022bd47c99f81a325",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [30, 67], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb32a67e7875c2920bbe1982b6e6f8fba3aa7f28a9489da666d5b7067d35f3c949a",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [54, 93], \"status\": \"parsed\", \"unit\": \"month\", \"value\": 12.0}"
+   }
+  },
+  {
+   "@id": "_:cb33f188db7b1a1165b4cc25d0ce290fcd210dc15650c1caeb6647eda9e5c51fed5",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [33, 70], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb353d727396487a73698e0e399f72266e8cda03681c0eab4d09d5bee8e754c5120",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "day",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [44, 81], \"status\": \"parsed\", \"unit\": \"day\", \"value\": 28.0}"
+   }
+  },
+  {
+   "@id": "_:cb35ddb1c713c391680474463e05c0d171a37b483d6e8f83e9e5796c0a072443876",
+   "@type": "cer:Predicate",
+   "cer:kind": "ecog",
+   "cer:p_allowed_values": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 1]"
+   },
+   "cer:p_key": "ecog",
+   "cer:p_scale": "ECOG",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"89247-1\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   }
+  },
+  {
+   "@id": "_:cb3933b4a58c1844d5bb46db5df4744a56eb18c8b900ff53f356fb1047340d4e509",
+   "@type": "cer:Predicate",
+   "cer:kind": "lab",
+   "cer:p_analyte": "Platelets",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "lab:platelets",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"777-3\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "null"
+   },
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "100.0"
+   }
+  },
+  {
+   "@id": "_:cb3a15214a59da61854319098601e4d83fe86ef44540d200e52d744bfaeb75ca320",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "unspecified",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "year",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"unspecified\", \"anchor_text\": null, \"direction\": \"lookback\", \"span\": [83, 106], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"year\", \"value\": 5.0}"
+   }
+  },
+  {
+   "@id": "_:cb3b0c4bc3d21c4c37bc242aa5e69b01d17316b1c621f58c6370708a450fd6935e4",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"anchor_text\": \"randomization\", \"direction\": \"lookback\", \"span\": [24, 61], \"status\": \"parsed\", \"unit\": \"week\", \"value\": 8.0}"
+   }
+  },
+  {
+   "@id": "_:cb3b78e278c48c3e68b2522c9ebd645495e4fa3e372bdc6789d5216d8022b9c18d1",
+   "@type": "cer:Predicate",
+   "cer:kind": "lab",
+   "cer:p_analyte": "Creatinine clearance",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "lab:creatinine_clearance",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"2164-2\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": "mL/min",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "40.0"
+   }
+  },
+  {
+   "@id": "_:cb3c4b0d4d9467f57cc19260d11404db8ecfbe1d7656099e2b7f1ce705eb0a77efd",
+   "@type": "cer:Predicate",
+   "cer:kind": "lab",
+   "cer:p_analyte": "ANC",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "lab:anc",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"751-8\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "null"
+   },
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "1.0"
+   }
+  },
+  {
+   "@id": "_:cb3e62706f1ccdd5aeed09e67b1c7cd76e045cfd4767ae37930865f8c22dd07043d",
+   "@type": "cer:Predicate",
+   "cer:kind": "lab",
+   "cer:p_analyte": "Total bilirubin",
+   "cer:p_comparator": "<",
+   "cer:p_key": "lab:total_bilirubin",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"1975-2\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   },
+   "cer:p_uln_multiple": true,
+   "cer:p_unit": "x ULN",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "3.0"
+   }
+  },
+  {
+   "@id": "_:cb43c824d3bac1e6d71dab1cd542c16387728815931357fd431a88b491223fdf4e1",
+   "@type": "cer:Predicate",
+   "cer:kind": "age",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "age",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"status\": \"n/a\"}"
+   },
+   "cer:p_unit": "a",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "18.0"
+   }
+  },
+  {
+   "@id": "_:cb4a693f09c67c496eed455552398f212838e6d38a48521418f8b2b61d6012028a6",
+   "@type": "cer:Predicate",
+   "cer:kind": "lab",
+   "cer:p_analyte": "Hemoglobin",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "lab:hemoglobin",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"718-7\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": "g/dL",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "9.0"
+   }
+  },
+  {
+   "@id": "_:cb55b72368707cbad5674dff4494fb6de11b7622ddbed6ad6e8aef5ea2fd983c53",
+   "@type": "cer:Exception",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"keyword\": \"unless\", \"span\": [90, 154], \"status\": \"unparsed\", \"text\": \"deemed clinically necessary by the treating investigator\"}"
+   }
+  },
+  {
+   "@id": "_:cb5636956031bac7a0f5ff5d3cca0a9f610d3a7402c18c4154e19457eedb2778b58",
+   "@type": "cer:Predicate",
+   "cer:kind": "performance_status",
+   "cer:p_allowed_values": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 1, 2]"
+   },
+   "cer:p_key": "ps:who",
+   "cer:p_note": "scale-specific: no assumed equivalence to ECOG",
+   "cer:p_scale": "Who",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"status\": \"n/a\"}"
+   }
+  },
+  {
+   "@id": "_:cb568bbcbc182206d2bb28c5120502477937ae25bae51890384f0946acd70d30743",
+   "@type": "cer:Predicate",
+   "cer:kind": "performance_status",
+   "cer:p_allowed_values": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[1]"
+   },
+   "cer:p_key": "ps:who",
+   "cer:p_note": "scale-specific: no assumed equivalence to ECOG",
+   "cer:p_scale": "Who",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"status\": \"n/a\"}"
+   }
+  },
+  {
+   "@id": "_:cb6d237e2f2951c08bb01969d1bcae5fdcf261c8188d37368fc784307d7e26a742",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3989,
+   "cer:start": 3962
+  },
+  {
+   "@id": "_:cb9748aebcbf4d21849f3f29bdfbf8cc32b091bebd6a2c7d2ca31df28ef1acac55",
+   "@type": "cer:SourceSpan",
+   "cer:end": 6165,
+   "cer:start": 5941
+  },
+  {
+   "@id": "_:cb98f696cfcb28b652eccc94de872c135a99f0f59f406904e899283b7515a212f1",
+   "@type": "cer:Exception",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"keyword\": \"unless\", \"span\": [72, 152], \"status\": \"unparsed\", \"text\": \"performed to render patient NED (in addition to the planned nephrectomy\"}"
+   }
+  },
+  {
+   "@id": "_:cba4ec78390347fcebc1f29aae657f5168309d5e130e793628238bafff7f04d8ff",
+   "@type": "cer:SourceSpan",
+   "cer:end": 794,
+   "cer:start": 644
+  },
+  {
+   "@id": "_:cbaa88201811da60fc1d9b407bd81504d2ca98823fda249e4c9b92e0d35f3cf755",
+   "@type": "cer:SourceSpan",
+   "cer:end": 7174,
+   "cer:start": 7074
+  },
+  {
+   "@id": "_:cbc9dae17222c1dc564121aad9de57b9955827256b4c7ee4b3b86aa9d9b5f61886",
+   "@type": "cer:Exception",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"keyword\": \"unless\", \"span\": [82, 209], \"status\": \"unparsed\", \"text\": \"the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation\"}"
+   }
+  },
+  {
+   "@id": "_:cbf6950c913298dc2c86f9bdf5bd76d0b94bf703e25cc365cf4e2393f69c20b5e0",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3961,
+   "cer:start": 3899
+  },
+  {
+   "@id": "_:cbff8432800e1d79033a11da0dc87519e18f739a5d9c22cfc91beba091084d6056",
+   "@type": "cer:SourceSpan",
+   "cer:end": 4641,
+   "cer:start": 4577
+  },
+  {
+   "@id": "_:cbff895c73a99e20af1579291555620f130dc40c3e66c666ddfc8911b2246e2cc5",
+   "@type": "cer:Exception",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"keyword\": \"except\", \"span\": [29, 110], \"status\": \"unparsed\", \"text\": \"subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN\"}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18",
+   "@type": "cer:Release",
+   "cer:contains": [
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/01f841f6-6f58-5fcd-9c6b-40e2cf15d955"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/041e3760-2aaf-5fdc-bd77-1f7e1d9dc201"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0677a7eb-bfcc-5a5b-87fe-c4dacbb189bf"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0aeeb509-dcce-54f6-a972-1ea7e49eb81c"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0ca633e2-6199-5692-ae95-b92f4bf543c1"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/21e57f4c-8676-5be1-96ff-bf3cc3e56844"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c05eb77-ed9f-5734-abc7-3c784492dc04"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c933c85-e6e0-5050-913a-c797cc1bca5f"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/32e8fc16-2dcc-55c1-b6bd-2f72ffcfff03"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/35ab5a17-cead-516f-9fe3-64d4f7917b1c"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/3956bef4-92ce-5edb-86d8-61cb8f642e44"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/4e52ab3b-89c8-5b58-92ee-c461dc9a5190"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/56665b85-9371-5050-b550-d1d62dedc94d"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/647884c5-2499-57a8-b4c5-9b38a5a07587"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/67737c12-4b5f-54e7-b89e-4b4773b26fc1"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/692a88df-816b-5de9-bc58-883bc330310a"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/7521d5fb-f70c-5fb6-a630-43582984b6cb"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8e7f57a2-f140-5daa-8877-7a77153db033"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8ee1df10-9daf-5309-a7c6-b5102211a172"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/96f6ff45-519b-590c-b50d-4eb0bd431a61"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/9d0e48b3-b238-5438-bbb2-280015f14b4a"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6b2967a-23b3-58a5-8f1d-a5ed898d69e1"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6e638c5-9b84-5479-8a5e-4a12be0246fc"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/aae82df4-3e7a-531e-80cf-7db1d4f9df18"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b6c17875-cc47-554c-b783-3da638dcda1d"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/cb49e016-9afb-57af-8c75-c7e2a4f27a7b"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1c7aad3-5197-5b60-87aa-3b333bd6a274"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1ff4de9-f6f9-564c-bac6-16a0a49e3e4a"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/e3ce5325-85bc-5750-947d-dc4df5e8b6c3"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/f25dc254-219c-52a9-b241-f38df55dad19"
+    }
+   ],
+   "cer:contentHash": "de2c9da08f1802abab97cc8c1d0d657b58722a8c19a34a174b8a0fba3223d635",
+   "cer:criteria": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/041e3760-2aaf-5fdc-bd77-1f7e1d9dc201"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/35ab5a17-cead-516f-9fe3-64d4f7917b1c"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/e3ce5325-85bc-5750-947d-dc4df5e8b6c3"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/cb49e016-9afb-57af-8c75-c7e2a4f27a7b"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0aeeb509-dcce-54f6-a972-1ea7e49eb81c"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/21e57f4c-8676-5be1-96ff-bf3cc3e56844"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6e638c5-9b84-5479-8a5e-4a12be0246fc"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/aae82df4-3e7a-531e-80cf-7db1d4f9df18"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/9d0e48b3-b238-5438-bbb2-280015f14b4a"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0ca633e2-6199-5692-ae95-b92f4bf543c1"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/56665b85-9371-5050-b550-d1d62dedc94d"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8e7f57a2-f140-5daa-8877-7a77153db033"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/f25dc254-219c-52a9-b241-f38df55dad19"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0677a7eb-bfcc-5a5b-87fe-c4dacbb189bf"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/3956bef4-92ce-5edb-86d8-61cb8f642e44"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/01f841f6-6f58-5fcd-9c6b-40e2cf15d955"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/96f6ff45-519b-590c-b50d-4eb0bd431a61"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c05eb77-ed9f-5734-abc7-3c784492dc04"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/647884c5-2499-57a8-b4c5-9b38a5a07587"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/4e52ab3b-89c8-5b58-92ee-c461dc9a5190"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1ff4de9-f6f9-564c-bac6-16a0a49e3e4a"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b6c17875-cc47-554c-b783-3da638dcda1d"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8ee1df10-9daf-5309-a7c6-b5102211a172"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/67737c12-4b5f-54e7-b89e-4b4773b26fc1"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c933c85-e6e0-5050-913a-c797cc1bca5f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6b2967a-23b3-58a5-8f1d-a5ed898d69e1"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/692a88df-816b-5de9-bc58-883bc330310a"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/32e8fc16-2dcc-55c1-b6bd-2f72ffcfff03"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1c7aad3-5197-5b60-87aa-3b333bd6a274"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/7521d5fb-f70c-5fb6-a630-43582984b6cb"
+     }
+    ]
+   },
+   "cer:header": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"authored_applied\": [], \"completeness_disclosure\": \"Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.\", \"conflicts\": [], \"ctrp_biomarker_contract\": {\"note\": \"No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.\", \"status\": \"not_supplied\"}, \"inventory\": {\"criteria_total\": 30, \"exclusion\": 0, \"flagged_nodes\": 17, \"inclusion\": 30, \"leaf_nodes\": 47, \"leaves_by_computability\": {\"human_judgment\": 6, \"structured_computable\": 9, \"text_dependent\": 32}, \"typed_predicates\": 9}, \"lifecycle\": {\"note\": \"Draft only: not reviewed; not executable for screening.\", \"status\": \"draft\"}, \"llm_applied\": [], \"review_summary\": {\"criteria\": 30, \"open_conflicts\": [], \"orphaned_decisions\": [], \"pending\": [\"Demo-min-age\", \"Inc-b1\", \"Inc-b2\", \"Inc-b3\", \"Inc-b4\", \"Inc-b5\", \"Inc-b6\", \"Inc-b7\", \"Inc-b8\", \"Inc-b9\", \"Inc-b10\", \"Inc-b11\", \"Inc-b12\", \"Inc-b13\", \"Inc-b14\", \"Inc-b15\", \"Inc-b16\", \"Inc-b17\", \"Inc-b18\", \"Inc-b19\", \"Inc-b20\", \"Inc-b21\", \"Inc-b22\", \"Inc-b23\", \"Inc-b24\", \"Inc-b25\", \"Inc-b26\", \"Inc-b27\", \"Inc-b28\", \"Inc-b29\"], \"stale_decisions\": [], \"unpinned_decisions\": [], \"validated\": 0}, \"schema_version\": \"cer-draft-0.1\", \"scope_items\": [], \"scopes\": [[]], \"source\": {\"content_sha256\": \"c8901f78698841736207f62c8297351d65c02645a7442fd61fc92832ef4cba74\", \"demographics\": {\"healthy_volunteers\": \"No\", \"maximum_age\": null, \"minimum_age\": \"18 Years\", \"sex\": \"ALL\"}, \"nct_id\": \"NCT03055013\", \"overall_status\": \"ACTIVE_NOT_RECRUITING\", \"protocol_baseline\": \"registry_excerpt\", \"registry\": \"ClinicalTrials.gov\", \"retrieved_at\": \"2026-10-06T03:00:00Z\", \"retrieved_via\": \"mcp:Clinical_Trials.get_trial_details\", \"source_role\": \"Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)\", \"source_type\": \"B\", \"text_normalized\": \"Inclusion Criteria:\\n\\n* ELIGIBILITY CRITERIA FOR RANDOMIZATION:\\n* Patients must have a renal mass consistent with a clinical stage >= T2Nx renal cell carcinoma (RCC) or TanyN+ RCC for which radical or partial nephrectomy is planned\\n* Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \\\"no evidence of disease\\\" (M1 NED)\\n\\n  * Liver, bone, or brain metastases are not permitted\\n  * No more than 3 metastases are permitted, and all must be able to be removed or definitively treated within 12 weeks of the primary tumor resection\\n* If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A\\n\\n  * NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose\\n\\n    * Patients randomized to Arm A: core tumor biopsy must have demonstrated RCC of any histology, including sarcomatoid, unclassified, or \\\"unknown histology\\\" (if preoperative biopsy was uninformative) with exception below for non-diagnostic biopsies\\n    * If the biopsy performed following randomization clearly demonstrates a benign condition, oncocytoma or a different type of cancer that is not RCC, the patient is not eligible and must come off study\\n    * A non-diagnostic biopsy is considered a good faith effort and does not need to be repeated unless deemed clinically necessary by the treating investigator\\n* Patient must not have any prior systemic or local anti-cancer therapy for the current RCC\\n\\n  * Patient must not have undergone a partial nephrectomy for the current RCC\\n  * Patient must not have had a metastasectomy for the current RCC diagnosis unless performed to render patient NED (in addition to the planned nephrectomy) within 6 months prior to the current diagnosis\\n  * Patient must not have received current or past antineoplastic systemic therapies for RCC: i.e., chemotherapy, hormonal therapy, immunotherapy, or standard or investigational agents for treatment of RCC\\n  * Patient must not have received prior treatment with an anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody, or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways\\n* Patient must be >= 18 years of age. Because no dosing or adverse event data are currently available on the use of nivolumab therapy in patients < 18 years of age, children are excluded from this study\\n* Patient must have an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1\\n* Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years\\n\\n  * Patients with a prior RCC that was treated > 5 years before, are eligible if the current tumor is consistent with a new primary in the opinion of the treating investigator\\n  * Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required\\n\\n    * Permitted forms of local therapy for second tumor:\\n\\n      * Partial or radical nephrectomy\\n      * If kidney tumor is =< 3 cm: thermal ablation (e.g., radiofrequency ablation, cryoablation or stereotactic radiosurgery)\\n* Patients cannot have concurrent malignancies, with the following exceptions:\\n\\n  * Adequately treated basal cell or squamous cell skin cancer\\n  * In situ cervical cancer\\n\\n    * A history of superficial Ta urothelial cancer is permitted (as long as not currently undergoing treatment) whereas T1 or greater disease is excluded if < 3 years from diagnosis; concurrent persistent disease is not permitted\\n    * Adequately treated stage I or II cancer from which the patient is currently in complete remission\\n    * Any other cancer and stage from which the patient has been disease-free for at least 3 years prior to the time of randomization and as long as they are not receiving any current treatment (e.g. adjuvant or maintenance systemic or local therapy)\\n    * Concurrent low risk prostate cancer on active surveillance\\n* Patient must not have active known or suspected autoimmune disease. The following autoimmune disorders are permitted: patients with vitiligo, type I diabetes mellitus, controlled/stable hypo or hyperthyroidism due to autoimmune or non-autoimmune conditions (hormone replacement is allowed), psoriasis not requiring systemic treatment, or other conditions not expected to recur\\n* Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:\\n\\n  * Topical, ocular, intra-articular, intranasal, inhaled steroids and adrenal replacement steroid doses > 10 mg daily prednisone or the equivalent are permitted in the absence of active autoimmune disease\\n  * A brief (less than 3 weeks) course of corticosteroids (any amount) for prophylaxis (for example: contrast dye allergy) or for treatment of non-autoimmune conditions (for example: nausea, delayed-type hypersensitivity reaction caused by a contact allergen) is permitted\\n* Patient must not have uncontrolled adrenal insufficiency\\n* Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization\\n\\n  * NOTE: If the patient has been treated and cured, and the HCV ribonucleic acid (RNA) is undetectable, the patient is eligible for this study\\n* Patient must not have any serious intercurrent illness, including ongoing or active infection requiring parenteral antibiotics\\n* Patient must not have known evidence of human immunodeficiency virus (HIV) infection, since the effects of nivolumab on anti-retroviral therapy have not been studied; HIV testing is only required if past or current history is suspected\\n* Patient must not have any known medical condition (e.g. a condition associated with uncontrolled diarrhea such as ulcerative colitis or acute diverticulitis) that, in the investigator's opinion, would increase the risk associated with study participation or interfere with the interpretation of safety results\\n* Patient must not have had any major surgery within 28 days prior to randomization\\n* Patient must not be currently enrolled in other clinical trials testing a therapeutic intervention\\n* Patient must not have any history of severe hypersensitivity to a monoclonal antibody\\n* Patient must have the ability to understand and the willingness to sign a written informed consent document\\n* Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)\\n* Patients must not expect to conceive or father children by using accepted and effective method(s) of contraception, as described in the informed consent form (ICF), or by abstaining from sexual intercourse for the duration of their participation in the study; patients of childbearing potential must use adequate methods to avoid pregnancy for 5 months after the last dose of nivolumab\\n* White blood cells >= 2000/uL (within 8 weeks prior to randomization)\\n* Absolute neutrophil count (ANC) >= 1,500/mm\\\\^3 (within 8 weeks prior to randomization)\\n* Platelet count >= 100,000/mm\\\\^3 (within 8 weeks prior to randomization)\\n* Hemoglobin >= 9.0 g/dL (within 8 weeks prior to randomization)\\n* Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)\\n* Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)\\n* Aspartate aminotransferase (AST) and alanine aminotransferase (ALT) =< 2.5 x ULN (within 8 weeks prior to randomization)\", \"title\": \"Nivolumab in Treating Patients With Localized Kidney Cancer Undergoing Nephrectomy\"}, \"terminology\": {\"bundle_id\": \"seed-terminology\", \"bundle_version\": \"0.1.0\", \"licenses\": {\"HGNC\": \"CC0\", \"LOINC\": \"LOINC licence (free, attribution)\", \"SNOMED CT\": \"SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary\", \"UCUM\": \"UCUM licence (free)\"}, \"sha256\": \"fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02\", \"stats\": {\"bound\": 6, \"by_relationship\": {\"equivalent\": 6}, \"unmapped\": 0}, \"status\": \"UNREVIEWED_SEED\", \"value_sets\": {}, \"warning\": \"SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty.\"}, \"validation\": {\"meaning\": \"NOT validated: clinical + informatics review still required for every executable criterion.\", \"problems\": [], \"structure_ok\": true}}"
+   },
+   "cer:lifecycleStatus": "draft",
+   "cer:trial": {
+    "@id": "https://cer.example.org/trial/NCT03055013"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "https://cer.example.org/trial/NCT03055013/source/c8901f786988"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/01f841f6-6f58-5fcd-9c6b-40e2cf15d955",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b15",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"hiv\", \"immunodeficiency\"], \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "01f841f6-6f58-5fcd-9c6b-40e2cf15d955",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b15",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have known evidence of human immunodeficiency virus (HIV) infection, since the effects of nivolumab on anti-retroviral therapy have not been studied; HIV testing is only required if past or current history is suspected",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1a6644fce32a6d812736eb65140eb4b35bc2c86a5a3058d2a8589a04502490bc7"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/041e3760-2aaf-5fdc-bd77-1f7e1d9dc201",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Demo-min-age",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"binding\": null, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "041e3760-2aaf-5fdc-bd77-1f7e1d9dc201",
+   "cer:nodeType": "predicate",
+   "cer:origin": "imported_structured",
+   "cer:path": "/demo/min-age",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "ct.gov structured field",
+   "cer:predicate": {
+    "@id": "_:cb43c824d3bac1e6d71dab1cd542c16387728815931357fd431a88b491223fdf4e1"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "minimumAge: 18 Years",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb2a96c839d490d4be83f3ca39d6f3b15d5964e5617846c7094cca64ca35b7bf21b"
+   },
+   "prov:wasGeneratedBy": "imported_structured"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0677a7eb-bfcc-5a5b-87fe-c4dacbb189bf",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b13",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "0677a7eb-bfcc-5a5b-87fe-c4dacbb189bf",
+   "cer:leadIn": "Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0ac648f4-816e-5fd1-8678-29a6decd5875"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b13",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization",
+   "cer:temporalConstraint": {
+    "@id": "_:cb309c61e03b30b9082258a04d889436fec96e08f0c6bb392db9086e35c9be9d98b"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb9748aebcbf4d21849f3f29bdfbf8cc32b091bebd6a2c7d2ca31df28ef1acac55"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/08fceb6d-a0f0-5c52-bb50-f159674f095f",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "08fceb6d-a0f0-5c52-bb50-f159674f095f",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b4/b1/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "If the biopsy performed following randomization clearly demonstrates a benign condition, oncocytoma or a different type of cancer that is not RCC, the patient is not eligible and must come off study",
+   "cer:subtype": "specimen / tissue availability",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb17e379ab5400d87bf590859f98a2769fc163ad2eb927e3f1d96fb2cadfbe3879c"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0ac648f4-816e-5fd1-8678-29a6decd5875",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "0ac648f4-816e-5fd1-8678-29a6decd5875",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b13/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "NOTE: If the patient has been treated and cured, and the HCV ribonucleic acid (RNA) is undetectable, the patient is eligible for this study",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb17d8a7d980a497d10b70605a32d7f3cd5d9d8bd6ea52198138b946d7325d4428e"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0aeeb509-dcce-54f6-a972-1ea7e49eb81c",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b4",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "0aeeb509-dcce-54f6-a972-1ea7e49eb81c",
+   "cer:leadIn": "If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fb628f2b-d515-5023-9b05-be2fda48c07f"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b4",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A",
+   "cer:temporalConstraint": {
+    "@id": "_:cb32a67e7875c2920bbe1982b6e6f8fba3aa7f28a9489da666d5b7067d35f3c949a"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb2260b473c82bbf125f97802309e74ce6f4af9c4cecb805742bb4055accf06b597"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/0ca633e2-6199-5692-ae95-b92f4bf543c1",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b9",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "0ca633e2-6199-5692-ae95-b92f4bf543c1",
+   "cer:leadIn": "Patients cannot have concurrent malignancies, with the following exceptions:",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/88e7cb7c-745c-5ef3-a610-77f78c548b91"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/44375f60-fdcc-5a73-a106-f281c5db4c97"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patients cannot have concurrent malignancies, with the following exceptions:",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb22334d8a80d6942d7e76a8f3718dfd8a9f5715b05105b226a3599188e22294a00"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/21e57f4c-8676-5be1-96ff-bf3cc3e56844",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b5",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "21e57f4c-8676-5be1-96ff-bf3cc3e56844",
+   "cer:leadIn": "Patient must not have any prior systemic or local anti-cancer therapy for the current RCC",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/34b5b5c7-24d5-5285-a6c2-2c481fa8d540"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/98491824-fa09-57ac-b763-1f81a56f9e9e"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fdb90553-f094-5ba3-8c36-c3db1c10e22c"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/46927171-f9cb-5f0a-92c6-fb8f67191239"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b5",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have any prior systemic or local anti-cancer therapy for the current RCC",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb137f8d1a64081f1f2f00ea4d29314b07ccbdeffa314caded499be469b50f9156f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/26254d1f-5808-510e-9f0e-0470cb75ec7f",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "26254d1f-5808-510e-9f0e-0470cb75ec7f",
+   "cer:mappingAssertion": {
+    "@id": "_:cb18b61554db436a9538fff7248dd8ba915d6123ce08a4ed55119febbf4eab7d203"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b28.p1",
+   "cer:predicate": {
+    "@id": "_:cb3e62706f1ccdd5aeed09e67b1c7cd76e045cfd4767ae37930865f8c22dd07043d"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "total bilirubin < 3.0 x ULN",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[82, 109]"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb178ae6521b4af2c71d1b662bc1f189e4dfb3c5a362ce6d182a26e7a65c34a2471"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#1975-2"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2a197206-d449-5cfd-a510-38747e45ce29",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"binding\": null}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "2a197206-d449-5cfd-a510-38747e45ce29",
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b28.p0",
+   "cer:predicate": {
+    "@id": "_:cb5636956031bac7a0f5ff5d3cca0a9f610d3a7402c18c4154e19457eedb2778b58"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "who can have total bilirubin < 3",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[69, 101]"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1c716a613ed367d730ebb2d5c455c45bd6012db5e583aa3a8a7644e23f27b5e7f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c05eb77-ed9f-5734-abc7-3c784492dc04",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b17",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "2c05eb77-ed9f-5734-abc7-3c784492dc04",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b17",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have had any major surgery within 28 days prior to randomization",
+   "cer:subtype": "unclassified narrative",
+   "cer:temporalConstraint": {
+    "@id": "_:cb353d727396487a73698e0e399f72266e8cda03681c0eab4d09d5bee8e754c5120"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb212ec5e43fcf1286e023849ab22f852aaaf7d893b5bfb7f914b6fdb9a0b7aba7b"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2c933c85-e6e0-5050-913a-c797cc1bca5f",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Inc-b24",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 0.5, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "2c933c85-e6e0-5050-913a-c797cc1bca5f",
+   "cer:mappingAssertion": {
+    "@id": "_:cb21a20191aca79cc9d589c4a84ef07eee6075b166c70b56ddc6f21bd2eb3d077e4"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b24.p0",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:predicate": {
+    "@id": "_:cb3c4b0d4d9467f57cc19260d11404db8ecfbe1d7656099e2b7f1ce705eb0a77efd"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Absolute neutrophil count (ANC) >= 1,500/mm\\^3 (within 8 weeks prior to randomization)",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 36]"
+   },
+   "cer:temporalConstraint": {
+    "@id": "_:cb2fc0b0ab1d7ecc3515470588b3d4742123070e5ddef4eaa6125d201bf188713f6"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1dfc5a068ca9316c11af1c0b5952d760196cc7227b40bf13d07b8a2578766445c"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#751-8"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/32e8fc16-2dcc-55c1-b6bd-2f72ffcfff03",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b27",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"~26% of the statement's content words are typed; residual kept as narrative requirement\"]"
+   },
+   "cer:identifier": "32e8fc16-2dcc-55c1-b6bd-2f72ffcfff03",
+   "cer:logicBasis": "residual_added",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/83980e92-6b81-5378-8c65-aed30adf0966"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c51eddfb-d927-5a2d-b67e-931ddb8b7477"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b27.g",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+   "cer:temporalConstraint": {
+    "@id": "_:cb2d1d04367d40a82daac674d37a26d6ea9187122c74dcd8940ce1cac47a1aae8a1"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1bc4a027727b29557994bc75eb34a0b3cc9106b41d04bb551fa1dd333c06cc10d"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/34b5b5c7-24d5-5285-a6c2-2c481fa8d540",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "34b5b5c7-24d5-5285-a6c2-2c481fa8d540",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b5/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patient must not have undergone a partial nephrectomy for the current RCC",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb20dbc97bf8c6f37f3c1bd1baeb18c8122e470a90bf964bc8988b2ca1dbcd4365f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/35ab5a17-cead-516f-9fe3-64d4f7917b1c",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b1",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "35ab5a17-cead-516f-9fe3-64d4f7917b1c",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b1",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "ELIGIBILITY CRITERIA FOR RANDOMIZATION:",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1c8385e4a0ccc367bf139686a109fe972789ca76256cbabbeb7f52a2f50511361"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/3956bef4-92ce-5edb-86d8-61cb8f642e44",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b14",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "3956bef4-92ce-5edb-86d8-61cb8f642e44",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b14",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have any serious intercurrent illness, including ongoing or active infection requiring parenteral antibiotics",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb12daa5e32fec9f53d1f4912a09a9f45c50b6dae13f3e51e7eaa910cdd363e8a00"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/44375f60-fdcc-5a73-a106-f281c5db4c97",
+   "@type": "cer:ExpressionNode",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "44375f60-fdcc-5a73-a106-f281c5db4c97",
+   "cer:leadIn": "In situ cervical cancer",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c79cde27-80a3-53e1-82f6-455101c74cc4"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fabaabf1-1b8e-5620-970f-822082b0855d"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8a3a7822-8dd3-5e77-800d-c8bb64efbdad"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a255c7bd-691f-5285-bd6f-8f7e58f4b957"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "In situ cervical cancer",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb6d237e2f2951c08bb01969d1bcae5fdcf261c8188d37368fc784307d7e26a742"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/46927171-f9cb-5f0a-92c6-fb8f67191239",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "46927171-f9cb-5f0a-92c6-fb8f67191239",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b5/b4",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patient must not have received prior treatment with an anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody, or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways",
+   "cer:subtype": "prior therapy / medication",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1f4d7702b46e74e81d97eff488f858d8788ff4e10afc1acc6f4055b1d071835ea"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/4e52ab3b-89c8-5b58-92ee-c461dc9a5190",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b19",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "4e52ab3b-89c8-5b58-92ee-c461dc9a5190",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b19",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have any history of severe hypersensitivity to a monoclonal antibody",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb15a289577e5cbfdeffd948bea86afd1b5d5da3623ad3ed9ff2319a90391ff6b4c"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/54665c65-7ffd-5964-b158-6d6787d034d0",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "54665c65-7ffd-5964-b158-6d6787d034d0",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b21.r",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+   "cer:subtype": "residual text not covered by typed predicates",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1976ab6d74614131546e4a5303140b7332737cec211b146576f496c0b0d782b27"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/56665b85-9371-5050-b550-d1d62dedc94d",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b10",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"autoimmune\"], \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "56665b85-9371-5050-b550-d1d62dedc94d",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b10",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have active known or suspected autoimmune disease. The following autoimmune disorders are permitted: patients with vitiligo, type I diabetes mellitus, controlled/stable hypo or hyperthyroidism due to autoimmune or non-autoimmune conditions (hormone replacement is allowed), psoriasis not requiring systemic treatment, or other conditions not expected to recur",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1f5d6fe68a12ec3b30a2b1ee3560504c02b82721503aaa96e5253334d4d83e45d"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/62a03129-6ec7-52fb-a609-0df4a3eed6bd",
+   "@type": "cer:ExpressionNode",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "62a03129-6ec7-52fb-a609-0df4a3eed6bd",
+   "cer:leadIn": "Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a890f27e-1f19-5897-9f5a-de7df0078c7c"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1289791a5be5d30073045200b9666fec17f0bfa65df568e3320a0ff815bd201e6"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/647884c5-2499-57a8-b4c5-9b38a5a07587",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b18",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "647884c5-2499-57a8-b4c5-9b38a5a07587",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b18",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not be currently enrolled in other clinical trials testing a therapeutic intervention",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cbaa88201811da60fc1d9b407bd81504d2ca98823fda249e4c9b92e0d35f3cf755"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/67737c12-4b5f-54e7-b89e-4b4773b26fc1",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b23",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "67737c12-4b5f-54e7-b89e-4b4773b26fc1",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b23",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "White blood cells >= 2000/uL (within 8 weeks prior to randomization)",
+   "cer:subtype": "unclassified narrative",
+   "cer:temporalConstraint": {
+    "@id": "_:cb30e1e7225a8d66a10e85735304e3012eb3dd4bf4204e68a2022bd47c99f81a325"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb147e43acd1015d0f31195733df727b9dd97e9a9860062442ad894e4c9ec7d9afe"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/692a88df-816b-5de9-bc58-883bc330310a",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Inc-b26",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 0.2, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "692a88df-816b-5de9-bc58-883bc330310a",
+   "cer:mappingAssertion": {
+    "@id": "_:cb2df75d962c7005134901e3a280d07b70613519fcb5a9ef0db7999b67cb9021c1a"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b26.p0",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:predicate": {
+    "@id": "_:cb4a693f09c67c496eed455552398f212838e6d38a48521418f8b2b61d6012028a6"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Hemoglobin >= 9.0 g/dL (within 8 weeks prior to randomization)",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 22]"
+   },
+   "cer:temporalConstraint": {
+    "@id": "_:cb3b0c4bc3d21c4c37bc242aa5e69b01d17316b1c621f58c6370708a450fd6935e4"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb12c5e6d68ee22338fa6bcaa8a87ce1862bf30bd69e430bd6b0edfc23be3c6b1e2"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#718-7"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/72284178-9292-593c-acf9-d48b2513251f",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:exceptions": {
+    "@list": [
+     {
+      "@id": "_:cb55b72368707cbad5674dff4494fb6de11b7622ddbed6ad6e8aef5ea2fd983c53"
+     }
+    ]
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "72284178-9292-593c-acf9-d48b2513251f",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b4/b1/b3",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "A non-diagnostic biopsy is considered a good faith effort and does not need to be repeated unless deemed clinically necessary by the treating investigator",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1dbdb748c5b86074860c0cec1486c5d38b1ef369f762c94c81c5e3d051b22e171"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/7521d5fb-f70c-5fb6-a630-43582984b6cb",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b29",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "7521d5fb-f70c-5fb6-a630-43582984b6cb",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b29",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Aspartate aminotransferase (AST) and alanine aminotransferase (ALT) =< 2.5 x ULN (within 8 weeks prior to randomization)",
+   "cer:subtype": "unclassified narrative",
+   "cer:temporalConstraint": {
+    "@id": "_:cb2a9694877ae117f3c3a2426439f0438862e1597ff24f8d0c874217c65d442d3bf"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb225ea4cb008bec0d516803b27de673bec9d818910980cb1b14dfe52b183e6b3ef"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/7d808bf9-4231-5c0c-8cfc-9beb3845dbde",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"temporal anchor missing or unrecognised -> evaluate as unknown until resolved\"]"
+   },
+   "cer:identifier": "7d808bf9-4231-5c0c-8cfc-9beb3845dbde",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b3/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "No more than 3 metastases are permitted, and all must be able to be removed or definitively treated within 12 weeks of the primary tumor resection",
+   "cer:subtype": "unclassified narrative",
+   "cer:temporalConstraint": {
+    "@id": "_:cb24d2f1482d318fb218b7fc6a33315db4a876a9343bc518ad20c729f201567150c"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cba4ec78390347fcebc1f29aae657f5168309d5e130e793628238bafff7f04d8ff"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/83980e92-6b81-5378-8c65-aed30adf0966",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 0.27}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "83980e92-6b81-5378-8c65-aed30adf0966",
+   "cer:mappingAssertion": {
+    "@id": "_:cb2e1a4dd5f2edddb21f69671a49289783031f895ace6a8110df2ed604d76a6870c"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b27.p0",
+   "cer:predicate": {
+    "@id": "_:cb3b78e278c48c3e68b2522c9ebd645495e4fa3e372bdc6789d5216d8022b9c18d1"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[68, 107]"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1b465ac531f05a586ada1dd69eaab3cea70f8be19d121c3af716f8860ee934518"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#2164-2"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/88e7cb7c-745c-5ef3-a610-77f78c548b91",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "88e7cb7c-745c-5ef3-a610-77f78c548b91",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Adequately treated basal cell or squamous cell skin cancer",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cbf6950c913298dc2c86f9bdf5bd76d0b94bf703e25cc365cf4e2393f69c20b5e0"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8a3a7822-8dd3-5e77-800d-c8bb64efbdad",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "8a3a7822-8dd3-5e77-800d-c8bb64efbdad",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b2/b3",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Any other cancer and stage from which the patient has been disease-free for at least 3 years prior to the time of randomization and as long as they are not receiving any current treatment (e.g. adjuvant or maintenance systemic or local therapy)",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1bbcfd06d0af7db8b7fe930f5f1f07b8501cb928a4a32a48a2ec194d98ea602be"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8e7f57a2-f140-5daa-8877-7a77153db033",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b11",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "8e7f57a2-f140-5daa-8877-7a77153db033",
+   "cer:leadIn": "Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:",
+   "cer:logicBasis": "explicit",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/acb5125e-f1e7-59c0-97ae-8c1c19b02038"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/f87556ab-790e-546f-8164-9d28b2106eee"
+     }
+    ]
+   },
+   "cer:operator": "ANY",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b11",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:",
+   "cer:temporalConstraint": {
+    "@id": "_:cb22c4d2daef3975feb901af15d9e93d791959e370e73cfd4820999316c9043becf"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb22fece50f29a72b49bb6a06fdb2764765271057dc2c7a3d04e7c9a097976488f4"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/8ee1df10-9daf-5309-a7c6-b5102211a172",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "human_judgment",
+   "cer:displayNumber": "Inc-b22",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"ild\"], \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"temporal anchor missing or unrecognised -> evaluate as unknown until resolved\"]"
+   },
+   "cer:identifier": "8ee1df10-9daf-5309-a7c6-b5102211a172",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b22",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patients must not expect to conceive or father children by using accepted and effective method(s) of contraception, as described in the informed consent form (ICF), or by abstaining from sexual intercourse for the duration of their participation in the study; patients of childbearing potential must use adequate methods to avoid pregnancy for 5 months after the last dose of nivolumab",
+   "cer:subtype": "consent / contraception / pregnancy workflow",
+   "cer:temporalConstraint": {
+    "@id": "_:cb239f3750b3b30007d0907699ad9091cc7a4e60372e671f285c6c1ee589a85dda4"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb21736b43113a994ae2663d723b89aca03457278811c2aea83e314db96e84b442d"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/96f6ff45-519b-590c-b50d-4eb0bd431a61",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "human_judgment",
+   "cer:displayNumber": "Inc-b16",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "96f6ff45-519b-590c-b50d-4eb0bd431a61",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b16",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have any known medical condition (e.g. a condition associated with uncontrolled diarrhea such as ulcerative colitis or acute diverticulitis) that, in the investigator's opinion, would increase the risk associated with study participation or interfere with the interpretation of safety results",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb16ad5ef6bd79ce80bb8daa5e40dc2ee870e11305f498ae47d261f1db8fd057cbf"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/98491824-fa09-57ac-b763-1f81a56f9e9e",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:exceptions": {
+    "@list": [
+     {
+      "@id": "_:cb98f696cfcb28b652eccc94de872c135a99f0f59f406904e899283b7515a212f1"
+     }
+    ]
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"temporal anchor missing or unrecognised -> evaluate as unknown until resolved\"]"
+   },
+   "cer:identifier": "98491824-fa09-57ac-b763-1f81a56f9e9e",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b5/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patient must not have had a metastasectomy for the current RCC diagnosis unless performed to render patient NED (in addition to the planned nephrectomy) within 6 months prior to the current diagnosis",
+   "cer:subtype": "unclassified narrative",
+   "cer:temporalConstraint": {
+    "@id": "_:cb2488889c484bae3d222c362c3834aacb4e956e1022ac94229e266e5dcb0dd5b46"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1235544d216be4f489830cd8e980288a88984a1cfb38aa0a19146904c8590d6be"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/99ada85a-f0d3-5b94-9ec1-fcc672004da9",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "99ada85a-f0d3-5b94-9ec1-fcc672004da9",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8/b2/b1/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Partial or radical nephrectomy",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1f91840055d8f8073b60300377b2e90d8be979dfb357b3555ba43e91217649e31"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/9d0e48b3-b238-5438-bbb2-280015f14b4a",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b8",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "9d0e48b3-b238-5438-bbb2-280015f14b4a",
+   "cer:leadIn": "Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/ed870c3e-cb81-54b6-a296-10adedfedbd8"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/62a03129-6ec7-52fb-a609-0df4a3eed6bd"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years",
+   "cer:temporalConstraint": {
+    "@id": "_:cb3a15214a59da61854319098601e4d83fe86ef44540d200e52d744bfaeb75ca320"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb20a173edddb1a03972c4a8743f4a60247b1b9929b2e76dd0b3b96e4e09725958b"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/9f421953-3c20-57a0-ba2c-01c3af902d3a",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"brain metastas\"]}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "9f421953-3c20-57a0-ba2c-01c3af902d3a",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b3/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Liver, bone, or brain metastases are not permitted",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb205c6a61540838a43fc31b85d4a4f320f5a9b3f1a1bf94a107e58850abfbf1ff6"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a255c7bd-691f-5285-bd6f-8f7e58f4b957",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "a255c7bd-691f-5285-bd6f-8f7e58f4b957",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b2/b4",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Concurrent low risk prostate cancer on active surveillance",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cbff8432800e1d79033a11da0dc87519e18f739a5d9c22cfc91beba091084d6056"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6b2967a-23b3-58a5-8f1d-a5ed898d69e1",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Inc-b25",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 0.33, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "a6b2967a-23b3-58a5-8f1d-a5ed898d69e1",
+   "cer:mappingAssertion": {
+    "@id": "_:cb1f0197f8fa02c4c573788899e7b1de46edbf21ee0db3be8aa72bf7b943988022d"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b25.p0",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:predicate": {
+    "@id": "_:cb3933b4a58c1844d5bb46db5df4744a56eb18c8b900ff53f356fb1047340d4e509"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Platelet count >= 100,000/mm\\^3 (within 8 weeks prior to randomization)",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 21]"
+   },
+   "cer:temporalConstraint": {
+    "@id": "_:cb33f188db7b1a1165b4cc25d0ce290fcd210dc15650c1caeb6647eda9e5c51fed5"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1799a1a7d3f98a5b877fce084af22a86b8ab8d850e41ecfc27191e6b5b6361d16"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#777-3"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a6e638c5-9b84-5479-8a5e-4a12be0246fc",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b6",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"ild\"], \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "a6e638c5-9b84-5479-8a5e-4a12be0246fc",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b6",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must be >= 18 years of age. Because no dosing or adverse event data are currently available on the use of nivolumab therapy in patients < 18 years of age, children are excluded from this study",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb157f72a9d3d2d929063bbf0c31fe9a34142908be830fd4ab94abd6a59d7bcad1f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/a890f27e-1f19-5897-9f5a-de7df0078c7c",
+   "@type": "cer:ExpressionNode",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "a890f27e-1f19-5897-9f5a-de7df0078c7c",
+   "cer:leadIn": "Permitted forms of local therapy for second tumor:",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/99ada85a-f0d3-5b94-9ec1-fcc672004da9"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c9d60103-a92c-5e55-a939-428327a6e057"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8/b2/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Permitted forms of local therapy for second tumor:",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1b455d47583aff84245547c17a115861979544ee4bd6c93825a844cce9fa58faa"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/aae82df4-3e7a-531e-80cf-7db1d4f9df18",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Inc-b7",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 1.0, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "aae82df4-3e7a-531e-80cf-7db1d4f9df18",
+   "cer:mappingAssertion": {
+    "@id": "_:cb250df296d9bf31fc0cd4e864b97a7f01ac6fbcccc56b6d0b4b25b4b78a6bb323b"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b7.p0",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:predicate": {
+    "@id": "_:cb35ddb1c713c391680474463e05c0d171a37b483d6e8f83e9e5796c0a072443876"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must have an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[57, 91]"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1caeea8f6e77ab8aca8490ee48fdd20bc2c1ce7ba5b419397be530b5fd7b77a36"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#89247-1"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/acb5125e-f1e7-59c0-97ae-8c1c19b02038",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"autoimmune\"]}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "acb5125e-f1e7-59c0-97ae-8c1c19b02038",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b11/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Topical, ocular, intra-articular, intranasal, inhaled steroids and adrenal replacement steroid doses > 10 mg daily prednisone or the equivalent are permitted in the absence of active autoimmune disease",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1ed98dc47ec04bae2485aad87daa4f62039b67777eac601e8afa2b40b2a25b725"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b41562a8-18ff-5d4f-a3fb-a6d7711e1013",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"binding\": null, \"extraction_coverage\": 0.37}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "b41562a8-18ff-5d4f-a3fb-a6d7711e1013",
+   "cer:nodeType": "predicate",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b21.p0",
+   "cer:predicate": {
+    "@id": "_:cb568bbcbc182206d2bb28c5120502477937ae25bae51890384f0946acd70d30743"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+   "cer:subSpan": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[424, 459]"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1be2360ad381425051605b1abe67527487f415413d4d80d35d80219c0d7b9f123"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b5485cf6-a526-5f80-a95c-5284a65a17f3",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "b5485cf6-a526-5f80-a95c-5284a65a17f3",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b28.r",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+   "cer:subtype": "residual text not covered by typed predicates",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1647bbcc21bb693943f82589ec0a8bf765968d7b4760abbae233d6cf7263fae82"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b6c17875-cc47-554c-b783-3da638dcda1d",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b21",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"~36% of the statement's content words are typed; residual kept as narrative requirement\", \"temporal anchor missing or unrecognised -> evaluate as unknown until resolved\"]"
+   },
+   "cer:identifier": "b6c17875-cc47-554c-b783-3da638dcda1d",
+   "cer:logicBasis": "residual_added",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b41562a8-18ff-5d4f-a3fb-a6d7711e1013"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/54665c65-7ffd-5964-b158-6d6787d034d0"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b21.g",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+   "cer:temporalConstraint": {
+    "@id": "_:cb283b9cb26e475e5bf0dfa0ae652bbd64b06954104bdd8318d82a8380956715235"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb25580545e812811fb0c225951ef685dca76ae622ee9cb1b655f8926abb30b8a1c"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c51eddfb-d927-5a2d-b67e-931ddb8b7477",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "c51eddfb-d927-5a2d-b67e-931ddb8b7477",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b27.r",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+   "cer:subtype": "residual text not covered by typed predicates",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb17bbbbd1549a1c7d91210a4726829ea5f8cb0fc9c1883ea347c77cca14421767f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c79cde27-80a3-53e1-82f6-455101c74cc4",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "c79cde27-80a3-53e1-82f6-455101c74cc4",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b2/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "A history of superficial Ta urothelial cancer is permitted (as long as not currently undergoing treatment) whereas T1 or greater disease is excluded if < 3 years from diagnosis; concurrent persistent disease is not permitted",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1cc141fb7369d766b1a4af20a470c74888d645194eebdaee5976cb043227ad153"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/c9d60103-a92c-5e55-a939-428327a6e057",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "c9d60103-a92c-5e55-a939-428327a6e057",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8/b2/b1/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "If kidney tumor is =< 3 cm: thermal ablation (e.g., radiofrequency ablation, cryoablation or stereotactic radiosurgery)",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1da8e5a186230936cfb511f4aec2ed895a340f3494dd9a51b70a5fb2e627049a2"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/cb49e016-9afb-57af-8c75-c7e2a4f27a7b",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b3",
+   "cer:exceptions": {
+    "@list": [
+     {
+      "@id": "_:cbc9dae17222c1dc564121aad9de57b9955827256b4c7ee4b3b86aa9d9b5f61886"
+     }
+    ]
+   },
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "cb49e016-9afb-57af-8c75-c7e2a4f27a7b",
+   "cer:leadIn": "Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \"no evidence of disease\" (M1 NED)",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/9f421953-3c20-57a0-ba2c-01c3af902d3a"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/7d808bf9-4231-5c0c-8cfc-9beb3845dbde"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b3",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \"no evidence of disease\" (M1 NED)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb19acd027eac85497615bf39e5e27aa75681e08c9bb0d8e56654de89fbf7425ac7"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1c7aad3-5197-5b60-87aa-3b333bd6a274",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:displayNumber": "Inc-b28",
+   "cer:exceptions": {
+    "@list": [
+     {
+      "@id": "_:cbff895c73a99e20af1579291555620f130dc40c3e66c666ddfc8911b2246e2cc5"
+     }
+    ]
+   },
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"~44% of the statement's content words are typed; residual kept as narrative requirement\"]"
+   },
+   "cer:identifier": "d1c7aad3-5197-5b60-87aa-3b333bd6a274",
+   "cer:logicBasis": "residual_added",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fae2f2b7-d717-5302-9212-209ecf4a2d19"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/b5485cf6-a526-5f80-a95c-5284a65a17f3"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b28.g",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+   "cer:temporalConstraint": {
+    "@id": "_:cb2621a334832850b28b6fa45e7742f4392214e507bae02f7f1170aeca557d1d8e7"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb15f880d37e31d371188c6f4dfbe880581d77e3fb0848c818a5c79725ee6de7467"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/d1ff4de9-f6f9-564c-bac6-16a0a49e3e4a",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "human_judgment",
+   "cer:displayNumber": "Inc-b20",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "d1ff4de9-f6f9-564c-bac6-16a0a49e3e4a",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b20",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must have the ability to understand and the willingness to sign a written informed consent document",
+   "cer:subtype": "consent / contraception / pregnancy workflow",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb2e27dfb139d27b07c384d54c51161109a47081ef0c165939c0e1af6dfc8526aba"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/dc312b73-5630-50cc-aefa-44c0a0534c1d",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "dc312b73-5630-50cc-aefa-44c0a0534c1d",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b4/b1/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patients randomized to Arm A: core tumor biopsy must have demonstrated RCC of any histology, including sarcomatoid, unclassified, or \"unknown histology\" (if preoperative biopsy was uninformative) with exception below for non-diagnostic biopsies",
+   "cer:subtype": "specimen / tissue availability",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1dff669c2740ec2739d9a9a7524902332813424729c0a2ba93c27ef47b4d30fba"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/e3ce5325-85bc-5750-947d-dc4df5e8b6c3",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b2",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "e3ce5325-85bc-5750-947d-dc4df5e8b6c3",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b2",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patients must have a renal mass consistent with a clinical stage >= T2Nx renal cell carcinoma (RCC) or TanyN+ RCC for which radical or partial nephrectomy is planned",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1d30ed1ffbe808e6cadc90c8ffb57b1647cc58ba8212c9da8bf106f773be87807"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/ed870c3e-cb81-54b6-a296-10adedfedbd8",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "ed870c3e-cb81-54b6-a296-10adedfedbd8",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b8/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patients with a prior RCC that was treated > 5 years before, are eligible if the current tumor is consistent with a new primary in the opinion of the treating investigator",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1fdaafcf80785626b03441ee45ace1d097c1b75385bd0b57deb8b99a87b71a10a"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/f25dc254-219c-52a9-b241-f38df55dad19",
+   "@type": [
+    "cer:Criterion",
+    "cer:ExpressionNode"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-b12",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "f25dc254-219c-52a9-b241-f38df55dad19",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b12",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Patient must not have uncontrolled adrenal insufficiency",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1e42a9046239be66f4f1706041b856d4c488d0f3b6fe4d21b9547dbbcce1aff90"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/f87556ab-790e-546f-8164-9d28b2106eee",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"autoimmune\"]}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "f87556ab-790e-546f-8164-9d28b2106eee",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b11/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "A brief (less than 3 weeks) course of corticosteroids (any amount) for prophylaxis (for example: contrast dye allergy) or for treatment of non-autoimmune conditions (for example: nausea, delayed-type hypersensitivity reaction caused by a contact allergen) is permitted",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1f92e301a6d1648978b22f0ae29ad2abf4a54a8c940de98951ef091c8f6f4f81f"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fabaabf1-1b8e-5620-970f-822082b0855d",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "fabaabf1-1b8e-5620-970f-822082b0855d",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b9/b2/b2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Adequately treated stage I or II cancer from which the patient is currently in complete remission",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb14178c67c9854568df51c62bb643da877988e9c16c7ca805f9ec5ad390c97651a"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fae2f2b7-d717-5302-9212-209ecf4a2d19",
+   "@type": "cer:ExpressionNode",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"extraction_coverage\": 0.44}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"conjunction assumed between extracted predicates (list/commas)\"]"
+   },
+   "cer:identifier": "fae2f2b7-d717-5302-9212-209ecf4a2d19",
+   "cer:logicBasis": "assumed_conjunction",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/2a197206-d449-5cfd-a510-38747e45ce29"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/26254d1f-5808-510e-9f0e-0470cb75ec7f"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b28",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb1348fa2254b2398cbe4b8d531bd861e89d3601bdb8b48e37c373926f24c88af22"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fb628f2b-d515-5023-9b05-be2fda48c07f",
+   "@type": "cer:ExpressionNode",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"group operator ALL assumed from wording/polarity -> verify\"]"
+   },
+   "cer:identifier": "fb628f2b-d515-5023-9b05-be2fda48c07f",
+   "cer:leadIn": "NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose",
+   "cer:logicBasis": "assumed",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/dc312b73-5630-50cc-aefa-44c0a0534c1d"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/08fceb6d-a0f0-5c52-bb50-f159674f095f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/72284178-9292-593c-acf9-d48b2513251f"
+     }
+    ]
+   },
+   "cer:operator": "ALL",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b4/b1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb104108c2e76ce28361080f9c11c842f1b8afdf070fc293fb65216e7f09f718f0a"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18/node/fdb90553-f094-5ba3-8c36-c3db1c10e22c",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "fdb90553-f094-5ba3-8c36-c3db1c10e22c",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/b5/b3",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Patient must not have received current or past antineoplastic systemic therapies for RCC: i.e., chemotherapy, hormonal therapy, immunotherapy, or standard or investigational agents for treatment of RCC",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:cb115d7601c585310afbd8890a9f74adee08e0df870fb597371b60a660df1e689a0"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT03055013/source/c8901f786988",
+   "@type": "cer:SourceDocument",
+   "cer:baseline": "registry_excerpt",
+   "cer:sha256": "c8901f78698841736207f62c8297351d65c02645a7442fd61fc92832ef4cba74"
+  }
+ ],
+ "@id": "https://cer.example.org/trial/NCT03055013/release/de2c9da08f18"
+}

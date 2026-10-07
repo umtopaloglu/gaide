@@ -2,9 +2,9 @@
  "nct_id": "NCT03092674",
  "releases": [
   {
-   "release_id": "e5c1359d19e851fcb966d71600c045a61adaba519334784cf5ecccfcadd91f82",
+   "release_id": "fafde8d61813b95fd74220e6d0e84f116c8bc85dce8b969b79567d6ac3719d2d",
    "status": "candidate",
-   "created": "2026-10-07T02:42:04+00:00",
+   "created": "2026-10-07T02:43:17+00:00",
    "cer_content_sha256": "4061ef132f64edfbb8d28dbfc43e89e08768fc5d1921d57778e4c3b6da11e4a1"
   }
  ]
