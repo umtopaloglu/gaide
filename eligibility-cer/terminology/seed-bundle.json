@@ -3,7 +3,7 @@
  "bundle_version": "0.1.0",
  "built": "2026-10-06",
  "status": "UNREVIEWED_SEED",
- "warning": "Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.",
+ "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty.",
  "code_systems": {
   "LOINC": {
    "uri": "http://loinc.org",
@@ -12,7 +12,7 @@
   },
   "SNOMED CT": {
    "uri": "http://snomed.info/sct",
-   "version": null,
+   "version": "http://snomed.info/sct/900000000000207008/version/20261001 (as reported by the snomedct-us branch on Snowstorm)",
    "license": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary"
   },
   "HGNC": {
@@ -278,6 +278,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Human immunodeficiency virus infection"
    }
   },
   {
@@ -292,7 +299,7 @@
    "primary": {
     "system": "SNOMED CT",
     "code": "66071002",
-    "display": "Viral hepatitis type B"
+    "display": "Type B viral hepatitis"
    },
    "relationship": "inexact",
    "direction": "source_to_target",
@@ -301,6 +308,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Type B viral hepatitis"
    }
   },
   {
@@ -314,7 +328,7 @@
    "primary": {
     "system": "SNOMED CT",
     "code": "50711007",
-    "display": "Viral hepatitis type C"
+    "display": "Viral hepatitis C"
    },
    "relationship": "inexact",
    "direction": "source_to_target",
@@ -323,6 +337,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Viral hepatitis C"
    }
   },
   {
@@ -344,6 +365,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Myocardial infarction"
    }
   },
   {
@@ -366,6 +394,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Cerebrovascular accident"
    }
   },
   {
@@ -387,6 +422,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Deep venous thrombosis"
    }
   },
   {
@@ -408,6 +450,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Pulmonary embolism"
    }
   },
   {
@@ -429,6 +478,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Tuberculosis"
    }
   },
   {
@@ -451,6 +507,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Interstitial lung disease"
    }
   },
   {
@@ -463,7 +526,7 @@
    "primary": {
     "system": "SNOMED CT",
     "code": "38341003",
-    "display": "Hypertensive disorder, systemic arterial"
+    "display": "Hypertensive disorder"
    },
    "relationship": "inexact",
    "direction": "source_to_target",
@@ -472,6 +535,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Hypertensive disorder"
    }
   },
   {
@@ -493,6 +563,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Heart failure"
    }
   },
   {
@@ -514,6 +591,13 @@
    "cross_links": {
     "NCIt": null,
     "UMLS_CUI": null
+   },
+   "verification": {
+    "source": "SNOMED CT US Edition via Snowstorm (snomedbrowser.org)",
+    "release": "20261001",
+    "checked": "2026-10-07",
+    "active": true,
+    "official_display": "Autoimmune disease"
    }
   },
   {
