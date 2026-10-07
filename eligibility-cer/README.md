@@ -65,7 +65,7 @@ CQL_LIB=<translator jars> ./tools_validate_cql.sh out/EligibilityCER_NCT06128837
 ## Updated plan (6 Oct 2026: terminology + knowledge-graph review) — what changed here
 | Plan requirement | Implementation |
 |---|---|
-| ct.gov text is a *registry assertion*, not the approved protocol (Source B = approved document) | `source.source_role`, `protocol_baseline="registry_excerpt"`, completeness disclosure on every CER |
+| Source B document | Program decision (7 Oct): the ct.gov eligibility text **is** the Source B document. `source.source_role` says so; the completeness disclosure notes what that text can omit |
 | Terminology layer: source phrase → canonical binding, cross-links, execution binding, mapping semantics, value set + frozen expansion, provenance, lifecycle (Table 4) | `cer/terminology.py`, `terminology/seed-bundle.json`; per-predicate `binding`; value sets with SHA-256 frozen expansions |
 | Mapping relation explicit (equivalent / inexact / broader / … / no-map); unmapped ≠ negative; outage = technical failure | `RELATIONSHIPS`, `no-map` records, `terminology_unavailable` status |
 | Graph-compatible CER: RDF 1.1 / JSON-LD 1.1, ordered operands, release snapshot as named graph, PROV-O, SKOS, SHACL Core, canonical hash, round-trip, competency queries | `cer/graph.py`, `graph/cer-shapes.ttl`, `python run.py graph NCT…` |

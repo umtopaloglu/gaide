@@ -245,7 +245,7 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
         "schema_version": SCHEMA_VERSION,
         "lifecycle": {"status": "draft", "note": "Draft only: not clinically or informatically reviewed; not executable for screening."},
         "source": {
-            "source_type": "B", "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
+            "source_type": "B", "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
             "registry": "ClinicalTrials.gov", "nct_id": nct,
             "title": ps["identificationModule"].get("briefTitle"),
             "overall_status": ps.get("statusModule", {}).get("overallStatus"),
@@ -258,8 +258,8 @@ def build_cer(record: dict, source_meta: dict | None = None) -> dict:
             "text_normalized": text,
         },
         "completeness_disclosure": (
-            "Registry-based prescreening: the approved protocol and amendments were not available. A registry "
-            "excerpt is a discovery source, not proof that all enrollment requirements are present."),
+            "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, "
+            "lab tables and amendment detail, so criteria referring to content outside this text stay unresolved."),
         "ctrp_biomarker_contract": {"status": "not_supplied",
                                     "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, "
                                             "not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."},

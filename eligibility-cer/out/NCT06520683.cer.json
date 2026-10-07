@@ -6,7 +6,7 @@
  },
  "source": {
   "source_type": "B",
-  "source_role": "curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
   "registry": "ClinicalTrials.gov",
   "nct_id": "NCT06520683",
   "title": "Adjuvant PD-1 Blockade for High-risk Stage-II DMMR/MSI-H Colorectal Cancer (SMALLER)",
@@ -23,7 +23,7 @@
   },
   "text_normalized": "Inclusion Criteria:\n\n* dMMR and/or MSI-H colorectal carcinoma that undergo surgical resection\n* Pathologically confirmed as stage II (T3-4,N0), with at least one of the following risk factors: 1) T4 (including T4a and T4b); 2) Vascular invasion; 3) Perineural invasion; 4) Poor differentiation (including mucinous and signet-ring carcinoma); 5) Obstruction and/or perforation before surgery.\n* Perioperative CT/MR/PET-CT find no signs of metastases\n* Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1 within 10 days prior to study start\n* Aged 18-80\n* No prior medical therapy (chemotherapy, immunotherapy, biologic or targeted therapy) or radiation therapy for the current cancer\n* Adequate organ function\n\nExclusion Criteria:\n\n* Active autoimmune disease that has required systemic treatment in past 2 years\n* Positive surgical margin (R1/R2 resection)\n* Presence of post-operative complications that may preclude treatment\n* Active infection requiring systemic therapy\n* Any other malignant disease within the preceding 5 years with the exception of non-melanomatous skin cancer, carcinoma in situ and early stage disease with a recurrence risk <5%."
  },
- "completeness_disclosure": "Registry-based prescreening: the approved protocol and amendments were not available. A registry excerpt is a discovery source, not proof that all enrollment requirements are present.",
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
  "ctrp_biomarker_contract": {
   "status": "not_supplied",
   "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
