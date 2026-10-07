@@ -1,0 +1,11 @@
+{
+ "nct_id": "NCT04547166",
+ "releases": [
+  {
+   "release_id": "4e3ddf68d3a75ff8d7cb09afb41381bc4fca257c9d9621958d59b418e0212b37",
+   "status": "candidate",
+   "created": "2026-10-07T02:42:04+00:00",
+   "cer_content_sha256": "da810c71d6e105fa7f0bd6984ad1efa4ae36dcaf2a3bdaf5382e58ee5e558ee4"
+  }
+ ]
+}

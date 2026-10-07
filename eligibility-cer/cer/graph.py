@@ -168,9 +168,15 @@ CONTEXT = {"cer": str(CER), "prov": str(PROV), "skos": str(SKOS), "xsd": str(XSD
 
 
 def to_jsonld(cer):
+    """Serialise the canonicalised graph (deterministic blank-node labels) so identical content -> identical bytes."""
     ds, gid = to_dataset(cer)
-    txt = ds.serialize(format="json-ld", context=CONTEXT, indent=1)
-    return txt, canonical_hash(ds, gid), gid
+    h = canonical_hash(ds, gid)
+    out = Dataset()
+    g2 = out.graph(gid)
+    for t in sorted(to_canonical_graph(ds.graph(gid))):
+        g2.add(t)
+    txt = out.serialize(format="json-ld", context=CONTEXT, indent=1)
+    return txt, h, gid
 
 
 def _scal(g, u, p):

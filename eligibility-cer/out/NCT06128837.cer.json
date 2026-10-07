@@ -2274,6 +2274,9 @@
  "conflicts": [],
  "review_summary": {
   "open_conflicts": [],
+  "stale_decisions": [],
+  "orphaned_decisions": [],
+  "unpinned_decisions": [],
   "criteria": 32,
   "validated": 0,
   "pending": [

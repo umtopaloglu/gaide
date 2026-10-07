@@ -1,0 +1,472 @@
+{
+ "capability": {
+  "approval": null,
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "leaves": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 49
+  },
+  "nodes": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 54
+  },
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path.",
+  "overall_assertion_allowed": false,
+  "per_node": {
+   "0b1a0324-97a4-5cfb-85a0-2c43a7d4ce81": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "0d53dd4a-1cd2-5784-bd7f-b10a6d5472fe": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "114ad437-f908-58da-9fe8-09b9782073a8": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "1b75621f-28e2-5d41-955b-bad40510488c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "20b96dab-909d-595c-9ee5-93e3c1571072": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "32f642b5-4112-59ce-9313-16a4a6aa6aaf": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "36facce4-1fea-55ef-8738-2cd6ca54e97f": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "39bf6d3e-3f64-520b-852e-1b91889cc608": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "45352ffa-a627-5b3b-9ed0-91293fc996c1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "46f4187e-2966-55d0-9860-3711b292605d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5046ae33-57a1-5f47-a092-be9b343bae5e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "50b9746b-44a3-5568-aa38-b461c1e8e0e4": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "517007d5-b127-5281-a919-f9312fab03fa": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "57d9dadd-faed-5562-8cc8-1872d19c2497": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5a0448cb-a8cd-5bcd-82c8-34ea25787d82": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5b643372-c0a6-5982-80e9-fd3bdf914e8b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5e9b0f79-001c-5ea9-b09c-14f7212c157f": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "62284e6d-2344-5e1d-8818-88bed17004fc": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6cd55c21-0c61-51e0-aaad-5905786a1a78": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6e313bf7-5210-5b99-8778-e0ea7a2216fb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6eb7266a-6e45-51a2-8f1c-c8988a9abd96": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6fa56f5b-7aa3-50dd-8839-25e53842a8bc": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "72b03ed1-f65b-5dcf-8f2e-ea190a69319e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "74aef2b7-6dfb-5c0c-980a-1a01ff81412a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "758d2dff-f9d8-5446-a8be-853bb8837ca1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7650f54b-7230-570c-bf45-5981eb1a0f5e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7b68c058-2854-5acb-93d1-39fc359e80d4": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7f6ffc53-cb6f-534c-a58a-f2fa36190be0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "87ed3b9e-57aa-5b4c-b9f9-20021df34c71": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "8ca07dbf-802c-5ee7-8387-b5ba5e761ca1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "90d2afd9-63e6-5265-abd9-bbc680abf1ce": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "90f22773-5bab-5261-af4d-6dcfffd958fb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "9f6e8b41-30b0-5f17-8a7c-273de9b946d7": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a30c53d1-bc04-57ac-8266-7733899033b9": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "abeb19a3-ad93-5d87-82b2-462d387f680b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ac610ebe-4e1c-51ec-829c-245b3ee5c65a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b0b20461-501b-5e11-8e1c-9e8e37779c96": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b12bc8c3-3192-5362-9e24-64143ed7d022": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b570e746-de65-5757-b40b-c925d1bf38e6": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c150986d-557e-5431-9857-7b5190a4231f": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c90056c5-d8e8-5ecc-8900-0aef2b3b763e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "cc11d745-1696-50ad-b9a9-a104814141cd": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "cd50ee95-2859-5fb1-85ac-05880fe0d15d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d1d1c318-e7e3-5578-a1aa-3935d295a42d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d21929a9-8a34-534f-b2d6-862bc986019c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d99d4147-aecd-5878-9f0e-0c45d837a753": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "dd9bfd3f-55db-53b3-9584-5c77da23d35a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e401b536-ac0f-569c-bc62-dd519361b381": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e88104d2-f77e-544d-b7d8-2b3bfb574463": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e8dd9302-32ee-5015-a700-264f6d83df05": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ea3ff3a5-240d-5044-b030-4f23c60fc754": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ed7e437c-b5f8-58d1-b952-abef91efae8c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "fa1f930b-6b3e-5bf3-8340-eaa7869a2c92": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "fae88c03-7e35-5389-a677-4bbbcb7addd6": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   }
+  },
+  "trial_backend_label": "unavailable"
+ },
+ "cer_content_sha256": "4061ef132f64edfbb8d28dbfc43e89e08768fc5d1921d57778e4c3b6da11e4a1",
+ "cql_sha256": "04876d4281a48a01be699999fe162af81d58db362c984b9896cd8f30e9f08df3",
+ "criteria": 37,
+ "executable_typed_leaves": 0,
+ "gated": true,
+ "library": "EligibilityCER_NCT03092674",
+ "parameters": [],
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site",
+ "scope": null,
+ "translator_validated": false,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "ac610ebe-4e1c-51ec-829c-245b3ee5c65a",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 60 Years"
+  },
+  {
+   "criterion": "Inc-b1",
+   "node": "517007d5-b127-5281-a919-f9312fab03fa",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 1-SPECIMEN SUBMISSION"
+  },
+  {
+   "criterion": "Inc-b2",
+   "node": "c150986d-557e-5431-9857-7b5190a4231f",
+   "reason": "not validated (gated)",
+   "text": "Patients must be suspected to have previously untreated acute myelogenous leukemia (AML) o"
+  },
+  {
+   "criterion": "Inc-b3",
+   "node": "62284e6d-2344-5e1d-8818-88bed17004fc",
+   "reason": "not validated (gated)",
+   "text": "Patients must not be known to have AML in the central nervous system (CNS)"
+  },
+  {
+   "criterion": "Inc-b4",
+   "node": "8ca07dbf-802c-5ee7-8387-b5ba5e761ca1",
+   "reason": "not validated (gated)",
+   "text": "Patients must have specimens submitted for FLT3 testing for randomization stratification; "
+  },
+  {
+   "criterion": "Inc-b5",
+   "node": "5e9b0f79-001c-5ea9-b09c-14f7212c157f",
+   "reason": "not validated (gated)",
+   "text": "Patients must be offered participation in specimen banking; with patient consent, pretreat"
+  },
+  {
+   "criterion": "Inc-b6",
+   "node": "cc11d745-1696-50ad-b9a9-a104814141cd",
+   "reason": "not validated (gated)",
+   "text": "Patients who have received prior therapy with midostaurin, any anti-PD-1 or anti-PD-L1 the"
+  },
+  {
+   "criterion": "Inc-b7",
+   "node": "20b96dab-909d-595c-9ee5-93e3c1571072",
+   "reason": "not validated (gated)",
+   "text": "Patients must be able to swallow oral medications without crushing or chewing"
+  },
+  {
+   "criterion": "Inc-b8",
+   "node": "45352ffa-a627-5b3b-9ed0-91293fc996c1",
+   "reason": "not validated (gated)",
+   "text": "Prior malignancy is allowed providing it does not require concurrent therapy"
+  },
+  {
+   "criterion": "Inc-b9",
+   "node": "fa1f930b-6b3e-5bf3-8340-eaa7869a2c92",
+   "reason": "not validated (gated)",
+   "text": "Patients must not be pregnant or nursing; women/men of reproductive potential must have ag"
+  },
+  {
+   "criterion": "Inc-b10",
+   "node": "50b9746b-44a3-5568-aa38-b461c1e8e0e4",
+   "reason": "not validated (gated)",
+   "text": "Patients must be informed of the investigational nature of this study and must sign and gi"
+  },
+  {
+   "criterion": "Inc-b11",
+   "node": "6cd55c21-0c61-51e0-aaad-5905786a1a78",
+   "reason": "not validated (gated)",
+   "text": "As a part of the Oncology Patient Enrollment Network (OPEN) registration process the treat"
+  },
+  {
+   "criterion": "Inc-b12",
+   "node": "ea3ff3a5-240d-5044-b030-4f23c60fc754",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be registered to Step 2 no more than 42 d"
+  },
+  {
+   "criterion": "Inc-b13",
+   "node": "abeb19a3-ad93-5d87-82b2-462d387f680b",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must have morphologically confirmed, previousl"
+  },
+  {
+   "criterion": "Inc-b14",
+   "node": "1b75621f-28e2-5d41-955b-bad40510488c",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must not be known to have AML in the CNS"
+  },
+  {
+   "criterion": "Inc-b15",
+   "node": "0b1a0324-97a4-5cfb-85a0-2c43a7d4ce81",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be deemed, in the judgment of the treatin"
+  },
+  {
+   "criterion": "Inc-b16",
+   "node": "36facce4-1fea-55ef-8738-2cd6ca54e97f",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Pretreatment cytogenetics must be performed on all pati"
+  },
+  {
+   "criterion": "Inc-b17",
+   "node": "72b03ed1-f65b-5dcf-8f2e-ea190a69319e",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: FLT3 results will be used for stratification purposes a"
+  },
+  {
+   "criterion": "Inc-b18",
+   "node": "fae88c03-7e35-5389-a677-4bbbcb7addd6",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Prior treatment with hydroxyurea is permitted; prior al"
+  },
+  {
+   "criterion": "Inc-b19",
+   "node": "a30c53d1-bc04-57ac-8266-7733899033b9",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients may have received non-intensive therapy for an"
+  },
+  {
+   "criterion": "Inc-b20",
+   "node": "d99d4147-aecd-5878-9f0e-0c45d837a753",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients who are transfusion-dependent and patients rec"
+  },
+  {
+   "criterion": "Inc-b21",
+   "node": "d1d1c318-e7e3-5578-a1aa-3935d295a42d",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: The following tests must be performed within 14 days pr"
+  },
+  {
+   "criterion": "Inc-b22",
+   "node": "d21929a9-8a34-534f-b2d6-862bc986019c",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must have complete history and physical examin"
+  },
+  {
+   "criterion": "Inc-b23",
+   "node": "7b68c058-2854-5acb-93d1-39fc359e80d4",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must not have active infection (systemic bacte"
+  },
+  {
+   "criterion": "Inc-b24",
+   "node": "114ad437-f908-58da-9fe8-09b9782073a8",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be eligible for at least one of the curre"
+  },
+  {
+   "criterion": "Inc-b25",
+   "node": "6fa56f5b-7aa3-50dd-8839-25e53842a8bc",
+   "reason": "not validated (gated)",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be informed of the investigational nature"
+  },
+  {
+   "criterion": "Inc-b26",
+   "node": "cd50ee95-2859-5fb1-85ac-05880fe0d15d",
+   "reason": "not validated (gated)",
+   "text": "ARM B (AZACITIDINE + NIVOLUMAB)"
+  },
+  {
+   "criterion": "Inc-b27",
+   "node": "39bf6d3e-3f64-520b-852e-1b91889cc608",
+   "reason": "not validated (gated)",
+   "text": "Patients must not have active autoimmune disease that has required systemic treatment in p"
+  },
+  {
+   "criterion": "Inc-b28",
+   "node": "5046ae33-57a1-5f47-a092-be9b343bae5e",
+   "reason": "not validated (gated)",
+   "text": "Patients must have AST and ALT =< 2.5 x institutional upper limit of normal (IULN)"
+  },
+  {
+   "criterion": "Inc-b29",
+   "node": "5b643372-c0a6-5982-80e9-fd3bdf914e8b",
+   "reason": "not validated (gated)",
+   "text": "Patients must have total bilirubin =< 1.5 x IULN"
+  },
+  {
+   "criterion": "Inc-b30",
+   "node": "e88104d2-f77e-544d-b7d8-2b3bfb574463",
+   "reason": "not validated (gated)",
+   "text": "Patients must have baseline troponin test performed for eligibility; however, no associate"
+  },
+  {
+   "criterion": "Inc-b31",
+   "node": "9f6e8b41-30b0-5f17-8a7c-273de9b946d7",
+   "reason": "not validated (gated)",
+   "text": "ARM C (AZACITIDINE + MIDOSTAURIN)"
+  },
+  {
+   "criterion": "Inc-b32",
+   "node": "b570e746-de65-5757-b40b-c925d1bf38e6",
+   "reason": "not validated (gated)",
+   "text": "Patients must have total bilirubin =< 2.5 x IULN"
+  },
+  {
+   "criterion": "Inc-b33",
+   "node": "90d2afd9-63e6-5265-abd9-bbc680abf1ce",
+   "reason": "not validated (gated)",
+   "text": "Patients must have creatinine clearance =< 2.5 x IULN"
+  },
+  {
+   "criterion": "Inc-b34",
+   "node": "ed7e437c-b5f8-58d1-b952-abef91efae8c",
+   "reason": "not validated (gated)",
+   "text": "Patients must have corrected QT (QTc) interval < 500/msec (by Bazett's formula) on baselin"
+  },
+  {
+   "criterion": "Inc-b35",
+   "node": "7650f54b-7230-570c-bf45-5981eb1a0f5e",
+   "reason": "not validated (gated)",
+   "text": "Patients must not have any history of hypersensitivity to any drugs or metabolites of mido"
+  },
+  {
+   "criterion": "Inc-b36",
+   "node": "c90056c5-d8e8-5ecc-8900-0aef2b3b763e",
+   "reason": "not validated (gated)",
+   "text": "All tests for establishing baseline values must be completed within 14 days prior to regis"
+  }
+ ]
+}

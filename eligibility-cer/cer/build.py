@@ -62,6 +62,8 @@ def _leaf(ctx, path, text, span, ctxinfo):
     tw, exc = X.time_window(text), X.exceptions(text)
     preds, connector, covered = X.extract_predicates(text)
     common = {}
+    if re.search(r"\w\*|\*\w|\*\s*$", text):
+        common["flags"] = ["footnote marker (*): a qualifying note elsewhere in the text may modify this criterion -> review together"]
     if tw:
         common["time_window"] = tw
         if tw["status"] != "parsed":
@@ -133,7 +135,11 @@ def _convert(ctx, items, c, path_prefix, out):
             elif "inclusion" in low:
                 sub["polarity"], sub["polarity_source"] = "inclusion", f"heading '{it.text}'"
             if not HEAD_NAMED_RE.match(it.text):
-                sub["scope"] = c["scope"] + [it.text.rstrip(":")]
+                letters = re.sub(r"[^A-Za-z]", "", it.text)
+                if letters.isupper() and not re.search(r"\b(phase|arm|cohort|part|step|stage)\b", it.text, re.I):
+                    sub["category"] = it.text.rstrip(":")         # e.g. legacy NCI "PATIENT CHARACTERISTICS": grouping only
+                else:
+                    sub["scope"] = c["scope"] + [it.text.rstrip(":")]
             sub.pop("hint", None)
             ctx_scopes.append({"label": it.text, "span": [it.start, it.end]})
             _convert(ctx, it.children, sub, path, out)
@@ -154,6 +160,8 @@ def _convert(ctx, items, c, path_prefix, out):
         node["polarity"] = c["polarity"]
         node["polarity_source"] = c.get("polarity_source", f"section '{c['section']}'")
         node["scope"] = list(c["scope"])
+        if c.get("category"):
+            node["category"] = c["category"]
         if c.get("hint"):
             node["branch_hint"] = c["hint"]
             node["flags"].append(f"follows branch heading '{c['hint']}' in a flat list; branch membership unresolved")

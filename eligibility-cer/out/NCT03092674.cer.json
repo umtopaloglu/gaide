@@ -1,0 +1,1366 @@
+{
+ "schema_version": "cer-draft-0.1",
+ "lifecycle": {
+  "status": "draft",
+  "note": "Draft only: not reviewed; not executable for screening."
+ },
+ "source": {
+  "source_type": "B",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "registry": "ClinicalTrials.gov",
+  "nct_id": "NCT03092674",
+  "title": "Azacitidine With or Without Nivolumab or Midostaurin, or Decitabine and Cytarabine Alone in Treating Older Patients With Newly Diagnosed Acute Myeloid Leukemia or High-Risk Myelodysplastic Syndrome",
+  "overall_status": "COMPLETED",
+  "retrieved_at": "2026-10-07T00:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "content_sha256": "4061ef132f64edfbb8d28dbfc43e89e08768fc5d1921d57778e4c3b6da11e4a1",
+  "protocol_baseline": "registry_excerpt",
+  "demographics": {
+   "minimum_age": "60 Years",
+   "maximum_age": null,
+   "sex": "ALL",
+   "healthy_volunteers": "No"
+  },
+  "text_normalized": "Inclusion Criteria:\n\n* REGISTRATION STEP 1-SPECIMEN SUBMISSION\n* Patients must be suspected to have previously untreated acute myelogenous leukemia (AML) or myelodysplastic syndrome with excess blasts-2 (MDS-EB-2)\n* Patients must not be known to have AML in the central nervous system (CNS)\n* Patients must have specimens submitted for FLT3 testing for randomization stratification; collection of pretreatment specimens must be completed within 1 day of registration to Step 1; specimens must be submitted via the Southwest Oncology Group (SWOG) Specimen Tracking System; FLT3 results will be used for stratification purposes at the time of randomization; E-mail notification of randomization assignment must be received prior to Step 2 registration\n* Patients must be offered participation in specimen banking; with patient consent, pretreatment specimens must be collected and submitted via the SWOG Specimen Tracking System\n* Patients who have received prior therapy with midostaurin, any anti-PD-1 or anti-PD-L1 therapy, any deoxyribonucleic acid (DNA)-methyltransferase inhibitor (including hypomethylating agents such as azacitidine, decitabine, or other investigational agent that acts by inhibiting DNA or ribonucleic acid [RNA] methylation) for any condition, or prior intensive cytotoxic therapy for myelodysplastic syndrome (MDS), are not eligible\n* Patients must be able to swallow oral medications without crushing or chewing\n* Prior malignancy is allowed providing it does not require concurrent therapy\n\n  * Exception: active hormonal therapy is allowed\n* Patients must not be pregnant or nursing; women/men of reproductive potential must have agreed to use an effective contraceptive method; a woman is considered to be of \"reproductive potential\" if she has had menses at any time in the preceding 12 consecutive months; in addition to routine contraceptive methods, \"effective contraception also includes (but is not limited to) heterosexual celibacy and surgery intended to prevent pregnancy (or with a side-effect of pregnancy prevention) defined as a hysterectomy, bilateral oophorectomy, bilateral tubal ligation, or vasectomy; however, if at any point a previously celibate patient chooses to become heterosexually active during the time period for use of contraceptive measures outlined in the protocol, he/she is responsible for beginning contraceptive measures\n\n  * Women must agree to avoid breast-feeding and women of child-bearing potential (WOCBP) must agree to use highly effective contraception while receiving study drug and for a period of 31 weeks after the last dose of study drug; sexually-active men must agree to use a condom while receiving study drug and for 31 weeks after the last dose of study drug; vasectomized men must also agree to use a condom to avoid delivering drug in the seminal fluid\n* Patients must be informed of the investigational nature of this study and must sign and give written informed consent in accordance with institutional and federal guidelines\n* As a part of the Oncology Patient Enrollment Network (OPEN) registration process the treating institution's identity is provided in order to ensure that the current (within 365 days) date of institutional review board approval for this study has been entered in the system\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must be registered to Step 2 no more than 42 days after registration to Step 1 and no more than 42 days after collection of specimens for FLT3 testing\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must have morphologically confirmed, previously untreated acute myeloid leukemia (AML) or MDS with excess blasts-2 (MDS-EB-2)\n\n  * Patients with acute promyelocytic leukemia (APL), biphenotypic leukemia, blastic transformation of chronic myelogenous leukemia (CML or BCR/ABL), are not eligible\n  * Patients must have disease present in the blood or bone marrow; patients with only extramedullary disease in the absence of bone marrow or blood involvement are not eligible\n  * All tests for establishing baseline disease status eligibility must be based on blood and/or bone marrow examination performed within 42 days prior to randomization (registration Step 2)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must not be known to have AML in the CNS\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must be deemed, in the judgment of the treating physician, to be ineligible for intensive induction therapy, or must have refused intensive induction therapy; rationale for clinical determination or notation of patient decision must be made\n* REGISTRATION STEP 2-RANDOMIZATION: Pretreatment cytogenetics must be performed on all patients; collection of pretreatment specimens must be completed within 42 days prior to randomization (registration Step 2); reports of the results must be submitted\n* REGISTRATION STEP 2-RANDOMIZATION: FLT3 results will be used for stratification purposes at the time of randomization; E-mail notification that FLT3 specimens have been processed must be received prior to randomization (registration Step 2)\n* REGISTRATION STEP 2-RANDOMIZATION: Prior treatment with hydroxyurea is permitted; prior all-trans retinoic acid (ATRA) for suspected APL and prior intrathecal therapy are permitted, but must plan to be discontinued prior to initiating protocol therapy; patients with signs/symptoms of hyperleukocytosis or white blood cells (WBC) >= 50,000/mcL can be treated with leukapheresis prior to randomization (registration to Step 2)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients may have received non-intensive therapy for antecedent hematologic disorders, including lenalidomide; patients may have received prior chemotherapy for prior cancers; these therapies must be discontinued at least 5 days prior to randomization (registration to Step 2)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients who are transfusion-dependent and patients receiving growth factor support are eligible; patients must discontinue growth factor support prior to initiation of protocol therapy\n* REGISTRATION STEP 2-RANDOMIZATION: The following tests must be performed within 14 days prior to randomization (registration to Step 2) to establish baseline values:\n\n  * Performance status\n  * Complete blood count (CBC)/differential/platelets\n  * Creatinine clearance (Cockcroft-Gault)\n  * Total bilirubin\n  * Aspartate aminotransferase (AST) and alanine aminotransferase (ALT)\n  * Lactate dehydrogenase (LDH)\n  * Albumin\n  * Glucose\n  * Fibrinogen\n  * Electrocardiogram (ECG)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must have complete history and physical examination within 28 days prior to randomization (registration to Step 2); history must include autoimmune disease status (to determine whether patient is eligible for Arm B)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must not have active infection (systemic bacterial, fungal, or viral infection) that is not controlled (defined as exhibiting ongoing signs/symptoms related to the infection and without improvement despite appropriate antibiotics or other treatment)\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must be eligible for at least one of the currently active investigational treatment arms (S1612B or S1612C); if the patient does not meet eligibility criteria for at least one active investigational arm, then the patient is not eligible for S1612\n* REGISTRATION STEP 2-RANDOMIZATION: Patients must be informed of the investigational nature of this study and must sign and give written informed consent in accordance with institutional and federal guidelines\n* ARM B (AZACITIDINE + NIVOLUMAB)\n* Patients must not have active autoimmune disease that has required systemic treatment in past 2 years (i.e., with use of disease modifying agents, corticosteroids or immunosuppressive drugs); replacement therapy (e.g., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency, etc.) is not considered a form of systemic treatment\n* Patients must have AST and ALT =< 2.5 x institutional upper limit of normal (IULN)\n* Patients must have total bilirubin =< 1.5 x IULN\n* Patients must have baseline troponin test performed for eligibility; however, no associated values must be met in order for the patient to be eligible\n* ARM C (AZACITIDINE + MIDOSTAURIN)\n* Patients must have total bilirubin =< 2.5 x IULN\n* Patients must have creatinine clearance =< 2.5 x IULN\n* Patients must have corrected QT (QTc) interval < 500/msec (by Bazett's formula) on baseline ECG\n* Patients must not have any history of hypersensitivity to any drugs or metabolites of midostaurin\n* All tests for establishing baseline values must be completed within 14 days prior to registration to Step 2 (randomization)"
+ },
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "ctrp_biomarker_contract": {
+  "status": "not_supplied",
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
+ },
+ "scopes": [
+  []
+ ],
+ "criteria": [
+  {
+   "id": "ac610ebe-4e1c-51ec-829c-245b3ee5c65a",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 60 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 60.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "517007d5-b127-5281-a919-f9312fab03fa",
+   "path": "/inc/b1",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 1-SPECIMEN SUBMISSION",
+   "source_span": [
+    21,
+    62
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "c150986d-557e-5431-9857-7b5190a4231f",
+   "path": "/inc/b2",
+   "type": "narrative",
+   "text": "Patients must be suspected to have previously untreated acute myelogenous leukemia (AML) or myelodysplastic syndrome with excess blasts-2 (MDS-EB-2)",
+   "source_span": [
+    63,
+    213
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "62284e6d-2344-5e1d-8818-88bed17004fc",
+   "path": "/inc/b3",
+   "type": "narrative",
+   "text": "Patients must not be known to have AML in the central nervous system (CNS)",
+   "source_span": [
+    214,
+    290
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "8ca07dbf-802c-5ee7-8387-b5ba5e761ca1",
+   "path": "/inc/b4",
+   "type": "narrative",
+   "text": "Patients must have specimens submitted for FLT3 testing for randomization stratification; collection of pretreatment specimens must be completed within 1 day of registration to Step 1; specimens must be submitted via the Southwest Oncology Group (SWOG) Specimen Tracking System; FLT3 results will be used for stratification purposes at the time of randomization; E-mail notification of randomization assignment must be received prior to Step 2 registration",
+   "source_span": [
+    291,
+    749
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 1.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     145,
+     157
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-b4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "5e9b0f79-001c-5ea9-b09c-14f7212c157f",
+   "path": "/inc/b5",
+   "type": "narrative",
+   "text": "Patients must be offered participation in specimen banking; with patient consent, pretreatment specimens must be collected and submitted via the SWOG Specimen Tracking System",
+   "source_span": [
+    750,
+    926
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "cc11d745-1696-50ad-b9a9-a104814141cd",
+   "path": "/inc/b6",
+   "type": "narrative",
+   "text": "Patients who have received prior therapy with midostaurin, any anti-PD-1 or anti-PD-L1 therapy, any deoxyribonucleic acid (DNA)-methyltransferase inhibitor (including hypomethylating agents such as azacitidine, decitabine, or other investigational agent that acts by inhibiting DNA or ribonucleic acid [RNA] methylation) for any condition, or prior intensive cytotoxic therapy for myelodysplastic syndrome (MDS), are not eligible",
+   "source_span": [
+    927,
+    1358
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Inc-b6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "20b96dab-909d-595c-9ee5-93e3c1571072",
+   "path": "/inc/b7",
+   "type": "narrative",
+   "text": "Patients must be able to swallow oral medications without crushing or chewing",
+   "source_span": [
+    1359,
+    1438
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "45352ffa-a627-5b3b-9ed0-91293fc996c1",
+   "path": "/inc/b8",
+   "type": "group",
+   "text": "Prior malignancy is allowed providing it does not require concurrent therapy",
+   "source_span": [
+    1439,
+    1517
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "0d53dd4a-1cd2-5784-bd7f-b10a6d5472fe",
+     "path": "/inc/b8/b1",
+     "type": "narrative",
+     "text": "Exception: active hormonal therapy is allowed",
+     "source_span": [
+      1519,
+      1568
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Prior malignancy is allowed providing it does not require concurrent therapy",
+   "display_number": "Inc-b8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "fa1f930b-6b3e-5bf3-8340-eaa7869a2c92",
+   "path": "/inc/b9",
+   "type": "group",
+   "text": "Patients must not be pregnant or nursing; women/men of reproductive potential must have agreed to use an effective contraceptive method; a woman is considered to be of \"reproductive potential\" if she has had menses at any time in the preceding 12 consecutive months; in addition to routine contraceptive methods, \"effective contraception also includes (but is not limited to) heterosexual celibacy and surgery intended to prevent pregnancy (or with a side-effect of pregnancy prevention) defined as a hysterectomy, bilateral oophorectomy, bilateral tubal ligation, or vasectomy; however, if at any point a previously celibate patient chooses to become heterosexually active during the time period for use of contraceptive measures outlined in the protocol, he/she is responsible for beginning contraceptive measures",
+   "source_span": [
+    1569,
+    2386
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "758d2dff-f9d8-5446-a8be-853bb8837ca1",
+     "path": "/inc/b9/b1",
+     "type": "narrative",
+     "text": "Women must agree to avoid breast-feeding and women of child-bearing potential (WOCBP) must agree to use highly effective contraception while receiving study drug and for a period of 31 weeks after the last dose of study drug; sexually-active men must agree to use a condom while receiving study drug and for 31 weeks after the last dose of study drug; vasectomized men must also agree to use a condom to avoid delivering drug in the seminal fluid",
+     "source_span": [
+      2388,
+      2838
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "human_judgment",
+     "subtype": "consent / contraception / pregnancy workflow",
+     "concept_hits": [
+      "ild"
+     ],
+     "time_window": {
+      "value": 31.0,
+      "unit": "week",
+      "direction": "forward",
+      "anchor": "last dose of study drug",
+      "anchor_text": "last dose of study drug",
+      "span": [
+       304,
+       350
+      ],
+      "status": "anchor_missing_or_unrecognised"
+     }
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "Patients must not be pregnant or nursing; women/men of reproductive potential must have agreed to use an effective contraceptive method; a woman is considered to be of \"reproductive potential\" if she has had menses at any time in the preceding 12 consecutive months; in addition to routine contraceptive methods, \"effective contraception also includes (but is not limited to) heterosexual celibacy and surgery intended to prevent pregnancy (or with a side-effect of pregnancy prevention) defined as a hysterectomy, bilateral oophorectomy, bilateral tubal ligation, or vasectomy; however, if at any point a previously celibate patient chooses to become heterosexually active during the time period for use of contraceptive measures outlined in the protocol, he/she is responsible for beginning contraceptive measures",
+   "display_number": "Inc-b9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "50b9746b-44a3-5568-aa38-b461c1e8e0e4",
+   "path": "/inc/b10",
+   "type": "narrative",
+   "text": "Patients must be informed of the investigational nature of this study and must sign and give written informed consent in accordance with institutional and federal guidelines",
+   "source_span": [
+    2839,
+    3014
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Inc-b10",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "6cd55c21-0c61-51e0-aaad-5905786a1a78",
+   "path": "/inc/b11",
+   "type": "narrative",
+   "text": "As a part of the Oncology Patient Enrollment Network (OPEN) registration process the treating institution's identity is provided in order to ensure that the current (within 365 days) date of institutional review board approval for this study has been entered in the system",
+   "source_span": [
+    3015,
+    3289
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 365.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     166,
+     181
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-b11",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "ea3ff3a5-240d-5044-b030-4f23c60fc754",
+   "path": "/inc/b12",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be registered to Step 2 no more than 42 days after registration to Step 1 and no more than 42 days after collection of specimens for FLT3 testing",
+   "source_span": [
+    3290,
+    3486
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b12",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "abeb19a3-ad93-5d87-82b2-462d387f680b",
+   "path": "/inc/b13",
+   "type": "group",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must have morphologically confirmed, previously untreated acute myeloid leukemia (AML) or MDS with excess blasts-2 (MDS-EB-2)",
+   "source_span": [
+    3487,
+    3658
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "5a0448cb-a8cd-5bcd-82c8-34ea25787d82",
+     "path": "/inc/b13/b1",
+     "type": "narrative",
+     "text": "Patients with acute promyelocytic leukemia (APL), biphenotypic leukemia, blastic transformation of chronic myelogenous leukemia (CML or BCR/ABL), are not eligible",
+     "source_span": [
+      3660,
+      3826
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "7f6ffc53-cb6f-534c-a58a-f2fa36190be0",
+     "path": "/inc/b13/b2",
+     "type": "narrative",
+     "text": "Patients must have disease present in the blood or bone marrow; patients with only extramedullary disease in the absence of bone marrow or blood involvement are not eligible",
+     "source_span": [
+      3827,
+      4004
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "6eb7266a-6e45-51a2-8f1c-c8988a9abd96",
+     "path": "/inc/b13/b3",
+     "type": "narrative",
+     "text": "All tests for establishing baseline disease status eligibility must be based on blood and/or bone marrow examination performed within 42 days prior to randomization (registration Step 2)",
+     "source_span": [
+      4005,
+      4195
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative",
+     "time_window": {
+      "value": 42.0,
+      "unit": "day",
+      "direction": "lookback",
+      "anchor": "randomisation",
+      "anchor_text": "randomization",
+      "span": [
+       127,
+       164
+      ],
+      "status": "parsed"
+     }
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "REGISTRATION STEP 2-RANDOMIZATION: Patients must have morphologically confirmed, previously untreated acute myeloid leukemia (AML) or MDS with excess blasts-2 (MDS-EB-2)",
+   "display_number": "Inc-b13",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "1b75621f-28e2-5d41-955b-bad40510488c",
+   "path": "/inc/b14",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must not be known to have AML in the CNS",
+   "source_span": [
+    4196,
+    4282
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b14",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "0b1a0324-97a4-5cfb-85a0-2c43a7d4ce81",
+   "path": "/inc/b15",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be deemed, in the judgment of the treating physician, to be ineligible for intensive induction therapy, or must have refused intensive induction therapy; rationale for clinical determination or notation of patient decision must be made",
+   "source_span": [
+    4283,
+    4569
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Inc-b15",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "36facce4-1fea-55ef-8738-2cd6ca54e97f",
+   "path": "/inc/b16",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Pretreatment cytogenetics must be performed on all patients; collection of pretreatment specimens must be completed within 42 days prior to randomization (registration Step 2); reports of the results must be submitted",
+   "source_span": [
+    4570,
+    4824
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 42.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     151,
+     188
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Inc-b16",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "72b03ed1-f65b-5dcf-8f2e-ea190a69319e",
+   "path": "/inc/b17",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: FLT3 results will be used for stratification purposes at the time of randomization; E-mail notification that FLT3 specimens have been processed must be received prior to randomization (registration Step 2)",
+   "source_span": [
+    4825,
+    5067
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b17",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "fae88c03-7e35-5389-a677-4bbbcb7addd6",
+   "path": "/inc/b18",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Prior treatment with hydroxyurea is permitted; prior all-trans retinoic acid (ATRA) for suspected APL and prior intrathecal therapy are permitted, but must plan to be discontinued prior to initiating protocol therapy; patients with signs/symptoms of hyperleukocytosis or white blood cells (WBC) >= 50,000/mcL can be treated with leukapheresis prior to randomization (registration to Step 2)",
+   "source_span": [
+    5068,
+    5495
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Inc-b18",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "a30c53d1-bc04-57ac-8266-7733899033b9",
+   "path": "/inc/b19",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients may have received non-intensive therapy for antecedent hematologic disorders, including lenalidomide; patients may have received prior chemotherapy for prior cancers; these therapies must be discontinued at least 5 days prior to randomization (registration to Step 2)",
+   "source_span": [
+    5496,
+    5809
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "display_number": "Inc-b19",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "d99d4147-aecd-5878-9f0e-0c45d837a753",
+   "path": "/inc/b20",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients who are transfusion-dependent and patients receiving growth factor support are eligible; patients must discontinue growth factor support prior to initiation of protocol therapy",
+   "source_span": [
+    5810,
+    6032
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b20",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "d1d1c318-e7e3-5578-a1aa-3935d295a42d",
+   "path": "/inc/b21",
+   "type": "group",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: The following tests must be performed within 14 days prior to randomization (registration to Step 2) to establish baseline values:",
+   "source_span": [
+    6033,
+    6200
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "b12bc8c3-3192-5362-9e24-64143ed7d022",
+     "path": "/inc/b21/b1",
+     "type": "narrative",
+     "text": "Performance status",
+     "source_span": [
+      6202,
+      6224
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "87ed3b9e-57aa-5b4c-b9f9-20021df34c71",
+     "path": "/inc/b21/b2",
+     "type": "narrative",
+     "text": "Complete blood count (CBC)/differential/platelets",
+     "source_span": [
+      6225,
+      6278
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "6e313bf7-5210-5b99-8778-e0ea7a2216fb",
+     "path": "/inc/b21/b3",
+     "type": "narrative",
+     "text": "Creatinine clearance (Cockcroft-Gault)",
+     "source_span": [
+      6279,
+      6321
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "32f642b5-4112-59ce-9313-16a4a6aa6aaf",
+     "path": "/inc/b21/b4",
+     "type": "narrative",
+     "text": "Total bilirubin",
+     "source_span": [
+      6322,
+      6341
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "57d9dadd-faed-5562-8cc8-1872d19c2497",
+     "path": "/inc/b21/b5",
+     "type": "narrative",
+     "text": "Aspartate aminotransferase (AST) and alanine aminotransferase (ALT)",
+     "source_span": [
+      6342,
+      6413
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "74aef2b7-6dfb-5c0c-980a-1a01ff81412a",
+     "path": "/inc/b21/b6",
+     "type": "narrative",
+     "text": "Lactate dehydrogenase (LDH)",
+     "source_span": [
+      6414,
+      6445
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "human_judgment",
+     "subtype": "consent / contraception / pregnancy workflow"
+    },
+    {
+     "id": "90f22773-5bab-5261-af4d-6dcfffd958fb",
+     "path": "/inc/b21/b7",
+     "type": "narrative",
+     "text": "Albumin",
+     "source_span": [
+      6446,
+      6457
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "46f4187e-2966-55d0-9860-3711b292605d",
+     "path": "/inc/b21/b8",
+     "type": "narrative",
+     "text": "Glucose",
+     "source_span": [
+      6458,
+      6469
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "b0b20461-501b-5e11-8e1c-9e8e37779c96",
+     "path": "/inc/b21/b9",
+     "type": "narrative",
+     "text": "Fibrinogen",
+     "source_span": [
+      6470,
+      6484
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    },
+    {
+     "id": "e8dd9302-32ee-5015-a700-264f6d83df05",
+     "path": "/inc/b21/b10",
+     "type": "narrative",
+     "text": "Electrocardiogram (ECG)",
+     "source_span": [
+      6485,
+      6512
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "unclassified narrative"
+    }
+   ],
+   "logic_basis": "assumed",
+   "lead_in": "REGISTRATION STEP 2-RANDOMIZATION: The following tests must be performed within 14 days prior to randomization (registration to Step 2) to establish baseline values:",
+   "time_window": {
+    "value": 14.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     73,
+     110
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Inc-b21",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "d21929a9-8a34-534f-b2d6-862bc986019c",
+   "path": "/inc/b22",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must have complete history and physical examination within 28 days prior to randomization (registration to Step 2); history must include autoimmune disease status (to determine whether patient is eligible for Arm B)",
+   "source_span": [
+    6513,
+    6774
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "autoimmune"
+   ],
+   "time_window": {
+    "value": 28.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     96,
+     133
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Inc-b22",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "7b68c058-2854-5acb-93d1-39fc359e80d4",
+   "path": "/inc/b23",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must not have active infection (systemic bacterial, fungal, or viral infection) that is not controlled (defined as exhibiting ongoing signs/symptoms related to the infection and without improvement despite appropriate antibiotics or other treatment)",
+   "source_span": [
+    6775,
+    7070
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b23",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "114ad437-f908-58da-9fe8-09b9782073a8",
+   "path": "/inc/b24",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be eligible for at least one of the currently active investigational treatment arms (S1612B or S1612C); if the patient does not meet eligibility criteria for at least one active investigational arm, then the patient is not eligible for S1612",
+   "source_span": [
+    7071,
+    7363
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b24",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "6fa56f5b-7aa3-50dd-8839-25e53842a8bc",
+   "path": "/inc/b25",
+   "type": "narrative",
+   "text": "REGISTRATION STEP 2-RANDOMIZATION: Patients must be informed of the investigational nature of this study and must sign and give written informed consent in accordance with institutional and federal guidelines",
+   "source_span": [
+    7364,
+    7574
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Inc-b25",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "cd50ee95-2859-5fb1-85ac-05880fe0d15d",
+   "path": "/inc/b26",
+   "type": "narrative",
+   "text": "ARM B (AZACITIDINE + NIVOLUMAB)",
+   "source_span": [
+    7575,
+    7608
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b26",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "39bf6d3e-3f64-520b-852e-1b91889cc608",
+   "path": "/inc/b27",
+   "type": "narrative",
+   "text": "Patients must not have active autoimmune disease that has required systemic treatment in past 2 years (i.e., with use of disease modifying agents, corticosteroids or immunosuppressive drugs); replacement therapy (e.g., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency, etc.) is not considered a form of systemic treatment",
+   "source_span": [
+    7609,
+    7992
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "autoimmune"
+   ],
+   "time_window": {
+    "value": 2.0,
+    "unit": "year",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     86,
+     101
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-b27",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "5046ae33-57a1-5f47-a092-be9b343bae5e",
+   "path": "/inc/b28",
+   "type": "narrative",
+   "text": "Patients must have AST and ALT =< 2.5 x institutional upper limit of normal (IULN)",
+   "source_span": [
+    7993,
+    8077
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b28",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "5b643372-c0a6-5982-80e9-fd3bdf914e8b",
+   "path": "/inc/b29",
+   "type": "narrative",
+   "text": "Patients must have total bilirubin =< 1.5 x IULN",
+   "source_span": [
+    8078,
+    8128
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b29",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "e88104d2-f77e-544d-b7d8-2b3bfb574463",
+   "path": "/inc/b30.g",
+   "type": "group",
+   "text": "Patients must have baseline troponin test performed for eligibility; however, no associated values must be met in order for the patient to be eligible",
+   "source_span": [
+    8129,
+    8281
+   ],
+   "flags": [
+    "~47% of the statement's content words are typed; residual kept as narrative requirement"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "e401b536-ac0f-569c-bc62-dd519361b381",
+     "path": "/inc/b30.p0",
+     "type": "predicate",
+     "text": "Patients must have baseline troponin test performed for eligibility; however, no associated values must be met in order for the patient to be eligible",
+     "source_span": [
+      8129,
+      8281
+     ],
+     "flags": [
+      "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "predicate": {
+      "kind": "biomarker",
+      "analyte": "MET",
+      "alteration": "alteration",
+      "required_state": "present",
+      "key": "biomarker:met",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:7029"
+      },
+      "qualifier_gaps": [
+       "assay",
+       "specimen/tumour context",
+       "local vs central",
+       "variant class detail"
+      ]
+     },
+     "computability": "structured_computable",
+     "sub_span": [
+      107,
+      111
+     ],
+     "extraction_coverage": 0.47,
+     "binding": {
+      "source_evidence": {
+       "phrase": "MET",
+       "document_span": [
+        8129,
+        8281
+       ],
+       "criterion_node": "e401b536-ac0f-569c-bc62-dd519361b381",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-met",
+       "semantic_role": "biomarker",
+       "label": "MET",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:7029",
+        "display": "MET"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:7029",
+        "display": "MET"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    },
+    {
+     "id": "dd9bfd3f-55db-53b3-9584-5c77da23d35a",
+     "path": "/inc/b30.r",
+     "type": "narrative",
+     "text": "Patients must have baseline troponin test performed for eligibility; however, no associated values must be met in order for the patient to be eligible",
+     "source_span": [
+      8129,
+      8281
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "residual text not covered by typed predicates"
+    }
+   ],
+   "logic_basis": "residual_added",
+   "display_number": "Inc-b30",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "9f6e8b41-30b0-5f17-8a7c-273de9b946d7",
+   "path": "/inc/b31",
+   "type": "narrative",
+   "text": "ARM C (AZACITIDINE + MIDOSTAURIN)",
+   "source_span": [
+    8282,
+    8317
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b31",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "b570e746-de65-5757-b40b-c925d1bf38e6",
+   "path": "/inc/b32",
+   "type": "narrative",
+   "text": "Patients must have total bilirubin =< 2.5 x IULN",
+   "source_span": [
+    8318,
+    8368
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b32",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "90d2afd9-63e6-5265-abd9-bbc680abf1ce",
+   "path": "/inc/b33",
+   "type": "narrative",
+   "text": "Patients must have creatinine clearance =< 2.5 x IULN",
+   "source_span": [
+    8369,
+    8424
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b33",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "ed7e437c-b5f8-58d1-b952-abef91efae8c",
+   "path": "/inc/b34",
+   "type": "narrative",
+   "text": "Patients must have corrected QT (QTc) interval < 500/msec (by Bazett's formula) on baseline ECG",
+   "source_span": [
+    8425,
+    8522
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b34",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "7650f54b-7230-570c-bf45-5981eb1a0f5e",
+   "path": "/inc/b35",
+   "type": "narrative",
+   "text": "Patients must not have any history of hypersensitivity to any drugs or metabolites of midostaurin",
+   "source_span": [
+    8523,
+    8622
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-b35",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "c90056c5-d8e8-5ecc-8900-0aef2b3b763e",
+   "path": "/inc/b36",
+   "type": "narrative",
+   "text": "All tests for establishing baseline values must be completed within 14 days prior to registration to Step 2 (randomization)",
+   "source_span": [
+    8623,
+    8748
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 14.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "span": [
+     61,
+     75
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-b36",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  }
+ ],
+ "scope_items": [],
+ "inventory": {
+  "criteria_total": 37,
+  "inclusion": 37,
+  "exclusion": 0,
+  "leaf_nodes": 49,
+  "leaves_by_computability": {
+   "structured_computable": 2,
+   "text_dependent": 42,
+   "human_judgment": 5
+  },
+  "typed_predicates": 2,
+  "flagged_nodes": 11
+ },
+ "validation": {
+  "structure_ok": true,
+  "problems": [],
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [],
+ "llm_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "status": "UNREVIEWED_SEED",
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty.",
+  "stats": {
+   "bound": 1,
+   "unmapped": 0,
+   "by_relationship": {
+    "related": 1
+   }
+  },
+  "value_sets": {},
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
+ "review_summary": {
+  "open_conflicts": [],
+  "stale_decisions": [],
+  "orphaned_decisions": [],
+  "unpinned_decisions": [],
+  "criteria": 37,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc-b1",
+   "Inc-b2",
+   "Inc-b3",
+   "Inc-b4",
+   "Inc-b5",
+   "Inc-b6",
+   "Inc-b7",
+   "Inc-b8",
+   "Inc-b9",
+   "Inc-b10",
+   "Inc-b11",
+   "Inc-b12",
+   "Inc-b13",
+   "Inc-b14",
+   "Inc-b15",
+   "Inc-b16",
+   "Inc-b17",
+   "Inc-b18",
+   "Inc-b19",
+   "Inc-b20",
+   "Inc-b21",
+   "Inc-b22",
+   "Inc-b23",
+   "Inc-b24",
+   "Inc-b25",
+   "Inc-b26",
+   "Inc-b27",
+   "Inc-b28",
+   "Inc-b29",
+   "Inc-b30",
+   "Inc-b31",
+   "Inc-b32",
+   "Inc-b33",
+   "Inc-b34",
+   "Inc-b35",
+   "Inc-b36"
+  ]
+ }
+}

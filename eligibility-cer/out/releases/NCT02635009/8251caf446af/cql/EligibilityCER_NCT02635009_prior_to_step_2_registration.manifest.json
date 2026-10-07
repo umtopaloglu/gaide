@@ -1,0 +1,184 @@
+{
+ "capability": {
+  "approval": null,
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "leaves": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 18
+  },
+  "nodes": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 21
+  },
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path.",
+  "overall_assertion_allowed": false,
+  "per_node": {
+   "18574456-704d-5918-bb6f-fbccbf48a690": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "25026dca-5c7b-5676-a930-7174b026ce44": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "285a2917-817c-521e-a41a-9312f0ae1949": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "37306c4c-0b70-5252-abf0-956954a6f7fb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3b180955-5013-51a7-9fc2-853db758d411": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "462cc110-8f12-53a9-8518-2acfe1450b43": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "48718212-29fb-5f17-947a-d9c68288e9c1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "48c30d17-a9aa-5062-be57-5153f653c3fa": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "667a1572-5e25-5de4-ae72-0a78c546effd": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6d9773df-0746-5085-b8b3-fe38ccf58ad5": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "8447b856-ad09-5f7c-b6de-5a0c33318ee0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "96b4f838-61d8-59e7-97c2-97ba652f354c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a4e46c66-7d9d-5e4b-aeba-812bf27aa51d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ab80a5c4-cbd8-5750-abdb-7a1b7a241286": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ac8e6242-1005-5ded-8ed6-064470fb4c6c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b9a95056-6cb1-5bd3-98f1-d748d3d242ac": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c5538dbd-b3f2-577f-92e0-94deb38bde5a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "da02252f-94f3-521b-a96b-28adac928bf7": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e2a9bc30-b34b-519b-9599-ea03f1daa3fa": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e7bf4128-2445-5683-874b-a7037b24c009": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "eb184992-b3a0-5628-99e2-7015e98fddde": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   }
+  },
+  "trial_backend_label": "unavailable"
+ },
+ "cer_content_sha256": "5c49cfbd66c16fe37501a0b5d5f4a3e939753da3c81778c23e82d736c66e3ef5",
+ "cql_sha256": "5ea175513e93f03d946eaa73ecc2f0fcbd3223d97d8155deeeb1a2672681ece4",
+ "criteria": 11,
+ "executable_typed_leaves": 0,
+ "gated": true,
+ "library": "EligibilityCER_NCT02635009_prior_to_step_2_registration",
+ "parameters": [],
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site",
+ "scope": "prior to Step 2 registration",
+ "translator_validated": false,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "e2a9bc30-b34b-519b-9599-ea03f1daa3fa",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 18 Years"
+  },
+  {
+   "criterion": "Inc2-b1",
+   "node": "ac8e6242-1005-5ded-8ed6-064470fb4c6c",
+   "reason": "not validated (gated)",
+   "text": "The following baseline neurocognitive assessments must be completed and uploaded within 10"
+  },
+  {
+   "criterion": "Inc2-b2",
+   "node": "285a2917-817c-521e-a41a-9312f0ae1949",
+   "reason": "not validated (gated)",
+   "text": "Patients must have a baseline raw score greater than 2 on the HVLT-R delayed recall as det"
+  },
+  {
+   "criterion": "Exc-b1",
+   "node": "3b180955-5013-51a7-9fc2-853db758d411",
+   "reason": "not validated (gated)",
+   "text": "Prior radiotherapy to the head or neck (except for T1 glottic cancer), resulting in overla"
+  },
+  {
+   "criterion": "Exc-b2",
+   "node": "c5538dbd-b3f2-577f-92e0-94deb38bde5a",
+   "reason": "not validated (gated)",
+   "text": "Radiographic evidence of central nervous system (CNS) metastases"
+  },
+  {
+   "criterion": "Exc-b3",
+   "node": "b9a95056-6cb1-5bd3-98f1-d748d3d242ac",
+   "reason": "not validated (gated)",
+   "text": "Radiographic evidence of hydrocephalus or other architectural distortion of the ventricula"
+  },
+  {
+   "criterion": "Exc-b4",
+   "node": "48c30d17-a9aa-5062-be57-5153f653c3fa",
+   "reason": "not validated (gated)",
+   "text": "Planned concurrent chemotherapy during PCI"
+  },
+  {
+   "criterion": "Exc-b5",
+   "node": "37306c4c-0b70-5252-abf0-956954a6f7fb",
+   "reason": "not validated (gated)",
+   "text": "Concomitant invasive malignancy or invasive malignancy within the past five years other th"
+  },
+  {
+   "criterion": "Exc-b6",
+   "node": "eb184992-b3a0-5628-99e2-7015e98fddde",
+   "reason": "not validated (gated)",
+   "text": "Contraindication to MR imaging, such as implanted metal devices or foreign bodies or sever"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "667a1572-5e25-5de4-ae72-0a78c546effd",
+   "reason": "not validated (gated)",
+   "text": "Severe, active comorbidity, defined as follows:"
+  },
+  {
+   "criterion": "Exc-b8",
+   "node": "a4e46c66-7d9d-5e4b-aeba-812bf27aa51d",
+   "reason": "not validated (gated)",
+   "text": "Pregnant or lactating women or women of childbearing potential and male participants who a"
+  }
+ ]
+}

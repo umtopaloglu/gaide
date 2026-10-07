@@ -4,6 +4,10 @@
   python run.py fetch NCT06128837 NCT06357533      # needs ct.gov network access
   python run.py search "lung cancer" --n 5          # list candidate NCT ids
   python run.py build [NCT...]                      # data/raw/*.json -> out/*.cer.json + out/*.html
+  python run.py release [NCT...]                      # immutable package out/releases/NCT/<id>/ (+ index, rollback pointer)
+  python run.py verify out/releases/NCT…/<id>          # integrity check
+  python run.py snapshot                            # store current texts under data/history/NCT/<hash>.json
+  python run.py changes NCT06357533                   # criterion-level diff + impact between the last two versions
   python run.py propose NCT04547166 [--provider anthropic|replay] [--criteria Exc-4,Exc-5] [--dry-run]
   python run.py graph NCT06520683                   # out/graph/*.jsonld (+ round-trip + SHACL check)
   python run.py review NCT06520683                  # review worklist (+ review/NCT*.json sidecar applied)
@@ -68,6 +72,10 @@ def main(argv=None):
     s = sub.add_parser("search"); s.add_argument("condition"); s.add_argument("--n", type=int, default=10); s.add_argument("--phase")
     b = sub.add_parser("build"); b.add_argument("ncts", nargs="*")
     gp = sub.add_parser("graph"); gp.add_argument("nct")
+    rl = sub.add_parser("release"); rl.add_argument("ncts", nargs="*")
+    vf = sub.add_parser("verify"); vf.add_argument("path")
+    sn = sub.add_parser("snapshot"); sn.add_argument("ncts", nargs="*")
+    ch = sub.add_parser("changes"); ch.add_argument("nct"); ch.add_argument("--from", dest="frm"); ch.add_argument("--to")
     pp = sub.add_parser("propose"); pp.add_argument("nct"); pp.add_argument("--provider"); pp.add_argument("--model")
     pp.add_argument("--criteria", help="comma-separated display numbers (default: narrative/flagged criteria)")
     pp.add_argument("--dry-run", action="store_true", help="print the prompt and schema for the first target; no API call")
@@ -81,7 +89,9 @@ def main(argv=None):
         for n in a.ncts:
             d = fetch_study(n)
             json.dump(d, open(os.path.join(RAW, f"{n}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-            print("saved", n)
+            from cer.amendments import snapshot
+            p, created = snapshot(d)
+            print("saved", n, "(new version snapshot)" if created else "(text unchanged)")
     elif a.cmd == "search":
         from cer.fetch import search
         for n, t in search(a.condition, phase=a.phase, n=a.n):
@@ -100,6 +110,45 @@ def main(argv=None):
             print(f"{n}: {i['criteria_total']} criteria ({i['inclusion']} inc / {i['exclusion']} exc), "
                   f"{i['typed_predicates']} typed predicates, leaves={i['leaves_by_computability']}, "
                   f"flagged={i['flagged_nodes']}, structure_ok={cer['validation']['structure_ok']}")
+    elif a.cmd == "release":
+        from cer.release import build_release
+        ncts = a.ncts or sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(RAW, "NCT*.json")))
+        for n in ncts:
+            cer = load_cer(n)
+            extra = {"terminology/bundle.json": os.path.join(HERE, "terminology", "seed-bundle.json"),
+                     "review/decisions.json": os.path.join(HERE, "review", f"{n}.json"),
+                     "proposals/authored.json": os.path.join(HERE, "authored", f"{n}.json"),
+                     "proposals/llm.json": os.path.join(HERE, "proposals", "llm", f"{n}.json"),
+                     "source/ctgov.json": os.path.join(RAW, f"{n}.json")}
+            d, m, created = build_release(cer, extra_files=extra)
+            print(f"{n}: {'new' if created else 'existing'} {m['status']} {os.path.relpath(d, HERE)}"
+                  + (f"  blocked: {'; '.join(m['blocking_reasons'])}" if m["blocking_reasons"] else ""))
+    elif a.cmd == "verify":
+        from cer.release import verify_release
+        ok, problems = verify_release(a.path)
+        print("OK" if ok else "TAMPERED: " + "; ".join(problems))
+    elif a.cmd == "snapshot":
+        from cer.amendments import snapshot
+        ncts = a.ncts or sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(RAW, "NCT*.json")))
+        for n in ncts:
+            p, created = snapshot(load(n))
+            print(n, "new snapshot" if created else "already snapshotted", os.path.relpath(p, HERE))
+    elif a.cmd == "changes":
+        from cer.amendments import diff_cers, impact, versions
+        vs = versions(a.nct)
+        pick = lambda pref, default: next((r for p, r in vs if os.path.basename(p).startswith(pref)), None) if pref else default
+        if len(vs) < 2 and not (a.frm and a.to):
+            print(f"{a.nct}: {len(vs)} snapshot(s); need two versions (fetch again after an amendment)"); return
+        old, new = pick(a.frm, vs[-2][1]), pick(a.to, vs[-1][1])
+        d = diff_cers(build_cer(old), build_cer(new))
+        rp = os.path.join(HERE, "review", f"{a.nct}.json")
+        imp = impact(d, json.load(open(rp)) if os.path.exists(rp) else None)
+        os.makedirs(os.path.join(OUT, "amendments"), exist_ok=True)
+        path = os.path.join(OUT, "amendments", f"{a.nct}_{d['from_sha256'][:8]}_{d['to_sha256'][:8]}.json")
+        json.dump({"diff": d, "impact": imp}, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        print(f"{a.nct}: {d['counts']}  -> {os.path.relpath(path, HERE)}")
+        for x in imp["actions"]:
+            print("  -", x)
     elif a.cmd == "propose":
         from cer.llm import get_provider
         from cer.llm.proposer import SYSTEM, default_targets, proposal_schema, propose, user_prompt

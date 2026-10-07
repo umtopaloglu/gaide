@@ -1,0 +1,17 @@
+{
+ "nct_id": "NCT06520683",
+ "releases": [
+  {
+   "release_id": "46232dfe6aa0fcdb487e055082acbc1805586dd1fa8eccaff934c15eb7b65b68",
+   "status": "candidate",
+   "created": "2026-10-07T02:42:08+00:00",
+   "cer_content_sha256": "f05717ce38b4935c64afdc24db4f045fee0a35c478d22793c11e6deef40f56c9"
+  },
+  {
+   "release_id": "97a397585eafd15ed5460c05af7b1343ddc790ddfc6504db189b3b032634272b",
+   "status": "candidate",
+   "created": "2026-10-07T02:42:10+00:00",
+   "cer_content_sha256": "f05717ce38b4935c64afdc24db4f045fee0a35c478d22793c11e6deef40f56c9"
+  }
+ ]
+}

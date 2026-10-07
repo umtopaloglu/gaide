@@ -1,0 +1,3684 @@
+{
+ "authored_applied": [],
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "conflicts": [],
+ "criteria": [
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-min-age",
+   "flags": [],
+   "id": "9118ad5a-328a-596e-bde9-6cb139e8a1bb",
+   "origin": "imported_structured",
+   "path": "/demo/min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "minimumAge: 18 Years",
+   "type": "predicate"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "binding": {
+        "canonical_binding": null,
+        "cross_terminology_links": {},
+        "execution_binding": {
+         "fhir": null,
+         "omop": null
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "no seeded concept",
+         "direction": "source_to_target",
+         "relationship": "no-map"
+        },
+        "provenance": {
+         "confidence": null,
+         "mapper": "pattern match",
+         "rationale": "no seed concept matched; requires terminology-lead mapping",
+         "reviewer": null,
+         "status": "unmapped",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "39534205-be54-56f0-a02f-8e4507c6b1ad",
+         "document_span": [
+          77,
+          263
+         ],
+         "inherited_context": [],
+         "phrase": "ER",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+        "terminology unmapped (no-map) -> not executable until bound"
+       ],
+       "id": "39534205-be54-56f0-a02f-8e4507c6b1ad",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/1/b1/b1.p0",
+       "predicate": {
+        "alteration": "receptor status",
+        "analyte": "ER",
+        "key": "biomarker:er",
+        "kind": "biomarker",
+        "qualifier_gaps": [
+         "assay/scoring method",
+         "specimen",
+         "local vs central"
+        ],
+        "required_state": "present",
+        "terminology": {
+         "relationship": "no-map",
+         "status": "unmapped"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        77,
+        263
+       ],
+       "sub_span": [
+        85,
+        96
+       ],
+       "text": "ER positive",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://www.genenames.org",
+         "concept_id": "cm:gene-erbb2",
+         "label": "ERBB2",
+         "primary": {
+          "code": "HGNC:3430",
+          "display": "ERBB2",
+          "system": "HGNC"
+         },
+         "semantic_role": "biomarker"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "HGNC:3430",
+          "display": "ERBB2",
+          "system": "http://www.genenames.org"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "direction": "source_to_target",
+         "relationship": "related"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "b073560d-1960-521f-8851-6c32ff5bbead",
+         "document_span": [
+          77,
+          263
+         ],
+         "inherited_context": [],
+         "phrase": "HER2",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+       ],
+       "id": "b073560d-1960-521f-8851-6c32ff5bbead",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/1/b1/b1.p1",
+       "predicate": {
+        "alteration": "receptor status",
+        "analyte": "HER2",
+        "key": "biomarker:her2",
+        "kind": "biomarker",
+        "qualifier_gaps": [
+         "assay/scoring method",
+         "specimen",
+         "local vs central"
+        ],
+        "required_state": "absent",
+        "terminology": {
+         "code": "HGNC:3430",
+         "relationship": "related",
+         "status": "proposed_unreviewed",
+         "system": "HGNC"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        77,
+        263
+       ],
+       "sub_span": [
+        117,
+        130
+       ],
+       "text": "HER2 negative",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 0.42,
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "id": "a3a69b8a-96c9-5d36-8d48-d0b89f3b6ee0",
+     "logic_basis": "assumed_conjunction",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      77,
+      263
+     ],
+     "text": "Female (both pre- and postmenopausal) or male patients with histologically confirmed ER positive (regardless of PR), HER2 negative breast cancer, according to local pathologist:",
+     "type": "group"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "1ed31b9b-9803-5bd7-a3a0-ca940b4b033d",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b1.r",
+     "review_status": "needs_review",
+     "source_span": [
+      77,
+      263
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Female (both pre- and postmenopausal) or male patients with histologically confirmed ER positive (regardless of PR), HER2 negative breast cancer, according to local pathologist:",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-1.b1.b1",
+   "flags": [
+    "~42% of the statement's content words are typed; residual kept as narrative requirement",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "e035368b-8fea-5cbb-a896-50e741164f5c",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b1.g",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    77,
+    263
+   ],
+   "text": "Female (both pre- and postmenopausal) or male patients with histologically confirmed ER positive (regardless of PR), HER2 negative breast cancer, according to local pathologist:",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "3d8336a3-9aa9-5954-b201-577bd44b9da5",
+       "document_span": [
+        264,
+        361
+       ],
+       "inherited_context": [],
+       "phrase": "ER",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "3d8336a3-9aa9-5954-b201-577bd44b9da5",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b2.p0",
+     "predicate": {
+      "alteration": "receptor status",
+      "analyte": "ER",
+      "key": "biomarker:er",
+      "kind": "biomarker",
+      "qualifier_gaps": [
+       "assay/scoring method",
+       "specimen",
+       "local vs central"
+      ],
+      "required_state": "present",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      264,
+      361
+     ],
+     "sub_span": [
+      0,
+      11
+     ],
+     "text": "ER-positive",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "3c2055a2-c976-51f3-be9f-0f474f5af42b",
+       "document_span": [
+        264,
+        361
+       ],
+       "inherited_context": [],
+       "phrase": "Allred proportion score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "3c2055a2-c976-51f3-be9f-0f474f5af42b",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b2.p1",
+     "predicate": {
+      "analyte": "Allred proportion score",
+      "comparator": ">=",
+      "key": "measurement:allred_proportion_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 3.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      264,
+      361
+     ],
+     "sub_span": [
+      66,
+      92
+     ],
+     "text": "Allred proportion score ≥3",
+     "type": "predicate"
+    }
+   ],
+   "display_number": "Inc-1.b1.b2",
+   "extraction_coverage": 0.56,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "a43bb309-15f9-5acc-bcdc-96f102733321",
+   "logic_basis": "inferred_from_connector",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b2",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    264,
+    361
+   ],
+   "text": "ER-positive defined as ≥ 10% of cells staining positive for ER or Allred proportion score ≥3",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://www.genenames.org",
+       "concept_id": "cm:gene-erbb2",
+       "label": "ERBB2",
+       "primary": {
+        "code": "HGNC:3430",
+        "display": "ERBB2",
+        "system": "HGNC"
+       },
+       "semantic_role": "biomarker"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "HGNC:3430",
+        "display": "ERBB2",
+        "system": "http://www.genenames.org"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "direction": "source_to_target",
+       "relationship": "related"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "2dd90b83-4fa1-51a0-a873-d5c7a1e4ab24",
+       "document_span": [
+        362,
+        584
+       ],
+       "inherited_context": [],
+       "phrase": "HER2",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "extraction_coverage": 0.13,
+     "flags": [
+      "biomarker qualifiers not stated in text: assay/scoring method, specimen, local vs central",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+     ],
+     "id": "2dd90b83-4fa1-51a0-a873-d5c7a1e4ab24",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b3.p0",
+     "predicate": {
+      "alteration": "receptor status",
+      "analyte": "HER2",
+      "key": "biomarker:her2",
+      "kind": "biomarker",
+      "qualifier_gaps": [
+       "assay/scoring method",
+       "specimen",
+       "local vs central"
+      ],
+      "required_state": "absent",
+      "terminology": {
+       "code": "HGNC:3430",
+       "relationship": "related",
+       "status": "proposed_unreviewed",
+       "system": "HGNC"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      362,
+      584
+     ],
+     "sub_span": [
+      0,
+      13
+     ],
+     "text": "HER2-negative defined as a score of 0, 1+ by immunohistochemistry (IHC) or a negative in situ hybridization (ISH) based on single-probe average HER2 copy number, as per American Society of Clinical Oncology guidelines",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "c3245096-0199-5fae-bf22-4f92c674af49",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b3.r",
+     "review_status": "needs_review",
+     "source_span": [
+      362,
+      584
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "HER2-negative defined as a score of 0, 1+ by immunohistochemistry (IHC) or a negative in situ hybridization (ISH) based on single-probe average HER2 copy number, as per American Society of Clinical Oncology guidelines",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-1.b1.b3",
+   "flags": [
+    "~13% of the statement's content words are typed; residual kept as narrative requirement",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "e50b646f-7c83-5d20-bda5-b78bbcbcc174",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b3.g",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    362,
+    584
+   ],
+   "text": "HER2-negative defined as a score of 0, 1+ by immunohistochemistry (IHC) or a negative in situ hybridization (ISH) based on single-probe average HER2 copy number, as per American Society of Clinical Oncology guidelines",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "d6e3a8b7-61bd-56ba-9a6a-e71ebe94f1df",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b4",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    585,
+    693
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Intermediate to high risk of recurrence after definitive treatment for early breast cancer, defined as:",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "acb2ba36-840a-5f44-a7b0-087c146c14b8",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b5",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    741,
+    811
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Any patient with ≥ 4 positive axillary lymph nodes (stage pN2-3).",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b6",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "51f7650c-e806-5171-9153-fc17d95ee3fa",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b6",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    812,
+    874
+   ],
+   "subtype": "unclassified narrative",
+   "text": "1-3 positive axillary lymph nodes (stage pN1) and either:",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "c7706806-a9ed-5af5-b4fb-477d238cbf81",
+     "document_span": [
+      875,
+      905
+     ],
+     "inherited_context": [
+      "ctDNA screening phase"
+     ],
+     "phrase": "Tumour size",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-1.b1.b7",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "c7706806-a9ed-5af5-b4fb-477d238cbf81",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b7.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "analyte": "Tumour size",
+    "comparator": ">=",
+    "key": "measurement:tumour_size",
+    "kind": "measurement",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    },
+    "uln_multiple": false,
+    "unit": "cm",
+    "value": 5.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    875,
+    905
+   ],
+   "sub_span": [
+    0,
+    18
+   ],
+   "text": "Tumour size ≥ 5 cm or/and",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b8",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "7f5cf59a-9d8a-56fb-855f-80ce04002c8d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b8",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    906,
+    936
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Histologic grade 3 or/and",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183",
+     "document_span": [
+      937,
+      957
+     ],
+     "inherited_context": [
+      "ctDNA screening phase"
+     ],
+     "phrase": "Ki-67",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-1.b1.b9",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b9.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "analyte": "Ki-67",
+    "comparator": ">=",
+    "key": "measurement:ki_67",
+    "kind": "measurement",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    },
+    "uln_multiple": false,
+    "unit": "%",
+    "value": 20.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    937,
+    957
+   ],
+   "sub_span": [
+    0,
+    8
+   ],
+   "text": "Ki67≥20% or/and",
+   "type": "predicate"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "a2ad012c-efd9-53ab-afd9-acc7feede0de",
+       "document_span": [
+        958,
+        1095
+       ],
+       "inherited_context": [],
+       "phrase": "Oncotype DX recurrence score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "a2ad012c-efd9-53ab-afd9-acc7feede0de",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b10.p0",
+     "predicate": {
+      "analyte": "Oncotype DX recurrence score",
+      "comparator": ">=",
+      "key": "measurement:oncotype_dx_recurrence_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 26.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      958,
+      1095
+     ],
+     "sub_span": [
+      29,
+      62
+     ],
+     "text": "Oncotype Dx Recurrence Score >=26",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "878d843d-be91-5c82-ba7e-263e50a7e6cb",
+       "document_span": [
+        958,
+        1095
+       ],
+       "inherited_context": [],
+       "phrase": "Prosigna score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "878d843d-be91-5c82-ba7e-263e50a7e6cb",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b10.p1",
+     "predicate": {
+      "analyte": "Prosigna score",
+      "comparator": ">",
+      "key": "measurement:prosigna_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 40.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      958,
+      1095
+     ],
+     "sub_span": [
+      86,
+      104
+     ],
+     "text": "Prosigna score >40",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "6c697789-3079-5142-8275-fb634e8e277b",
+       "document_span": [
+        958,
+        1095
+       ],
+       "inherited_context": [],
+       "phrase": "EPclin risk score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "6c697789-3079-5142-8275-fb634e8e277b",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b10.p2",
+     "predicate": {
+      "analyte": "EPclin risk score",
+      "comparator": ">=",
+      "key": "measurement:epclin_risk_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 4.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      958,
+      1095
+     ],
+     "sub_span": [
+      108,
+      131
+     ],
+     "text": "EPclin risk score >=4.0",
+     "type": "predicate"
+    }
+   ],
+   "display_number": "Inc-1.b1.b10",
+   "extraction_coverage": 0.53,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "58466cdb-3836-5e20-941a-fb89113eed81",
+   "logic_basis": "inferred_from_connector",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b10",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    958,
+    1095
+   ],
+   "text": "High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Prosigna score >40 or EPclin risk score >=4.0.",
+   "type": "group"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "3deb4226-3277-59ae-b7de-e788950b68f3",
+     "document_span": [
+      1096,
+      1176
+     ],
+     "inherited_context": [
+      "ctDNA screening phase"
+     ],
+     "phrase": "Tumour size",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-1.b1.b11",
+   "extraction_coverage": 0.4,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "3deb4226-3277-59ae-b7de-e788950b68f3",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b11.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "analyte": "Tumour size",
+    "comparator": ">=",
+    "key": "measurement:tumour_size",
+    "kind": "measurement",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    },
+    "uln_multiple": false,
+    "unit": "cm",
+    "value": 2.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1096,
+    1176
+   ],
+   "sub_span": [
+    46,
+    64
+   ],
+   "text": "Negative axillary lymph nodes (stage pN0) and tumour size ≥ 2 cm and either",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b12",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "bf6f23b0-5ca0-5e8d-bebe-701acf665be0",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b12",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1177,
+    1209
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Histologic grade 3 a or/and",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa",
+     "document_span": [
+      1210,
+      1230
+     ],
+     "inherited_context": [
+      "ctDNA screening phase"
+     ],
+     "phrase": "Ki-67",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-1.b1.b13",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b13.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "analyte": "Ki-67",
+    "comparator": ">=",
+    "key": "measurement:ki_67",
+    "kind": "measurement",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    },
+    "uln_multiple": false,
+    "unit": "%",
+    "value": 20.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1210,
+    1230
+   ],
+   "sub_span": [
+    0,
+    8
+   ],
+   "text": "Ki67≥20% and/or",
+   "type": "predicate"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "34c3af87-fff7-598a-ad29-fdd22f73bfef",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "inherited_context": [],
+       "phrase": "Oncotype DX recurrence score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "34c3af87-fff7-598a-ad29-fdd22f73bfef",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b14.p0",
+     "predicate": {
+      "analyte": "Oncotype DX recurrence score",
+      "comparator": ">=",
+      "key": "measurement:oncotype_dx_recurrence_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 26.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1231,
+      1368
+     ],
+     "sub_span": [
+      29,
+      62
+     ],
+     "text": "Oncotype Dx Recurrence Score >=26",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "24800ceb-f9c2-50db-b2b4-cccaf4c171ae",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "inherited_context": [],
+       "phrase": "Prosigna score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "24800ceb-f9c2-50db-b2b4-cccaf4c171ae",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b14.p1",
+     "predicate": {
+      "analyte": "Prosigna score",
+      "comparator": ">",
+      "key": "measurement:prosigna_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 60.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1231,
+      1368
+     ],
+     "sub_span": [
+      86,
+      104
+     ],
+     "text": "Prosigna score >60",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "5fe34165-a7b6-5944-b29e-c6924e0371e4",
+       "document_span": [
+        1231,
+        1368
+       ],
+       "inherited_context": [],
+       "phrase": "EPclin risk score",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "5fe34165-a7b6-5944-b29e-c6924e0371e4",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b14.p2",
+     "predicate": {
+      "analyte": "EPclin risk score",
+      "comparator": ">=",
+      "key": "measurement:epclin_risk_score",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 4.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1231,
+      1368
+     ],
+     "sub_span": [
+      108,
+      131
+     ],
+     "text": "EPclin risk score >=4.0",
+     "type": "predicate"
+    }
+   ],
+   "display_number": "Inc-1.b1.b14",
+   "extraction_coverage": 0.53,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "30fbda21-cee4-53a8-8775-bafd22797fd9",
+   "logic_basis": "inferred_from_connector",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b14",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1231,
+    1368
+   ],
+   "text": "High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Prosigna score >60 or EPclin risk score >=4.0.",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b15",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "b5593eea-5806-5d56-b044-94c033c3ac23",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b15",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1451,
+    1554
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Patient may have received neoadjuvant endocrine therapy or neoadjuvant chemotherapy provided that:",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b16",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "dbeda5df-71a7-5a0e-911f-d54922d8ef31",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b16",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1555,
+    1732
+   ],
+   "subtype": "unclassified narrative",
+   "text": "The initial tumour and/or the tumour after surgery meet the criteria above defined for patients treated with primary surgery or the initial tumour was staged as cT4anyN and",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b17",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "81d93a00-d844-5056-ad2a-92ae0b8b7c2e",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b17",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1733,
+    1853
+   ],
+   "subtype": "unclassified narrative",
+   "text": "There is no pathological complete response, defined as no invasive disease in the breast and axilla (ypT0/is ypN0).",
+   "type": "narrative"
+  },
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Inc-1.b1.b18",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "e22209e4-b799-568b-8f1f-c059a4f126f1",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b18.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1854,
+    1872
+   ],
+   "sub_span": [
+    0,
+    13
+   ],
+   "text": "Age ≥18 years",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b19",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "d323db21-2216-5378-88f6-380654334965",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b19",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    1873,
+    2012
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patients must have received at least 1 year and up to 7.5 years of ET and planned to continue adjuvant ET during ctDNA screening phase",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b20",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "7dfbe381-bd0d-5ff4-ac01-06c0a34ad363",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b20",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2013,
+    2116
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Previous adjuvant CDK4/6 inhibitor or PARP-inhibitor treatment is allowed provided it is completed",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc-1.b1.b21",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "a71c94bf-e2d8-57aa-bae3-9c4a7cb6ec6d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b21",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2117,
+    2387
+   ],
+   "subtype": "investigator judgement",
+   "text": "Invasive multicentric / multifocal disease is allowed provided that all the tested foci are ER+ HER2-. A sample from the highest-risk one, according to the investigator decision based on the size and grade, should be sent to Natera to build the patient ctDNA assay.",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "8b98ca5f-bdda-5a31-8c27-0a514b722911",
+       "document_span": [
+        2388,
+        2596
+       ],
+       "inherited_context": [],
+       "phrase": "Tumour content",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "extraction_coverage": 0.23,
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "8b98ca5f-bdda-5a31-8c27-0a514b722911",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b22.p0",
+     "predicate": {
+      "analyte": "Tumour content",
+      "comparator": ">=",
+      "key": "measurement:tumour_content",
+      "kind": "measurement",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      },
+      "uln_multiple": false,
+      "unit": "%",
+      "value": 20.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      2388,
+      2596
+     ],
+     "sub_span": [
+      65,
+      87
+     ],
+     "text": "Available tumour sample from resected or biopsied tissue, with a tumour content of ≥20% (30% preferred) either before or after macro dissection (if performed) and a cell viability of a minimum 100 cells.",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "7bb4d585-0966-542f-91f8-e17b9b9e00a1",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/1/b1/b22.r",
+     "review_status": "needs_review",
+     "source_span": [
+      2388,
+      2596
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Available tumour sample from resected or biopsied tissue, with a tumour content of ≥20% (30% preferred) either before or after macro dissection (if performed) and a cell viability of a minimum 100 cells.",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-1.b1.b22",
+   "flags": [
+    "~22% of the statement's content words are typed; residual kept as narrative requirement",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "5c1ca295-486e-5953-83d3-c6b329e687cf",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b22.g",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2388,
+    2596
+   ],
+   "text": "Available tumour sample from resected or biopsied tissue, with a tumour content of ≥20% (30% preferred) either before or after macro dissection (if performed) and a cell viability of a minimum 100 cells.",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b23",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "b7615ea4-3d81-5d2c-bb16-dbfd502631e9",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b23",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2597,
+    2677
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "Core Needle Biopsies (CNB): recommended minimum of four (4) cores per block",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b24",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "27225a9b-de50-5a8d-b74e-917948d20e11",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b24",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2678,
+    2727
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Fine Needle Aspirates (FNA) are not accepted",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b25",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "604c3772-7cdf-5d24-984a-41c129d0b1cb",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b25",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2728,
+    2775
+   ],
+   "subtype": "unclassified narrative",
+   "text": "The following sample types are acceptable:",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b26",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "c158fbcd-3a65-5e25-b87f-f320336d9448",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b26",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2776,
+    2957
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "6-10 unstained slides (charged and unbaked) of 10μm each (or 12-19 unstained slides at 5 μm each), PLUS one contiguous H&E slide. Minimum total tissue thickness must be 60μm OR",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b1.b27",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "f5b854a5-b88d-567c-8cf3-86682a7b122a",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b27",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    2958,
+    3012
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "FFPE tissue block with 25mm2 minimum surface area",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-1.b1.b28",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "967b16b2-4eec-5f7c-8445-0276e1514da7",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b1/b28",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3013,
+    3110
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Written informed consent must be given according to ICH/GCP, and national/local regulations.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b1",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "1fdfb3cf-3eca-5920-9553-a1fbe4ef54ee",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b1",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3140,
+    3258
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Suspected recurrent disease or known conflicts with the inclusion and exclusion criteria for the randomised trial",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b2",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "3fe1126e-961a-5629-90bb-462beb18dc4d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b2",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3259,
+    3326
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Prior treatment with any SERD or investigational ER antagonist",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b3",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "1a2c9ca4-2d22-5375-a32a-4cd6f3603c3b",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b3",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3327,
+    3374
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Previous history of invasive breast cancer",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b4",
+   "exceptions": [
+    {
+     "keyword": "except for",
+     "span": [
+      64,
+      158
+     ],
+     "status": "unparsed",
+     "text": "adequately treated basal cell or squamous cell skin cancer, or carcinoma in situ"
+    }
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "c4ee467f-8e7f-5070-ae3b-07ac8e1edd39",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b4",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3375,
+    3538
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Previous history of any other malignancy within the last 5 years, except for adequately treated basal cell or squamous cell skin cancer, or carcinoma in situ.",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     41,
+     64
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "year",
+    "value": 5.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "transplant"
+   ],
+   "display_number": "Inc-1.b2.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "5037890a-7149-5ce5-bc28-aa8d41ff8ce8",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b5",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3539,
+    3599
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Previous history of bone marrow and/or organ transplant",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b6",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "741690e2-e214-5d18-b6d9-8b57d52067cb",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b6",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3600,
+    3637
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Bilateral invasive breast cancer",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b7",
+   "exceptions": [
+    {
+     "keyword": "with the exception of",
+     "span": [
+      39,
+      119
+     ],
+     "status": "unparsed",
+     "text": "the SURVIVE study and observational (non-interventional"
+    }
+   ],
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "356e5c44-79b4-5b19-857c-02d853fd956c",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b7",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3638,
+    3927
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Participation in another clinical study, with the exception of the SURVIVE study and observational (non-interventional) and non-drug intervention clinical studies. Note: patients participating in interventional studies may participate once they enter the follow-up period of the study",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-1.b2.b8",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "7a796cdf-cea0-5bca-9553-e7b23a718afd",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1/b2/b8",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "ctDNA screening phase"
+   ],
+   "source_span": [
+    3928,
+    4013
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Blood transfusion within 3 months prior to registration or during the screening.",
+   "time_window": {
+    "anchor": "registration",
+    "anchor_text": "registration",
+    "direction": "lookback",
+    "span": [
+     18,
+     55
+    ],
+    "status": "parsed",
+    "unit": "month",
+    "value": 3.0
+   },
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "0e8936c9-6410-58ba-8a17-733daa57b488",
+       "document_span": [
+        4062,
+        4196
+       ],
+       "inherited_context": [],
+       "phrase": "ctDNA",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "extraction_coverage": 0.22,
+     "flags": [
+      "biomarker qualifiers not stated in text: assay (protocol names Signatera), sampling time",
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "0e8936c9-6410-58ba-8a17-733daa57b488",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b1/b1.p0",
+     "predicate": {
+      "alteration": "detection",
+      "analyte": "ctDNA",
+      "key": "biomarker:ctdna",
+      "kind": "biomarker",
+      "qualifier_gaps": [
+       "assay (protocol names Signatera)",
+       "sampling time"
+      ],
+      "required_state": "present",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      4062,
+      4196
+     ],
+     "sub_span": [
+      0,
+      14
+     ],
+     "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctDNA assay approved for diagnostic purposes.",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "0f6f7b60-df11-5ea5-a11d-154cc5131ec9",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b1/b1.r",
+     "review_status": "needs_review",
+     "source_span": [
+      4062,
+      4196
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctDNA assay approved for diagnostic purposes.",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-2.b1.b1",
+   "flags": [
+    "~22% of the statement's content words are typed; residual kept as narrative requirement",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "cc844ae0-8234-52aa-986f-3b47932b6492",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b1.g",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4062,
+    4196
+   ],
+   "text": "ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctDNA assay approved for diagnostic purposes.",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b1.b2",
+   "exceptions": [
+    {
+     "keyword": "with the exception of",
+     "span": [
+      67,
+      122
+     ],
+     "status": "unparsed",
+     "text": "the tissue sample requirements"
+    }
+   ],
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "563cc509-03bd-5006-8b6f-75db3aeb4704",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b2",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4197,
+    4321
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "Patients must meet the eligibility criteria for the screening phase, with the exception of the tissue sample requirements.",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
+     "document_span": [
+      4322,
+      4396
+     ],
+     "inherited_context": [
+      "Randomised trial"
+     ],
+     "phrase": "ctDNA",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-2.b1.b3",
+   "extraction_coverage": 0.6,
+   "flags": [
+    "biomarker qualifiers not stated in text: assay (protocol names Signatera), sampling time",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "aa22ffa9-e798-521e-8ded-9eeaad92d0ce",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b3.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "alteration": "detection",
+    "analyte": "ctDNA",
+    "key": "biomarker:ctdna",
+    "kind": "biomarker",
+    "qualifier_gaps": [
+     "assay (protocol names Signatera)",
+     "sampling time"
+    ],
+    "required_state": "present",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4322,
+    4396
+   ],
+   "sub_span": [
+    53,
+    67
+   ],
+   "text": "Patients must receive adjuvant ET at the time of the ctDNA positive test",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b1.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "80129ba9-290f-5e4e-b507-648c4afcaa01",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b4",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4397,
+    4491
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Absence of locoregional and/or metastatic disease and/or new malignancy, as investigated by:",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-2.b1.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "586146af-9dd6-5a18-8d84-b61f0f42d71a",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b5",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4492,
+    4731
+   ],
+   "subtype": "investigator judgement",
+   "text": "Mammogram (unilateral in case of mastectomy; not required in patients having undergone bilateral mastectomy) NOTE: if local investigator plans to use MRIs instead of mammograms during the study, MRI will have to be performed at baseline.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b1.b6",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "5ce80a28-4067-5f4d-9211-6d5f467f0ddd",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b6",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4732,
+    4888
+   ],
+   "subtype": "unclassified narrative",
+   "text": "CT thorax and abdomen/pelvis with IV contrast. In case of any contra-indications (medical or regulatory): CT thorax without contrast + MRI abdomen/pelvis.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b1.b7",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "f7148bc8-168a-56a8-96c2-925d683e42d9",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b7",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4889,
+    4923
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Technetium-99m bone scintigraphy",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:ecog",
+     "label": "ECOG performance status",
+     "primary": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "named ECOG scale",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97",
+     "document_span": [
+      4924,
+      4995
+     ],
+     "inherited_context": [
+      "Randomised trial"
+     ],
+     "phrase": "ECOG",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-2.b1.b8",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "d0b67e30-21a3-5b5d-904f-cf6f8c2cad97",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b8.p0",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "predicate": {
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "kind": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "code": "89247-1",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4924,
+    4995
+   ],
+   "sub_span": [
+    36,
+    69
+   ],
+   "text": "Eastern Cooperative Oncology Group (ECOG) performance status (PS) 0-1",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b1.b9",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "d5715b64-e651-5d05-b16d-b02d1b17897d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b9",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    4996,
+    5021
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Adequate organ function",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc-2.b1.b10",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "62fec048-027a-5646-b4d7-1da11c1f0777",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b1/b10",
+   "polarity": "inclusion",
+   "polarity_source": "heading 'Main inclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    5022,
+    5169
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Women of childbearing potential (WOCBP) must have a negative highly sensitive serum or urine pregnancy test within 7 days prior to randomisation.",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomisation",
+    "direction": "lookback",
+    "span": [
+     108,
+     144
+    ],
+    "status": "parsed",
+    "unit": "day",
+    "value": 7.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-2.b2.b1",
+   "exceptions": [
+    {
+     "keyword": "with the exception of",
+     "span": [
+      154,
+      308
+     ],
+     "status": "unparsed",
+     "text": "alopecia, peripheral neuropathy and other toxicities not considered a safety risk for the participant at investigator's discretion"
+    }
+   ],
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "cf03f16e-1cac-50a5-8ee4-1c480ce359d1",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b1",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    5197,
+    5507
+   ],
+   "subtype": "investigator judgement",
+   "text": "Any unresolved toxic effect of prior therapies or surgical procedures of Grade ≥ 2 according to Common Terminology Criteria of Adverse Events (CTCAE) v5.0, with the exception of alopecia, peripheral neuropathy and other toxicities not considered a safety risk for the participant at investigator's discretion",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-2.b2.b2",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "8e088569-d6bb-5719-afb5-0f8ee4be9ac5",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b2",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    5508,
+    5676
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Unable or unwilling to avoid over-the-counter medications, dietary/herbal supplements, and/or foods that are moderate/strong inhibitors or inducers of CYP3A4 activity",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b2.b3",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "4c456042-7062-5879-9747-5a5feab6718b",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b3",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    5677,
+    5790
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Known difficulty in tolerating oral medications or conditions which would impair absorption of oral medications",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://snomed.info/sct",
+       "concept_id": "cm:cond-myocardial-infarction",
+       "label": "Myocardial infarction",
+       "primary": {
+        "code": "22298006",
+        "display": "Myocardial infarction",
+        "system": "SNOMED CT"
+       },
+       "semantic_role": "condition"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "22298006",
+        "display": "Myocardial infarction",
+        "system": "http://snomed.info/sct",
+        "valueSet": "vs:cond-myocardial-infarction"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "direct",
+       "direction": "source_to_target",
+       "relationship": "equivalent"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "direct",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "649aff05-13d1-56ae-a6a1-52bedffe4954",
+       "document_span": [
+        5873,
+        5896
+       ],
+       "inherited_context": [],
+       "phrase": "myocardial infarction",
+       "source_code": null
+      },
+      "value_set": {
+       "compose": [
+        {
+         "codes": [
+          "22298006"
+         ],
+         "system": "SNOMED CT"
+        }
+       ],
+       "excluded": [],
+       "frozen_expansion": {
+        "date": "2026-10-06",
+        "members": [
+         "SNOMED CT|22298006"
+        ],
+        "sha256": "dd8cee64bca6915484ad018c8d93ec19648719880b10f3234a53df1ffe175647"
+       },
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "id": "vs:cond-myocardial-infarction",
+       "version": "0.1.0"
+      }
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "condition predicate has no terminology binding yet -> not executable until bound",
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+     ],
+     "id": "649aff05-13d1-56ae-a6a1-52bedffe4954",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b1",
+     "predicate": {
+      "concept": "myocardial infarction",
+      "key": "condition:myocardial_infarction",
+      "kind": "condition",
+      "terminology": {
+       "code": "22298006",
+       "relationship": "equivalent",
+       "status": "proposed_unreviewed",
+       "system": "SNOMED CT"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      5873,
+      5896
+     ],
+     "sub_span": [
+      0,
+      21
+     ],
+     "text": "myocardial infarction",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://snomed.info/sct",
+       "concept_id": "cm:cond-stroke",
+       "label": "Stroke / cerebrovascular accident",
+       "primary": {
+        "code": "230690007",
+        "display": "Cerebrovascular accident",
+        "system": "SNOMED CT"
+       },
+       "semantic_role": "condition"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "230690007",
+        "display": "Cerebrovascular accident",
+        "system": "http://snomed.info/sct",
+        "valueSet": "vs:cond-stroke"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "cerebral infarction is narrower than CVA",
+       "direction": "source_to_target",
+       "relationship": "inexact"
+      },
+      "provenance": {
+       "confidence": "low",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "cerebral infarction is narrower than CVA",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "dab4ff71-f9cf-5788-9573-e5e33b446740",
+       "document_span": [
+        5897,
+        5905
+       ],
+       "inherited_context": [],
+       "phrase": "stroke",
+       "source_code": null
+      },
+      "value_set": {
+       "compose": [
+        {
+         "codes": [
+          "230690007"
+         ],
+         "system": "SNOMED CT"
+        }
+       ],
+       "excluded": [],
+       "frozen_expansion": {
+        "date": "2026-10-06",
+        "members": [
+         "SNOMED CT|230690007"
+        ],
+        "sha256": "0ecc5f4c8d41ec80bbd7a76240f1c7288ca9501c2d0e132da4d577587ae5c651"
+       },
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "id": "vs:cond-stroke",
+       "version": "0.1.0"
+      }
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "condition predicate has no terminology binding yet -> not executable until bound",
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "mapping relationship 'inexact': cerebral infarction is narrower than CVA"
+     ],
+     "id": "dab4ff71-f9cf-5788-9573-e5e33b446740",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b2",
+     "predicate": {
+      "concept": "stroke",
+      "key": "condition:stroke",
+      "kind": "condition",
+      "terminology": {
+       "code": "230690007",
+       "relationship": "inexact",
+       "status": "proposed_unreviewed",
+       "system": "SNOMED CT"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      5897,
+      5905
+     ],
+     "sub_span": [
+      0,
+      6
+     ],
+     "text": "stroke",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "9771085a-fa14-524e-817c-5600552d67ab",
+       "document_span": [
+        5906,
+        5930
+       ],
+       "inherited_context": [],
+       "phrase": "unstable angina",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "9771085a-fa14-524e-817c-5600552d67ab",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b3",
+     "predicate": {
+      "concept": "unstable angina",
+      "key": "condition:unstable_angina",
+      "kind": "condition",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      5906,
+      5930
+     ],
+     "sub_span": [
+      0,
+      22
+     ],
+     "text": "severe/unstable angina",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "001ede3c-a3cd-5b31-ba71-7209359c2640",
+       "document_span": [
+        5931,
+        5963
+       ],
+       "inherited_context": [],
+       "phrase": "arrhythmia",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping",
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "001ede3c-a3cd-5b31-ba71-7209359c2640",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b4",
+     "predicate": {
+      "concept": "arrhythmia",
+      "key": "condition:arrhythmia",
+      "kind": "condition",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      5931,
+      5963
+     ],
+     "sub_span": [
+      0,
+      30
+     ],
+     "text": "symptomatic cardiac arrhythmia",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+     ],
+     "id": "b026db49-b078-5a57-8e50-5ff473f2055b",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b5",
+     "review_status": "needs_review",
+     "source_span": [
+      5964,
+      6009
+     ],
+     "subtype": "unclassified narrative",
+     "text": "prolonged QTcF ≥ Grade 3 (i.e., > 500 msec)",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "heart failure"
+     ],
+     "flags": [
+      "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+     ],
+     "id": "658484fc-a19d-5bdd-b0de-34e7283bff52",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/2/b2/b4/b6",
+     "review_status": "needs_review",
+     "source_span": [
+      6010,
+      6100
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "heart failure ≥ Class III as defined by the New York Heart Association (NYHA) guidelines",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-2.b2.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "17bce57d-eaba-5c4d-aa4f-325680477007",
+   "lead_in": "Any of the following cardiovascular disorders within 3 months before enrolment:",
+   "logic_basis": "explicit",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b4",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    5791,
+    5872
+   ],
+   "text": "Any of the following cardiovascular disorders within 3 months before enrolment:",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     46,
+     61
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "month",
+    "value": 3.0
+   },
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2.b2.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "caca954b-c585-522b-b8b4-b7eb72ed3fa2",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b5",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    6101,
+    6269
+   ],
+   "subtype": "unclassified narrative",
+   "text": "CTCAE version 5.0 grade 3 or 4 dyslipidemia at the time of screening, defined as cholesterol>400 mg/dL or >10.34 mmol/L and/or triglycerides>500 mg/dL or >5.7 mmol/L.",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://snomed.info/sct",
+     "concept_id": "cm:cond-ild",
+     "label": "Interstitial lung disease",
+     "primary": {
+      "code": "233703007",
+      "display": "Interstitial lung disease",
+      "system": "SNOMED CT"
+     },
+     "semantic_role": "condition"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "233703007",
+      "display": "Interstitial lung disease",
+      "system": "http://snomed.info/sct",
+      "valueSet": "vs:cond-ild"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "direct",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "direct",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "07fb197c-972f-5b6d-8541-f494f85d57fc",
+     "document_span": [
+      6270,
+      6309
+     ],
+     "inherited_context": [
+      "Randomised trial"
+     ],
+     "phrase": "ild",
+     "source_code": null
+    },
+    "value_set": {
+     "compose": [
+      {
+       "codes": [
+        "233703007"
+       ],
+       "system": "SNOMED CT"
+      }
+     ],
+     "excluded": [],
+     "frozen_expansion": {
+      "date": "2026-10-06",
+      "members": [
+       "SNOMED CT|233703007"
+      ],
+      "sha256": "1aed8e01032457c62e442353c4748c07c0ae80ed27a76612a4dee27552c4966f"
+     },
+     "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+     "id": "vs:cond-ild",
+     "version": "0.1.0"
+    }
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-2.b2.b6",
+   "flags": [
+    "condition predicate has no terminology binding yet -> not executable until bound",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "07fb197c-972f-5b6d-8541-f494f85d57fc",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b6",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "predicate": {
+    "concept": "ild",
+    "key": "condition:ild",
+    "kind": "condition",
+    "terminology": {
+     "code": "233703007",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "SNOMED CT"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    6270,
+    6309
+   ],
+   "sub_span": [
+    0,
+    37
+   ],
+   "text": "Child-Pugh Score greater than Class A",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "hepatitis b",
+    "hepatitis c",
+    "hiv",
+    "immunodeficiency"
+   ],
+   "display_number": "Inc-2.b2.b7",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "dc1bc968-a0c8-5844-8633-527279732633",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b7",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    6310,
+    6500
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Uncontrolled significant active infections (≥ grade 3 according to CTCAE version 5), including active hepatitis B virus (HBV), hepatitis C virus (HCV) or human immunodeficiency Virus (HIV)",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "coagulopathy",
+    "deep vein thrombosis",
+    "pulmonary embolism"
+   ],
+   "display_number": "Inc-2.b2.b8",
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "964d5bc9-f750-5921-85c3-0336e0d208e0",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2/b2/b8",
+   "polarity": "exclusion",
+   "polarity_source": "heading 'Main exclusion criteria:'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [
+    "Randomised trial"
+   ],
+   "source_span": [
+    6501,
+    6636
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Coagulopathy or any history of coagulopathy within the past 6 months, including history of deep vein thrombosis or pulmonary embolism",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     44,
+     68
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "month",
+    "value": 6.0
+   },
+   "type": "narrative"
+  }
+ ],
+ "ctrp_biomarker_contract": {
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.",
+  "status": "not_supplied"
+ },
+ "inventory": {
+  "criteria_total": 55,
+  "exclusion": 16,
+  "flagged_nodes": 74,
+  "inclusion": 39,
+  "leaf_nodes": 70,
+  "leaves_by_computability": {
+   "human_judgment": 6,
+   "structured_computable": 26,
+   "text_dependent": 38
+  },
+  "typed_predicates": 26
+ },
+ "lifecycle": {
+  "note": "Draft only: not reviewed; not executable for screening.",
+  "status": "draft"
+ },
+ "llm_applied": [],
+ "review_summary": {
+  "criteria": 55,
+  "open_conflicts": [],
+  "orphaned_decisions": [],
+  "pending": [
+   "Demo-min-age",
+   "Inc-1.b1.b1",
+   "Inc-1.b1.b2",
+   "Inc-1.b1.b3",
+   "Inc-1.b1.b4",
+   "Inc-1.b1.b5",
+   "Inc-1.b1.b6",
+   "Inc-1.b1.b7",
+   "Inc-1.b1.b8",
+   "Inc-1.b1.b9",
+   "Inc-1.b1.b10",
+   "Inc-1.b1.b11",
+   "Inc-1.b1.b12",
+   "Inc-1.b1.b13",
+   "Inc-1.b1.b14",
+   "Inc-1.b1.b15",
+   "Inc-1.b1.b16",
+   "Inc-1.b1.b17",
+   "Inc-1.b1.b18",
+   "Inc-1.b1.b19",
+   "Inc-1.b1.b20",
+   "Inc-1.b1.b21",
+   "Inc-1.b1.b22",
+   "Inc-1.b1.b23",
+   "Inc-1.b1.b24",
+   "Inc-1.b1.b25",
+   "Inc-1.b1.b26",
+   "Inc-1.b1.b27",
+   "Inc-1.b1.b28",
+   "Inc-1.b2.b1",
+   "Inc-1.b2.b2",
+   "Inc-1.b2.b3",
+   "Inc-1.b2.b4",
+   "Inc-1.b2.b5",
+   "Inc-1.b2.b6",
+   "Inc-1.b2.b7",
+   "Inc-1.b2.b8",
+   "Inc-2.b1.b1",
+   "Inc-2.b1.b2",
+   "Inc-2.b1.b3",
+   "Inc-2.b1.b4",
+   "Inc-2.b1.b5",
+   "Inc-2.b1.b6",
+   "Inc-2.b1.b7",
+   "Inc-2.b1.b8",
+   "Inc-2.b1.b9",
+   "Inc-2.b1.b10",
+   "Inc-2.b2.b1",
+   "Inc-2.b2.b2",
+   "Inc-2.b2.b3",
+   "Inc-2.b2.b4",
+   "Inc-2.b2.b5",
+   "Inc-2.b2.b6",
+   "Inc-2.b2.b7",
+   "Inc-2.b2.b8"
+  ],
+  "stale_decisions": [],
+  "unpinned_decisions": [],
+  "validated": 0
+ },
+ "schema_version": "cer-draft-0.1",
+ "scope_items": [
+  {
+   "label": "ctDNA screening phase:",
+   "span": [
+    21,
+    46
+   ]
+  },
+  {
+   "label": "Main inclusion criteria:",
+   "span": [
+    48,
+    75
+   ]
+  },
+  {
+   "label": "Main exclusion criteria:",
+   "span": [
+    3112,
+    3139
+   ]
+  },
+  {
+   "label": "Randomised trial:",
+   "span": [
+    4014,
+    4034
+   ]
+  },
+  {
+   "label": "Main inclusion criteria:",
+   "span": [
+    4036,
+    4060
+   ]
+  },
+  {
+   "label": "Main exclusion criteria:",
+   "span": [
+    5171,
+    5195
+   ]
+  }
+ ],
+ "scopes": [
+  [],
+  [
+   "Randomised trial"
+  ],
+  [
+   "ctDNA screening phase"
+  ]
+ ],
+ "source": {
+  "content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
+  "demographics": {
+   "healthy_volunteers": false,
+   "maximum_age": null,
+   "minimum_age": "18 Years",
+   "sex": "ALL"
+  },
+  "nct_id": "NCT05512364",
+  "overall_status": "RECRUITING",
+  "protocol_baseline": "registry_excerpt",
+  "registry": "ClinicalTrials.gov",
+  "retrieved_at": "2026-10-06T01:30:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "source_type": "B",
+  "text_normalized": "Inclusion Criteria:\n\n1. ctDNA screening phase:\n\n   Main inclusion criteria:\n\n   • Female (both pre- and postmenopausal) or male patients with histologically confirmed ER positive (regardless of PR),\n\n   HER2 negative breast cancer, according to local pathologist:\n   * ER-positive defined as ≥ 10% of cells staining positive for ER or Allred proportion score ≥3\n   * HER2-negative defined as a score of 0, 1+ by immunohistochemistry (IHC) or a negative in situ hybridization (ISH) based on single-probe average HER2 copy number, as per American Society of Clinical Oncology guidelines\n   * Intermediate to high risk of recurrence after definitive treatment for early breast cancer, defined as:\n\n   FOR PATIENTS TREATED WITH PRIMARY SURGERY:\n   * Any patient with ≥ 4 positive axillary lymph nodes (stage pN2-3).\n   * 1-3 positive axillary lymph nodes (stage pN1) and either:\n   * Tumour size ≥ 5 cm or/and\n   * Histologic grade 3 or/and\n   * Ki67≥20% or/and\n   * High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Prosigna score >40 or EPclin risk score >=4.0.\n   * Negative axillary lymph nodes (stage pN0) and tumour size ≥ 2 cm and either\n   * Histologic grade 3 a or/and\n   * Ki67≥20% and/or\n   * High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Prosigna score >60 or EPclin risk score >=4.0. FOR PATIENTS TREATED WITH NEOADJUVANT\n\n   SYSTEMIC TREATMENT FOLLOWED BY SURGERY:\n   * Patient may have received neoadjuvant endocrine therapy or neoadjuvant chemotherapy provided that:\n   * The initial tumour and/or the tumour after surgery meet the criteria above defined for patients treated with primary surgery or the initial tumour was staged as cT4anyN and\n   * There is no pathological complete response, defined as no invasive disease in the breast and axilla (ypT0/is ypN0).\n   * Age ≥18 years\n   * Patients must have received at least 1 year and up to 7.5 years of ET and planned to continue adjuvant ET during ctDNA screening phase\n   * Previous adjuvant CDK4/6 inhibitor or PARP-inhibitor treatment is allowed provided it is completed\n   * Invasive multicentric / multifocal disease is allowed provided that all the tested foci are ER+ HER2-. A sample from the highest-risk one, according to the investigator decision based on the size and grade, should be sent to Natera to build the patient ctDNA assay.\n   * Available tumour sample from resected or biopsied tissue, with a tumour content of ≥20% (30% preferred) either before or after macro dissection (if performed) and a cell viability of a minimum 100 cells.\n   * Core Needle Biopsies (CNB): recommended minimum of four (4) cores per block\n   * Fine Needle Aspirates (FNA) are not accepted\n   * The following sample types are acceptable:\n   * 6-10 unstained slides (charged and unbaked) of 10μm each (or 12-19 unstained slides at 5 μm each), PLUS one contiguous H&E slide. Minimum total tissue thickness must be 60μm OR\n   * FFPE tissue block with 25mm2 minimum surface area\n   * Written informed consent must be given according to ICH/GCP, and national/local regulations.\n\n   Main exclusion criteria:\n   * Suspected recurrent disease or known conflicts with the inclusion and exclusion criteria for the randomised trial\n   * Prior treatment with any SERD or investigational ER antagonist\n   * Previous history of invasive breast cancer\n   * Previous history of any other malignancy within the last 5 years, except for adequately treated basal cell or squamous cell skin cancer, or carcinoma in situ.\n   * Previous history of bone marrow and/or organ transplant\n   * Bilateral invasive breast cancer\n   * Participation in another clinical study, with the exception of the SURVIVE study and observational (non-interventional) and non-drug intervention clinical studies. Note: patients participating in interventional studies may participate once they enter the follow-up period of the study\n   * Blood transfusion within 3 months prior to registration or during the screening.\n2. Randomised trial:\n\nMain inclusion criteria:\n\n* ctDNA positive according to the Signatera ctDNA assay (main study ctDNA test) or other ctDNA assay approved for diagnostic purposes.\n* Patients must meet the eligibility criteria for the screening phase, with the exception of the tissue sample requirements.\n* Patients must receive adjuvant ET at the time of the ctDNA positive test\n* Absence of locoregional and/or metastatic disease and/or new malignancy, as investigated by:\n* Mammogram (unilateral in case of mastectomy; not required in patients having undergone bilateral mastectomy) NOTE: if local investigator plans to use MRIs instead of mammograms during the study, MRI will have to be performed at baseline.\n* CT thorax and abdomen/pelvis with IV contrast. In case of any contra-indications (medical or regulatory): CT thorax without contrast + MRI abdomen/pelvis.\n* Technetium-99m bone scintigraphy\n* Eastern Cooperative Oncology Group (ECOG) performance status (PS) 0-1\n* Adequate organ function\n* Women of childbearing potential (WOCBP) must have a negative highly sensitive serum or urine pregnancy test within 7 days prior to randomisation.\n\nMain exclusion criteria:\n\n* Any unresolved toxic effect of prior therapies or surgical procedures of Grade ≥ 2 according to Common Terminology Criteria of Adverse Events (CTCAE) v5.0, with the exception of alopecia, peripheral neuropathy and other toxicities not considered a safety risk for the participant at investigator's discretion\n* Unable or unwilling to avoid over-the-counter medications, dietary/herbal supplements, and/or foods that are moderate/strong inhibitors or inducers of CYP3A4 activity\n* Known difficulty in tolerating oral medications or conditions which would impair absorption of oral medications\n* Any of the following cardiovascular disorders within 3 months before enrolment:\n* myocardial infarction\n* stroke\n* severe/unstable angina\n* symptomatic cardiac arrhythmia\n* prolonged QTcF ≥ Grade 3 (i.e., > 500 msec)\n* heart failure ≥ Class III as defined by the New York Heart Association (NYHA) guidelines\n* CTCAE version 5.0 grade 3 or 4 dyslipidemia at the time of screening, defined as cholesterol>400 mg/dL or >10.34 mmol/L and/or triglycerides>500 mg/dL or >5.7 mmol/L.\n* Child-Pugh Score greater than Class A\n* Uncontrolled significant active infections (≥ grade 3 according to CTCAE version 5), including active hepatitis B virus (HBV), hepatitis C virus (HCV) or human immunodeficiency Virus (HIV)\n* Coagulopathy or any history of coagulopathy within the past 6 months, including history of deep vein thrombosis or pulmonary embolism",
+  "title": "Elacestrant for Treating ER+/HER2- Breast Cancer Patients With ctDNA Relapse (TREAT ctDNA)"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "licenses": {
+   "HGNC": "CC0",
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "UCUM": "UCUM licence (free)"
+  },
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "stats": {
+   "bound": 6,
+   "by_relationship": {
+    "equivalent": 3,
+    "inexact": 1,
+    "no-map": 18,
+    "related": 2
+   },
+   "unmapped": 18
+  },
+  "status": "UNREVIEWED_SEED",
+  "value_sets": {
+   "vs:cond-ild": {
+    "compose": [
+     {
+      "codes": [
+       "233703007"
+      ],
+      "system": "SNOMED CT"
+     }
+    ],
+    "excluded": [],
+    "frozen_expansion": {
+     "date": "2026-10-06",
+     "members": [
+      "SNOMED CT|233703007"
+     ],
+     "sha256": "1aed8e01032457c62e442353c4748c07c0ae80ed27a76612a4dee27552c4966f"
+    },
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "id": "vs:cond-ild",
+    "version": "0.1.0"
+   },
+   "vs:cond-myocardial-infarction": {
+    "compose": [
+     {
+      "codes": [
+       "22298006"
+      ],
+      "system": "SNOMED CT"
+     }
+    ],
+    "excluded": [],
+    "frozen_expansion": {
+     "date": "2026-10-06",
+     "members": [
+      "SNOMED CT|22298006"
+     ],
+     "sha256": "dd8cee64bca6915484ad018c8d93ec19648719880b10f3234a53df1ffe175647"
+    },
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "id": "vs:cond-myocardial-infarction",
+    "version": "0.1.0"
+   },
+   "vs:cond-stroke": {
+    "compose": [
+     {
+      "codes": [
+       "230690007"
+      ],
+      "system": "SNOMED CT"
+     }
+    ],
+    "excluded": [],
+    "frozen_expansion": {
+     "date": "2026-10-06",
+     "members": [
+      "SNOMED CT|230690007"
+     ],
+     "sha256": "0ecc5f4c8d41ec80bbd7a76240f1c7288ca9501c2d0e132da4d577587ae5c651"
+    },
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "id": "vs:cond-stroke",
+    "version": "0.1.0"
+   }
+  },
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty."
+ },
+ "validation": {
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion.",
+  "problems": [],
+  "structure_ok": true
+ }
+}

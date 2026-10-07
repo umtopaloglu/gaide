@@ -1,0 +1,117 @@
+{
+ "Inc-5": {
+  "op": "ALL",
+  "of": [
+   {
+    "p": {
+     "kind": "biomarker",
+     "analyte": "EGFR",
+     "alteration": "sensitising mutation",
+     "required_state": "present",
+     "qualifier_gaps": [
+      "variant list defining 'sensitive'",
+      "assay",
+      "local vs central"
+     ],
+     "specimen": [
+      "tumour tissue",
+      "blood"
+     ]
+    }
+   }
+  ]
+ },
+ "Inc-12": {
+  "op": "ANY",
+  "of": [
+   {
+    "p": {
+     "kind": "measurement",
+     "analyte": "Urinary protein (dipstick)",
+     "comparator": "<=",
+     "value": 2,
+     "unit": "+ (ordinal)"
+    }
+   },
+   {
+    "p": {
+     "kind": "measurement",
+     "analyte": "Urinary protein (24h)",
+     "comparator": "<",
+     "value": 1000,
+     "unit": "mg/(24.h)"
+    }
+   }
+  ]
+ },
+ "Inc-10": {
+  "op": "ALL",
+  "of": [
+   {
+    "narrative": "human_judgment",
+    "subtype": "'no severe cardiac dysfunction' (undefined)"
+   },
+   {
+    "p": {
+     "kind": "measurement",
+     "analyte": "LVEF",
+     "comparator": ">=",
+     "value": 50,
+     "unit": "%"
+    }
+   }
+  ]
+ },
+ "Exc-2": {
+  "p": {
+   "kind": "condition",
+   "concept": "previous systemic therapy"
+  }
+ },
+ "Exc-3": {
+  "p": {
+   "kind": "condition",
+   "concept": "prior EGFR-TKI therapy"
+  }
+ },
+ "Exc-8": {
+  "p": {
+   "kind": "condition",
+   "concept": "active malignancy"
+  },
+  "tw": {
+   "value": 3,
+   "unit": "year",
+   "anchor": "randomisation"
+  }
+ },
+ "Exc-13": {
+  "p": {
+   "kind": "condition",
+   "concept": "active CNS metastasis"
+  }
+ },
+ "Exc-22": {
+  "op": "ANY",
+  "of": [
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "HIV antibody positive"
+    }
+   },
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "active hepatitis B infection"
+    }
+   },
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "active hepatitis C infection"
+    }
+   }
+  ]
+ }
+}

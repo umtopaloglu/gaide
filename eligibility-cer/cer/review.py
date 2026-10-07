@@ -10,13 +10,26 @@ is validated; it is `released` only with an explicit release block on a validate
 ROLES = ("clinical", "informatics")
 
 
+def text_hash(text):
+    import hashlib
+    return hashlib.sha256(text.encode()).hexdigest()
+
+
 def apply_review(cer, sidecar):
-    latest = {}
+    """Decisions pinned to a criterion text (criterion_text_sha256) only count while that text is unchanged:
+    after an amendment they become STALE and the criterion needs review again.  Unpinned decisions still count
+    but are reported; decisions for criteria that no longer exist are reported as orphaned."""
+    texts = {r.get("display_number"): text_hash(r["text"]) for r in cer["criteria"]}
+    latest, stale, orphaned, unpinned = {}, [], [], []
     for d in sidecar.get("decisions", []):
+        if d["criterion"] not in texts:
+            orphaned.append(d); continue
+        pin = d.get("criterion_text_sha256")
+        if pin and pin != texts[d["criterion"]]:
+            stale.append(d); continue
+        if not pin:
+            unpinned.append(d["criterion"])
         latest[(d["criterion"], d["role"])] = d          # later entries supersede earlier ones
-    unknown = {c for c, _ in latest} - {r.get("display_number") for r in cer["criteria"]}
-    if unknown:
-        raise KeyError(f"review decisions for unknown criteria: {sorted(unknown)}")
     pending, validated = [], 0
     for r in cer["criteria"]:
         num = r.get("display_number")
@@ -38,7 +51,8 @@ def apply_review(cer, sidecar):
             c["status"] = "resolved"; c["adjudication"].update(outcome=r["outcome"], clinical_owner=r["adjudicator"])
         elif c["blocks_release"]:
             open_conf.append(c["id"])
-    cer["review_summary"] = {"open_conflicts": open_conf, "criteria": len(cer["criteria"]), "validated": validated, "pending": pending}
+    cer["review_summary"] = {"open_conflicts": open_conf, "stale_decisions": stale, "orphaned_decisions": orphaned,
+                             "unpinned_decisions": sorted(set(unpinned)), "criteria": len(cer["criteria"]), "validated": validated, "pending": pending}
     status = "draft"
     if validated == len(cer["criteria"]) and open_conf:
         status = "in_review"                                      # material open registry conflict blocks release

@@ -42,6 +42,11 @@ LAB_RE = re.compile(
     r"(?:\s*(?P<unit>g/dL|g/L|mg/dL|mL/min|mmol/L|µmol/L|μmol/L|mg/L|IU/mL|cm|mm|%))?",
     re.I,
 )
+LAB_ULN_RE = re.compile(
+    rf"(?P<names>(?:{_ALIAS_PLAIN})(?:\s*\([A-Za-z0-9\-]+\))?(?:\s*(?:,|and|/|or)\s*(?:{_ALIAS_PLAIN})(?:\s*\([A-Za-z0-9\-]+\))?)*)"
+    r"(?P<gap>[^≥≤<>=;:]{0,28}?)(?P<cmp>≥|≤|>=|<=|<|>)\s*(?:the\s+)?(?:institutional\s+)?(?:upper limit of normal|ULN)\b(?:\s*\(ULN\))?",
+    re.I,
+)
 _ALIAS_ONE = [(n, re.compile(p, re.I), k) for (n, p, k) in _ALIASES]
 _CASE_SENSITIVE = {"ER staining (% cells)"}
 
@@ -132,6 +137,16 @@ def extract_predicates(text: str):
                 p["applicability"] = {"status": "unresolved", "condition": cm.group("c").strip(),
                                       "key": "fact:" + slug(cm.group("c"))}
             preds.append(p)
+        spans.append((m.start(), m.end()))
+
+    for m in LAB_ULN_RE.finditer(text):                 # "ALT <= ULN" (implicit 1 x ULN)
+        if any(a <= m.start() < b for a, b in spans):
+            continue
+        for name, kind in _lab_names(m.group("names")):
+            preds.append({"kind": kind, "analyte": name, "comparator": NORM_CMP[m.group("cmp")], "value": 1.0, "unit": "x ULN",
+                          "uln_multiple": True, "key": f"{kind}:{slug(name)}", "span": [m.start(), m.end()],
+                          "terminology": ({"system": "LOINC", "code": LABS[name][1], "status": "proposed_unreviewed"}
+                                          if name in LABS else {"status": "unmapped"})})
         spans.append((m.start(), m.end()))
 
     am = AGE_RE.search(text)

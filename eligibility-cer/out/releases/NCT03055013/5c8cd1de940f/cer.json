@@ -1,0 +1,2043 @@
+{
+ "authored_applied": [],
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "conflicts": [],
+ "criteria": [
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-min-age",
+   "flags": [],
+   "id": "041e3760-2aaf-5fdc-bd77-1f7e1d9dc201",
+   "origin": "imported_structured",
+   "path": "/demo/min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "minimumAge: 18 Years",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b1",
+   "flags": [],
+   "id": "35ab5a17-cead-516f-9fe3-64d4f7917b1c",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    21,
+    62
+   ],
+   "subtype": "unclassified narrative",
+   "text": "ELIGIBILITY CRITERIA FOR RANDOMIZATION:",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b2",
+   "flags": [],
+   "id": "e3ce5325-85bc-5750-947d-dc4df5e8b6c3",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    63,
+    230
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patients must have a renal mass consistent with a clinical stage >= T2Nx renal cell carcinoma (RCC) or TanyN+ RCC for which radical or partial nephrectomy is planned",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "brain metastas"
+     ],
+     "flags": [],
+     "id": "9f421953-3c20-57a0-ba2c-01c3af902d3a",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b3/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      589,
+      643
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "Liver, bone, or brain metastases are not permitted",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "id": "7d808bf9-4231-5c0c-8cfc-9beb3845dbde",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b3/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      644,
+      794
+     ],
+     "subtype": "unclassified narrative",
+     "text": "No more than 3 metastases are permitted, and all must be able to be removed or definitively treated within 12 weeks of the primary tumor resection",
+     "time_window": {
+      "anchor": "primary tumor resection",
+      "anchor_text": "primary tumor resection",
+      "direction": "lookback",
+      "span": [
+       100,
+       146
+      ],
+      "status": "anchor_missing_or_unrecognised",
+      "unit": "week",
+      "value": 12.0
+     },
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b3",
+   "exceptions": [
+    {
+     "keyword": "unless",
+     "span": [
+      82,
+      209
+     ],
+     "status": "unparsed",
+     "text": "the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation"
+    }
+   ],
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "cb49e016-9afb-57af-8c75-c7e2a4f27a7b",
+   "lead_in": "Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \"no evidence of disease\" (M1 NED)",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    231,
+    587
+   ],
+   "text": "Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \"no evidence of disease\" (M1 NED)",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "dc312b73-5630-50cc-aefa-44c0a0534c1d",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b4/b1/b1",
+       "review_status": "needs_review",
+       "source_span": [
+        1201,
+        1451
+       ],
+       "subtype": "specimen / tissue availability",
+       "text": "Patients randomized to Arm A: core tumor biopsy must have demonstrated RCC of any histology, including sarcomatoid, unclassified, or \"unknown histology\" (if preoperative biopsy was uninformative) with exception below for non-diagnostic biopsies",
+       "type": "narrative"
+      },
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "08fceb6d-a0f0-5c52-bb50-f159674f095f",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b4/b1/b2",
+       "review_status": "needs_review",
+       "source_span": [
+        1452,
+        1656
+       ],
+       "subtype": "specimen / tissue availability",
+       "text": "If the biopsy performed following randomization clearly demonstrates a benign condition, oncocytoma or a different type of cancer that is not RCC, the patient is not eligible and must come off study",
+       "type": "narrative"
+      },
+      {
+       "computability": "human_judgment",
+       "exceptions": [
+        {
+         "keyword": "unless",
+         "span": [
+          90,
+          154
+         ],
+         "status": "unparsed",
+         "text": "deemed clinically necessary by the treating investigator"
+        }
+       ],
+       "flags": [],
+       "id": "72284178-9292-593c-acf9-d48b2513251f",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b4/b1/b3",
+       "review_status": "needs_review",
+       "source_span": [
+        1657,
+        1817
+       ],
+       "subtype": "investigator judgement",
+       "text": "A non-diagnostic biopsy is considered a good faith effort and does not need to be repeated unless deemed clinically necessary by the treating investigator",
+       "type": "narrative"
+      }
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "id": "fb628f2b-d515-5023-9b05-be2fda48c07f",
+     "lead_in": "NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose",
+     "logic_basis": "assumed",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b4/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      982,
+      1199
+     ],
+     "text": "NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose",
+     "type": "group"
+    }
+   ],
+   "display_number": "Inc-b4",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "0aeeb509-dcce-54f6-a972-1ea7e49eb81c",
+   "lead_in": "If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    795,
+    980
+   ],
+   "text": "If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     54,
+     93
+    ],
+    "status": "parsed",
+    "unit": "month",
+    "value": 12.0
+   },
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "34b5b5c7-24d5-5285-a6c2-2c481fa8d540",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b5/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      1911,
+      1988
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Patient must not have undergone a partial nephrectomy for the current RCC",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "exceptions": [
+      {
+       "keyword": "unless",
+       "span": [
+        72,
+        152
+       ],
+       "status": "unparsed",
+       "text": "performed to render patient NED (in addition to the planned nephrectomy"
+      }
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "id": "98491824-fa09-57ac-b763-1f81a56f9e9e",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b5/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      1989,
+      2192
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Patient must not have had a metastasectomy for the current RCC diagnosis unless performed to render patient NED (in addition to the planned nephrectomy) within 6 months prior to the current diagnosis",
+     "time_window": {
+      "anchor": "current diagnosis",
+      "anchor_text": "current diagnosis",
+      "direction": "lookback",
+      "span": [
+       153,
+       199
+      ],
+      "status": "anchor_missing_or_unrecognised",
+      "unit": "month",
+      "value": 6.0
+     },
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "fdb90553-f094-5ba3-8c36-c3db1c10e22c",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b5/b3",
+     "review_status": "needs_review",
+     "source_span": [
+      2193,
+      2398
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Patient must not have received current or past antineoplastic systemic therapies for RCC: i.e., chemotherapy, hormonal therapy, immunotherapy, or standard or investigational agents for treatment of RCC",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "46927171-f9cb-5f0a-92c6-fb8f67191239",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b5/b4",
+     "review_status": "needs_review",
+     "source_span": [
+      2399,
+      2627
+     ],
+     "subtype": "prior therapy / medication",
+     "text": "Patient must not have received prior treatment with an anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody, or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b5",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "21e57f4c-8676-5be1-96ff-bf3cc3e56844",
+   "lead_in": "Patient must not have any prior systemic or local anti-cancer therapy for the current RCC",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1818,
+    1909
+   ],
+   "text": "Patient must not have any prior systemic or local anti-cancer therapy for the current RCC",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc-b6",
+   "flags": [],
+   "id": "a6e638c5-9b84-5479-8a5e-4a12be0246fc",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2628,
+    2830
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Patient must be >= 18 years of age. Because no dosing or adverse event data are currently available on the use of nivolumab therapy in patients < 18 years of age, children are excluded from this study",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:ecog",
+     "label": "ECOG performance status",
+     "primary": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "named ECOG scale",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "aae82df4-3e7a-531e-80cf-7db1d4f9df18",
+     "document_span": [
+      2831,
+      2924
+     ],
+     "inherited_context": [],
+     "phrase": "ECOG",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b7",
+   "extraction_coverage": 1.0,
+   "flags": [],
+   "id": "aae82df4-3e7a-531e-80cf-7db1d4f9df18",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b7.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "kind": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "code": "89247-1",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2831,
+    2924
+   ],
+   "sub_span": [
+    57,
+    91
+   ],
+   "text": "Patient must have an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1",
+   "type": "predicate"
+  },
+  {
+   "children": [
+    {
+     "computability": "human_judgment",
+     "flags": [],
+     "id": "ed870c3e-cb81-54b6-a296-10adedfedbd8",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b8/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      3035,
+      3210
+     ],
+     "subtype": "investigator judgement",
+     "text": "Patients with a prior RCC that was treated > 5 years before, are eligible if the current tumor is consistent with a new primary in the opinion of the treating investigator",
+     "type": "narrative"
+    },
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "computability": "text_dependent",
+         "flags": [],
+         "id": "99ada85a-f0d3-5b94-9ec1-fcc672004da9",
+         "origin": "interpreted_rule_based",
+         "path": "/inc/b8/b2/b1/b1",
+         "review_status": "needs_review",
+         "source_span": [
+          3652,
+          3690
+         ],
+         "subtype": "unclassified narrative",
+         "text": "Partial or radical nephrectomy",
+         "type": "narrative"
+        },
+        {
+         "computability": "text_dependent",
+         "flags": [],
+         "id": "c9d60103-a92c-5e55-a939-428327a6e057",
+         "origin": "interpreted_rule_based",
+         "path": "/inc/b8/b2/b1/b2",
+         "review_status": "needs_review",
+         "source_span": [
+          3691,
+          3818
+         ],
+         "subtype": "unclassified narrative",
+         "text": "If kidney tumor is =< 3 cm: thermal ablation (e.g., radiofrequency ablation, cryoablation or stereotactic radiosurgery)",
+         "type": "narrative"
+        }
+       ],
+       "flags": [
+        "group operator ALL assumed from wording/polarity -> verify"
+       ],
+       "id": "a890f27e-1f19-5897-9f5a-de7df0078c7c",
+       "lead_in": "Permitted forms of local therapy for second tumor:",
+       "logic_basis": "assumed",
+       "op": "ALL",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b8/b2/b1",
+       "review_status": "needs_review",
+       "source_span": [
+        3594,
+        3650
+       ],
+       "text": "Permitted forms of local therapy for second tumor:",
+       "type": "group"
+      }
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "id": "62a03129-6ec7-52fb-a609-0df4a3eed6bd",
+     "lead_in": "Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required",
+     "logic_basis": "assumed",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b8/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      3211,
+      3592
+     ],
+     "text": "Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required",
+     "type": "group"
+    }
+   ],
+   "display_number": "Inc-b8",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "9d0e48b3-b238-5438-bbb2-280015f14b4a",
+   "lead_in": "Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2925,
+    3033
+   ],
+   "text": "Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     83,
+     106
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "year",
+    "value": 5.0
+   },
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "88e7cb7c-745c-5ef3-a610-77f78c548b91",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b9/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      3899,
+      3961
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Adequately treated basal cell or squamous cell skin cancer",
+     "type": "narrative"
+    },
+    {
+     "children": [
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "c79cde27-80a3-53e1-82f6-455101c74cc4",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b9/b2/b1",
+       "review_status": "needs_review",
+       "source_span": [
+        3991,
+        4221
+       ],
+       "subtype": "unclassified narrative",
+       "text": "A history of superficial Ta urothelial cancer is permitted (as long as not currently undergoing treatment) whereas T1 or greater disease is excluded if < 3 years from diagnosis; concurrent persistent disease is not permitted",
+       "type": "narrative"
+      },
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "fabaabf1-1b8e-5620-970f-822082b0855d",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b9/b2/b2",
+       "review_status": "needs_review",
+       "source_span": [
+        4222,
+        4325
+       ],
+       "subtype": "unclassified narrative",
+       "text": "Adequately treated stage I or II cancer from which the patient is currently in complete remission",
+       "type": "narrative"
+      },
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "8a3a7822-8dd3-5e77-800d-c8bb64efbdad",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b9/b2/b3",
+       "review_status": "needs_review",
+       "source_span": [
+        4326,
+        4576
+       ],
+       "subtype": "unclassified narrative",
+       "text": "Any other cancer and stage from which the patient has been disease-free for at least 3 years prior to the time of randomization and as long as they are not receiving any current treatment (e.g. adjuvant or maintenance systemic or local therapy)",
+       "type": "narrative"
+      },
+      {
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "a255c7bd-691f-5285-bd6f-8f7e58f4b957",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b9/b2/b4",
+       "review_status": "needs_review",
+       "source_span": [
+        4577,
+        4641
+       ],
+       "subtype": "unclassified narrative",
+       "text": "Concurrent low risk prostate cancer on active surveillance",
+       "type": "narrative"
+      }
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "id": "44375f60-fdcc-5a73-a106-f281c5db4c97",
+     "lead_in": "In situ cervical cancer",
+     "logic_basis": "assumed",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b9/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      3962,
+      3989
+     ],
+     "text": "In situ cervical cancer",
+     "type": "group"
+    }
+   ],
+   "display_number": "Inc-b9",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "0ca633e2-6199-5692-ae95-b92f4bf543c1",
+   "lead_in": "Patients cannot have concurrent malignancies, with the following exceptions:",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    3819,
+    3897
+   ],
+   "text": "Patients cannot have concurrent malignancies, with the following exceptions:",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "autoimmune"
+   ],
+   "display_number": "Inc-b10",
+   "flags": [],
+   "id": "56665b85-9371-5050-b550-d1d62dedc94d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b10",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    4642,
+    5020
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Patient must not have active known or suspected autoimmune disease. The following autoimmune disorders are permitted: patients with vitiligo, type I diabetes mellitus, controlled/stable hypo or hyperthyroidism due to autoimmune or non-autoimmune conditions (hormone replacement is allowed), psoriasis not requiring systemic treatment, or other conditions not expected to recur",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "autoimmune"
+     ],
+     "flags": [],
+     "id": "acb5125e-f1e7-59c0-97ae-8c1c19b02038",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b11/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      5403,
+      5608
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "Topical, ocular, intra-articular, intranasal, inhaled steroids and adrenal replacement steroid doses > 10 mg daily prednisone or the equivalent are permitted in the absence of active autoimmune disease",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "autoimmune"
+     ],
+     "flags": [],
+     "id": "f87556ab-790e-546f-8164-9d28b2106eee",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b11/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      5609,
+      5881
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "A brief (less than 3 weeks) course of corticosteroids (any amount) for prophylaxis (for example: contrast dye allergy) or for treatment of non-autoimmune conditions (for example: nausea, delayed-type hypersensitivity reaction caused by a contact allergen) is permitted",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b11",
+   "flags": [],
+   "id": "8e7f57a2-f140-5daa-8877-7a77153db033",
+   "lead_in": "Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:",
+   "logic_basis": "explicit",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b11",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5021,
+    5401
+   ],
+   "text": "Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     295,
+     309
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "day",
+    "value": 14.0
+   },
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b12",
+   "flags": [],
+   "id": "f25dc254-219c-52a9-b241-f38df55dad19",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b12",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5882,
+    5940
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patient must not have uncontrolled adrenal insufficiency",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "0ac648f4-816e-5fd1-8678-29a6decd5875",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b13/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      6167,
+      6310
+     ],
+     "subtype": "unclassified narrative",
+     "text": "NOTE: If the patient has been treated and cured, and the HCV ribonucleic acid (RNA) is undetectable, the patient is eligible for this study",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b13",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "0677a7eb-bfcc-5a5b-87fe-c4dacbb189bf",
+   "lead_in": "Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b13",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5941,
+    6165
+   ],
+   "text": "Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     185,
+     222
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b14",
+   "flags": [],
+   "id": "3956bef4-92ce-5edb-86d8-61cb8f642e44",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b14",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6311,
+    6439
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patient must not have any serious intercurrent illness, including ongoing or active infection requiring parenteral antibiotics",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "hiv",
+    "immunodeficiency"
+   ],
+   "display_number": "Inc-b15",
+   "flags": [],
+   "id": "01f841f6-6f58-5fcd-9c6b-40e2cf15d955",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b15",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6440,
+    6677
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Patient must not have known evidence of human immunodeficiency virus (HIV) infection, since the effects of nivolumab on anti-retroviral therapy have not been studied; HIV testing is only required if past or current history is suspected",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-b16",
+   "flags": [],
+   "id": "96f6ff45-519b-590c-b50d-4eb0bd431a61",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b16",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6678,
+    6989
+   ],
+   "subtype": "investigator judgement",
+   "text": "Patient must not have any known medical condition (e.g. a condition associated with uncontrolled diarrhea such as ulcerative colitis or acute diverticulitis) that, in the investigator's opinion, would increase the risk associated with study participation or interfere with the interpretation of safety results",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b17",
+   "flags": [],
+   "id": "2c05eb77-ed9f-5734-abc7-3c784492dc04",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b17",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6990,
+    7073
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patient must not have had any major surgery within 28 days prior to randomization",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     44,
+     81
+    ],
+    "status": "parsed",
+    "unit": "day",
+    "value": 28.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b18",
+   "flags": [],
+   "id": "647884c5-2499-57a8-b4c5-9b38a5a07587",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b18",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    7074,
+    7174
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patient must not be currently enrolled in other clinical trials testing a therapeutic intervention",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b19",
+   "flags": [],
+   "id": "4e52ab3b-89c8-5b58-92ee-c461dc9a5190",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b19",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    7175,
+    7262
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patient must not have any history of severe hypersensitivity to a monoclonal antibody",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-b20",
+   "flags": [],
+   "id": "d1ff4de9-f6f9-564c-bac6-16a0a49e3e4a",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b20",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    7263,
+    7372
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Patient must have the ability to understand and the willingness to sign a written informed consent document",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "binding": null,
+     "computability": "structured_computable",
+     "extraction_coverage": 0.37,
+     "flags": [],
+     "id": "b41562a8-18ff-5d4f-a3fb-a6d7711e1013",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b21.p0",
+     "predicate": {
+      "allowed_values": [
+       1
+      ],
+      "key": "ps:who",
+      "kind": "performance_status",
+      "note": "scale-specific: no assumed equivalence to ECOG",
+      "scale": "Who",
+      "terminology": {
+       "status": "n/a"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      7373,
+      8087
+     ],
+     "sub_span": [
+      424,
+      459
+     ],
+     "text": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+     "type": "predicate"
+    },
+    {
+     "computability": "human_judgment",
+     "flags": [],
+     "id": "54665c65-7ffd-5964-b158-6d6787d034d0",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b21.r",
+     "review_status": "needs_review",
+     "source_span": [
+      7373,
+      8087
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b21",
+   "flags": [
+    "~36% of the statement's content words are typed; residual kept as narrative requirement",
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "id": "b6c17875-cc47-554c-b783-3da638dcda1d",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b21.g",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    7373,
+    8087
+   ],
+   "text": "Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     222,
+     236
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "week",
+    "value": 2.0
+   },
+   "type": "group"
+  },
+  {
+   "computability": "human_judgment",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc-b22",
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "id": "8ee1df10-9daf-5309-a7c6-b5102211a172",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b22",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8088,
+    8475
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Patients must not expect to conceive or father children by using accepted and effective method(s) of contraception, as described in the informed consent form (ICF), or by abstaining from sexual intercourse for the duration of their participation in the study; patients of childbearing potential must use adequate methods to avoid pregnancy for 5 months after the last dose of nivolumab",
+   "time_window": {
+    "anchor": "last dose of nivolumab",
+    "anchor_text": "last dose of nivolumab",
+    "direction": "forward",
+    "span": [
+     340,
+     385
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "month",
+    "value": 5.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b23",
+   "flags": [],
+   "id": "67737c12-4b5f-54e7-b89e-4b4773b26fc1",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b23",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8476,
+    8546
+   ],
+   "subtype": "unclassified narrative",
+   "text": "White blood cells >= 2000/uL (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     30,
+     67
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:lab-anc",
+     "label": "ANC",
+     "primary": {
+      "code": "751-8",
+      "display": "ANC",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "751-8",
+      "display": "ANC",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "2c933c85-e6e0-5050-913a-c797cc1bca5f",
+     "document_span": [
+      8547,
+      8635
+     ],
+     "inherited_context": [],
+     "phrase": "ANC",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b24",
+   "extraction_coverage": 0.5,
+   "flags": [],
+   "id": "2c933c85-e6e0-5050-913a-c797cc1bca5f",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b24.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "analyte": "ANC",
+    "comparator": ">=",
+    "key": "lab:anc",
+    "kind": "lab",
+    "terminology": {
+     "code": "751-8",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    },
+    "uln_multiple": false,
+    "unit": null,
+    "value": 1.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8547,
+    8635
+   ],
+   "sub_span": [
+    0,
+    36
+   ],
+   "text": "Absolute neutrophil count (ANC) >= 1,500/mm\\^3 (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     48,
+     85
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "predicate"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:lab-platelets",
+     "label": "Platelets",
+     "primary": {
+      "code": "777-3",
+      "display": "Platelets",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "777-3",
+      "display": "Platelets",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "a6b2967a-23b3-58a5-8f1d-a5ed898d69e1",
+     "document_span": [
+      8636,
+      8709
+     ],
+     "inherited_context": [],
+     "phrase": "Platelets",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b25",
+   "extraction_coverage": 0.33,
+   "flags": [],
+   "id": "a6b2967a-23b3-58a5-8f1d-a5ed898d69e1",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b25.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "analyte": "Platelets",
+    "comparator": ">=",
+    "key": "lab:platelets",
+    "kind": "lab",
+    "terminology": {
+     "code": "777-3",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    },
+    "uln_multiple": false,
+    "unit": null,
+    "value": 100.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8636,
+    8709
+   ],
+   "sub_span": [
+    0,
+    21
+   ],
+   "text": "Platelet count >= 100,000/mm\\^3 (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     33,
+     70
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "predicate"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:lab-hemoglobin",
+     "label": "Hemoglobin",
+     "primary": {
+      "code": "718-7",
+      "display": "Hemoglobin",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "718-7",
+      "display": "Hemoglobin",
+      "system": "http://loinc.org",
+      "ucum_unit": "g/dL"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "692a88df-816b-5de9-bc58-883bc330310a",
+     "document_span": [
+      8710,
+      8774
+     ],
+     "inherited_context": [],
+     "phrase": "Hemoglobin",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b26",
+   "extraction_coverage": 0.2,
+   "flags": [],
+   "id": "692a88df-816b-5de9-bc58-883bc330310a",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b26.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "analyte": "Hemoglobin",
+    "comparator": ">=",
+    "key": "lab:hemoglobin",
+    "kind": "lab",
+    "terminology": {
+     "code": "718-7",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    },
+    "uln_multiple": false,
+    "unit": "g/dL",
+    "value": 9.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8710,
+    8774
+   ],
+   "sub_span": [
+    0,
+    22
+   ],
+   "text": "Hemoglobin >= 9.0 g/dL (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     24,
+     61
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "predicate"
+  },
+  {
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://loinc.org",
+       "concept_id": "cm:lab-creatinine-clearance",
+       "label": "Creatinine clearance",
+       "primary": {
+        "code": "2164-2",
+        "display": "Creatinine clearance",
+        "system": "LOINC"
+       },
+       "semantic_role": "observation"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "2164-2",
+        "display": "Creatinine clearance",
+        "system": "http://loinc.org",
+        "ucum_unit": "mL/min"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "direction": "source_to_target",
+       "relationship": "equivalent"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "83980e92-6b81-5378-8c65-aed30adf0966",
+       "document_span": [
+        8775,
+        8924
+       ],
+       "inherited_context": [],
+       "phrase": "Creatinine clearance",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "extraction_coverage": 0.27,
+     "flags": [],
+     "id": "83980e92-6b81-5378-8c65-aed30adf0966",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b27.p0",
+     "predicate": {
+      "analyte": "Creatinine clearance",
+      "comparator": ">=",
+      "key": "lab:creatinine_clearance",
+      "kind": "lab",
+      "terminology": {
+       "code": "2164-2",
+       "relationship": "equivalent",
+       "status": "proposed_unreviewed",
+       "system": "LOINC"
+      },
+      "uln_multiple": false,
+      "unit": "mL/min",
+      "value": 40.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      8775,
+      8924
+     ],
+     "sub_span": [
+      68,
+      107
+     ],
+     "text": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "c51eddfb-d927-5a2d-b67e-931ddb8b7477",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b27.r",
+     "review_status": "needs_review",
+     "source_span": [
+      8775,
+      8924
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b27",
+   "flags": [
+    "~26% of the statement's content words are typed; residual kept as narrative requirement"
+   ],
+   "id": "32e8fc16-2dcc-55c1-b6bd-2f72ffcfff03",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b27.g",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8775,
+    8924
+   ],
+   "text": "Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     109,
+     146
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "binding": null,
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "2a197206-d449-5cfd-a510-38747e45ce29",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b28.p0",
+       "predicate": {
+        "allowed_values": [
+         0,
+         1,
+         2
+        ],
+        "key": "ps:who",
+        "kind": "performance_status",
+        "note": "scale-specific: no assumed equivalence to ECOG",
+        "scale": "Who",
+        "terminology": {
+         "status": "n/a"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        8925,
+        9077
+       ],
+       "sub_span": [
+        69,
+        101
+       ],
+       "text": "who can have total bilirubin < 3",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-total-bilirubin",
+         "label": "Total bilirubin",
+         "primary": {
+          "code": "1975-2",
+          "display": "Total bilirubin",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1975-2",
+          "display": "Total bilirubin",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "26254d1f-5808-510e-9f0e-0470cb75ec7f",
+         "document_span": [
+          8925,
+          9077
+         ],
+         "inherited_context": [],
+         "phrase": "Total bilirubin",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "26254d1f-5808-510e-9f0e-0470cb75ec7f",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b28.p1",
+       "predicate": {
+        "analyte": "Total bilirubin",
+        "comparator": "<",
+        "key": "lab:total_bilirubin",
+        "kind": "lab",
+        "terminology": {
+         "code": "1975-2",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 3.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        8925,
+        9077
+       ],
+       "sub_span": [
+        82,
+        109
+       ],
+       "text": "total bilirubin < 3.0 x ULN",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 0.44,
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "id": "fae2f2b7-d717-5302-9212-209ecf4a2d19",
+     "logic_basis": "assumed_conjunction",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b28",
+     "review_status": "needs_review",
+     "source_span": [
+      8925,
+      9077
+     ],
+     "text": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+     "type": "group"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "b5485cf6-a526-5f80-a95c-5284a65a17f3",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b28.r",
+     "review_status": "needs_review",
+     "source_span": [
+      8925,
+      9077
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b28",
+   "exceptions": [
+    {
+     "keyword": "except",
+     "span": [
+      29,
+      110
+     ],
+     "status": "unparsed",
+     "text": "subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN"
+    }
+   ],
+   "flags": [
+    "~44% of the statement's content words are typed; residual kept as narrative requirement"
+   ],
+   "id": "d1c7aad3-5197-5b60-87aa-3b333bd6a274",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b28.g",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    8925,
+    9077
+   ],
+   "text": "Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     112,
+     149
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b29",
+   "flags": [],
+   "id": "7521d5fb-f70c-5fb6-a630-43582984b6cb",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b29",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    9078,
+    9200
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Aspartate aminotransferase (AST) and alanine aminotransferase (ALT) =< 2.5 x ULN (within 8 weeks prior to randomization)",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     82,
+     119
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 8.0
+   },
+   "type": "narrative"
+  }
+ ],
+ "ctrp_biomarker_contract": {
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.",
+  "status": "not_supplied"
+ },
+ "inventory": {
+  "criteria_total": 30,
+  "exclusion": 0,
+  "flagged_nodes": 17,
+  "inclusion": 30,
+  "leaf_nodes": 47,
+  "leaves_by_computability": {
+   "human_judgment": 6,
+   "structured_computable": 9,
+   "text_dependent": 32
+  },
+  "typed_predicates": 9
+ },
+ "lifecycle": {
+  "note": "Draft only: not reviewed; not executable for screening.",
+  "status": "draft"
+ },
+ "llm_applied": [],
+ "review_summary": {
+  "criteria": 30,
+  "open_conflicts": [],
+  "orphaned_decisions": [],
+  "pending": [
+   "Demo-min-age",
+   "Inc-b1",
+   "Inc-b2",
+   "Inc-b3",
+   "Inc-b4",
+   "Inc-b5",
+   "Inc-b6",
+   "Inc-b7",
+   "Inc-b8",
+   "Inc-b9",
+   "Inc-b10",
+   "Inc-b11",
+   "Inc-b12",
+   "Inc-b13",
+   "Inc-b14",
+   "Inc-b15",
+   "Inc-b16",
+   "Inc-b17",
+   "Inc-b18",
+   "Inc-b19",
+   "Inc-b20",
+   "Inc-b21",
+   "Inc-b22",
+   "Inc-b23",
+   "Inc-b24",
+   "Inc-b25",
+   "Inc-b26",
+   "Inc-b27",
+   "Inc-b28",
+   "Inc-b29"
+  ],
+  "stale_decisions": [],
+  "unpinned_decisions": [],
+  "validated": 0
+ },
+ "schema_version": "cer-draft-0.1",
+ "scope_items": [],
+ "scopes": [
+  []
+ ],
+ "source": {
+  "content_sha256": "c8901f78698841736207f62c8297351d65c02645a7442fd61fc92832ef4cba74",
+  "demographics": {
+   "healthy_volunteers": "No",
+   "maximum_age": null,
+   "minimum_age": "18 Years",
+   "sex": "ALL"
+  },
+  "nct_id": "NCT03055013",
+  "overall_status": "ACTIVE_NOT_RECRUITING",
+  "protocol_baseline": "registry_excerpt",
+  "registry": "ClinicalTrials.gov",
+  "retrieved_at": "2026-10-06T03:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "source_type": "B",
+  "text_normalized": "Inclusion Criteria:\n\n* ELIGIBILITY CRITERIA FOR RANDOMIZATION:\n* Patients must have a renal mass consistent with a clinical stage >= T2Nx renal cell carcinoma (RCC) or TanyN+ RCC for which radical or partial nephrectomy is planned\n* Patients must have no clinical or radiological evidence of distant metastases (M0) unless the presumed M1 disease is planned to be resected/definitively treated (e.g., thermal ablation, stereotactic radiation) at the same time or up to 12 weeks after the date of the initial procedure such that the patient is considered \"no evidence of disease\" (M1 NED)\n\n  * Liver, bone, or brain metastases are not permitted\n  * No more than 3 metastases are permitted, and all must be able to be removed or definitively treated within 12 weeks of the primary tumor resection\n* If histological confirmation of RCC has not been done within 12 months prior to randomization, patient must be willing to undergo a core biopsy for this purpose if randomized to Arm A\n\n  * NOTE: This histologic confirmation can be a (1) standard of care diagnostic biopsy or (2) a research biopsy or a planned metastasectomy. Tissue must be obtained with results available prior to the neoadjuvant dose\n\n    * Patients randomized to Arm A: core tumor biopsy must have demonstrated RCC of any histology, including sarcomatoid, unclassified, or \"unknown histology\" (if preoperative biopsy was uninformative) with exception below for non-diagnostic biopsies\n    * If the biopsy performed following randomization clearly demonstrates a benign condition, oncocytoma or a different type of cancer that is not RCC, the patient is not eligible and must come off study\n    * A non-diagnostic biopsy is considered a good faith effort and does not need to be repeated unless deemed clinically necessary by the treating investigator\n* Patient must not have any prior systemic or local anti-cancer therapy for the current RCC\n\n  * Patient must not have undergone a partial nephrectomy for the current RCC\n  * Patient must not have had a metastasectomy for the current RCC diagnosis unless performed to render patient NED (in addition to the planned nephrectomy) within 6 months prior to the current diagnosis\n  * Patient must not have received current or past antineoplastic systemic therapies for RCC: i.e., chemotherapy, hormonal therapy, immunotherapy, or standard or investigational agents for treatment of RCC\n  * Patient must not have received prior treatment with an anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody, or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways\n* Patient must be >= 18 years of age. Because no dosing or adverse event data are currently available on the use of nivolumab therapy in patients < 18 years of age, children are excluded from this study\n* Patient must have an Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1\n* Patient must not have a prior history of RCC that was treated with curative intent within the past 5 years\n\n  * Patients with a prior RCC that was treated > 5 years before, are eligible if the current tumor is consistent with a new primary in the opinion of the treating investigator\n  * Patients with bilateral synchronous RCCs are eligible if they can be resected or definitively treated at the same time or within a 12 week window from time of initial nephrectomy (partial or radical) or procedure and maintain adequate residual renal function; the patient is not eligible if both kidneys are to be completely removed and subsequent hemodialysis will be required\n\n    * Permitted forms of local therapy for second tumor:\n\n      * Partial or radical nephrectomy\n      * If kidney tumor is =< 3 cm: thermal ablation (e.g., radiofrequency ablation, cryoablation or stereotactic radiosurgery)\n* Patients cannot have concurrent malignancies, with the following exceptions:\n\n  * Adequately treated basal cell or squamous cell skin cancer\n  * In situ cervical cancer\n\n    * A history of superficial Ta urothelial cancer is permitted (as long as not currently undergoing treatment) whereas T1 or greater disease is excluded if < 3 years from diagnosis; concurrent persistent disease is not permitted\n    * Adequately treated stage I or II cancer from which the patient is currently in complete remission\n    * Any other cancer and stage from which the patient has been disease-free for at least 3 years prior to the time of randomization and as long as they are not receiving any current treatment (e.g. adjuvant or maintenance systemic or local therapy)\n    * Concurrent low risk prostate cancer on active surveillance\n* Patient must not have active known or suspected autoimmune disease. The following autoimmune disorders are permitted: patients with vitiligo, type I diabetes mellitus, controlled/stable hypo or hyperthyroidism due to autoimmune or non-autoimmune conditions (hormone replacement is allowed), psoriasis not requiring systemic treatment, or other conditions not expected to recur\n* Patient must not have any ongoing condition requiring systemic treatment with either corticosteroids (> 10 mg daily prednisone equivalent) or other immunosuppressive medications with the exceptions outlined below; patient must not have received any treatment with other immunosuppressive agents within 14 days prior to the first dose of study drug with the following exceptions:\n\n  * Topical, ocular, intra-articular, intranasal, inhaled steroids and adrenal replacement steroid doses > 10 mg daily prednisone or the equivalent are permitted in the absence of active autoimmune disease\n  * A brief (less than 3 weeks) course of corticosteroids (any amount) for prophylaxis (for example: contrast dye allergy) or for treatment of non-autoimmune conditions (for example: nausea, delayed-type hypersensitivity reaction caused by a contact allergen) is permitted\n* Patient must not have uncontrolled adrenal insufficiency\n* Patient must not have known evidence of chronic active liver disease or evidence of acute or chronic hepatitis B Virus (HBV) or hepatitis C (HCV); HBV and HCV testing must be completed within 8 weeks prior to randomization\n\n  * NOTE: If the patient has been treated and cured, and the HCV ribonucleic acid (RNA) is undetectable, the patient is eligible for this study\n* Patient must not have any serious intercurrent illness, including ongoing or active infection requiring parenteral antibiotics\n* Patient must not have known evidence of human immunodeficiency virus (HIV) infection, since the effects of nivolumab on anti-retroviral therapy have not been studied; HIV testing is only required if past or current history is suspected\n* Patient must not have any known medical condition (e.g. a condition associated with uncontrolled diarrhea such as ulcerative colitis or acute diverticulitis) that, in the investigator's opinion, would increase the risk associated with study participation or interfere with the interpretation of safety results\n* Patient must not have had any major surgery within 28 days prior to randomization\n* Patient must not be currently enrolled in other clinical trials testing a therapeutic intervention\n* Patient must not have any history of severe hypersensitivity to a monoclonal antibody\n* Patient must have the ability to understand and the willingness to sign a written informed consent document\n* Patients must not be pregnant or breast-feeding, as the effects of nivolumab on the developing human fetus or in the nursing infant are unknown; all patients of childbearing potential must have a blood test or urine study within 2 weeks prior to randomization to rule out pregnancy; a patient of childbearing potential is defined as any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has achieved menarche at some point 2) has not undergone a hysterectomy or bilateral oophorectomy; or 3) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)\n* Patients must not expect to conceive or father children by using accepted and effective method(s) of contraception, as described in the informed consent form (ICF), or by abstaining from sexual intercourse for the duration of their participation in the study; patients of childbearing potential must use adequate methods to avoid pregnancy for 5 months after the last dose of nivolumab\n* White blood cells >= 2000/uL (within 8 weeks prior to randomization)\n* Absolute neutrophil count (ANC) >= 1,500/mm\\^3 (within 8 weeks prior to randomization)\n* Platelet count >= 100,000/mm\\^3 (within 8 weeks prior to randomization)\n* Hemoglobin >= 9.0 g/dL (within 8 weeks prior to randomization)\n* Serum creatinine =< 1.5 x upper limit of normal (ULN) or calculated creatinine clearance (CrCl) >= 40mL/min (within 8 weeks prior to randomization)\n* Total bilirubin =< 1.5 x ULN (except subjects with Gilbert syndrome, who can have total bilirubin < 3.0 x ULN) (within 8 weeks prior to randomization)\n* Aspartate aminotransferase (AST) and alanine aminotransferase (ALT) =< 2.5 x ULN (within 8 weeks prior to randomization)",
+  "title": "Nivolumab in Treating Patients With Localized Kidney Cancer Undergoing Nephrectomy"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "licenses": {
+   "HGNC": "CC0",
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "UCUM": "UCUM licence (free)"
+  },
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "stats": {
+   "bound": 6,
+   "by_relationship": {
+    "equivalent": 6
+   },
+   "unmapped": 0
+  },
+  "status": "UNREVIEWED_SEED",
+  "value_sets": {},
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty."
+ },
+ "validation": {
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion.",
+  "problems": [],
+  "structure_ok": true
+ }
+}

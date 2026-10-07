@@ -1303,6 +1303,9 @@
  "conflicts": [],
  "review_summary": {
   "open_conflicts": [],
+  "stale_decisions": [],
+  "orphaned_decisions": [],
+  "unpinned_decisions": [],
   "criteria": 24,
   "validated": 0,
   "pending": [

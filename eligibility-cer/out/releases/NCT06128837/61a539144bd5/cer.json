@@ -1,0 +1,2317 @@
+{
+ "authored_applied": [],
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "conflicts": [],
+ "criteria": [
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-min-age",
+   "flags": [],
+   "id": "e800d2a1-0103-5f8a-8bc6-1c35ce07ef9f",
+   "origin": "imported_structured",
+   "path": "/demo/min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "minimumAge: 18 Years",
+   "type": "predicate"
+  },
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Inc-1",
+   "extraction_coverage": 1.0,
+   "flags": [],
+   "id": "3d6d2e48-ee34-586d-81df-c43c90e1516b",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/1.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    21,
+    55
+   ],
+   "sub_span": [
+    0,
+    14
+   ],
+   "text": "Age ≥ 18 years, male or female;",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-2",
+   "flags": [],
+   "id": "b1fd9e9a-dac7-54d4-9914-31431785600c",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    56,
+    142
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patients with histologically and/or cytologically confirmed small cell lung cancer;",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-3",
+   "flags": [],
+   "id": "4fb2b6e8-0fb9-5b2f-b460-1e41240eec67",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    143,
+    482
+   ],
+   "subtype": "investigator judgement",
+   "text": "Disease progression (CTFI ≥ 30 days and ≤ 6 months) occurred after at least 4 cycles of first-line etoposide + platinum two-drug chemotherapy-based treatment, regardless of whether the primary tumor was treated with radiotherapy; the stage of patients with limited stage SCLC should meet more than T1-2, N0, or not suitable for surgery;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-4",
+   "flags": [],
+   "id": "5bb83ae0-5b62-547a-878c-3b5017339e55",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    483,
+    551
+   ],
+   "subtype": "unclassified narrative",
+   "text": "At least one evaluable lesion (according to RECIST 1.1 criteria);",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-5",
+   "flags": [],
+   "id": "434a0ea0-090c-5d9d-919a-881478253cab",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    552,
+    589
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Expected survival time ≥ 3 months;",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:ecog",
+     "label": "ECOG performance status",
+     "primary": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "named ECOG scale",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "3b482930-cf1f-574e-bb77-6ea47e473e60",
+     "document_span": [
+      590,
+      645
+     ],
+     "inherited_context": [],
+     "phrase": "ECOG",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-6",
+   "extraction_coverage": 1.0,
+   "flags": [],
+   "id": "3b482930-cf1f-574e-bb77-6ea47e473e60",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/6.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "kind": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "code": "89247-1",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    590,
+    645
+   ],
+   "sub_span": [
+    36,
+    51
+   ],
+   "text": "Eastern Cooperative Oncology Group (ECOG) score < 2;",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-7",
+   "flags": [],
+   "id": "99060239-f203-58e8-a9d7-47cee6977a14",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    646,
+    932
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patients who received no liver metastasis; or the number of liver metastases was ≤ 3 and the longest diameter of a single lesion was ≤ 1.5 cm; or although the longest diameter of a single lesion was > 1.5 cm, the imaging was stable for at least 3 weeks after local treatment control;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "brain metastas"
+   ],
+   "display_number": "Inc-8",
+   "flags": [],
+   "id": "40587813-4ab2-507b-8e66-e6195608fb7d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    933,
+    1347
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Patients with brain metastasis at baseline should meet all the following conditions: lesions not involving the brainstem, the number of brain metastases ≤ 2 (but patients with only intracranial target lesions should be excluded), imaging stability for at least 3 weeks after local treatment control, and no application of dehydration drugs and hormones before screening,Without any symptoms of brain metastasis;",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-anc",
+         "label": "ANC",
+         "primary": {
+          "code": "751-8",
+          "display": "ANC",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "751-8",
+          "display": "ANC",
+          "system": "http://loinc.org",
+          "ucum_unit": "10*9/L"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "b42d05f8-d3a7-509a-afbf-ce78b9fd2948",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "ANC",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "b42d05f8-d3a7-509a-afbf-ce78b9fd2948",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/a.p0",
+       "predicate": {
+        "analyte": "ANC",
+        "comparator": ">=",
+        "key": "lab:anc",
+        "kind": "lab",
+        "terminology": {
+         "code": "751-8",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": false,
+        "unit": "10*9/L",
+        "value": 1.5
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        15,
+        45
+       ],
+       "text": "neutrophil (ANC) ≥ 1.5 × 109/L",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-platelets",
+         "label": "Platelets",
+         "primary": {
+          "code": "777-3",
+          "display": "Platelets",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "777-3",
+          "display": "Platelets",
+          "system": "http://loinc.org",
+          "ucum_unit": "10*9/L"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "ccda739d-675f-5a5c-b623-bc068e1c3262",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Platelets",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "ccda739d-675f-5a5c-b623-bc068e1c3262",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/a.p1",
+       "predicate": {
+        "analyte": "Platelets",
+        "comparator": ">=",
+        "key": "lab:platelets",
+        "kind": "lab",
+        "terminology": {
+         "code": "777-3",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": false,
+        "unit": "10*9/L",
+        "value": 100.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        47,
+        75
+       ],
+       "text": "platelet (PLT) ≥ 100 × 109/L",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-hemoglobin",
+         "label": "Hemoglobin",
+         "primary": {
+          "code": "718-7",
+          "display": "Hemoglobin",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "718-7",
+          "display": "Hemoglobin",
+          "system": "http://loinc.org",
+          "ucum_unit": "g/L"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "a4f132d3-9281-5fc2-a406-d0b0b47c1686",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Hemoglobin",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "a4f132d3-9281-5fc2-a406-d0b0b47c1686",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/a.p2",
+       "predicate": {
+        "analyte": "Hemoglobin",
+        "comparator": ">=",
+        "key": "lab:hemoglobin",
+        "kind": "lab",
+        "terminology": {
+         "code": "718-7",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": false,
+        "unit": "g/L",
+        "value": 90.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        77,
+        101
+       ],
+       "text": "hemoglobin (Hb) ≥ 90 g/L",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 1.0,
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "id": "d3efe146-58eb-5774-abdd-0a3a4b1748e6",
+     "logic_basis": "assumed_conjunction",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/9/a",
+     "review_status": "needs_review",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "text": "Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L",
+     "type": "group"
+    },
+    {
+     "children": [
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-total-bilirubin",
+         "label": "Total bilirubin",
+         "primary": {
+          "code": "1975-2",
+          "display": "Total bilirubin",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1975-2",
+          "display": "Total bilirubin",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "2abf7f13-8d0f-561a-9606-68f9a48a24b0",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Total bilirubin",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "2abf7f13-8d0f-561a-9606-68f9a48a24b0",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p0",
+       "predicate": {
+        "analyte": "Total bilirubin",
+        "comparator": "<=",
+        "key": "lab:total_bilirubin",
+        "kind": "lab",
+        "terminology": {
+         "code": "1975-2",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 1.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        16,
+        74
+       ],
+       "text": "total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN)",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-ast",
+         "label": "AST",
+         "primary": {
+          "code": "1920-8",
+          "display": "AST",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1920-8",
+          "display": "AST",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "AST",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p1",
+       "predicate": {
+        "analyte": "AST",
+        "comparator": "<=",
+        "key": "lab:ast",
+        "kind": "lab",
+        "terminology": {
+         "code": "1920-8",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 2.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        76,
+        155
+       ],
+       "text": "aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-alt",
+         "label": "ALT",
+         "primary": {
+          "code": "1742-6",
+          "display": "ALT",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1742-6",
+          "display": "ALT",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "ALT",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p2",
+       "predicate": {
+        "analyte": "ALT",
+        "comparator": "<=",
+        "key": "lab:alt",
+        "kind": "lab",
+        "terminology": {
+         "code": "1742-6",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 2.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        76,
+        155
+       ],
+       "text": "aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN",
+       "type": "predicate"
+      },
+      {
+       "applicability": {
+        "condition": "liver metastases",
+        "key": "fact:liver_metastases",
+        "status": "unresolved"
+       },
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-ast",
+         "label": "AST",
+         "primary": {
+          "code": "1920-8",
+          "display": "AST",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1920-8",
+          "display": "AST",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "AST",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "conditional_applicability: threshold applies only if condition is true; may override a stricter sibling threshold -> needs clinical review"
+       ],
+       "id": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p3",
+       "predicate": {
+        "analyte": "AST",
+        "comparator": "<=",
+        "key": "lab:ast",
+        "kind": "lab",
+        "terminology": {
+         "code": "1920-8",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 3.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        178,
+        199
+       ],
+       "text": "AST and ALT ≤ 3 × ULN",
+       "type": "predicate"
+      },
+      {
+       "applicability": {
+        "condition": "liver metastases",
+        "key": "fact:liver_metastases",
+        "status": "unresolved"
+       },
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-alt",
+         "label": "ALT",
+         "primary": {
+          "code": "1742-6",
+          "display": "ALT",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1742-6",
+          "display": "ALT",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "203edb5a-ee0d-59bd-a61a-6379a6427ff9",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "ALT",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "conditional_applicability: threshold applies only if condition is true; may override a stricter sibling threshold -> needs clinical review"
+       ],
+       "id": "203edb5a-ee0d-59bd-a61a-6379a6427ff9",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p4",
+       "predicate": {
+        "analyte": "ALT",
+        "comparator": "<=",
+        "key": "lab:alt",
+        "kind": "lab",
+        "terminology": {
+         "code": "1742-6",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 3.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        178,
+        199
+       ],
+       "text": "AST and ALT ≤ 3 × ULN",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-albumin",
+         "label": "Albumin",
+         "primary": {
+          "code": "1751-7",
+          "display": "Albumin",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "1751-7",
+          "display": "Albumin",
+          "system": "http://loinc.org",
+          "ucum_unit": "g/L"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "81d8071f-6c74-5f1e-8862-a8f1108492b1",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Albumin",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "81d8071f-6c74-5f1e-8862-a8f1108492b1",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/b.p5",
+       "predicate": {
+        "analyte": "Albumin",
+        "comparator": ">=",
+        "key": "lab:albumin",
+        "kind": "lab",
+        "terminology": {
+         "code": "1751-7",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": false,
+        "unit": "g/L",
+        "value": 30.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        201,
+        223
+       ],
+       "text": "serum albumin ≥ 30 g/L",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 0.92,
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "id": "7ccb9a12-be2d-5f9c-a0e9-a0b6be147e0f",
+     "logic_basis": "assumed_conjunction",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/9/b",
+     "review_status": "needs_review",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "text": "Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L",
+     "type": "group"
+    },
+    {
+     "children": [
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-creatinine",
+         "label": "Creatinine",
+         "primary": {
+          "code": "2160-0",
+          "display": "Creatinine",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "2160-0",
+          "display": "Creatinine",
+          "system": "http://loinc.org",
+          "ucum_unit": "x ULN"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "343260a4-f48d-5992-b152-5c9c98bc8214",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Creatinine",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "343260a4-f48d-5992-b152-5c9c98bc8214",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/c.p0",
+       "predicate": {
+        "analyte": "Creatinine",
+        "comparator": "<=",
+        "key": "lab:creatinine",
+        "kind": "lab",
+        "terminology": {
+         "code": "2160-0",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": true,
+        "unit": "x ULN",
+        "value": 1.5
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        16,
+        44
+       ],
+       "text": "serum creatinine ≤ 1.5 × ULN",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://loinc.org",
+         "concept_id": "cm:lab-creatinine-clearance",
+         "label": "Creatinine clearance",
+         "primary": {
+          "code": "2164-2",
+          "display": "Creatinine clearance",
+          "system": "LOINC"
+         },
+         "semantic_role": "observation"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "2164-2",
+          "display": "Creatinine clearance",
+          "system": "http://loinc.org",
+          "ucum_unit": "mL/min"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "direction": "source_to_target",
+         "relationship": "equivalent"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "51ad51fe-4cd7-536b-a55f-dea0ada244d9",
+         "document_span": [
+          1348,
+          1916
+         ],
+         "inherited_context": [],
+         "phrase": "Creatinine clearance",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [],
+       "id": "51ad51fe-4cd7-536b-a55f-dea0ada244d9",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/9/c.p1",
+       "predicate": {
+        "analyte": "Creatinine clearance",
+        "comparator": ">=",
+        "key": "lab:creatinine_clearance",
+        "kind": "lab",
+        "terminology": {
+         "code": "2164-2",
+         "relationship": "equivalent",
+         "status": "proposed_unreviewed",
+         "system": "LOINC"
+        },
+        "uln_multiple": false,
+        "unit": "mL/min",
+        "value": 40.0
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        1348,
+        1916
+       ],
+       "sub_span": [
+        48,
+        80
+       ],
+       "text": "creatinine clearance ≥ 40 mL/min",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 1.0,
+     "flags": [],
+     "id": "1e756cbb-f140-59e1-939c-ce57f9d6a7cd",
+     "logic_basis": "inferred_from_connector",
+     "op": "ANY",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/9/c",
+     "review_status": "needs_review",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "text": "Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min",
+     "type": "group"
+    },
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://loinc.org",
+       "concept_id": "cm:lab-inr",
+       "label": "INR",
+       "primary": {
+        "code": "6301-6",
+        "display": "INR",
+        "system": "LOINC"
+       },
+       "semantic_role": "observation"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "6301-6",
+        "display": "INR",
+        "system": "http://loinc.org"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "direction": "source_to_target",
+       "relationship": "equivalent"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0",
+       "document_span": [
+        1348,
+        1916
+       ],
+       "inherited_context": [],
+       "phrase": "INR",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "extraction_coverage": 0.38,
+     "flags": [],
+     "id": "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/9/d.p0",
+     "predicate": {
+      "analyte": "INR",
+      "comparator": "<",
+      "key": "lab:inr",
+      "kind": "lab",
+      "terminology": {
+       "code": "6301-6",
+       "relationship": "equivalent",
+       "status": "proposed_unreviewed",
+       "system": "LOINC"
+      },
+      "uln_multiple": false,
+      "unit": null,
+      "value": 1.5
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1348,
+      1916
+     ],
+     "sub_span": [
+      73,
+      86
+     ],
+     "text": "Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5",
+     "type": "predicate"
+    }
+   ],
+   "display_number": "Inc-9",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify"
+   ],
+   "id": "d82c5508-8219-52dd-9c5d-f15db85e2ccc",
+   "lead_in": "Organ function meeting the following criteria at screening:",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1348,
+    1916
+   ],
+   "text": "Organ function meeting the following criteria at screening: a.Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L; b.Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L; c.Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min; d.Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5;",
+   "type": "group"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Inc-10",
+   "flags": [],
+   "id": "475f0e55-840b-5115-922b-41e4eeaeeafa",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/10",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1917,
+    2109
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Has fully understood and voluntarily signed a written informed consent form for this study and is able to comply with the requirements and restrictions listed in the informed consent form;",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "concept_hits": [
+    "ild"
+   ],
+   "display_number": "Inc-11",
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "id": "2ca6766e-600a-5ea1-afec-a6f3f2dd2176",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/11",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2110,
+    2329
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Female subjects of childbearing potential and male subjects with partners of childbearing potential agree to use reliable contraceptive measures during the study and within 6 months after the infusion of study drug.",
+   "time_window": {
+    "anchor": "infusion of study drug",
+    "anchor_text": "infusion of study drug",
+    "direction": "forward",
+    "span": [
+     166,
+     214
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "month",
+    "value": 6.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-1",
+   "flags": [],
+   "id": "f6a151f1-1e06-571d-b425-4c5acb115433",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2352,
+    2413
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Pathological diagnosis of compound small cell lung cancer;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "spinal cord compression"
+   ],
+   "display_number": "Exc-2",
+   "flags": [],
+   "id": "d933ec44-ee54-58fd-9934-9ba2408b41b6",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2414,
+    2514
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Patients with meningeal metastasis, spinal cord tumor invasion, spinal cord compression syndrome;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "ascites",
+    "pleural effusion",
+    "superior vena cava syndrome"
+   ],
+   "display_number": "Exc-3",
+   "flags": [],
+   "id": "267f280d-bbd7-50ea-8472-d3ec4b3acb33",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2515,
+    2829
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Superior vena cava syndrome with symptoms or significantly aggravated imaging, which may require radiotherapy/surgery/endoscopic therapy/intervention and other non-medical treatment; the presence of large amount of pleural effusion, ascites and/or pericardial effusion with local treatment and unstable control;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "tuberculosis"
+   ],
+   "display_number": "Exc-4",
+   "flags": [],
+   "id": "96b63c73-ccdb-5d89-93d4-b1b7708a5c2c",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2830,
+    2980
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Active infection (including tuberculosis infection) requiring systemic anti-bacterial, antifungal, antiviral and other treatments during screening;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "interstitial lung disease"
+   ],
+   "display_number": "Exc-5",
+   "flags": [],
+   "id": "25740300-47a7-57fb-a45e-52e28035c769",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2981,
+    3186
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Recurrent symptomatic poorly controlled chronic obstructive pulmonary disease, extensive interstitial lung disease (including interstitial pneumonia, pulmonary interstitial fibrosis, etc.) at screening,",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "hemoptysis",
+    "pneumonitis",
+    "pulmonary embolism"
+   ],
+   "display_number": "Exc-6",
+   "flags": [],
+   "id": "a5db7f0d-ea41-5224-b565-b5fc0ec8d8c4",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    3187,
+    3637
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Extensive radiation pneumonitis, pulmonary embolism or active massive hemoptysis; Patients with severe gastrointestinal diseases or gastrointestinal disorders (such as gastrointestinal bleeding, gastrointestinal obstruction, unhealed peptic ulcer, immune enteritis, ulcerative colitis, Crohn's disease, ischemic necrotizing enteritis, diarrhea > grade 1, other gastrointestinal diseases that may affect the tolerance of chemotherapy) at screening;",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "hypertension"
+     ],
+     "flags": [],
+     "id": "437a0205-2faf-52b8-9880-a0df0a2652fc",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/7/1",
+     "review_status": "needs_review",
+     "source_span": [
+      3726,
+      3915
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "patients with unstable hypertension (systolic blood pressure ≥ 160 mmHg and/or diastolic blood pressure ≥ 100 mmHg) or a history of hypertensive crisis or hypertensive encephalopathy;",
+     "type": "narrative"
+    },
+    {
+     "binding": {
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "no seeded concept",
+       "direction": "source_to_target",
+       "relationship": "no-map"
+      },
+      "provenance": {
+       "confidence": null,
+       "mapper": "pattern match",
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "23fd1405-12d9-545d-8046-7b57dd897655",
+       "document_span": [
+        3916,
+        3963
+       ],
+       "inherited_context": [],
+       "phrase": "arrhythmia",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "id": "23fd1405-12d9-545d-8046-7b57dd897655",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/7/2",
+     "predicate": {
+      "concept": "arrhythmia",
+      "key": "condition:arrhythmia",
+      "kind": "condition",
+      "terminology": {
+       "relationship": "no-map",
+       "status": "unmapped"
+      }
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      3916,
+      3963
+     ],
+     "sub_span": [
+      0,
+      41
+     ],
+     "text": "patients with unstable severe arrhythmia;",
+     "type": "predicate"
+    },
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "arrhythmia",
+      "deep vein thrombosis",
+      "myocardial infarction",
+      "pulmonary embolism",
+      "unstable angina"
+     ],
+     "flags": [
+      "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+     ],
+     "id": "8b557516-ead0-5980-a8cb-833bbd7660ba",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/7/3",
+     "review_status": "needs_review",
+     "source_span": [
+      3964,
+      4398
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "patients with the following cardiovascular and cerebrovascular diseases within 6 months: myocardial infarction, unstable angina, coronary revascularization/angioplasty, coronary artery bypass grafting, coronary artery stenting, New York Heart Association (NYHA) class ≥ 2 cardiac insufficiency, severe unstable arrhythmia, deep vein thrombosis, pulmonary embolism history, active cerebral infarction, active cerebral hemorrhage;",
+     "time_window": {
+      "anchor": "unspecified",
+      "anchor_text": null,
+      "direction": "lookback",
+      "span": [
+       72,
+       87
+      ],
+      "status": "anchor_missing_or_unrecognised",
+      "unit": "month",
+      "value": 6.0
+     },
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Exc-7",
+   "flags": [
+    "group operator ANY assumed from wording/polarity -> verify"
+   ],
+   "id": "aaf382c6-a243-5046-bdb5-873382b4c654",
+   "lead_in": "Patients with the following cardiovascular and cerebrovascular diseases or history:",
+   "logic_basis": "assumed",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    3638,
+    3724
+   ],
+   "text": "Patients with the following cardiovascular and cerebrovascular diseases or history:",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "hepatitis b"
+     ],
+     "flags": [],
+     "id": "66b3e1e0-995f-5f0f-819a-e8a92f6aa90f",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/8/1",
+     "review_status": "needs_review",
+     "source_span": [
+      4450,
+      4606
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "positive hepatitis B virus surface antigen (HBsAg) test,And peripheral blood hepatitis B virus deoxyribonucleic acid (HBV-DNA) detection ≥ 1000 IU/mL;",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "hepatitis c"
+     ],
+     "flags": [],
+     "id": "f489c7a4-c9af-5bef-85c2-ada538c3193e",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/8/2",
+     "review_status": "needs_review",
+     "source_span": [
+      4607,
+      4730
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "hepatitis C virus antibody (HCV-Ab) positive, and hepatitis C virus ribonucleic acid (HCV-RNA) detection ≥ 100 IU/mL;",
+     "type": "narrative"
+    },
+    {
+     "computability": "text_dependent",
+     "concept_hits": [
+      "hiv",
+      "immunodeficiency"
+     ],
+     "flags": [],
+     "id": "a6845d16-1730-59fc-a5b1-9978cadb7423",
+     "origin": "interpreted_rule_based",
+     "path": "/exc/8/3",
+     "review_status": "needs_review",
+     "source_span": [
+      4731,
+      4803
+     ],
+     "subtype": "clinical condition (terminology unbound)",
+     "text": "human immunodeficiency virus antibody (HIV-Ab) detection positive;",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Exc-8",
+   "flags": [],
+   "id": "e39491dc-6e02-5871-9db1-29ebfa4e3b4d",
+   "lead_in": "Patients with any of the following conditions:",
+   "logic_basis": "explicit",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    4399,
+    4448
+   ],
+   "text": "Patients with any of the following conditions:",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-9",
+   "exceptions": [
+    {
+     "keyword": "except",
+     "span": [
+      51,
+      180
+     ],
+     "status": "unparsed",
+     "text": "cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ"
+    }
+   ],
+   "flags": [],
+   "id": "cb141b13-a02a-56de-9520-53385f084f13",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/9",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    4804,
+    4988
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Other malignancies within 5 years before screening (except cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ);",
+   "time_window": {
+    "anchor": "screening",
+    "anchor_text": "screening",
+    "direction": "lookback",
+    "span": [
+     19,
+     50
+    ],
+    "status": "parsed",
+    "unit": "year",
+    "value": 5.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Exc-10",
+   "flags": [],
+   "id": "874710d4-0306-5bc5-b29d-92c5800f1479",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/10",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    4989,
+    5367
+   ],
+   "subtype": "investigator judgement",
+   "text": "Patients with primary diseases of other important organs (such as nervous system, cardiovascular and cerebrovascular system, urinary system, digestive system, respiratory system or metabolic endocrine system diseases) and the researchers believe that it is not suitable for participants, or for other reasons the researchers believe that it is not suitable for participants;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-11",
+   "flags": [],
+   "id": "e64db985-39e8-5cbd-babd-78552dcbabac",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/11",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5368,
+    5477
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Previous treatment with irinotecan or irinotecan modified, topotecan or other topoisomerase I inhibitors;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-12",
+   "flags": [],
+   "id": "8b73a64f-b760-573d-bc65-cea68a4c87ee",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/12",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5478,
+    5664
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Known hypersensitivity to irinotecan hydrochloride liposomes or its excipients, structurally similar compounds (such as camptothecin compounds), other liposomal drugs, and topotecan;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-13",
+   "flags": [],
+   "id": "f71a57f3-49b5-5099-bf01-da0966695eff",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/13",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5665,
+    5762
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Those who have been vaccinated with live vaccine or live attenuated vaccine before screening;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-14",
+   "flags": [],
+   "id": "076724b4-a652-5f79-a3ef-f3a562ba14cf",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/14",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5763,
+    5854
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Patients who have received systemic anti-tumor therapy in 4 weeks before randomization;",
+   "time_window": {
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "direction": "lookback",
+    "span": [
+     55,
+     86
+    ],
+    "status": "parsed",
+    "unit": "week",
+    "value": 4.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-15",
+   "flags": [],
+   "id": "e2243e65-f121-5ac1-b470-db90847ca2a8",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/15",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5855,
+    5941
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Patients who have applied other clinical trial drugs/devices before randomization;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-16",
+   "flags": [],
+   "id": "a335b653-5cf6-5833-ab82-d82343082790",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/16",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    5942,
+    6069
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Patients who have used strong inducers or strong inhibitors of CYP3A4 and strong inhibitors of UGT1A1 before randomization;",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-17",
+   "exceptions": [
+    {
+     "keyword": "except",
+     "span": [
+      96,
+      139
+     ],
+     "status": "unparsed",
+     "text": "alopecia and peripheral neuropathy"
+    }
+   ],
+   "flags": [],
+   "id": "1754f7a0-8521-503a-877e-143513f49190",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/17",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6070,
+    6214
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Adverse reactions caused by previous anti-tumor treatment are not recovered to grade 1 or lower (except alopecia and peripheral neuropathy);",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "alcoholism"
+   ],
+   "display_number": "Exc-18",
+   "flags": [],
+   "id": "34fa272d-3dca-5d10-a2b2-d25560e30348",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/18",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6215,
+    6271
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "History of drug abuse, drug abuse and/or alcoholism;",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Exc-19",
+   "flags": [],
+   "id": "5031ef13-2951-5739-b795-b2df5fe81715",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/19",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6272,
+    6304
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Pregnant or lactating women;",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Exc-20",
+   "flags": [],
+   "id": "ab2c3291-5d90-5086-a965-7bc007f69724",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/20",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    6305,
+    6490
+   ],
+   "subtype": "investigator judgement",
+   "text": "Other conditions (including but not limited to unstable nervous system diseases and mental disorders) that are considered unsuitable for inclusion in this trial by the investigator.",
+   "type": "narrative"
+  }
+ ],
+ "ctrp_biomarker_contract": {
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.",
+  "status": "not_supplied"
+ },
+ "inventory": {
+  "criteria_total": 32,
+  "exclusion": 20,
+  "flagged_nodes": 9,
+  "inclusion": 12,
+  "leaf_nodes": 47,
+  "leaves_by_computability": {
+   "human_judgment": 6,
+   "structured_computable": 16,
+   "text_dependent": 25
+  },
+  "typed_predicates": 16
+ },
+ "lifecycle": {
+  "note": "Draft only: not reviewed; not executable for screening.",
+  "status": "draft"
+ },
+ "llm_applied": [],
+ "review_summary": {
+  "criteria": 32,
+  "open_conflicts": [],
+  "orphaned_decisions": [],
+  "pending": [
+   "Demo-min-age",
+   "Inc-1",
+   "Inc-2",
+   "Inc-3",
+   "Inc-4",
+   "Inc-5",
+   "Inc-6",
+   "Inc-7",
+   "Inc-8",
+   "Inc-9",
+   "Inc-10",
+   "Inc-11",
+   "Exc-1",
+   "Exc-2",
+   "Exc-3",
+   "Exc-4",
+   "Exc-5",
+   "Exc-6",
+   "Exc-7",
+   "Exc-8",
+   "Exc-9",
+   "Exc-10",
+   "Exc-11",
+   "Exc-12",
+   "Exc-13",
+   "Exc-14",
+   "Exc-15",
+   "Exc-16",
+   "Exc-17",
+   "Exc-18",
+   "Exc-19",
+   "Exc-20"
+  ],
+  "stale_decisions": [],
+  "unpinned_decisions": [],
+  "validated": 0
+ },
+ "schema_version": "cer-draft-0.1",
+ "scope_items": [],
+ "scopes": [
+  []
+ ],
+ "source": {
+  "content_sha256": "4a73219730ffaf2a1b918d9426bc7b5da1d433fc2c0375c70253d04881da4510",
+  "demographics": {
+   "healthy_volunteers": true,
+   "maximum_age": null,
+   "minimum_age": "18 Years",
+   "sex": "ALL"
+  },
+  "nct_id": "NCT06128837",
+  "overall_status": "RECRUITING",
+  "protocol_baseline": "registry_excerpt",
+  "registry": "ClinicalTrials.gov",
+  "retrieved_at": "2026-10-06T01:30:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "source_type": "B",
+  "text_normalized": "Inclusion Criteria:\n\n1. Age ≥ 18 years, male or female;\n2. Patients with histologically and/or cytologically confirmed small cell lung cancer;\n3. Disease progression (CTFI ≥ 30 days and ≤ 6 months) occurred after at least 4 cycles of first-line etoposide + platinum two-drug chemotherapy-based treatment, regardless of whether the primary tumor was treated with radiotherapy; the stage of patients with limited stage SCLC should meet more than T1-2, N0, or not suitable for surgery;\n4. At least one evaluable lesion (according to RECIST 1.1 criteria);\n5. Expected survival time ≥ 3 months;\n6. Eastern Cooperative Oncology Group (ECOG) score < 2;\n7. Patients who received no liver metastasis; or the number of liver metastases was ≤ 3 and the longest diameter of a single lesion was ≤ 1.5 cm; or although the longest diameter of a single lesion was > 1.5 cm, the imaging was stable for at least 3 weeks after local treatment control;\n8. Patients with brain metastasis at baseline should meet all the following conditions: lesions not involving the brainstem, the number of brain metastases ≤ 2 (but patients with only intracranial target lesions should be excluded), imaging stability for at least 3 weeks after local treatment control, and no application of dehydration drugs and hormones before screening,Without any symptoms of brain metastasis;\n9. Organ function meeting the following criteria at screening: a.Blood routine: neutrophil (ANC) ≥ 1.5 × 109/L, platelet (PLT) ≥ 100 × 109/L, hemoglobin (Hb) ≥ 90 g/L; b.Liver function: total bilirubin (TBIL) ≤ 1.0 × upper limit of normal (ULN); aspartate aminotransferase (AST) and alanine aminotransferase (ALT) ≤ 2.0 × ULN; if liver metastases, AST and ALT ≤ 3 × ULN; serum albumin ≥ 30 g/L; c.Renal function: serum creatinine ≤ 1.5 × ULN or creatinine clearance ≥ 40 mL/min; d.Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5;\n10. Has fully understood and voluntarily signed a written informed consent form for this study and is able to comply with the requirements and restrictions listed in the informed consent form;\n11. Female subjects of childbearing potential and male subjects with partners of childbearing potential agree to use reliable contraceptive measures during the study and within 6 months after the infusion of study drug.\n\nExclusion Criteria:\n\n1. Pathological diagnosis of compound small cell lung cancer;\n2. Patients with meningeal metastasis, spinal cord tumor invasion, spinal cord compression syndrome;\n3. Superior vena cava syndrome with symptoms or significantly aggravated imaging, which may require radiotherapy/surgery/endoscopic therapy/intervention and other non-medical treatment; the presence of large amount of pleural effusion, ascites and/or pericardial effusion with local treatment and unstable control;\n4. Active infection (including tuberculosis infection) requiring systemic anti-bacterial, antifungal, antiviral and other treatments during screening;\n5. Recurrent symptomatic poorly controlled chronic obstructive pulmonary disease, extensive interstitial lung disease (including interstitial pneumonia, pulmonary interstitial fibrosis, etc.) at screening,\n6. Extensive radiation pneumonitis, pulmonary embolism or active massive hemoptysis; Patients with severe gastrointestinal diseases or gastrointestinal disorders (such as gastrointestinal bleeding, gastrointestinal obstruction, unhealed peptic ulcer, immune enteritis, ulcerative colitis, Crohn's disease, ischemic necrotizing enteritis, diarrhea > grade 1, other gastrointestinal diseases that may affect the tolerance of chemotherapy) at screening;\n7. Patients with the following cardiovascular and cerebrovascular diseases or history:\n\n   1. patients with unstable hypertension (systolic blood pressure ≥ 160 mmHg and/or diastolic blood pressure ≥ 100 mmHg) or a history of hypertensive crisis or hypertensive encephalopathy;\n   2. patients with unstable severe arrhythmia;\n   3. patients with the following cardiovascular and cerebrovascular diseases within 6 months: myocardial infarction, unstable angina, coronary revascularization/angioplasty, coronary artery bypass grafting, coronary artery stenting, New York Heart Association (NYHA) class ≥ 2 cardiac insufficiency, severe unstable arrhythmia, deep vein thrombosis, pulmonary embolism history, active cerebral infarction, active cerebral hemorrhage;\n8. Patients with any of the following conditions:\n\n   1. positive hepatitis B virus surface antigen (HBsAg) test,And peripheral blood hepatitis B virus deoxyribonucleic acid (HBV-DNA) detection ≥ 1000 IU/mL;\n   2. hepatitis C virus antibody (HCV-Ab) positive, and hepatitis C virus ribonucleic acid (HCV-RNA) detection ≥ 100 IU/mL;\n   3. human immunodeficiency virus antibody (HIV-Ab) detection positive;\n9. Other malignancies within 5 years before screening (except cured stage IB or lower cervical cancer, non-invasive basal cell, scale-cell skin cancer or resectable carcinoma in situ);\n10. Patients with primary diseases of other important organs (such as nervous system, cardiovascular and cerebrovascular system, urinary system, digestive system, respiratory system or metabolic endocrine system diseases) and the researchers believe that it is not suitable for participants, or for other reasons the researchers believe that it is not suitable for participants;\n11. Previous treatment with irinotecan or irinotecan modified, topotecan or other topoisomerase I inhibitors;\n12. Known hypersensitivity to irinotecan hydrochloride liposomes or its excipients, structurally similar compounds (such as camptothecin compounds), other liposomal drugs, and topotecan;\n13. Those who have been vaccinated with live vaccine or live attenuated vaccine before screening;\n14. Patients who have received systemic anti-tumor therapy in 4 weeks before randomization;\n15. Patients who have applied other clinical trial drugs/devices before randomization;\n16. Patients who have used strong inducers or strong inhibitors of CYP3A4 and strong inhibitors of UGT1A1 before randomization;\n17. Adverse reactions caused by previous anti-tumor treatment are not recovered to grade 1 or lower (except alopecia and peripheral neuropathy);\n18. History of drug abuse, drug abuse and/or alcoholism;\n19. Pregnant or lactating women;\n20. Other conditions (including but not limited to unstable nervous system diseases and mental disorders) that are considered unsuitable for inclusion in this trial by the investigator.",
+  "title": "Study of LY01610 in Patients With Recurrent Small Cell Lung Cancer"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "licenses": {
+   "HGNC": "CC0",
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "UCUM": "UCUM licence (free)"
+  },
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "stats": {
+   "bound": 13,
+   "by_relationship": {
+    "equivalent": 13,
+    "no-map": 1
+   },
+   "unmapped": 1
+  },
+  "status": "UNREVIEWED_SEED",
+  "value_sets": {},
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty."
+ },
+ "validation": {
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion.",
+  "problems": [],
+  "structure_ok": true
+ }
+}

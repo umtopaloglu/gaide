@@ -1,0 +1,952 @@
+{
+ "authored_applied": [],
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "conflicts": [],
+ "criteria": [
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-min-age",
+   "flags": [],
+   "id": "d91c2d65-f191-5023-929c-6a04cd9790f8",
+   "origin": "imported_structured",
+   "path": "/demo/min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "minimumAge: 18 Years",
+   "type": "predicate"
+  },
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-max-age",
+   "flags": [],
+   "id": "b56d0890-a95d-51d5-aaef-49b988a28e86",
+   "origin": "imported_structured",
+   "path": "/demo/max-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": "<=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 120.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "maximumAge: 120 Years",
+   "type": "predicate"
+  },
+  {
+   "category": "DISEASE CHARACTERISTICS",
+   "children": [
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "children": [
+      {
+       "category": "DISEASE CHARACTERISTICS",
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "3048d6e4-5629-559b-9a90-3be3d8d77a67",
+       "origin": "interpreted_rule_based",
+       "path": "/pre/b1/b1/b1/b1",
+       "review_status": "needs_review",
+       "source_span": [
+        124,
+        208
+       ],
+       "subtype": "unclassified narrative",
+       "text": "No clinical stage consistent with a low-risk of node metastasis (CIS only, T1)",
+       "type": "narrative"
+      },
+      {
+       "category": "DISEASE CHARACTERISTICS",
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "0288e077-3c3e-568c-b8f3-53a5a34a358d",
+       "origin": "interpreted_rule_based",
+       "path": "/pre/b1/b1/b1/b2",
+       "review_status": "needs_review",
+       "source_span": [
+        209,
+        244
+       ],
+       "subtype": "unclassified narrative",
+       "text": "No T4b disease (fixed lesion)",
+       "type": "narrative"
+      }
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "id": "a904407b-03ac-52f2-b4d2-e8b9c2325df7",
+     "lead_in": "Stage T2, T3, or T4a disease",
+     "logic_basis": "assumed",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b1/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      90,
+      122
+     ],
+     "text": "Stage T2, T3, or T4a disease",
+     "type": "group"
+    },
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "children": [
+      {
+       "category": "DISEASE CHARACTERISTICS",
+       "computability": "text_dependent",
+       "flags": [],
+       "id": "3185a888-0406-5527-8b3a-478afdc8c8e0",
+       "origin": "interpreted_rule_based",
+       "path": "/pre/b1/b1/b2/b1",
+       "review_status": "needs_review",
+       "source_span": [
+        350,
+        379
+       ],
+       "subtype": "unclassified narrative",
+       "text": "No laparoscopic surgery",
+       "type": "narrative"
+      }
+     ],
+     "flags": [
+      "group operator ALL assumed from wording/polarity -> verify"
+     ],
+     "id": "b885d146-3bdc-55a7-8faf-37d487a69f5f",
+     "lead_in": "Disease that requires primary radical cystectomy and lymph node dissection for definitive treatment",
+     "logic_basis": "assumed",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b1/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      245,
+      348
+     ],
+     "text": "Disease that requires primary radical cystectomy and lymph node dissection for definitive treatment",
+     "type": "group"
+    }
+   ],
+   "display_number": "Pre-b1.b1",
+   "flags": [
+    "group operator ALL assumed from wording/polarity -> verify",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "f34963c8-3f96-5f1b-8436-203180bf0ae2",
+   "lead_in": "Histologically confirmed urothelial carcinoma of the bladder",
+   "logic_basis": "assumed",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b1/b1",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    26,
+    88
+   ],
+   "text": "Histologically confirmed urothelial carcinoma of the bladder",
+   "type": "group"
+  },
+  {
+   "category": "DISEASE CHARACTERISTICS",
+   "children": [
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "337ed2ee-5626-5b5c-822e-9c729a52452c",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b2/b1",
+     "review_status": "needs_review",
+     "source_span": [
+      460,
+      478
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Adenocarcinoma",
+     "type": "narrative"
+    },
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "b0ebc5e2-8dd3-51cf-a70e-85c0dedd49df",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b2/b2",
+     "review_status": "needs_review",
+     "source_span": [
+      479,
+      506
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Squamous cell carcinoma",
+     "type": "narrative"
+    },
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "ba0a4241-e6ed-5679-9a8b-388425aa2de9",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b2/b3",
+     "review_status": "needs_review",
+     "source_span": [
+      507,
+      569
+     ],
+     "subtype": "unclassified narrative",
+     "text": "Micropapillary or minor components of other rare phenotype",
+     "type": "narrative"
+    },
+    {
+     "category": "DISEASE CHARACTERISTICS",
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "257c8c60-b2e1-5487-aba3-40d9b857ce9b",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b1/b2/b4",
+     "review_status": "needs_review",
+     "source_span": [
+      570,
+      623
+     ],
+     "subtype": "unclassified narrative",
+     "text": "No pure squamous cell carcinoma or adenocarcinoma",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Pre-b1.b2",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "7816b329-38fa-5447-87f2-1f2b44372cc3",
+   "lead_in": "Predominant urothelial carcinoma with any of the following elements allowed:",
+   "logic_basis": "explicit",
+   "op": "ANY",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b1/b2",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    380,
+    458
+   ],
+   "text": "Predominant urothelial carcinoma with any of the following elements allowed:",
+   "type": "group"
+  },
+  {
+   "category": "DISEASE CHARACTERISTICS",
+   "computability": "text_dependent",
+   "display_number": "Pre-b1.b3",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "c89bbf25-a05f-5b69-90ca-9b99af3bc31f",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b1/b3",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    624,
+    817
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No visceral or nodal metastatic disease proximal to the common iliac bifurcation by 2-view chest x-ray and abdominal-pelvic imaging by computerized tomography or MRI of the abdomen and pelvis",
+   "type": "narrative"
+  },
+  {
+   "category": "DISEASE CHARACTERISTICS",
+   "computability": "text_dependent",
+   "display_number": "Pre-b1.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "4b4d3605-e58d-5323-a609-23631650df41",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b1/b4",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    818,
+    986
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No intra-operative pelvic lymph node involvement (confirmed by frozen section) at or above the bifurcation of the common iliac vessels in any of the extended template",
+   "type": "narrative"
+  },
+  {
+   "binding": null,
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "structured_computable",
+   "display_number": "Pre-b2.b1",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "ddb16697-46ab-5100-946f-42bca0613c92",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b1.p0",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "predicate": {
+    "allowed_values": [
+     0,
+     1,
+     2
+    ],
+    "key": "ps:zubrod",
+    "kind": "performance_status",
+    "note": "scale-specific: no assumed equivalence to ECOG",
+    "scale": "Zubrod",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1014,
+    1045
+   ],
+   "sub_span": [
+    0,
+    29
+   ],
+   "text": "Zubrod performance status 0-2",
+   "type": "predicate"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "children": [
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://loinc.org",
+       "concept_id": "cm:lab-ast",
+       "label": "AST",
+       "primary": {
+        "code": "1920-8",
+        "display": "AST",
+        "system": "LOINC"
+       },
+       "semantic_role": "observation"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "1920-8",
+        "display": "AST",
+        "system": "http://loinc.org",
+        "ucum_unit": "x ULN"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "direction": "source_to_target",
+       "relationship": "equivalent"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "638f6386-5b86-5309-8bbd-90d6ab9dc2cf",
+       "document_span": [
+        1046,
+        1090
+       ],
+       "inherited_context": [],
+       "phrase": "AST",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [],
+     "id": "638f6386-5b86-5309-8bbd-90d6ab9dc2cf",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b2/b2.p0",
+     "predicate": {
+      "analyte": "AST",
+      "comparator": "<=",
+      "key": "lab:ast",
+      "kind": "lab",
+      "terminology": {
+       "code": "1920-8",
+       "relationship": "equivalent",
+       "status": "proposed_unreviewed",
+       "system": "LOINC"
+      },
+      "uln_multiple": true,
+      "unit": "x ULN",
+      "value": 1.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1046,
+      1090
+     ],
+     "sub_span": [
+      0,
+      41
+     ],
+     "text": "ALT and AST ≤ upper limit of normal (ULN)",
+     "type": "predicate"
+    },
+    {
+     "binding": {
+      "canonical_binding": {
+       "code_system_uri": "http://loinc.org",
+       "concept_id": "cm:lab-alt",
+       "label": "ALT",
+       "primary": {
+        "code": "1742-6",
+        "display": "ALT",
+        "system": "LOINC"
+       },
+       "semantic_role": "observation"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "code": "1742-6",
+        "display": "ALT",
+        "system": "http://loinc.org",
+        "ucum_unit": "x ULN"
+       },
+       "omop": {
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+        "status": "requires site vocabulary snapshot"
+       }
+      },
+      "lifecycle": {
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true,
+       "valid_from": "2026-10-06"
+      },
+      "mapping_semantics": {
+       "context": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "direction": "source_to_target",
+       "relationship": "equivalent"
+      },
+      "provenance": {
+       "confidence": "medium",
+       "mapper": "pattern match (seed bundle)",
+       "rationale": "analyte name matches the LOINC test; method/specimen/system not constrained by the protocol text",
+       "reviewer": null,
+       "status": "proposed_unreviewed",
+       "tool": "eligibility-cer/terminology 0.1.0"
+      },
+      "source_evidence": {
+       "criterion_node": "17990300-7e2a-51fc-9f94-98f6c580c155",
+       "document_span": [
+        1046,
+        1090
+       ],
+       "inherited_context": [],
+       "phrase": "ALT",
+       "source_code": null
+      },
+      "value_set": null
+     },
+     "computability": "structured_computable",
+     "flags": [],
+     "id": "17990300-7e2a-51fc-9f94-98f6c580c155",
+     "origin": "interpreted_rule_based",
+     "path": "/pre/b2/b2.p1",
+     "predicate": {
+      "analyte": "ALT",
+      "comparator": "<=",
+      "key": "lab:alt",
+      "kind": "lab",
+      "terminology": {
+       "code": "1742-6",
+       "relationship": "equivalent",
+       "status": "proposed_unreviewed",
+       "system": "LOINC"
+      },
+      "uln_multiple": true,
+      "unit": "x ULN",
+      "value": 1.0
+     },
+     "review_status": "needs_review",
+     "source_span": [
+      1046,
+      1090
+     ],
+     "sub_span": [
+      0,
+      41
+     ],
+     "text": "ALT and AST ≤ upper limit of normal (ULN)",
+     "type": "predicate"
+    }
+   ],
+   "display_number": "Pre-b2.b2",
+   "extraction_coverage": 1.0,
+   "flags": [
+    "conjunction assumed between extracted predicates (list/commas)",
+    "footnote marker (*): a qualifying note elsewhere in the text may modify this criterion -> review together",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "a0e00d15-dabe-5857-bfdc-ec82cb8402af",
+   "logic_basis": "assumed_conjunction",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b2",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1046,
+    1090
+   ],
+   "text": "ALT and AST ≤ upper limit of normal (ULN)*",
+   "type": "group"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "text_dependent",
+   "display_number": "Pre-b2.b3",
+   "flags": [
+    "footnote marker (*): a qualifying note elsewhere in the text may modify this criterion -> review together",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "a89d8539-598d-565f-bb8e-95c09173afe7",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b3",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1091,
+    1120
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Alkaline phosphatase ≤ ULN*",
+   "type": "narrative"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "human_judgment",
+   "display_number": "Pre-b2.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "677dbaee-ce56-581a-9696-12582c772e1e",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b4",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1121,
+    1146
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Not pregnant or nursing",
+   "type": "narrative"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "human_judgment",
+   "display_number": "Pre-b2.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "8621afbb-bd0b-542d-9209-e882a22683f5",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b5",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1147,
+    1201
+   ],
+   "subtype": "consent / contraception / pregnancy workflow",
+   "text": "Fertile patients must use an effective contraception",
+   "type": "narrative"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "text_dependent",
+   "display_number": "Pre-b2.b6",
+   "exceptions": [
+    {
+     "keyword": "except",
+     "span": [
+      25,
+      210
+     ],
+     "status": "unparsed",
+     "text": "adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer, or stage I or II cancer from which the patient is in complete remission for the past 5 years"
+    }
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "c39b432c-7e6e-5cb3-a951-c4f808c4f9f0",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b6",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1202,
+    1414
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No other prior malignancy except adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer, or stage I or II cancer from which the patient is in complete remission for the past 5 years",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     190,
+     210
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "year",
+    "value": 5.0
+   },
+   "type": "narrative"
+  },
+  {
+   "category": "PATIENT CHARACTERISTICS",
+   "computability": "text_dependent",
+   "display_number": "Pre-b2.b7",
+   "flags": [
+    "footnote marker (*): a qualifying note elsewhere in the text may modify this criterion -> review together",
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "ac77ce74-ffcb-5b3e-aa25-8445fc2c7f22",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b2/b7",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1415,
+    1605
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "Medically suitable to undergo cystectomy, in the physician's opinion NOTE: *Levels may be ≥ ULN provided metastatic disease is excluded using dedicated liver imaging, bone scan, or biopsy.",
+   "type": "narrative"
+  },
+  {
+   "category": "PRIOR CONCURRENT THERAPY",
+   "computability": "text_dependent",
+   "display_number": "Pre-b3.b1",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "ad17efea-8686-50f3-9006-04c05e732158",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b3/b1",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1634,
+    1663
+   ],
+   "subtype": "unclassified narrative",
+   "text": "See Disease Characteristics",
+   "type": "narrative"
+  },
+  {
+   "category": "PRIOR CONCURRENT THERAPY",
+   "computability": "text_dependent",
+   "display_number": "Pre-b3.b2",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "e3f9572b-15a1-5ab1-aae4-ed038a104fa6",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b3/b2",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1664,
+    1721
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No prior partial cystectomy for invasive bladder cancer",
+   "type": "narrative"
+  },
+  {
+   "category": "PRIOR CONCURRENT THERAPY",
+   "computability": "text_dependent",
+   "display_number": "Pre-b3.b3",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "3a2e1dbd-01a6-5d54-8945-fa43684514de",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b3/b3",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1722,
+    1837
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No prior pelvic surgery that would obviate a complete extended lymphadenectomy (e.g., aorto-femoral/iliac bypass)",
+   "type": "narrative"
+  },
+  {
+   "category": "PRIOR CONCURRENT THERAPY",
+   "computability": "text_dependent",
+   "display_number": "Pre-b3.b4",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "854bdc07-635c-55d0-84f4-9c22c205958a",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b3/b4",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1838,
+    1951
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Prior neoadjuvant chemotherapy for this cancer allowed provided it has been completed and patient has recovered",
+   "type": "narrative"
+  },
+  {
+   "category": "PRIOR CONCURRENT THERAPY",
+   "computability": "text_dependent",
+   "display_number": "Pre-b3.b5",
+   "flags": [
+    "nesting inferred from a flat list (heuristic) -> verify parent/child grouping"
+   ],
+   "id": "f4875687-303f-5b7d-becc-0aedbc0e21c6",
+   "origin": "interpreted_rule_based",
+   "path": "/pre/b3/b5",
+   "polarity": "inclusion",
+   "polarity_source": "no section header (assumed inclusion)",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1952,
+    1981
+   ],
+   "subtype": "unclassified narrative",
+   "text": "No prior pelvic irradiation",
+   "type": "narrative"
+  }
+ ],
+ "ctrp_biomarker_contract": {
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.",
+  "status": "not_supplied"
+ },
+ "inventory": {
+  "criteria_total": 18,
+  "exclusion": 0,
+  "flagged_nodes": 18,
+  "inclusion": 18,
+  "leaf_nodes": 24,
+  "leaves_by_computability": {
+   "human_judgment": 2,
+   "structured_computable": 5,
+   "text_dependent": 17
+  },
+  "typed_predicates": 5
+ },
+ "lifecycle": {
+  "note": "Draft only: not reviewed; not executable for screening.",
+  "status": "draft"
+ },
+ "llm_applied": [],
+ "review_summary": {
+  "criteria": 18,
+  "open_conflicts": [],
+  "orphaned_decisions": [],
+  "pending": [
+   "Demo-min-age",
+   "Demo-max-age",
+   "Pre-b1.b1",
+   "Pre-b1.b2",
+   "Pre-b1.b3",
+   "Pre-b1.b4",
+   "Pre-b2.b1",
+   "Pre-b2.b2",
+   "Pre-b2.b3",
+   "Pre-b2.b4",
+   "Pre-b2.b5",
+   "Pre-b2.b6",
+   "Pre-b2.b7",
+   "Pre-b3.b1",
+   "Pre-b3.b2",
+   "Pre-b3.b3",
+   "Pre-b3.b4",
+   "Pre-b3.b5"
+  ],
+  "stale_decisions": [],
+  "unpinned_decisions": [],
+  "validated": 0
+ },
+ "schema_version": "cer-draft-0.1",
+ "scope_items": [
+  {
+   "label": "DISEASE CHARACTERISTICS:",
+   "span": [
+    0,
+    24
+   ]
+  },
+  {
+   "label": "PATIENT CHARACTERISTICS:",
+   "span": [
+    988,
+    1012
+   ]
+  },
+  {
+   "label": "PRIOR CONCURRENT THERAPY:",
+   "span": [
+    1607,
+    1632
+   ]
+  }
+ ],
+ "scopes": [
+  []
+ ],
+ "source": {
+  "content_sha256": "e35717329f7f2512a60fac098ee1621b4ae91a9319f25bf04ebd7c0fa7ab898f",
+  "demographics": {
+   "healthy_volunteers": "No",
+   "maximum_age": "120 Years",
+   "minimum_age": "18 Years",
+   "sex": "ALL"
+  },
+  "nct_id": "NCT01224665",
+  "overall_status": "COMPLETED",
+  "protocol_baseline": "registry_excerpt",
+  "registry": "ClinicalTrials.gov",
+  "retrieved_at": "2026-10-07T00:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "source_type": "B",
+  "text_normalized": "DISEASE CHARACTERISTICS:\n\n* Histologically confirmed urothelial carcinoma of the bladder\n\n  * Stage T2, T3, or T4a disease\n\n    * No clinical stage consistent with a low-risk of node metastasis (CIS only, T1)\n    * No T4b disease (fixed lesion)\n  * Disease that requires primary radical cystectomy and lymph node dissection for definitive treatment\n\n    * No laparoscopic surgery\n* Predominant urothelial carcinoma with any of the following elements allowed:\n\n  * Adenocarcinoma\n  * Squamous cell carcinoma\n  * Micropapillary or minor components of other rare phenotype\n  * No pure squamous cell carcinoma or adenocarcinoma\n* No visceral or nodal metastatic disease proximal to the common iliac bifurcation by 2-view chest x-ray and abdominal-pelvic imaging by computerized tomography or MRI of the abdomen and pelvis\n* No intra-operative pelvic lymph node involvement (confirmed by frozen section) at or above the bifurcation of the common iliac vessels in any of the extended template\n\nPATIENT CHARACTERISTICS:\n\n* Zubrod performance status 0-2\n* ALT and AST ≤ upper limit of normal (ULN)*\n* Alkaline phosphatase ≤ ULN*\n* Not pregnant or nursing\n* Fertile patients must use an effective contraception\n* No other prior malignancy except adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer, or stage I or II cancer from which the patient is in complete remission for the past 5 years\n* Medically suitable to undergo cystectomy, in the physician's opinion NOTE: *Levels may be ≥ ULN provided metastatic disease is excluded using dedicated liver imaging, bone scan, or biopsy.\n\nPRIOR CONCURRENT THERAPY:\n\n* See Disease Characteristics\n* No prior partial cystectomy for invasive bladder cancer\n* No prior pelvic surgery that would obviate a complete extended lymphadenectomy (e.g., aorto-femoral/iliac bypass)\n* Prior neoadjuvant chemotherapy for this cancer allowed provided it has been completed and patient has recovered\n* No prior pelvic irradiation",
+  "title": "S1011 Standard or Extended Pelvic Lymphadenectomy in Treating Patients Undergoing Surgery for Invasive Bladder Cancer"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "licenses": {
+   "HGNC": "CC0",
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "UCUM": "UCUM licence (free)"
+  },
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "stats": {
+   "bound": 2,
+   "by_relationship": {
+    "equivalent": 2
+   },
+   "unmapped": 0
+  },
+  "status": "UNREVIEWED_SEED",
+  "value_sets": {},
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty."
+ },
+ "validation": {
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion.",
+  "problems": [],
+  "structure_ok": true
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "capability": {
+  "approval": null,
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "leaves": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 1
+  },
+  "nodes": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 1
+  },
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path.",
+  "overall_assertion_allowed": false,
+  "per_node": {
+   "9118ad5a-328a-596e-bde9-6cb139e8a1bb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   }
+  },
+  "trial_backend_label": "unavailable"
+ },
+ "cer_content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
+ "cql_sha256": "8e489d65483f2275127d2362f72842a4804bb7db09fab29a7e82976be0aa9326",
+ "criteria": 1,
+ "executable_typed_leaves": 0,
+ "gated": true,
+ "library": "EligibilityCER_NCT05512364",
+ "parameters": [],
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site",
+ "scope": null,
+ "translator_validated": false,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "9118ad5a-328a-596e-bde9-6cb139e8a1bb",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 18 Years"
+  }
+ ]
+}
