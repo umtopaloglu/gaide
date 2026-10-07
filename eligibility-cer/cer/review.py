@@ -36,6 +36,9 @@ def apply_review(cer, sidecar):
         st = {role: latest.get((num, role), {}).get("decision") for role in ROLES}
         if any(v in ("reject", "needs_change") for v in st.values()):
             r["review_status"] = "changes_requested"
+        elif all(v == "approve" for v in st.values()) and _same_person(latest, num):
+            r["review_status"] = "partially_reviewed"
+            r.setdefault("flags", []).append("clinical and informatics approvals came from the same reviewer: needs a second person")
         elif all(v == "approve" for v in st.values()):
             r["review_status"] = "validated"; validated += 1
         elif any(st.values()):
@@ -67,6 +70,11 @@ def apply_review(cer, sidecar):
         "validated": "All criteria dual-approved; awaiting release authorization (not yet executable for screening).",
         "in_review": "Review in progress" + (" (blocked by open registry conflict)." if open_conf else "."), "draft": "Draft only: not reviewed; not executable for screening."}[status]
     return cer
+
+
+def _same_person(latest, num):
+    a, b = latest.get((num, "clinical"), {}).get("reviewer"), latest.get((num, "informatics"), {}).get("reviewer")
+    return a is not None and a == b
 
 
 def worklist(cer):

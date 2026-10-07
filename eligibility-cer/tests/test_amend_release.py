@@ -107,3 +107,34 @@ class Determinism(unittest.TestCase):
         outs = {subprocess.run([sys.executable, "-c", code], env={**os.environ, "PYTHONHASHSEED": s}, capture_output=True,
                                text=True, check=True).stdout.strip() for s in ("1", "2", "3")}
         self.assertEqual(len(outs), 1)
+
+
+class Workbench(unittest.TestCase):
+    def test_payload_renders_and_escapes_script_close(self):
+        from cer.workbench import build_payload, render
+        cer = R.load_cer("NCT06520683")
+        cer["criteria"][2]["text"] += " </script><b>x</b>"
+        html = render(build_payload([cer]))
+        self.assertEqual(html.count("</script>"), 2)                 # payload cannot break out of its <script>
+        self.assertIn("Eligibility Review Desk", html)
+    def test_import_validates_rows_and_same_person_cannot_dual_approve(self):
+        import hashlib
+        from cer.workbench import import_reviews
+        cer = build_cer(R.load("NCT06520683"))
+        c = next(r for r in cer["criteria"] if r["display_number"] == "Inc-b5")
+        sha = hashlib.sha256(c["text"].encode()).hexdigest()
+        known = {"NCT06520683": {r["display_number"]: hashlib.sha256(r["text"].encode()).hexdigest() for r in cer["criteria"]}}
+        dump = {"reviews": {
+            "u_a": {"NCT06520683": {"decisions": {"Inc-b5": {"role": "clinical", "decision": "approve", "sha": sha, "ts": "1"}}}},
+            "u_b": {"NCT06520683": {"decisions": {"Inc-b5": {"role": "informatics", "decision": "approve", "sha": sha, "ts": "2"},
+                                                  "Nope": {"role": "clinical", "decision": "approve", "sha": sha}}}},
+            "u_c": {"NCT99999999": {"decisions": {}}}}}
+        sc, bad = import_reviews(dump, known)
+        self.assertEqual(len(sc["NCT06520683"]["decisions"]), 2)
+        self.assertEqual(len(bad), 2)
+        apply_review(cer, sc["NCT06520683"])
+        self.assertEqual(next(r for r in cer["criteria"] if r is c)["review_status"], "validated")
+        same = {"decisions": [dict(d, reviewer="u_a") for d in sc["NCT06520683"]["decisions"]]}
+        cer2 = build_cer(R.load("NCT06520683")); apply_review(cer2, same)
+        r2 = next(r for r in cer2["criteria"] if r["display_number"] == "Inc-b5")
+        self.assertEqual(r2["review_status"], "partially_reviewed")

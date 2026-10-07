@@ -1,0 +1,334 @@
+<title>Eligibility Review Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a review desk -- study index on the left, one criterion card per row on the right; stacks on phones. */
+:root{
+  --bg:#f3f5f3; --surface:#ffffff; --sunk:#eaeeeb; --ink:#1b2320; --muted:#5a6661; --line:#d8dfdb;
+  --accent:#1f5b6e; --accent-ink:#ffffff;
+  --inc:#2c6a3c; --exc:#9c3a28;
+  --ok:#2c6a3c; --ok-bg:#e3f0e6; --warn:#8f5a06; --warn-bg:#f8ecd6; --bad:#a8322a; --bad-bg:#f6e1de;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141a18; --surface:#1b2320; --sunk:#222b28; --ink:#e4ebe7; --muted:#9aa8a1; --line:#2e3935;
+  --accent:#6fb4c8; --accent-ink:#0d1a1e; --inc:#7cc48d; --exc:#e58b77;
+  --ok:#7cc48d; --ok-bg:#1f3326; --warn:#e2b25c; --warn-bg:#3a2e17; --bad:#ec8679; --bad-bg:#3d211e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141a18; --surface:#1b2320; --sunk:#222b28; --ink:#e4ebe7; --muted:#9aa8a1; --line:#2e3935;
+  --accent:#6fb4c8; --accent-ink:#0d1a1e; --inc:#7cc48d; --exc:#e58b77;
+  --ok:#7cc48d; --ok-bg:#1f3326; --warn:#e2b25c; --warn-bg:#3a2e17; --bad:#ec8679; --bad-bg:#3d211e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);padding-inline:16px;padding-block:0 48px}
+h1,h2,h3{text-wrap:balance;margin:0}
+button,select,textarea,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;padding-block:20px 12px;border-bottom:1px solid var(--line)}
+.top h1{font:600 1.25rem/1.2 var(--sans);letter-spacing:.01em}
+.top .who{color:var(--muted);font-size:.85rem;margin-left:auto}
+.notice{margin-top:12px;padding:10px 12px;border:1px solid var(--line);background:var(--sunk);border-radius:6px;font-size:.88rem}
+.desk{display:grid;grid-template-columns:260px minmax(0,1fr);gap:24px;margin-top:16px}
+.index{display:flex;flex-direction:column;gap:2px;position:sticky;top:env(safe-area-inset-top,0px);align-self:start;max-height:100vh;overflow:auto;padding-block:4px}
+.index button{display:grid;grid-template-columns:1fr auto;gap:2px 8px;text-align:left;border:0;background:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+.index button:hover{background:var(--sunk)}
+.index button[aria-current="true"]{background:var(--surface);box-shadow:inset 3px 0 0 var(--accent)}
+.index .n{font:500 .85rem var(--mono)}
+.index .t{grid-column:1/-1;color:var(--muted);font-size:.8rem;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.index .p{font:.75rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.picker{display:none;margin-bottom:12px}
+@media (max-width:900px){.desk{grid-template-columns:minmax(0,1fr)}.desk .index{display:none}.picker{display:block!important}}
+.picker select{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.study h2{font:600 1.15rem/1.3 var(--sans)}
+.study .meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted);font-size:.85rem;margin-top:4px}
+.mono{font-family:var(--mono)}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.stat{padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:.85rem}
+.stat b{font:600 1rem var(--mono);font-variant-numeric:tabular-nums;margin-right:4px}
+.blocks{margin-top:12px;font-size:.85rem;color:var(--muted)}
+.blocks li{margin-block:2px}
+.conflict{margin-top:10px;padding:8px 10px;border-radius:6px;background:var(--warn-bg);color:var(--warn);font-size:.88rem}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-block:18px 10px}
+.filters button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:.85rem;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.num{font:500 .9rem var(--mono)}
+.pol{font:600 .7rem var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;border:1px solid currentColor}
+.pol.inclusion{color:var(--inc)} .pol.exclusion{color:var(--exc)}
+.tag{font-size:.75rem;color:var(--muted);padding:1px 6px;border-radius:4px;background:var(--sunk)}
+.state{margin-left:auto;font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px}
+.state.validated{color:var(--ok);background:var(--ok-bg)} .state.changes{color:var(--bad);background:var(--bad-bg)}
+.state.partial{color:var(--warn);background:var(--warn-bg)} .state.open{color:var(--muted);background:var(--sunk)}
+.src{font:1.02rem/1.55 var(--serif);max-width:68ch;margin:0;overflow-wrap:anywhere}
+details.logic summary{cursor:pointer;color:var(--accent);font-size:.85rem;font-weight:500}
+.tree{list-style:none;margin:8px 0 0;padding:0 0 0 2px;font-size:.88rem;display:grid;gap:4px;min-width:0}
+.tree .tree{padding-left:14px;border-left:1px solid var(--line);margin-top:4px}
+.op{font:600 .72rem var(--mono);color:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:0 4px;margin-right:6px}
+.kind{font:.72rem var(--mono);color:var(--muted);margin-right:6px}
+.code{font:.78rem var(--mono);color:var(--muted);overflow-wrap:anywhere}
+.rel{font-size:.72rem;padding:0 5px;border-radius:3px;background:var(--sunk);color:var(--muted)}
+.rel.inexact,.rel.no-map,.rel.related{background:var(--warn-bg);color:var(--warn)}
+.narr{color:var(--muted);font-style:italic}
+.flag{color:var(--warn);font-size:.8rem;margin-top:2px}
+.llm{font-size:.82rem;color:var(--muted);border-left:2px solid var(--accent);padding-left:8px}
+.decisions{display:grid;gap:4px;font-size:.85rem}
+.dec{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.dec .d-approve{color:var(--ok);font-weight:600} .dec .d-needs_change{color:var(--warn);font-weight:600} .dec .d-reject{color:var(--bad);font-weight:600}
+.dec .stale{color:var(--muted);text-decoration:line-through}
+.dec q{color:var(--muted)}
+.mine{display:grid;gap:8px;border-top:1px dashed var(--line);padding-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg label{padding:4px 10px;font-size:.85rem;cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg input:checked+span{font-weight:600;color:var(--accent)}
+.seg input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.act{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:5px 12px;font-size:.85rem;cursor:pointer}
+.act.approve{color:var(--ok)} .act.needs_change{color:var(--warn)} .act.reject{color:var(--bad)}
+.act[aria-pressed="true"].approve{background:var(--ok-bg);border-color:var(--ok)}
+.act[aria-pressed="true"].needs_change{background:var(--warn-bg);border-color:var(--warn)}
+.act[aria-pressed="true"].reject{background:var(--bad-bg);border-color:var(--bad)}
+.act.save{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);margin-left:auto}
+.act:disabled{opacity:.5;cursor:not-allowed}
+textarea{width:100%;min-height:56px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);resize:vertical}
+.saved{font-size:.8rem;color:var(--muted)}
+.empty{padding:24px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:8px}
+.foot{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:.85rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="top">
+  <h1>Eligibility Review Desk</h1>
+  <span class="who" id="who">Loading reviewer identity…</span>
+</div>
+<div class="notice" id="notice">Each criterion needs an approval from a clinical reviewer and from a different informatics reviewer. Approvals apply to the exact criterion text shown; if the text changes, they lapse.</div>
+<div class="desk">
+  <nav class="index" id="index" aria-label="Studies"></nav>
+  <main id="main" style="min-width:0">
+    <div class="picker" id="picker"><label for="study-select" class="tag">Study</label> <select id="study-select"></select></div>
+    <section id="study"></section>
+  </main>
+</div>
+
+<script id="payload" type="application/json">/*__DATA__*/null</script>
+<script>
+(function(){
+const DATA = JSON.parse(document.getElementById('payload').textContent);
+const S = {i:0, filter:'pending', me:null, canWrite:false, db:null, user:null, reviews:{}, names:{}, subs:{}, draft:{}, savedAt:{}};
+const LABEL = {approve:'Approve', needs_change:'Needs change', reject:'Reject'};
+try{ const t = localStorage.getItem('wb.study'); if(t){ const j = DATA.studies.findIndex(s=>s.nct===t); if(j>=0) S.i=j; } }catch(e){}
+try{ const f = localStorage.getItem('wb.filter'); if(f) S.filter=f; }catch(e){}
+
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const study = () => DATA.studies[S.i];
+
+// decisions for one criterion from every reviewer: {uid, role, decision, comment, ts, sha}
+function decisionsFor(nct, c){
+  const out=[];
+  for(const [uid, studies] of Object.entries(S.reviews)){
+    const d = studies && studies[nct] && studies[nct][c.num];
+    if(d && typeof d==='object') out.push(Object.assign({uid}, d, {current: d.sha===c.sha}));
+  }
+  return out.sort((a,b)=>String(a.ts).localeCompare(String(b.ts)));
+}
+function statusOf(nct, c){
+  const cur = decisionsFor(nct,c).filter(d=>d.current);
+  if(cur.some(d=>d.decision!=='approve')) return 'changes';
+  const roles = new Set(cur.filter(d=>d.decision==='approve').map(d=>d.role));
+  if(roles.has('clinical') && roles.has('informatics')) return 'validated';
+  return roles.size ? 'partial' : 'open';
+}
+const STATE_TEXT = {validated:'Dual-approved', changes:'Changes requested', partial:'One approval', open:'Not reviewed'};
+function flagged(node){ return !!((node.f&&node.f.length) || (node.ch||[]).some(flagged)); }
+function myDecision(nct,c){ const m=S.me && S.reviews[S.me] && S.reviews[S.me][nct]; return m ? m[c.num] : null; }
+
+function treeHTML(n, root){
+  let head='';
+  if(n.t==='group') head = `<span class="op">${esc(n.op)}</span>`;
+  else if(n.t==='predicate'){
+    head = `<span class="kind">${esc(n.k)}</span>${esc(n.s)}`;
+    if(n.b){ head += n.b.code ? ` <span class="code">${esc(n.b.sys)} ${esc(n.b.code)} · ${esc(n.b.disp)}</span> <span class="rel ${esc(n.b.rel)}">${esc(n.b.rel)}</span>`
+                               : ` <span class="rel no-map">unmapped</span>`; }
+  } else {
+    head = `<span class="kind">${esc(n.c==='human_judgment'?'judgement':'chart review')}</span><span class="narr">${esc(n.sub||'narrative')}</span>`;
+    if(n.q && n.q!==root) head += `<div class="code">“${esc(n.q)}”</div>`;
+  }
+  if(n.tw) head += ` <span class="tag">within ${esc(n.tw)}</span>`;
+  if(n.if) head += ` <span class="tag">only if ${esc(n.if)}</span>`;
+  (n.ex||[]).forEach(x=>{ head += ` <span class="tag">except ${esc(x)}</span>`; });
+  const flags = (n.f||[]).map(f=>`<div class="flag">⚑ ${esc(f)}</div>`).join('');
+  const kids = n.ch ? `<ul class="tree">${n.ch.map(c=>`<li>${treeHTML(c, root)}</li>`).join('')}</ul>` : '';
+  return head + flags + kids;
+}
+
+function cardHTML(s, c){
+  const st = statusOf(s.nct,c), decs = decisionsFor(s.nct,c), mine = myDecision(s.nct,c), dr = S.draft[s.nct+'|'+c.num] || {};
+  const role = dr.role || (mine && mine.role) || 'clinical', dec = dr.decision || (mine && mine.sha===c.sha ? mine.decision : null);
+  const comment = dr.comment!=null ? dr.comment : (mine && mine.sha===c.sha ? mine.comment||'' : '');
+  const tags = [...c.scope.map(x=>`<span class="tag">${esc(x)}</span>`), c.cat?`<span class="tag">${esc(c.cat)}</span>`:'',
+    c.origin!=='interpreted_rule_based'?`<span class="tag">${esc(c.origin.replace(/_/g,' '))}</span>`:''].join('');
+  const decHTML = decs.length ? decs.map(d=>{
+      const who = (S.names[d.uid]||'').trim() || (d.uid===S.me?'You':'Reviewer');
+      return `<div class="dec"><span class="${d.current?'':'stale'}">${esc(who)} · ${esc(d.role)}</span>
+        <span class="d-${esc(d.decision)} ${d.current?'':'stale'}">${esc(LABEL[d.decision]||d.decision)}</span>
+        ${d.current?'':'<span class="tag">text changed since</span>'}${d.comment?`<q>${esc(d.comment)}</q>`:''}</div>`;}).join('')
+    : '<div class="saved">No decisions yet.</div>';
+  const k = esc(c.num);
+  const controls = S.canWrite ? `
+    <div class="mine" data-num="${k}">
+      <div class="row">
+        <span class="seg" role="radiogroup" aria-label="Your role">
+          ${['clinical','informatics'].map(r=>`<label><input type="radio" name="role-${k}" id="role-${k}-${r}" value="${r}" ${role===r?'checked':''}><span>${r==='clinical'?'Clinical':'Informatics'}</span></label>`).join('')}
+        </span>
+        ${['approve','needs_change','reject'].map(d=>`<button class="act ${d}" data-d="${d}" aria-pressed="${dec===d}">${LABEL[d]}</button>`).join('')}
+      </div>
+      <textarea id="comment-${k}" placeholder="Comment (required for Needs change or Reject)">${esc(comment)}</textarea>
+      <div class="row"><span class="saved" id="saved-${k}">${S.savedAt[s.nct+'|'+c.num]?'Saved':''}</span>
+        <button class="act save" data-save="1">Save decision</button></div>
+    </div>` : '';
+  return `<article class="card" id="c-${k}">
+    <header><span class="num">${k}</span><span class="pol ${esc(c.pol)}">${esc(c.pol)}</span>${tags}
+      <span class="state ${st}">${STATE_TEXT[st]}</span></header>
+    <p class="src">${esc(c.text)}</p>
+    ${c.llm?`<div class="llm">LLM proposal (${esc(c.llm.model||'model')}, confidence ${esc(c.llm.confidence||'?')})${c.llm.uncertainties.length?': '+esc(c.llm.uncertainties.join('; ')):''}</div>`:''}
+    <details class="logic" ${flagged(c.tree)?'open':''}><summary>Computable logic${flagged(c.tree)?' · flagged':''}</summary><ul class="tree"><li>${treeHTML(c.tree, c.text)}</li></ul></details>
+    <div class="decisions">${decHTML}</div>${controls}</article>`;
+}
+
+function filtered(s){
+  return s.criteria.filter(c=>{
+    const st = statusOf(s.nct,c);
+    if(S.filter==='pending') return st!=='validated';
+    if(S.filter==='flagged') return flagged(c.tree);
+    if(S.filter==='mine'){ const m=myDecision(s.nct,c); return !m || m.sha!==c.sha; }
+    if(S.filter==='changes') return st==='changes';
+    return true;
+  });
+}
+
+function render(){
+  const s = study();
+  document.getElementById('index').innerHTML = DATA.studies.map((x,i)=>{
+    const v = x.criteria.filter(c=>statusOf(x.nct,c)==='validated').length;
+    return `<button data-i="${i}" aria-current="${i===S.i}"><span class="n">${esc(x.nct)}</span><span class="p">${v}/${x.criteria.length}</span><span class="t">${esc(x.title||'')}</span></button>`;}).join('');
+  document.getElementById('study-select').innerHTML = DATA.studies.map((x,i)=>`<option value="${i}" ${i===S.i?'selected':''}>${esc(x.nct)} · ${esc((x.title||'').slice(0,60))}</option>`).join('');
+  const counts = {validated:0,partial:0,changes:0,open:0};
+  s.criteria.forEach(c=>counts[statusOf(s.nct,c)]++);
+  const list = filtered(s);
+  const F = [['pending','Not yet dual-approved'],['mine','Needs my decision'],['flagged','Flagged'],['changes','Changes requested'],['all','All']];
+  document.getElementById('study').innerHTML = `<div class="study">
+    <h2>${esc(s.title||s.nct)}</h2>
+    <div class="meta"><span class="mono">${esc(s.nct)}</span><span>${esc(s.status||'')}</span><span>model lifecycle: ${esc(s.lifecycle)}</span>
+      ${s.release?`<span>release candidate <span class="mono">${esc(s.release.id)}</span></span>`:''}</div>
+    <div class="stats">
+      <span class="stat"><b>${s.criteria.length}</b>criteria</span><span class="stat"><b>${counts.validated}</b>dual-approved</span>
+      <span class="stat"><b>${counts.partial}</b>one approval</span><span class="stat"><b>${counts.changes}</b>changes requested</span>
+      <span class="stat"><b>${counts.open}</b>not reviewed</span></div>
+    ${s.conflicts.filter(x=>x.status==='open').map(x=>`<div class="conflict">Registry conflict: ${esc(x.field)} says ${esc(x.registry)}, criterion ${esc(x.criterion)} says ${esc(x.text)}. The study owner must decide which is right.</div>`).join('')}
+    ${s.release&&s.release.blocking.length?`<ul class="blocks">${s.release.blocking.map(b=>`<li>Not releasable: ${esc(b)}</li>`).join('')}</ul>`:''}
+    <div class="filters" role="group" aria-label="Show">${F.map(([k,l])=>`<button data-f="${k}" aria-pressed="${S.filter===k}">${l}</button>`).join('')}</div>
+    <div class="list">${list.length?list.map(c=>cardHTML(s,c)).join(''):'<div class="empty">Nothing in this view. Try “All”.</div>'}</div>
+    <div class="foot"><span>${esc(s.disclosure)}</span><button class="act" id="copy">Copy decisions as JSON</button><span id="copied"></span></div>
+  </div>`;
+}
+
+// ---- events (delegated) ----
+document.addEventListener('click', async ev=>{
+  const b = ev.target.closest('button'); if(!b) return;
+  if(b.dataset.i!=null){ S.i=+b.dataset.i; try{localStorage.setItem('wb.study',study().nct)}catch(e){} render(); window.scrollTo(0,0); return; }
+  if(b.dataset.f){ S.filter=b.dataset.f; try{localStorage.setItem('wb.filter',S.filter)}catch(e){} render(); return; }
+  if(b.id==='copy'){ copyJSON(); return; }
+  const box = b.closest('.mine'); if(!box) return;
+  const num = box.dataset.num, s = study(), key = s.nct+'|'+num, dr = S.draft[key] = S.draft[key]||{};
+  dr.role = (box.querySelector('input[type=radio]:checked')||{}).value || 'clinical';
+  dr.comment = box.querySelector('textarea').value;
+  if(b.dataset.d){ dr.decision=b.dataset.d; box.querySelectorAll('[data-d]').forEach(x=>x.setAttribute('aria-pressed', x===b)); return; }
+  if(b.dataset.save) await save(s, num, box, b);
+});
+document.addEventListener('input', ev=>{
+  const box = ev.target.closest && ev.target.closest('.mine'); if(!box) return;
+  const key = study().nct+'|'+box.dataset.num, dr = S.draft[key] = S.draft[key]||{};
+  if(ev.target.tagName==='TEXTAREA') dr.comment = ev.target.value;
+  if(ev.target.type==='radio') dr.role = ev.target.value;
+});
+document.addEventListener('change', ev=>{
+  if(ev.target.id==='study-select'){ S.i=+ev.target.value; try{localStorage.setItem('wb.study',study().nct)}catch(e){} render(); }
+});
+
+// ---- writes: one at a time per study document ----
+const queue = {};
+async function save(s, num, box, btn){
+  const c = s.criteria.find(x=>x.num===num), key=s.nct+'|'+num, dr=S.draft[key]||{};
+  const mine = myDecision(s.nct,c), decision = dr.decision || (mine&&mine.sha===c.sha?mine.decision:null);
+  const out = document.getElementById('saved-'+num);
+  if(!decision){ out.textContent='Choose Approve, Needs change or Reject first.'; return; }
+  const comment = (dr.comment!=null?dr.comment:(mine&&mine.comment)||'').slice(0,4000);
+  if(decision!=='approve' && !comment.trim()){ out.textContent='Add a comment saying what needs to change.'; return; }
+  const role = dr.role || (mine&&mine.role) || 'clinical';
+  const others = decisionsFor(s.nct,c).filter(d=>d.current && d.uid!==S.me && d.role===role && d.decision==='approve');
+  const mineStudy = Object.assign({}, (S.reviews[S.me]||{})[s.nct]||{});
+  mineStudy[num] = {role, decision, comment, sha:c.sha, ts:new Date().toISOString()};
+  btn.disabled = true; out.textContent='Saving…';
+  try{
+    await (queue[s.nct] = (queue[s.nct]||Promise.resolve()).then(async ()=>{
+      if(!S.indexed){ await S.db.doc('reviews/'+S.me).set({updated:new Date().toISOString()}); S.indexed=true; }
+      await S.db.doc('reviews/'+S.me+'/studies/'+s.nct).set({decisions: mineStudy});
+    }));
+    S.reviews[S.me] = Object.assign({}, S.reviews[S.me]||{}, {[s.nct]: mineStudy});
+    delete S.draft[key]; S.savedAt[key]=1;
+    out.textContent = others.length ? `Saved. Note: another reviewer already approved as ${role}; the criterion still needs the other role.` : 'Saved';
+    setTimeout(render, 600);
+  }catch(e){
+    btn.disabled = false;
+    out.textContent = e && e.code==='invalid_argument' ? 'You have view-only access, so your decision was not saved. Ask the owner for Contributor access.'
+      : e && e.code==='quota_exceeded' ? 'The review store is full. Ask the owner to archive old decisions.'
+      : 'Could not save right now. Try again in a moment.';
+    if(e && e.code==='invalid_argument'){ S.canWrite=false; }
+  }
+}
+
+async function copyJSON(){
+  const s = study(), dump = {reviews:{}};
+  for(const [uid, st] of Object.entries(S.reviews)) if(st && st[s.nct]) dump.reviews[uid] = {[s.nct]: {decisions: st[s.nct]}};
+  const txt = JSON.stringify(dump, null, 1), out = document.getElementById('copied');
+  try{ await navigator.clipboard.writeText(txt); out.textContent='Copied'; }
+  catch(e){ out.textContent='Copy is blocked here; select the text below.'; const t=document.createElement('textarea'); t.value=txt; t.readOnly=true; out.after(t); t.select(); }
+}
+
+// ---- live data ----
+async function refreshNames(){
+  if(!S.user) return;
+  const ids = Object.keys(S.reviews); if(!ids.length) return;
+  const ps = await S.user.profiles(ids); let changed=false;
+  for(const id of ids){ const n=(ps[id]&&ps[id].name)||''; if(S.names[id]!==n){ S.names[id]=n; changed=true; } }
+  if(changed) render();
+}
+function watchReviewer(uid){
+  if(S.subs[uid] || Object.keys(S.subs).length>=60) return;
+  S.subs[uid] = S.db.collection('reviews/'+uid+'/studies').onSnapshot(q=>{
+    const st={}; q.docs.forEach(d=>{ const v=d.data(); if(v && v.decisions && typeof v.decisions==='object') st[d.id]=v.decisions; });
+    S.reviews[uid]=st; render(); refreshNames();
+  }, ()=>{});
+}
+async function start(){
+  render();
+  const [db, user] = await Promise.all([window.claude?.use?.('db') ?? null, window.claude?.use?.('user') ?? null]).catch(()=>[null,null]);
+  S.db=db; S.user=user;
+  const who = document.getElementById('who');
+  if(!db || !user){ who.textContent='Read-only copy'; document.getElementById('notice').textContent='This copy cannot save decisions. Open the shared Review Desk in Claude to record approvals.'; return; }
+  const me = await user.me(); S.me = me.id;
+  if(!S.me){ who.textContent='Signed out: read-only'; return; }
+  const can = await user.can('data.write');
+  S.canWrite = can !== false;
+  who.textContent = (me.name||'You') + (S.canWrite ? ' · can record decisions' : ' · view only');
+  db.collection('reviews').onSnapshot(q=>{ q.docs.forEach(d=>watchReviewer(d.id)); }, ()=>{});
+  watchReviewer(S.me);
+  render();
+}
+start();
+})();
+</script>

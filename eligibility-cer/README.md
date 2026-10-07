@@ -108,3 +108,16 @@ returning a `ProviderResult(data=<dict matching schema>, ...)`, raise `ProviderR
 `"my_llm": {"class": "my_package.my_module:MyProvider", "model": "...", ...}` under `providers` in `llm.config.json`
 (read keys from environment variables inside your class; anything containing "key"/"token" is excluded from provenance).
 `proposals/llm/replay-example.json` is a hand-written example recording (not model output) used by tests.
+
+## Review Desk, amendments, releases
+* **Review Desk** (`python run.py workbench` → `out/workbench/review-desk.html`, published as a private claude.ai page):
+  every study's criteria, logic, codes and flags; each signed-in reviewer records Approve / Needs change / Reject as
+  Clinical or Informatics. Decisions are stored per reviewer (`reviews/<reviewer>/studies/<NCT>`; each person writes only
+  their own, everyone reads all), pinned to the criterion text hash. Pull them back with
+  `python run.py import-review dump.json` (rows are validated; malformed ones are rejected and listed). The same person
+  cannot supply both roles for one criterion.
+* **Amendments**: `python run.py snapshot` / `fetch` keep every distinct text in `data/history/<NCT>/`; `python run.py changes NCT…`
+  diffs the last two versions criterion by criterion and lists the impact. Approvals of changed text go stale automatically.
+* **Releases**: `python run.py release` writes `out/releases/<NCT>/<id>/` (model, graph, gated CQL per scope with capability
+  manifest, terminology snapshot, reviews, proposals, source) with per-file SHA-256, a rollback pointer and the reasons it is
+  not yet usable; `python run.py verify <dir>` detects any modification. Identical content gives the identical id.

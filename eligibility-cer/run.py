@@ -4,6 +4,8 @@
   python run.py fetch NCT06128837 NCT06357533      # needs ct.gov network access
   python run.py search "lung cancer" --n 5          # list candidate NCT ids
   python run.py build [NCT...]                      # data/raw/*.json -> out/*.cer.json + out/*.html
+  python run.py workbench                             # out/workbench/review-desk.html (publish as the shared Review Desk)
+  python run.py import-review dump.json               # decisions from the Review Desk -> review/NCT*.json
   python run.py release [NCT...]                      # immutable package out/releases/NCT/<id>/ (+ index, rollback pointer)
   python run.py verify out/releases/NCT…/<id>          # integrity check
   python run.py snapshot                            # store current texts under data/history/NCT/<hash>.json
@@ -72,6 +74,8 @@ def main(argv=None):
     s = sub.add_parser("search"); s.add_argument("condition"); s.add_argument("--n", type=int, default=10); s.add_argument("--phase")
     b = sub.add_parser("build"); b.add_argument("ncts", nargs="*")
     gp = sub.add_parser("graph"); gp.add_argument("nct")
+    wb = sub.add_parser("workbench")
+    ir = sub.add_parser("import-review"); ir.add_argument("dump"); ir.add_argument("--dry-run", action="store_true")
     rl = sub.add_parser("release"); rl.add_argument("ncts", nargs="*")
     vf = sub.add_parser("verify"); vf.add_argument("path")
     sn = sub.add_parser("snapshot"); sn.add_argument("ncts", nargs="*")
@@ -110,6 +114,28 @@ def main(argv=None):
             print(f"{n}: {i['criteria_total']} criteria ({i['inclusion']} inc / {i['exclusion']} exc), "
                   f"{i['typed_predicates']} typed predicates, leaves={i['leaves_by_computability']}, "
                   f"flagged={i['flagged_nodes']}, structure_ok={cer['validation']['structure_ok']}")
+    elif a.cmd == "workbench":
+        from cer.workbench import build_payload, render as wb_render
+        ncts = sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(RAW, "NCT*.json")))
+        html = wb_render(build_payload([load_cer(n) for n in ncts]))
+        os.makedirs(os.path.join(OUT, "workbench"), exist_ok=True)
+        path = os.path.join(OUT, "workbench", "review-desk.html")
+        open(path, "w", encoding="utf-8").write(html)
+        print(f"wrote {os.path.relpath(path, HERE)} ({len(html)//1024} KB, {len(ncts)} studies)")
+    elif a.cmd == "import-review":
+        import hashlib
+        from cer.workbench import import_reviews
+        known = {}
+        for p in glob.glob(os.path.join(RAW, "NCT*.json")):
+            n = os.path.basename(p)[:-5]
+            known[n] = {r["display_number"]: hashlib.sha256(r["text"].encode()).hexdigest() for r in build_cer(load(n))["criteria"]}
+        sidecars, bad = import_reviews(json.load(open(a.dump, encoding="utf-8")), known)
+        for n, sc in sidecars.items():
+            print(f"{n}: {len(sc['decisions'])} decision(s)")
+            if not a.dry_run:
+                json.dump(sc, open(os.path.join(HERE, "review", f"{n}.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        for b in bad:
+            print("rejected:", b)
     elif a.cmd == "release":
         from cer.release import build_release
         ncts = a.ncts or sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(RAW, "NCT*.json")))
