@@ -37,13 +37,13 @@ def _pred(p):
     return p
 
 
-def _mk(spec, root, path, counter):
+def _mk(spec, root, path, counter, origin="authored_proposal"):
     counter[0] += 1
     base = {"id": f"{root['id']}#a{counter[0]}", "path": path, "text": root["text"], "source_span": root["source_span"],
-            "flags": [], "review_status": "needs_review", "origin": "authored_proposal"}
+            "flags": [], "review_status": "needs_review", "origin": origin}
     if "op" in spec:
         n = dict(base, type="group", op=spec["op"], logic_basis="authored",
-                 children=[_mk(c, root, f"{path}.{i}", counter) for i, c in enumerate(spec["of"])])
+                 children=[_mk(c, root, f"{path}.{i}", counter, origin) for i, c in enumerate(spec["of"])])
         if spec["op"] == "NOT" and len(n["children"]) != 1:
             raise ValueError("NOT takes exactly one child")
         return n
@@ -77,23 +77,26 @@ def _walk(n, f):
         _walk(c, f)
 
 
-def apply_authored(cer, proposals):
-    """proposals: {display_number: spec}.  Returns list of display numbers applied."""
+def apply_authored(cer, proposals, origin="authored_proposal", skip=(), provenance=None):
+    """proposals: {display_number: spec}.  Returns list of display numbers applied.
+    origin: authored_proposal (hand-written) or llm_proposal; skip: criteria not to touch; provenance: per-criterion dict."""
     by = {r.get("display_number"): i for i, r in enumerate(cer["criteria"])}
     done = []
     for num, spec in proposals.items():
-        if num.startswith("_"):
+        if num.startswith("_") or num in skip:
             continue
         if num not in by:
             raise KeyError(f"authored proposal for unknown criterion {num}")
         old = cer["criteria"][by[num]]
-        new = _mk(spec, old, old["path"], [0])
+        new = _mk(spec, old, old["path"], [0], origin)
         for k in ("display_number", "polarity", "polarity_source", "scope", "branch_hint"):
             if k in old:
                 new[k] = old[k]
         new["id"] = old["id"]                          # identity survives re-interpretation
         new["supersedes_origin"] = old["origin"]
-        new["flags"].append("authored proposal replaces rule-based parse -> requires clinical + informatics review")
+        new["flags"].append(f"{origin.replace('_', ' ')} replaces rule-based parse -> requires clinical + informatics review")
+        if provenance and num in provenance:
+            new["proposal_provenance"] = provenance[num]
         cer["criteria"][by[num]] = new
         done.append(num)
     return done

@@ -4,6 +4,7 @@
   python run.py fetch NCT06128837 NCT06357533      # needs ct.gov network access
   python run.py search "lung cancer" --n 5          # list candidate NCT ids
   python run.py build [NCT...]                      # data/raw/*.json -> out/*.cer.json + out/*.html
+  python run.py propose NCT04547166 [--provider anthropic|replay] [--criteria Exc-4,Exc-5] [--dry-run]
   python run.py graph NCT06520683                   # out/graph/*.jsonld (+ round-trip + SHACL check)
   python run.py review NCT06520683                  # review worklist (+ review/NCT*.json sidecar applied)
   python run.py cql NCT06128837 [--scope S] [--allow-draft]   # -> out/*.cql + manifest
@@ -35,11 +36,25 @@ def load(nct):
         return json.load(f)
 
 
+def apply_llm_proposals(cer, d):
+    """Overlay LLM proposals.  Hand-authored proposals win; proposals whose criterion text changed are stale -> skipped."""
+    import hashlib
+    texts = {r["display_number"]: r["text"] for r in cer["criteria"]}
+    stale = {k for k, v in d["results"].items()
+             if v.get("criterion_text_sha256") != hashlib.sha256(texts.get(k, "").encode()).hexdigest()}
+    prov = {k: {"run": d["run"], **{f: v.get(f) for f in ("model_served", "request_id", "confidence", "uncertainties")}}
+            for k, v in d["results"].items()}
+    return apply_authored(cer, d["proposals"], origin="llm_proposal",
+                          skip=set(cer.get("authored_applied", [])) | stale, provenance=prov)
+
+
 def load_cer(nct):
     """rule-based draft + authored proposals + review sidecar (all optional)"""
     cer = build_cer(load(nct))
     ap = os.path.join(HERE, "authored", f"{nct}.json")
     cer["authored_applied"] = apply_authored(cer, json.load(open(ap, encoding="utf-8"))) if os.path.exists(ap) else []
+    lp = os.path.join(HERE, "proposals", "llm", f"{nct}.json")
+    cer["llm_applied"] = apply_llm_proposals(cer, json.load(open(lp, encoding="utf-8"))) if os.path.exists(lp) else []
     bind_cer(cer)
     cer["conflicts"] = detect(cer)
     rp = os.path.join(HERE, "review", f"{nct}.json")
@@ -53,6 +68,9 @@ def main(argv=None):
     s = sub.add_parser("search"); s.add_argument("condition"); s.add_argument("--n", type=int, default=10); s.add_argument("--phase")
     b = sub.add_parser("build"); b.add_argument("ncts", nargs="*")
     gp = sub.add_parser("graph"); gp.add_argument("nct")
+    pp = sub.add_parser("propose"); pp.add_argument("nct"); pp.add_argument("--provider"); pp.add_argument("--model")
+    pp.add_argument("--criteria", help="comma-separated display numbers (default: narrative/flagged criteria)")
+    pp.add_argument("--dry-run", action="store_true", help="print the prompt and schema for the first target; no API call")
     w = sub.add_parser("review"); w.add_argument("nct")
     c = sub.add_parser("cql"); c.add_argument("nct"); c.add_argument("--scope"); c.add_argument("--allow-draft", action="store_true")
     v = sub.add_parser("evaluate"); v.add_argument("nct"); v.add_argument("evidence"); v.add_argument("--scope")
@@ -82,6 +100,28 @@ def main(argv=None):
             print(f"{n}: {i['criteria_total']} criteria ({i['inclusion']} inc / {i['exclusion']} exc), "
                   f"{i['typed_predicates']} typed predicates, leaves={i['leaves_by_computability']}, "
                   f"flagged={i['flagged_nodes']}, structure_ok={cer['validation']['structure_ok']}")
+    elif a.cmd == "propose":
+        from cer.llm import get_provider
+        from cer.llm.proposer import SYSTEM, default_targets, proposal_schema, propose, user_prompt
+        cer = build_cer(load(a.nct))
+        ap = os.path.join(HERE, "authored", f"{a.nct}.json")
+        if os.path.exists(ap):
+            apply_authored(cer, json.load(open(ap, encoding="utf-8")))
+        targets = a.criteria.split(",") if a.criteria else default_targets(cer)
+        if a.dry_run:
+            by = {r["display_number"]: r for r in cer["criteria"]}
+            print("SYSTEM:\n" + SYSTEM + "\n\nUSER:\n" + user_prompt(by[targets[0]]))
+            print(f"\nSCHEMA bytes: {len(json.dumps(proposal_schema()))}; targets ({len(targets)}): {', '.join(targets)}")
+            return
+        prov = get_provider(a.provider, model=a.model)
+        out = propose(cer, prov, targets)
+        path = os.path.join(HERE, "proposals", "llm", f"{a.nct}.json")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        json.dump(out, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        st = {}
+        for v in out["results"].values():
+            st[v["status"]] = st.get(v["status"], 0) + 1
+        print(f"wrote {path}: {st}")
     elif a.cmd == "graph":
         cer = load_cer(a.nct)
         txt, h, gid = G.to_jsonld(cer)

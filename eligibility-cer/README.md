@@ -82,3 +82,29 @@ Verify every code against the pinned release (terminology lead) before use. SNOM
 
 **Not yet done:** SHACL Core cannot express NOT-arity (enforced in tests); no OMOP/Circe projection; no native graph store; no UMLS/NCIt lookups;
 fidelity numbers need an independently adjudicated reference; PROV-O is modelled for source spans/origin/review but not full activity/agent records.
+
+## LLM proposer (pluggable)
+Nothing in the pipeline called an LLM before this; earlier `authored/*.json` trees were written by hand in-session.
+`cer/llm/` lets an API model **propose** trees; it can never approve them.
+
+```
+python run.py propose NCT04547166 --dry-run                     # show exact prompt + schema; no call
+python run.py propose NCT04547166                               # default provider from llm.config.json
+python run.py propose NCT04547166 --criteria Exc-4,Exc-5 --provider anthropic --model claude-opus-5-5
+python run.py build                                             # proposals/llm/NCT*.json are overlaid as origin=llm_proposal
+```
+* **Claude** (`anthropic` provider, official SDK): structured output (JSON schema), adaptive thinking, effort `high`,
+  server-side refusal fallback `fallbacks: "default"` (set `"fallbacks": null` in `llm.config.json` to turn it off).
+  Credentials come only from the environment: `ANTHROPIC_API_KEY` (or an `ant auth login` profile). `pip install anthropic`.
+* **Fail-closed validation** (local, deterministic): grammar (NOT = 1 child, no empty groups, required fields per kind),
+  every `source_quote` verbatim in the criterion text, every numeric threshold / window present in the text, criterion id echo.
+  Any failure → proposal rejected, criterion left as it was. Refusals, timeouts, bad JSON = technical errors, never clinical results.
+* Hand-authored proposals win over LLM ones; a proposal is skipped automatically if the criterion text changed since it was made.
+* Provenance per criterion: provider/model requested and served, request id, prompt and schema hashes, confidence, uncertainties.
+* Only trial text is sent (`patient_data_sent: false`).
+
+**Add another LLM API**: subclass `cer.llm.base.LLMProvider`, implement `complete_json(system, user, schema, schema_name)`
+returning a `ProviderResult(data=<dict matching schema>, ...)`, raise `ProviderRefusal` / `ProviderError` on failure, then add
+`"my_llm": {"class": "my_package.my_module:MyProvider", "model": "...", ...}` under `providers` in `llm.config.json`
+(read keys from environment variables inside your class; anything containing "key"/"token" is excluded from provenance).
+`proposals/llm/replay-example.json` is a hand-written example recording (not model output) used by tests.

@@ -1,0 +1,237 @@
+{
+ "_comment": "EXAMPLE RECORDING written by hand for tests/demos - NOT real model output. Inc-2 is deliberately wrong (invented threshold) to show fail-closed rejection.",
+ "responses": {
+  "Exc-4": {
+   "criterion": "Exc-4",
+   "confidence": "medium",
+   "uncertainties": [
+    "'initiation of study treatment' and 'randomization' are different anchors",
+    "'more than 30% of the bone marrow area' needs a radiotherapy-plan source"
+   ],
+   "tree": {
+    "kind": "group",
+    "op": "ANY",
+    "children": [
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "radiotherapy",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": {
+       "value": 6,
+       "unit": "month",
+       "anchor": "initiation of study treatment"
+      },
+      "exceptions": [
+       "palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment"
+      ],
+      "source_quote": "Have received radiotherapy within 6 months prior to the initiation of study treatment"
+     },
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "radiotherapy covering more than 30% of the bone marrow area",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": {
+       "value": 28,
+       "unit": "day",
+       "anchor": "randomization"
+      },
+      "exceptions": null,
+      "source_quote": "radiotherapy covering more than 30% of the bone marrow area within 28 days prior to randomization"
+     }
+    ],
+    "predicate": null,
+    "narrative": null,
+    "time_window": null,
+    "exceptions": null,
+    "source_quote": "Have received radiotherapy within 6 months prior to the initiation of study treatment"
+   }
+  },
+  "Exc-5": {
+   "criterion": "Exc-5",
+   "confidence": "high",
+   "uncertainties": [
+    "'severe' pulmonary dysfunction is undefined"
+   ],
+   "tree": {
+    "kind": "group",
+    "op": "ANY",
+    "children": [
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "interstitial pneumonia",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "interstitial pneumonia"
+     },
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "pneumoconiosis",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "pneumoconiosis"
+     },
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "radiation pneumonitis",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "radiation pneumonitis"
+     },
+     {
+      "kind": "predicate",
+      "op": null,
+      "children": null,
+      "predicate": {
+       "kind": "condition",
+       "analyte": null,
+       "concept": "drug-related pneumonitis",
+       "scale": null,
+       "comparator": null,
+       "value": null,
+       "unit": null,
+       "allowed_values": null,
+       "alteration": null,
+       "required_state": null,
+       "uln_multiple": null
+      },
+      "narrative": null,
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "drug-related pneumonitis"
+     },
+     {
+      "kind": "narrative",
+      "op": null,
+      "children": null,
+      "predicate": null,
+      "narrative": {
+       "computability": "human_judgment",
+       "subtype": "severity of pulmonary dysfunction"
+      },
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "severe pulmonary dysfunction"
+     },
+     {
+      "kind": "narrative",
+      "op": null,
+      "children": null,
+      "predicate": null,
+      "narrative": {
+       "computability": "human_judgment",
+       "subtype": "condition interfering with pulmonary-toxicity management"
+      },
+      "time_window": null,
+      "exceptions": null,
+      "source_quote": "any condition that may interfere with the detection and management of suspected drug-related pulmonary toxicity"
+     }
+    ],
+    "predicate": null,
+    "narrative": null,
+    "time_window": null,
+    "exceptions": null,
+    "source_quote": "With a history of or current interstitial pneumonia"
+   }
+  },
+  "Inc-2": {
+   "criterion": "Inc-2",
+   "confidence": "high",
+   "uncertainties": [],
+   "tree": {
+    "kind": "predicate",
+    "op": null,
+    "children": null,
+    "predicate": {
+     "kind": "measurement",
+     "analyte": "life expectancy",
+     "concept": null,
+     "scale": null,
+     "comparator": ">=",
+     "value": 6,
+     "unit": "wk",
+     "allowed_values": null,
+     "alteration": null,
+     "required_state": null,
+     "uln_multiple": null
+    },
+    "narrative": null,
+    "time_window": null,
+    "exceptions": null,
+    "source_quote": "Life expectancy ≥ 12 weeks"
+   }
+  }
+ }
+}

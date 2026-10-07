@@ -1453,6 +1453,7 @@
   "Exc-b4",
   "Exc-b5"
  ],
+ "llm_applied": [],
  "terminology": {
   "bundle_id": "seed-terminology",
   "bundle_version": "0.1.0",
