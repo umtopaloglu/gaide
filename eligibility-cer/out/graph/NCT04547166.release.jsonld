@@ -1,0 +1,1825 @@
+{
+ "@context": {
+  "cer": "https://cer.example.org/vocab#",
+  "prov": "http://www.w3.org/ns/prov#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#"
+ },
+ "@graph": [
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/0115bf82-bbad-5151-98bb-dc40a80edaac",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-12",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "0115bf82-bbad-5151-98bb-dc40a80edaac",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/12",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "With evidence showing the presence of meteorism that cannot be attributed to puncture or recent surgery",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N22437401de754600822a7ac043293695"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N22437401de754600822a7ac043293695",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2844,
+   "cer:start": 2737
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/43130b17-1e24-5145-a7c5-321e0f534382",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:displayNumber": "Exc-14",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "43130b17-1e24-5145-a7c5-321e0f534382",
+   "cer:leadIn": "Presence of any of the following medical conditions within 6 months prior to randomization:",
+   "cer:logicBasis": "explicit",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/ee6c1f9a-a387-5730-a528-1bc4ce4d925f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3a824ec2-c80f-5d51-8212-8cf662474e17"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/137ba28d-03db-559d-8912-f9d670ed9d5e"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3b743ddd-3dcb-516f-be86-ebad819acf40"
+     }
+    ]
+   },
+   "cer:operator": "ANY",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/14",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Presence of any of the following medical conditions within 6 months prior to randomization:",
+   "cer:temporalConstraint": {
+    "@id": "_:Nf58bc89beec44474a2a5729b2ec4465e"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N03b1279b41d542219984c76bb3203557"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N03b1279b41d542219984c76bb3203557",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3030,
+   "cer:start": 2935
+  },
+  {
+   "@id": "_:Nf58bc89beec44474a2a5729b2ec4465e",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "unspecified",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"unspecified\", \"anchor_text\": null, \"direction\": \"lookback\", \"span\": [52, 67], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"month\", \"value\": 6.0}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/24e29c63-a1d6-52f4-ab53-2ea694b49ef7",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-5",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"pneumonitis\"], \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "24e29c63-a1d6-52f4-ab53-2ea694b49ef7",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/5",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "With a history of or current interstitial pneumonia, pneumoconiosis, radiation pneumonitis, drug-related pneumonitis, severe pulmonary dysfunction, or any condition that may interfere with the detection and management of suspected drug-related pulmonary toxicity",
+   "cer:subtype": "clinical condition (terminology unbound)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N774971703f63486c96f46c5b392a43d9"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N774971703f63486c96f46c5b392a43d9",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1826,
+   "cer:start": 1561
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/210cf091-eeba-513b-80d8-8d3fa8595c36",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-4",
+   "cer:exceptions": {
+    "@list": [
+     {
+      "@id": "_:Nf78d169d1a994d119970ab4ce9a728ab"
+     }
+    ]
+   },
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"temporal anchor missing or unrecognised -> evaluate as unknown until resolved\"]"
+   },
+   "cer:identifier": "210cf091-eeba-513b-80d8-8d3fa8595c36",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/4",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have received radiotherapy within 6 months prior to the initiation of study treatment, except for palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment; radiotherapy covering more than 30% of the bone marrow area within 28 days prior to randomization is not allowed.",
+   "cer:subtype": "prior therapy / medication",
+   "cer:temporalConstraint": {
+    "@id": "_:N5ab264a20ac0483793f89063ca230786"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N14de4f8c97a7426599f296941652c649"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N14de4f8c97a7426599f296941652c649",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1560,
+   "cer:start": 1246
+  },
+  {
+   "@id": "_:N5ab264a20ac0483793f89063ca230786",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "initiation of study treatment",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "anchor_missing_or_unrecognised",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"initiation of study treatment\", \"anchor_text\": \"initiation of study treatment\", \"direction\": \"lookback\", \"span\": [27, 85], \"status\": \"anchor_missing_or_unrecognised\", \"unit\": \"month\", \"value\": 6.0}"
+   }
+  },
+  {
+   "@id": "_:Nf78d169d1a994d119970ab4ce9a728ab",
+   "@type": "cer:Exception",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"keyword\": \"except for\", \"span\": [85, 196], \"status\": \"unparsed\", \"text\": \"palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment\"}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3f6056e7-3e21-5e51-8039-7c162ceb887f",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-2",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "3f6056e7-3e21-5e51-8039-7c162ceb887f",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/2",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Life expectancy ≥ 12 weeks",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N2c114edb7f474c54bdf355f43a6b7b1c"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N2c114edb7f474c54bdf355f43a6b7b1c",
+   "@type": "cer:SourceSpan",
+   "cer:end": 147,
+   "cer:start": 118
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175",
+   "@type": "cer:Release",
+   "cer:contains": [
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/840f0c7b-f82e-5a6b-876b-574180eca2a1"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/95298c13-09a3-523a-9ab4-24226107193b"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/338cba16-c9c1-5705-a909-4baab5974e02"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3f6056e7-3e21-5e51-8039-7c162ceb887f"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7dfce80d-8548-5c0a-9ff2-5f751e078f17"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/ce31947a-15fd-5a6d-83c5-ceae1f3f9119"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/501b9217-5642-5193-a65e-2935d538e838"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/fc229e37-4c0e-593e-9684-b67d9cb3067f"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/27c2c067-4bbf-5da7-a767-7810e5a530f2"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/a05cc6f9-b251-5328-8b1b-b9e59b00b989"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/f68e5817-8c0f-5228-b69a-e617becba9af"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7340f66f-ceb0-542e-af52-8b6758f77c46"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/210cf091-eeba-513b-80d8-8d3fa8595c36"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/24e29c63-a1d6-52f4-ab53-2ea694b49ef7"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/25f5297e-56a9-5cd2-9a93-1dea53f8179f"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/455cee13-9dba-5bd0-b9b3-1c44354fb388"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/e4d30f0b-4143-57aa-91ec-0c40a8508ea7"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/2a81caaa-95b2-58f6-a746-6d928b9c9b7e"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/0115bf82-bbad-5151-98bb-dc40a80edaac"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/10ad86a1-df2a-53f1-a212-226652997bef"
+    },
+    {
+     "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/43130b17-1e24-5145-a7c5-321e0f534382"
+    }
+   ],
+   "cer:contentHash": "c41f5a0ea175982ebc6f56aacd1fbbb9bc299d5a079d1c9b5e67f2a748aa1899",
+   "cer:criteria": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/840f0c7b-f82e-5a6b-876b-574180eca2a1"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/95298c13-09a3-523a-9ab4-24226107193b"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/338cba16-c9c1-5705-a909-4baab5974e02"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3f6056e7-3e21-5e51-8039-7c162ceb887f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7dfce80d-8548-5c0a-9ff2-5f751e078f17"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/ce31947a-15fd-5a6d-83c5-ceae1f3f9119"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/501b9217-5642-5193-a65e-2935d538e838"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/fc229e37-4c0e-593e-9684-b67d9cb3067f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/27c2c067-4bbf-5da7-a767-7810e5a530f2"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/a05cc6f9-b251-5328-8b1b-b9e59b00b989"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/f68e5817-8c0f-5228-b69a-e617becba9af"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7340f66f-ceb0-542e-af52-8b6758f77c46"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/210cf091-eeba-513b-80d8-8d3fa8595c36"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/24e29c63-a1d6-52f4-ab53-2ea694b49ef7"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/25f5297e-56a9-5cd2-9a93-1dea53f8179f"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/455cee13-9dba-5bd0-b9b3-1c44354fb388"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/e4d30f0b-4143-57aa-91ec-0c40a8508ea7"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/2a81caaa-95b2-58f6-a746-6d928b9c9b7e"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/0115bf82-bbad-5151-98bb-dc40a80edaac"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/10ad86a1-df2a-53f1-a212-226652997bef"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/43130b17-1e24-5145-a7c5-321e0f534382"
+     }
+    ]
+   },
+   "cer:header": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"authored_applied\": [\"Inc-7\", \"Exc-1\", \"Exc-3\", \"Exc-6\", \"Exc-8\", \"Exc-10\"], \"completeness_disclosure\": \"Registry-based prescreening: the approved protocol and amendments were not available. A registry excerpt is a discovery source, not proof that all enrollment requirements are present.\", \"conflicts\": [], \"ctrp_biomarker_contract\": {\"note\": \"No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.\", \"status\": \"not_supplied\"}, \"inventory\": {\"criteria_total\": 24, \"exclusion\": 14, \"flagged_nodes\": 2, \"inclusion\": 10, \"leaf_nodes\": 28, \"leaves_by_computability\": {\"human_judgment\": 3, \"structured_computable\": 3, \"text_dependent\": 22}, \"typed_predicates\": 3}, \"lifecycle\": {\"note\": \"Draft only: not reviewed; not executable for screening.\", \"status\": \"draft\"}, \"review_summary\": {\"criteria\": 24, \"open_conflicts\": [], \"pending\": [\"Demo-min-age\", \"Demo-max-age\", \"Inc-1\", \"Inc-2\", \"Inc-3\", \"Inc-4\", \"Inc-5\", \"Inc-6\", \"Inc-7\", \"Inc-8\", \"Exc-1\", \"Exc-2\", \"Exc-3\", \"Exc-4\", \"Exc-5\", \"Exc-6\", \"Exc-7\", \"Exc-8\", \"Exc-9\", \"Exc-10\", \"Exc-11\", \"Exc-12\", \"Exc-13\", \"Exc-14\"], \"validated\": 0}, \"schema_version\": \"cer-draft-0.1\", \"scope_items\": [], \"scopes\": [[]], \"source\": {\"content_sha256\": \"da810c71d6e105fa7f0bd6984ad1efa4ae36dcaf2a3bdaf5382e58ee5e558ee4\", \"demographics\": {\"healthy_volunteers\": false, \"maximum_age\": \"75 Years\", \"minimum_age\": \"18 Years\", \"sex\": \"ALL\"}, \"nct_id\": \"NCT04547166\", \"overall_status\": \"RECRUITING\", \"protocol_baseline\": \"registry_excerpt\", \"registry\": \"ClinicalTrials.gov\", \"retrieved_at\": \"2026-10-06T02:00:00Z\", \"retrieved_via\": \"mcp:Clinical_Trials.get_trial_details\", \"source_role\": \"curated_registry_input (pilot proxy for Source B: the approved protocol document was not available)\", \"source_type\": \"B\", \"text_normalized\": \"Key Inclusion Criteria:\\n\\n1. Histopathologically confirmed unresectable metastatic/recurrent colorectal adenocarcinoma\\n2. Life expectancy ≥ 12 weeks\\n3. Have not received any previous systemic anti-tumor drug treatment for metastatic colorectal adenocarcinoma\\n4. For participants who have previously received neoadjuvant/adjuvant therapy, the time from the last treatment to recurrence or progression must exceed 12 months.\\n5. With at least one measurable lesion as assessed by the IRRC per RECIST v1.1, and the measurable lesion should not have been treated locally such as with radiotherapy (a lesion located in an area subjected to previous radiotherapy can also be regarded as a measurable lesion if PD is confirmed)\\n6. Agree to provide sufficient previously preserved tumor tissue specimens or agree to undergo biopsy to collect tumor tissue for some gene test.\\n7. Have an ECOG PS score of 0 or 1 within 7 days prior to receiving the first dose of the study drugs\\n8. Have Adequate major organ functions.\\n\\nKey Exclusion Criteria:\\n\\n1. Have confirmed MSI-H CRC (gene test)\\n2. Subjects with oligometastatic liver disease and presenting the potential for becoming resectable\\n3. Presence of central nervous system (CNS) or leptomeningeal metastases\\n4. Have received radiotherapy within 6 months prior to the initiation of study treatment, except for palliative radiotherapy for bone disorders at least 14 days prior to initiation of study treatment; radiotherapy covering more than 30% of the bone marrow area within 28 days prior to randomization is not allowed.\\n5. With a history of or current interstitial pneumonia, pneumoconiosis, radiation pneumonitis, drug-related pneumonitis, severe pulmonary dysfunction, or any condition that may interfere with the detection and management of suspected drug-related pulmonary toxicity\\n6. Have received major surgery within 28 days prior to randomization. A major surgery in this study is defined as a surgery requiring at least 3 weeks of recovery to be able to receive the treatment in this study\\n7. Previously received intestinal stent implantation, with the stent remaining in place at the screening period\\n8. Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)\\n9. With a history of hypertensive crisis or hypertensive encephalopathy\\n10. With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization\\n11. Requiring long-term treatment with daily administration of nonsteroidal anti-inflammatory drugs (NSAIDs). Occasional use of NSAIDs to relieve medical symptoms such as headache or pyrexia is allowed\\n12. With evidence showing the presence of meteorism that cannot be attributed to puncture or recent surgery\\n13. Presence of severe, unhealed or split wounds and active ulcers or untreated fractures\\n14. Presence of any of the following medical conditions within 6 months prior to randomization:\\n\\n    1. Abdominal or tracheoesophageal fistula, gastrointestinal perforation or intra-abdominal abscess, massive ascites as judged by the investigator (defined as patients requiring drainage or treatment within two weeks)\\n    2. Intestinal obstruction and/or previous clinical signs or symptoms of gastrointestinal obstruction, including incomplete obstruction associated with a preexisting disease or requiring routine parenteral hydration, parenteral nutrition, or tube feeding. 2 months prior to randomization, patients with previous symptoms of incomplete obstruction/obstructive syndrome/signs/symptoms of intestinal obstruction that have improved after treatment may be enrolled in the study as assessed by the investigator\\n    3. Severe, uncontrollable intra-abdominal inflammation requiring clinical intervention as judged by the investigator\\n    4. Major vascular disease (e.g., aortic aneurysm requiring surgical repair or associated with recent peripheral artery thrombosis)\", \"title\": \"Serplulimab + Bevacizumab + XELOX in Metastatic Colorectal Cancer\"}, \"terminology\": {\"bundle_id\": \"seed-terminology\", \"bundle_version\": \"0.1.0\", \"licenses\": {\"HGNC\": \"CC0\", \"LOINC\": \"LOINC licence (free, attribution)\", \"SNOMED CT\": \"SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary\", \"UCUM\": \"UCUM licence (free)\"}, \"sha256\": \"5703d11c29c4233511ce758a38a8cd3e8ea507a541f8f74b31b455f07790733c\", \"stats\": {\"bound\": 1, \"by_relationship\": {\"equivalent\": 1, \"no-map\": 8}, \"unmapped\": 8}, \"status\": \"UNREVIEWED_SEED\", \"value_sets\": {}, \"warning\": \"Seed entered by the authoring assistant from general knowledge. No licensed SNOMED CT/UMLS/NCIt/RxNorm access was available. Every code must be verified against the pinned vocabulary release and reviewed (terminology lead) before use. NCIt and UMLS CUI links are intentionally empty.\"}, \"validation\": {\"meaning\": \"NOT validated: clinical + informatics review still required for every executable criterion.\", \"problems\": [], \"structure_ok\": true}}"
+   },
+   "cer:lifecycleStatus": "draft",
+   "cer:trial": {
+    "@id": "https://cer.example.org/trial/NCT04547166"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "https://cer.example.org/trial/NCT04547166/source/da810c71d6e1"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/501b9217-5642-5193-a65e-2935d538e838",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-5",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "501b9217-5642-5193-a65e-2935d538e838",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/5",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "With at least one measurable lesion as assessed by the IRRC per RECIST v1.1, and the measurable lesion should not have been treated locally such as with radiotherapy (a lesion located in an area subjected to previous radiotherapy can also be regarded as a measurable lesion if PD is confirmed)",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N3ce77649cbd146de8e9726a0272f0c4b"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N3ce77649cbd146de8e9726a0272f0c4b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 718,
+   "cer:start": 422
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/840f0c7b-f82e-5a6b-876b-574180eca2a1",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Demo-min-age",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"binding\": null, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "840f0c7b-f82e-5a6b-876b-574180eca2a1",
+   "cer:nodeType": "predicate",
+   "cer:origin": "imported_structured",
+   "cer:path": "/demo/min-age",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "ct.gov structured field",
+   "cer:predicate": {
+    "@id": "_:N807c966a33c04a7ea713ac49c7e95046"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "minimumAge: 18 Years",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N96df7920a1434357921e386917232d00"
+   },
+   "prov:wasGeneratedBy": "imported_structured"
+  },
+  {
+   "@id": "_:N96df7920a1434357921e386917232d00",
+   "@type": "cer:SourceSpan",
+   "cer:end": 0,
+   "cer:start": 0
+  },
+  {
+   "@id": "_:N807c966a33c04a7ea713ac49c7e95046",
+   "@type": "cer:Predicate",
+   "cer:kind": "age",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "age",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"status\": \"n/a\"}"
+   },
+   "cer:p_unit": "a",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "18.0"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/fc229e37-4c0e-593e-9684-b67d9cb3067f",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-6",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "fc229e37-4c0e-593e-9684-b67d9cb3067f",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/6",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Agree to provide sufficient previously preserved tumor tissue specimens or agree to undergo biopsy to collect tumor tissue for some gene test.",
+   "cer:subtype": "specimen / tissue availability",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N8bc6af134961432a898393bc6a734af5"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N8bc6af134961432a898393bc6a734af5",
+   "@type": "cer:SourceSpan",
+   "cer:end": 864,
+   "cer:start": 719
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:displayNumber": "Exc-8",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"authored proposal replaces rule-based parse -> requires clinical + informatics review\"]"
+   },
+   "cer:identifier": "826e90ee-e3b0-5398-97ca-569f1569bb52",
+   "cer:logicBasis": "authored",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52#a2"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52#a3"
+     }
+    ]
+   },
+   "cer:operator": "ANY",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/8",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N35291bf0358d4a6e91f0c1e2bf5fbb68"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N35291bf0358d4a6e91f0c1e2bf5fbb68",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2298,
+   "cer:start": 2152
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3b743ddd-3dcb-516f-be86-ebad819acf40",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "text_dependent",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "3b743ddd-3dcb-516f-be86-ebad819acf40",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/14/4",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Major vascular disease (e.g., aortic aneurysm requiring surgical repair or associated with recent peripheral artery thrombosis)",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N186920cc924a4077b8dcd427feb42c73"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N186920cc924a4077b8dcd427feb42c73",
+   "@type": "cer:SourceSpan",
+   "cer:end": 4016,
+   "cer:start": 3882
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7dfce80d-8548-5c0a-9ff2-5f751e078f17",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-3",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "7dfce80d-8548-5c0a-9ff2-5f751e078f17",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/3",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have not received any previous systemic anti-tumor drug treatment for metastatic colorectal adenocarcinoma",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N8d16073bb4c3457c95fe424fda5d2428"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N8d16073bb4c3457c95fe424fda5d2428",
+   "@type": "cer:SourceSpan",
+   "cer:end": 257,
+   "cer:start": 148
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:displayNumber": "Exc-3",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"authored proposal replaces rule-based parse -> requires clinical + informatics review\"]"
+   },
+   "cer:identifier": "90535f8d-c76f-5af7-bdc7-346aab61e573",
+   "cer:logicBasis": "authored",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573#a2"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573#a3"
+     }
+    ]
+   },
+   "cer:operator": "ANY",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/3",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Ne998ba1cb0b94b0b81d84c50ed66b31b"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:Ne998ba1cb0b94b0b81d84c50ed66b31b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1245,
+   "cer:start": 1173
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/27c2c067-4bbf-5da7-a767-7810e5a530f2",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Inc-7",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"authored proposal replaces rule-based parse -> requires clinical + informatics review\"]"
+   },
+   "cer:identifier": "27c2c067-4bbf-5da7-a767-7810e5a530f2",
+   "cer:mappingAssertion": {
+    "@id": "_:N931b07b411a24fc985c88f4d80967b9d"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/inc/7.g",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:predicate": {
+    "@id": "_:N5e3fe53cacf44ee1a3ceace874c69279"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have an ECOG PS score of 0 or 1 within 7 days prior to receiving the first dose of the study drugs",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "cer:temporalConstraint": {
+    "@id": "_:N903f1895973f4927a83367652b3fc24c"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N1594f310d8494227a97bca7842bc1f6d"
+   },
+   "prov:wasGeneratedBy": "authored_proposal",
+   "skos:exactMatch": {
+    "@id": "http://loinc.org#89247-1"
+   }
+  },
+  {
+   "@id": "_:N1594f310d8494227a97bca7842bc1f6d",
+   "@type": "cer:SourceSpan",
+   "cer:end": 966,
+   "cer:start": 865
+  },
+  {
+   "@id": "_:N5e3fe53cacf44ee1a3ceace874c69279",
+   "@type": "cer:Predicate",
+   "cer:kind": "ecog",
+   "cer:p_allowed_values": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[0, 1]"
+   },
+   "cer:p_key": "ecog",
+   "cer:p_scale": "ECOG",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"code\": \"89247-1\", \"relationship\": \"equivalent\", \"status\": \"proposed_unreviewed\", \"system\": \"LOINC\"}"
+   }
+  },
+  {
+   "@id": "_:N903f1895973f4927a83367652b3fc24c",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "first dose",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "day",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"first dose\", \"direction\": \"lookback\", \"status\": \"parsed\", \"unit\": \"day\", \"value\": 7}"
+   }
+  },
+  {
+   "@id": "_:N931b07b411a24fc985c88f4d80967b9d",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "equivalent",
+   "cer:targetCode": "89247-1",
+   "cer:targetSystem": "LOINC",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": {\"code_system_uri\": \"http://loinc.org\", \"concept_id\": \"cm:ecog\", \"label\": \"ECOG performance status\", \"primary\": {\"code\": \"89247-1\", \"display\": \"ECOG Performance Status score\", \"system\": \"LOINC\"}, \"semantic_role\": \"observation\"}, \"cross_terminology_links\": {\"NCIt\": null, \"UMLS_CUI\": null}, \"execution_binding\": {\"fhir\": {\"code\": \"89247-1\", \"display\": \"ECOG Performance Status score\", \"system\": \"http://loinc.org\"}, \"omop\": {\"note\": \"map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative\", \"status\": \"requires site vocabulary snapshot\"}}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"named ECOG scale\", \"direction\": \"source_to_target\", \"relationship\": \"equivalent\"}, \"provenance\": {\"confidence\": \"medium\", \"mapper\": \"pattern match (seed bundle)\", \"rationale\": \"named ECOG scale\", \"reviewer\": null, \"status\": \"proposed_unreviewed\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"27c2c067-4bbf-5da7-a767-7810e5a530f2\", \"document_span\": [865, 966], \"inherited_context\": [], \"phrase\": \"ECOG\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/455cee13-9dba-5bd0-b9b3-1c44354fb388",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-7",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "455cee13-9dba-5bd0-b9b3-1c44354fb388",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/7",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Previously received intestinal stent implantation, with the stent remaining in place at the screening period",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Na30e1c17ffe041799e54c35ee7b05ed5"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:Na30e1c17ffe041799e54c35ee7b05ed5",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2151,
+   "cer:start": 2040
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/10ad86a1-df2a-53f1-a212-226652997bef",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-13",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "10ad86a1-df2a-53f1-a212-226652997bef",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/13",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Presence of severe, unhealed or split wounds and active ulcers or untreated fractures",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Na3490450834d4690af70f234da28e155"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:Na3490450834d4690af70f234da28e155",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2934,
+   "cer:start": 2845
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/ce31947a-15fd-5a6d-83c5-ceae1f3f9119",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-4",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "ce31947a-15fd-5a6d-83c5-ceae1f3f9119",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/4",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "For participants who have previously received neoadjuvant/adjuvant therapy, the time from the last treatment to recurrence or progression must exceed 12 months.",
+   "cer:subtype": "prior therapy / medication",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N800d67a9f4414a00ac81862a429c4e98"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N800d67a9f4414a00ac81862a429c4e98",
+   "@type": "cer:SourceSpan",
+   "cer:end": 421,
+   "cer:start": 258
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/25f5297e-56a9-5cd2-9a93-1dea53f8179f",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Exc-6",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"authored proposal replaces rule-based parse -> requires clinical + informatics review\", \"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "25f5297e-56a9-5cd2-9a93-1dea53f8179f",
+   "cer:mappingAssertion": {
+    "@id": "_:N1a728589f7864d749df930ec95742838"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/6",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:predicate": {
+    "@id": "_:N6aee67806a11442f96f7ef5eb0e0fae3"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have received major surgery within 28 days prior to randomization. A major surgery in this study is defined as a surgery requiring at least 3 weeks of recovery to be able to receive the treatment in this study",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "cer:temporalConstraint": {
+    "@id": "_:Ne394e3c8983c42458a346b5ff7dfbae8"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N2f0d6e353c544a05af1b724934be95b9"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N2f0d6e353c544a05af1b724934be95b9",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2039,
+   "cer:start": 1827
+  },
+  {
+   "@id": "_:N6aee67806a11442f96f7ef5eb0e0fae3",
+   "@type": "cer:Predicate",
+   "cer:kind": "condition",
+   "cer:p_concept": "major surgery",
+   "cer:p_key": "condition:major_surgery",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:Ne394e3c8983c42458a346b5ff7dfbae8",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "day",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"direction\": \"lookback\", \"status\": \"parsed\", \"unit\": \"day\", \"value\": 28}"
+   }
+  },
+  {
+   "@id": "_:N1a728589f7864d749df930ec95742838",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"25f5297e-56a9-5cd2-9a93-1dea53f8179f\", \"document_span\": [1827, 2039], \"inherited_context\": [], \"phrase\": \"major surgery\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/3a824ec2-c80f-5d51-8212-8cf662474e17",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "3a824ec2-c80f-5d51-8212-8cf662474e17",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/14/2",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Intestinal obstruction and/or previous clinical signs or symptoms of gastrointestinal obstruction, including incomplete obstruction associated with a preexisting disease or requiring routine parenteral hydration, parenteral nutrition, or tube feeding. 2 months prior to randomization, patients with previous symptoms of incomplete obstruction/obstructive syndrome/signs/symptoms of intestinal obstruction that have improved after treatment may be enrolled in the study as assessed by the investigator",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N02a6345ee1da47a497575c79ef00bab1"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N02a6345ee1da47a497575c79ef00bab1",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3760,
+   "cer:start": 3253
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573#a3",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "90535f8d-c76f-5af7-bdc7-346aab61e573#a3",
+   "cer:mappingAssertion": {
+    "@id": "_:N6fb9cc0946444573a5671bce22ca5970"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/3.1",
+   "cer:predicate": {
+    "@id": "_:N2a0bf94d85fe43c9b5a38f8e3688bdd5"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Nb7ecc62fbf3540b895827c550356736a"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:Nb7ecc62fbf3540b895827c550356736a",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1245,
+   "cer:start": 1173
+  },
+  {
+   "@id": "_:N2a0bf94d85fe43c9b5a38f8e3688bdd5",
+   "@type": "cer:Predicate",
+   "cer:kind": "condition",
+   "cer:p_concept": "leptomeningeal metastases",
+   "cer:p_key": "condition:leptomeningeal_metastases",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:N6fb9cc0946444573a5671bce22ca5970",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"90535f8d-c76f-5af7-bdc7-346aab61e573#a3\", \"document_span\": [1173, 1245], \"inherited_context\": [], \"phrase\": \"leptomeningeal metastases\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb#a3",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "20657332-f675-54ec-9028-d8f4079df4bb#a3",
+   "cer:mappingAssertion": {
+    "@id": "_:N3cb659aa535b42e1ab184c5f0cc1d3bd"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/10.1",
+   "cer:predicate": {
+    "@id": "_:N3e444f35aed347f19a562c5c48bd44c1"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+   "cer:temporalConstraint": {
+    "@id": "_:Nfb57a64eab6b49fd87ad4466cdef238f"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N22c52deec682419e971628ee4f8e380b"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N22c52deec682419e971628ee4f8e380b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2534,
+   "cer:start": 2371
+  },
+  {
+   "@id": "_:N3e444f35aed347f19a562c5c48bd44c1",
+   "@type": "cer:Predicate",
+   "cer:kind": "condition",
+   "cer:p_concept": "blood transfusion",
+   "cer:p_key": "condition:blood_transfusion",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:Nfb57a64eab6b49fd87ad4466cdef238f",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "week",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"direction\": \"lookback\", \"status\": \"parsed\", \"unit\": \"week\", \"value\": 2}"
+   }
+  },
+  {
+   "@id": "_:N3cb659aa535b42e1ab184c5f0cc1d3bd",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"20657332-f675-54ec-9028-d8f4079df4bb#a3\", \"document_span\": [2371, 2534], \"inherited_context\": [], \"phrase\": \"blood transfusion\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:displayNumber": "Exc-10",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"authored proposal replaces rule-based parse -> requires clinical + informatics review\"]"
+   },
+   "cer:identifier": "20657332-f675-54ec-9028-d8f4079df4bb",
+   "cer:logicBasis": "authored",
+   "cer:nodeType": "group",
+   "cer:operand": {
+    "@list": [
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb#a2"
+     },
+     {
+      "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb#a3"
+     }
+    ]
+   },
+   "cer:operator": "ANY",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/10",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Ne7d5bfab36624024a2e65788ea4343a4"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:Ne7d5bfab36624024a2e65788ea4343a4",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2534,
+   "cer:start": 2371
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/source/da810c71d6e1",
+   "@type": "cer:SourceDocument",
+   "cer:baseline": "registry_excerpt",
+   "cer:sha256": "da810c71d6e105fa7f0bd6984ad1efa4ae36dcaf2a3bdaf5382e58ee5e558ee4"
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/ee6c1f9a-a387-5730-a528-1bc4ce4d925f",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"concept_hits\": [\"ascites\"]}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "ee6c1f9a-a387-5730-a528-1bc4ce4d925f",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/14/1",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Abdominal or tracheoesophageal fistula, gastrointestinal perforation or intra-abdominal abscess, massive ascites as judged by the investigator (defined as patients requiring drainage or treatment within two weeks)",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Nf011b1af71c4462992caf7e9a49de0eb"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:Nf011b1af71c4462992caf7e9a49de0eb",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3252,
+   "cer:start": 3032
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/2a81caaa-95b2-58f6-a746-6d928b9c9b7e",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-11",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "2a81caaa-95b2-58f6-a746-6d928b9c9b7e",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/11",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Requiring long-term treatment with daily administration of nonsteroidal anti-inflammatory drugs (NSAIDs). Occasional use of NSAIDs to relieve medical symptoms such as headache or pyrexia is allowed",
+   "cer:subtype": "prior therapy / medication",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N9fc1611d29cc4f8da5a951705432d146"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N9fc1611d29cc4f8da5a951705432d146",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2736,
+   "cer:start": 2535
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/137ba28d-03db-559d-8912-f9d670ed9d5e",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "human_judgment",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "137ba28d-03db-559d-8912-f9d670ed9d5e",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/14/3",
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Severe, uncontrollable intra-abdominal inflammation requiring clinical intervention as judged by the investigator",
+   "cer:subtype": "investigator judgement",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N154a6abe3ec942adb10fc173856fd2bb"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N154a6abe3ec942adb10fc173856fd2bb",
+   "@type": "cer:SourceSpan",
+   "cer:end": 3881,
+   "cer:start": 3761
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/338cba16-c9c1-5705-a909-4baab5974e02",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-1",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "338cba16-c9c1-5705-a909-4baab5974e02",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/1",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Histopathologically confirmed unresectable metastatic/recurrent colorectal adenocarcinoma",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Nfb1b3ad1c1c24c5a9a2907ba4b3189b2"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:Nfb1b3ad1c1c24c5a9a2907ba4b3189b2",
+   "@type": "cer:SourceSpan",
+   "cer:end": 117,
+   "cer:start": 25
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/a05cc6f9-b251-5328-8b1b-b9e59b00b989",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Inc-8",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "a05cc6f9-b251-5328-8b1b-b9e59b00b989",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/inc/8",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "section 'inclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have Adequate major organ functions.",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N3d220a0611f945b4ab7624830dc63cf1"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N3d220a0611f945b4ab7624830dc63cf1",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1006,
+   "cer:start": 967
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52#a2",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "826e90ee-e3b0-5398-97ca-569f1569bb52#a2",
+   "cer:mappingAssertion": {
+    "@id": "_:N14e51e6787d74ab5ad007959c83a794a"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/8.0",
+   "cer:predicate": {
+    "@id": "_:N745d2dfd7b284f7c94c15095e5e6f936"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N5d9b5bbeb1ed4998b7ac93a2203733e8"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N5d9b5bbeb1ed4998b7ac93a2203733e8",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2298,
+   "cer:start": 2152
+  },
+  {
+   "@id": "_:N745d2dfd7b284f7c94c15095e5e6f936",
+   "@type": "cer:Predicate",
+   "cer:kind": "measurement",
+   "cer:p_analyte": "Systolic blood pressure",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "measurement:systolic_blood_pressure",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": "mm[Hg]",
+   "cer:p_value": 150
+  },
+  {
+   "@id": "_:N14e51e6787d74ab5ad007959c83a794a",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"826e90ee-e3b0-5398-97ca-569f1569bb52#a2\", \"document_span\": [2152, 2298], \"inherited_context\": [], \"phrase\": \"Systolic blood pressure\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/20657332-f675-54ec-9028-d8f4079df4bb#a2",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "20657332-f675-54ec-9028-d8f4079df4bb#a2",
+   "cer:mappingAssertion": {
+    "@id": "_:N8a5cdc5a249a46c7a49736c45476a5da"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/10.0",
+   "cer:predicate": {
+    "@id": "_:N06464b01a24c4c3d9b9151c042d0ba46"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "With a history of significant/severe hemorrhage within 1 month prior to randomization, or have received blood transfusion within 2 weeks prior to randomization",
+   "cer:temporalConstraint": {
+    "@id": "_:Na30bea6d650d4bfd88f8011a47864832"
+   },
+   "prov:wasDerivedFrom": {
+    "@id": "_:N82f2d2340cbd4845b6f5ba0809f8a13b"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N82f2d2340cbd4845b6f5ba0809f8a13b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2534,
+   "cer:start": 2371
+  },
+  {
+   "@id": "_:N06464b01a24c4c3d9b9151c042d0ba46",
+   "@type": "cer:Predicate",
+   "cer:kind": "condition",
+   "cer:p_concept": "significant/severe hemorrhage",
+   "cer:p_key": "condition:significant_severe_hemorrhage",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:Na30bea6d650d4bfd88f8011a47864832",
+   "@type": "cer:TemporalConstraint",
+   "cer:t_anchor": "randomisation",
+   "cer:t_direction": "lookback",
+   "cer:t_status": "parsed",
+   "cer:t_unit": "month",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"anchor\": \"randomisation\", \"direction\": \"lookback\", \"status\": \"parsed\", \"unit\": \"month\", \"value\": 1}"
+   }
+  },
+  {
+   "@id": "_:N8a5cdc5a249a46c7a49736c45476a5da",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"20657332-f675-54ec-9028-d8f4079df4bb#a2\", \"document_span\": [2371, 2534], \"inherited_context\": [], \"phrase\": \"significant/severe hemorrhage\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/826e90ee-e3b0-5398-97ca-569f1569bb52#a3",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "826e90ee-e3b0-5398-97ca-569f1569bb52#a3",
+   "cer:mappingAssertion": {
+    "@id": "_:Nd638753de174489ab6bb92234eb909be"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/8.1",
+   "cer:predicate": {
+    "@id": "_:Naaaf92c44fbc43f68ea0c5cb01290fcb"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Uncontrolled hypertension despite clinical treatment (defined as systolic blood pressure ≥ 150 mmHg and/or diastolic blood pressure ≥ 100 mmHg)",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Nf5ff72af49004f9d860b8151ed295225"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:Nf5ff72af49004f9d860b8151ed295225",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2298,
+   "cer:start": 2152
+  },
+  {
+   "@id": "_:Naaaf92c44fbc43f68ea0c5cb01290fcb",
+   "@type": "cer:Predicate",
+   "cer:kind": "measurement",
+   "cer:p_analyte": "Diastolic blood pressure",
+   "cer:p_comparator": ">=",
+   "cer:p_key": "measurement:diastolic_blood_pressure",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   },
+   "cer:p_uln_multiple": false,
+   "cer:p_unit": "mm[Hg]",
+   "cer:p_value": 100
+  },
+  {
+   "@id": "_:Nd638753de174489ab6bb92234eb909be",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"826e90ee-e3b0-5398-97ca-569f1569bb52#a3\", \"document_span\": [2152, 2298], \"inherited_context\": [], \"phrase\": \"Diastolic blood pressure\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/90535f8d-c76f-5af7-bdc7-346aab61e573#a2",
+   "@type": "cer:ExpressionNode",
+   "cer:computability": "structured_computable",
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "90535f8d-c76f-5af7-bdc7-346aab61e573#a2",
+   "cer:mappingAssertion": {
+    "@id": "_:N3aed8c5a390e461da750a5cf5cbbf074"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/3.0",
+   "cer:predicate": {
+    "@id": "_:N68fbc40d9db94b56a5ca46a298fb1468"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:sourceText": "Presence of central nervous system (CNS) or leptomeningeal metastases",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N0bf24ff4abb4428a9ecc027f8556f83d"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N0bf24ff4abb4428a9ecc027f8556f83d",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1245,
+   "cer:start": 1173
+  },
+  {
+   "@id": "_:N68fbc40d9db94b56a5ca46a298fb1468",
+   "@type": "cer:Predicate",
+   "cer:kind": "condition",
+   "cer:p_concept": "CNS metastases",
+   "cer:p_key": "condition:cns_metastases",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:N3aed8c5a390e461da750a5cf5cbbf074",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"90535f8d-c76f-5af7-bdc7-346aab61e573#a2\", \"document_span\": [1173, 1245], \"inherited_context\": [], \"phrase\": \"CNS metastases\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/f68e5817-8c0f-5228-b69a-e617becba9af",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Exc-1",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"biomarker qualifiers not stated: assay (source says 'gene test'), local vs central\", \"authored proposal replaces rule-based parse -> requires clinical + informatics review\", \"terminology unmapped (no-map) -> not executable until bound\"]"
+   },
+   "cer:identifier": "f68e5817-8c0f-5228-b69a-e617becba9af",
+   "cer:mappingAssertion": {
+    "@id": "_:Na34dcbb357db48eaad4c39a9c4ae8c67"
+   },
+   "cer:nodeType": "predicate",
+   "cer:origin": "authored_proposal",
+   "cer:path": "/exc/1",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:predicate": {
+    "@id": "_:Nae053910077546038812fe263d28ffaa"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Have confirmed MSI-H CRC (gene test)",
+   "cer:supersedesOrigin": "interpreted_rule_based",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N9ad7464d201148a588d8cd9893247542"
+   },
+   "prov:wasGeneratedBy": "authored_proposal"
+  },
+  {
+   "@id": "_:N9ad7464d201148a588d8cd9893247542",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1072,
+   "cer:start": 1033
+  },
+  {
+   "@id": "_:Nae053910077546038812fe263d28ffaa",
+   "@type": "cer:Predicate",
+   "cer:kind": "biomarker",
+   "cer:p_alteration": "microsatellite instability",
+   "cer:p_analyte": "MSI",
+   "cer:p_key": "biomarker:msi",
+   "cer:p_qualifier_gaps": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[\"assay (source says 'gene test')\", \"local vs central\"]"
+   },
+   "cer:p_required_state": "high",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"relationship\": \"no-map\", \"status\": \"unmapped\"}"
+   }
+  },
+  {
+   "@id": "_:Na34dcbb357db48eaad4c39a9c4ae8c67",
+   "@type": "cer:MappingAssertion",
+   "cer:relationship": "no-map",
+   "cer:value": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"canonical_binding\": null, \"cross_terminology_links\": {}, \"execution_binding\": {\"fhir\": null, \"omop\": null}, \"lifecycle\": {\"deprecated\": null, \"impacted_releases\": [], \"requires_re_review\": true, \"valid_from\": \"2026-10-06\"}, \"mapping_semantics\": {\"context\": \"no seeded concept\", \"direction\": \"source_to_target\", \"relationship\": \"no-map\"}, \"provenance\": {\"confidence\": null, \"mapper\": \"pattern match\", \"rationale\": \"no seed concept matched; requires terminology-lead mapping\", \"reviewer\": null, \"status\": \"unmapped\", \"tool\": \"eligibility-cer/terminology 0.1.0\"}, \"source_evidence\": {\"criterion_node\": \"f68e5817-8c0f-5228-b69a-e617becba9af\", \"document_span\": [1033, 1072], \"inherited_context\": [], \"phrase\": \"MSI\", \"source_code\": null}, \"value_set\": null}"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/95298c13-09a3-523a-9ab4-24226107193b",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "structured_computable",
+   "cer:displayNumber": "Demo-max-age",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"binding\": null, \"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "95298c13-09a3-523a-9ab4-24226107193b",
+   "cer:nodeType": "predicate",
+   "cer:origin": "imported_structured",
+   "cer:path": "/demo/max-age",
+   "cer:polarity": "inclusion",
+   "cer:polarityBasis": "ct.gov structured field",
+   "cer:predicate": {
+    "@id": "_:N293cb6e6a25c41fe8b198593f546252f"
+   },
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "maximumAge: 75 Years",
+   "prov:wasDerivedFrom": {
+    "@id": "_:Nf51437e3226b4bcead0577ec2a279c7e"
+   },
+   "prov:wasGeneratedBy": "imported_structured"
+  },
+  {
+   "@id": "_:Nf51437e3226b4bcead0577ec2a279c7e",
+   "@type": "cer:SourceSpan",
+   "cer:end": 0,
+   "cer:start": 0
+  },
+  {
+   "@id": "_:N293cb6e6a25c41fe8b198593f546252f",
+   "@type": "cer:Predicate",
+   "cer:kind": "age",
+   "cer:p_comparator": "<=",
+   "cer:p_key": "age",
+   "cer:p_terminology": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"status\": \"n/a\"}"
+   },
+   "cer:p_unit": "a",
+   "cer:p_value": {
+    "@type": "xsd:decimal",
+    "@value": "75.0"
+   }
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/e4d30f0b-4143-57aa-91ec-0c40a8508ea7",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-9",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "e4d30f0b-4143-57aa-91ec-0c40a8508ea7",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/9",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "With a history of hypertensive crisis or hypertensive encephalopathy",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N4edb1d4c936748f7a2c1525d3ffcfc1b"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N4edb1d4c936748f7a2c1525d3ffcfc1b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 2370,
+   "cer:start": 2299
+  },
+  {
+   "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175/node/7340f66f-ceb0-542e-af52-8b6758f77c46",
+   "@type": [
+    "cer:ExpressionNode",
+    "cer:Criterion"
+   ],
+   "cer:computability": "text_dependent",
+   "cer:displayNumber": "Exc-2",
+   "cer:extra": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "{\"review\": {}}"
+   },
+   "cer:flags": {
+    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    "@value": "[]"
+   },
+   "cer:identifier": "7340f66f-ceb0-542e-af52-8b6758f77c46",
+   "cer:nodeType": "narrative",
+   "cer:origin": "interpreted_rule_based",
+   "cer:path": "/exc/2",
+   "cer:polarity": "exclusion",
+   "cer:polarityBasis": "section 'exclusion'",
+   "cer:reviewStatus": "needs_review",
+   "cer:scope": {
+    "@list": []
+   },
+   "cer:sourceText": "Subjects with oligometastatic liver disease and presenting the potential for becoming resectable",
+   "cer:subtype": "unclassified narrative",
+   "prov:wasDerivedFrom": {
+    "@id": "_:N0689c262e44f44f8a3cce9050550709b"
+   },
+   "prov:wasGeneratedBy": "interpreted_rule_based"
+  },
+  {
+   "@id": "_:N0689c262e44f44f8a3cce9050550709b",
+   "@type": "cer:SourceSpan",
+   "cer:end": 1172,
+   "cer:start": 1073
+  }
+ ],
+ "@id": "https://cer.example.org/trial/NCT04547166/release/c41f5a0ea175"
+}

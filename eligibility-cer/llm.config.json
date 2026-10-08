@@ -1,0 +1,9 @@
+{
+ "_comment": "Secrets are NEVER stored here: the anthropic provider reads ANTHROPIC_API_KEY (or an `ant auth login` profile) from the environment. Add your own provider with \"class\": \"package.module:ClassName\".",
+ "default_provider": "anthropic",
+ "providers": {
+  "anthropic": {"model": "claude-opus-5-5", "effort": "high", "max_tokens": 16000, "fallbacks": "default"},
+  "replay":    {"path": "proposals/llm/replay-example.json"}
+ },
+ "proposer": {"max_depth": 3, "send_patient_data": false}
+}

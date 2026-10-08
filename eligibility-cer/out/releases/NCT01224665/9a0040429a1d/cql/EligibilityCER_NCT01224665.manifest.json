@@ -1,0 +1,258 @@
+{
+ "capability": {
+  "approval": null,
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "leaves": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 24
+  },
+  "nodes": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 29
+  },
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path.",
+  "overall_assertion_allowed": false,
+  "per_node": {
+   "0288e077-3c3e-568c-b8f3-53a5a34a358d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "17990300-7e2a-51fc-9f94-98f6c580c155": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "257c8c60-b2e1-5487-aba3-40d9b857ce9b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3048d6e4-5629-559b-9a90-3be3d8d77a67": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3185a888-0406-5527-8b3a-478afdc8c8e0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "337ed2ee-5626-5b5c-822e-9c729a52452c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3a2e1dbd-01a6-5d54-8945-fa43684514de": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "4b4d3605-e58d-5323-a609-23631650df41": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "638f6386-5b86-5309-8bbd-90d6ab9dc2cf": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "677dbaee-ce56-581a-9696-12582c772e1e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7816b329-38fa-5447-87f2-1f2b44372cc3": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "854bdc07-635c-55d0-84f4-9c22c205958a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "8621afbb-bd0b-542d-9209-e882a22683f5": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a0e00d15-dabe-5857-bfdc-ec82cb8402af": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a89d8539-598d-565f-bb8e-95c09173afe7": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a904407b-03ac-52f2-b4d2-e8b9c2325df7": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ac77ce74-ffcb-5b3e-aa25-8445fc2c7f22": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ad17efea-8686-50f3-9006-04c05e732158": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b0ebc5e2-8dd3-51cf-a70e-85c0dedd49df": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b56d0890-a95d-51d5-aaef-49b988a28e86": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b885d146-3bdc-55a7-8faf-37d487a69f5f": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ba0a4241-e6ed-5679-9a8b-388425aa2de9": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c39b432c-7e6e-5cb3-a951-c4f808c4f9f0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c89bbf25-a05f-5b69-90ca-9b99af3bc31f": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d91c2d65-f191-5023-929c-6a04cd9790f8": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "ddb16697-46ab-5100-946f-42bca0613c92": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e3f9572b-15a1-5ab1-aae4-ed038a104fa6": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "f34963c8-3f96-5f1b-8436-203180bf0ae2": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "f4875687-303f-5b7d-becc-0aedbc0e21c6": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   }
+  },
+  "trial_backend_label": "unavailable"
+ },
+ "cer_content_sha256": "e35717329f7f2512a60fac098ee1621b4ae91a9319f25bf04ebd7c0fa7ab898f",
+ "cql_sha256": "b900754bdb2a167b475238875dba82e8245af5f7b1e33821d49a931acaf41eed",
+ "criteria": 18,
+ "executable_typed_leaves": 0,
+ "gated": true,
+ "library": "EligibilityCER_NCT01224665",
+ "parameters": [],
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site",
+ "scope": null,
+ "translator_validated": false,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "d91c2d65-f191-5023-929c-6a04cd9790f8",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 18 Years"
+  },
+  {
+   "criterion": "Demo-max-age",
+   "node": "b56d0890-a95d-51d5-aaef-49b988a28e86",
+   "reason": "not validated (gated)",
+   "text": "maximumAge: 120 Years"
+  },
+  {
+   "criterion": "Pre-b1.b1",
+   "node": "f34963c8-3f96-5f1b-8436-203180bf0ae2",
+   "reason": "not validated (gated)",
+   "text": "Histologically confirmed urothelial carcinoma of the bladder"
+  },
+  {
+   "criterion": "Pre-b1.b2",
+   "node": "7816b329-38fa-5447-87f2-1f2b44372cc3",
+   "reason": "not validated (gated)",
+   "text": "Predominant urothelial carcinoma with any of the following elements allowed:"
+  },
+  {
+   "criterion": "Pre-b1.b3",
+   "node": "c89bbf25-a05f-5b69-90ca-9b99af3bc31f",
+   "reason": "not validated (gated)",
+   "text": "No visceral or nodal metastatic disease proximal to the common iliac bifurcation by 2-view"
+  },
+  {
+   "criterion": "Pre-b1.b4",
+   "node": "4b4d3605-e58d-5323-a609-23631650df41",
+   "reason": "not validated (gated)",
+   "text": "No intra-operative pelvic lymph node involvement (confirmed by frozen section) at or above"
+  },
+  {
+   "criterion": "Pre-b2.b1",
+   "node": "ddb16697-46ab-5100-946f-42bca0613c92",
+   "reason": "not validated (gated)",
+   "text": "Zubrod performance status 0-2"
+  },
+  {
+   "criterion": "Pre-b2.b2",
+   "node": "a0e00d15-dabe-5857-bfdc-ec82cb8402af",
+   "reason": "not validated (gated)",
+   "text": "ALT and AST \u2264 upper limit of normal (ULN)*"
+  },
+  {
+   "criterion": "Pre-b2.b3",
+   "node": "a89d8539-598d-565f-bb8e-95c09173afe7",
+   "reason": "not validated (gated)",
+   "text": "Alkaline phosphatase \u2264 ULN*"
+  },
+  {
+   "criterion": "Pre-b2.b4",
+   "node": "677dbaee-ce56-581a-9696-12582c772e1e",
+   "reason": "not validated (gated)",
+   "text": "Not pregnant or nursing"
+  },
+  {
+   "criterion": "Pre-b2.b5",
+   "node": "8621afbb-bd0b-542d-9209-e882a22683f5",
+   "reason": "not validated (gated)",
+   "text": "Fertile patients must use an effective contraception"
+  },
+  {
+   "criterion": "Pre-b2.b6",
+   "node": "c39b432c-7e6e-5cb3-a951-c4f808c4f9f0",
+   "reason": "not validated (gated)",
+   "text": "No other prior malignancy except adequately treated basal cell or squamous cell skin cance"
+  },
+  {
+   "criterion": "Pre-b2.b7",
+   "node": "ac77ce74-ffcb-5b3e-aa25-8445fc2c7f22",
+   "reason": "not validated (gated)",
+   "text": "Medically suitable to undergo cystectomy, in the physician's opinion NOTE: *Levels may be "
+  },
+  {
+   "criterion": "Pre-b3.b1",
+   "node": "ad17efea-8686-50f3-9006-04c05e732158",
+   "reason": "not validated (gated)",
+   "text": "See Disease Characteristics"
+  },
+  {
+   "criterion": "Pre-b3.b2",
+   "node": "e3f9572b-15a1-5ab1-aae4-ed038a104fa6",
+   "reason": "not validated (gated)",
+   "text": "No prior partial cystectomy for invasive bladder cancer"
+  },
+  {
+   "criterion": "Pre-b3.b3",
+   "node": "3a2e1dbd-01a6-5d54-8945-fa43684514de",
+   "reason": "not validated (gated)",
+   "text": "No prior pelvic surgery that would obviate a complete extended lymphadenectomy (e.g., aort"
+  },
+  {
+   "criterion": "Pre-b3.b4",
+   "node": "854bdc07-635c-55d0-84f4-9c22c205958a",
+   "reason": "not validated (gated)",
+   "text": "Prior neoadjuvant chemotherapy for this cancer allowed provided it has been completed and "
+  },
+  {
+   "criterion": "Pre-b3.b5",
+   "node": "f4875687-303f-5b7d-becc-0aedbc0e21c6",
+   "reason": "not validated (gated)",
+   "text": "No prior pelvic irradiation"
+  }
+ ]
+}

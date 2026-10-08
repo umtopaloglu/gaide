@@ -1,0 +1,8 @@
+{
+  "_comment": "TEMPLATE ONLY (not applied: file name ends .example.json). Copy to review/NCT06520683.json. Every criterion needs an approve from BOTH roles; nothing is auto-approved.",
+  "decisions": [
+    {"criterion": "Inc-b2", "role": "clinical",     "decision": "approve",      "reviewer": "<name>", "date": "2026-10-07", "comment": "ANY over the five risk factors is the intended meaning"},
+    {"criterion": "Inc-b2", "role": "informatics",  "decision": "needs_change", "reviewer": "<name>", "date": "2026-10-07", "comment": "bind the five condition concepts to SNOMED/ICD-O before compile"}
+  ],
+  "release": null
+}

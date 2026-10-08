@@ -1,0 +1,1258 @@
+{
+ "authored_applied": [],
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "conflicts": [],
+ "criteria": [
+  {
+   "binding": null,
+   "computability": "structured_computable",
+   "display_number": "Demo-min-age",
+   "flags": [],
+   "id": "0e9ca6c2-0e73-5e53-8fa9-15f06f024ed7",
+   "origin": "imported_structured",
+   "path": "/demo/min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "predicate": {
+    "comparator": ">=",
+    "key": "age",
+    "kind": "age",
+    "terminology": {
+     "status": "n/a"
+    },
+    "unit": "a",
+    "value": 18.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    0,
+    0
+   ],
+   "text": "minimumAge: 18 Years",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b1",
+   "flags": [],
+   "id": "252f3487-0df1-58cf-9494-c5b9ddae4e1b",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    21,
+    85
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Histologically or cytologically documented non-squamous NSCLC.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b2",
+   "flags": [],
+   "id": "e6e45f02-70d9-5e3b-a637-7901e88c2a2e",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    86,
+    250
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Stage IIIB or IIIC or Stage IV metastatic NSCLC (according to Edition 8 of the AJCC staging manual) not amenable to curative surgery or definitive chemoradiation.",
+   "type": "narrative"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://www.genenames.org",
+         "concept_id": "cm:gene-egfr",
+         "label": "EGFR",
+         "primary": {
+          "code": "HGNC:3236",
+          "display": "EGFR",
+          "system": "HGNC"
+         },
+         "semantic_role": "biomarker"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "HGNC:3236",
+          "display": "EGFR",
+          "system": "http://www.genenames.org"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "direction": "source_to_target",
+         "relationship": "related"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "a5733269-c964-5c4b-ac14-7c41e8cd99ef",
+         "document_span": [
+          251,
+          489
+         ],
+         "inherited_context": [],
+         "phrase": "EGFR",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+       ],
+       "id": "a5733269-c964-5c4b-ac14-7c41e8cd99ef",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b3.p0",
+       "predicate": {
+        "alteration": "mutation",
+        "analyte": "EGFR",
+        "key": "biomarker:egfr",
+        "kind": "biomarker",
+        "qualifier_gaps": [
+         "assay",
+         "specimen/tumour context",
+         "local vs central",
+         "variant class detail"
+        ],
+        "required_state": "absent",
+        "terminology": {
+         "code": "HGNC:3236",
+         "relationship": "related",
+         "status": "proposed_unreviewed",
+         "system": "HGNC"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        251,
+        489
+       ],
+       "sub_span": [
+        23,
+        37
+       ],
+       "text": "EGFR mutations",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://www.genenames.org",
+         "concept_id": "cm:gene-alk",
+         "label": "ALK",
+         "primary": {
+          "code": "HGNC:427",
+          "display": "ALK",
+          "system": "HGNC"
+         },
+         "semantic_role": "biomarker"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "HGNC:427",
+          "display": "ALK",
+          "system": "http://www.genenames.org"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "direction": "source_to_target",
+         "relationship": "related"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "6c6f797c-b8f7-5612-a143-9fb86ebbefc2",
+         "document_span": [
+          251,
+          489
+         ],
+         "inherited_context": [],
+         "phrase": "ALK",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+       ],
+       "id": "6c6f797c-b8f7-5612-a143-9fb86ebbefc2",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b3.p1",
+       "predicate": {
+        "alteration": "rearrangement",
+        "analyte": "ALK",
+        "key": "biomarker:alk",
+        "kind": "biomarker",
+        "qualifier_gaps": [
+         "assay",
+         "specimen/tumour context",
+         "local vs central",
+         "variant class detail"
+        ],
+        "required_state": "absent",
+        "terminology": {
+         "code": "HGNC:427",
+         "relationship": "related",
+         "status": "proposed_unreviewed",
+         "system": "HGNC"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        251,
+        489
+       ],
+       "sub_span": [
+        43,
+        70
+       ],
+       "text": "ALK and ROS1 rearrangements",
+       "type": "predicate"
+      },
+      {
+       "binding": {
+        "canonical_binding": {
+         "code_system_uri": "http://www.genenames.org",
+         "concept_id": "cm:gene-ros1",
+         "label": "ROS1",
+         "primary": {
+          "code": "HGNC:10261",
+          "display": "ROS1",
+          "system": "HGNC"
+         },
+         "semantic_role": "biomarker"
+        },
+        "cross_terminology_links": {
+         "NCIt": null,
+         "UMLS_CUI": null
+        },
+        "execution_binding": {
+         "fhir": {
+          "code": "HGNC:10261",
+          "display": "ROS1",
+          "system": "http://www.genenames.org"
+         },
+         "omop": {
+          "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+          "status": "requires site vocabulary snapshot"
+         }
+        },
+        "lifecycle": {
+         "deprecated": null,
+         "impacted_releases": [],
+         "requires_re_review": true,
+         "valid_from": "2026-10-06"
+        },
+        "mapping_semantics": {
+         "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "direction": "source_to_target",
+         "relationship": "related"
+        },
+        "provenance": {
+         "confidence": "medium",
+         "mapper": "pattern match (seed bundle)",
+         "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+         "reviewer": null,
+         "status": "proposed_unreviewed",
+         "tool": "eligibility-cer/terminology 0.1.0"
+        },
+        "source_evidence": {
+         "criterion_node": "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8",
+         "document_span": [
+          251,
+          489
+         ],
+         "inherited_context": [],
+         "phrase": "ROS1",
+         "source_code": null
+        },
+        "value_set": null
+       },
+       "computability": "structured_computable",
+       "flags": [
+        "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+        "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+       ],
+       "id": "3f73a344-fdbf-5b2e-bf6d-495be5efb5a8",
+       "origin": "interpreted_rule_based",
+       "path": "/inc/b3.p2",
+       "predicate": {
+        "alteration": "rearrangement",
+        "analyte": "ROS1",
+        "key": "biomarker:ros1",
+        "kind": "biomarker",
+        "qualifier_gaps": [
+         "assay",
+         "specimen/tumour context",
+         "local vs central",
+         "variant class detail"
+        ],
+        "required_state": "absent",
+        "terminology": {
+         "code": "HGNC:10261",
+         "relationship": "related",
+         "status": "proposed_unreviewed",
+         "system": "HGNC"
+        }
+       },
+       "review_status": "needs_review",
+       "source_span": [
+        251,
+        489
+       ],
+       "sub_span": [
+        43,
+        70
+       ],
+       "text": "ALK and ROS1 rearrangements",
+       "type": "predicate"
+      }
+     ],
+     "extraction_coverage": 0.42,
+     "flags": [
+      "conjunction assumed between extracted predicates (list/commas)"
+     ],
+     "id": "242d1ace-ec1e-57ad-bc57-3d6e895e1ceb",
+     "logic_basis": "assumed_conjunction",
+     "op": "ALL",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b3",
+     "review_status": "needs_review",
+     "source_span": [
+      251,
+      489
+     ],
+     "text": "Absence of sensitising EGFR mutations, and ALK and ROS1 rearrangements, and absence of documented local test result for any other known genomic alteration for which there are locally approved and available targeted first-line therapies.",
+     "type": "group"
+    },
+    {
+     "computability": "text_dependent",
+     "flags": [],
+     "id": "a9e06ae2-ce57-5c62-b8dd-89bb5006bf26",
+     "origin": "interpreted_rule_based",
+     "path": "/inc/b3.r",
+     "review_status": "needs_review",
+     "source_span": [
+      251,
+      489
+     ],
+     "subtype": "residual text not covered by typed predicates",
+     "text": "Absence of sensitising EGFR mutations, and ALK and ROS1 rearrangements, and absence of documented local test result for any other known genomic alteration for which there are locally approved and available targeted first-line therapies.",
+     "type": "narrative"
+    }
+   ],
+   "display_number": "Inc-b3",
+   "flags": [
+    "~42% of the statement's content words are typed; residual kept as narrative requirement"
+   ],
+   "id": "10eeb293-ff96-5595-9c9d-e31e36c62366",
+   "logic_basis": "residual_added",
+   "op": "ALL",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b3.g",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    251,
+    489
+   ],
+   "text": "Absence of sensitising EGFR mutations, and ALK and ROS1 rearrangements, and absence of documented local test result for any other known genomic alteration for which there are locally approved and available targeted first-line therapies.",
+   "type": "group"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b4",
+   "flags": [],
+   "id": "cc47a04f-18a2-5d88-a3d8-fd61895b5f06",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    490,
+    579
+   ],
+   "subtype": "specimen / tissue availability",
+   "text": "Must provide tumor sample to determine PD-L1 status, TROP2 status and other biomarkers.",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "445a1abf-e51b-5f23-9e77-aab88877e13b",
+     "document_span": [
+      580,
+      638
+     ],
+     "inherited_context": [],
+     "phrase": "PD-L1",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b5",
+   "extraction_coverage": 0.6,
+   "flags": [
+    "biomarker qualifiers not stated in text: assay/antibody clone, specimen/tumour context, local vs central",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "445a1abf-e51b-5f23-9e77-aab88877e13b",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b5.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "alteration": "expression",
+    "analyte": "PD-L1",
+    "comparator": ">=",
+    "key": "biomarker:pd_l1",
+    "kind": "biomarker",
+    "qualifier_gaps": [
+     "assay/antibody clone",
+     "specimen/tumour context",
+     "local vs central"
+    ],
+    "required_state": "score",
+    "score_method": "TC",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    },
+    "unit": "%",
+    "value": 50.0
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    580,
+    638
+   ],
+   "sub_span": [
+    13,
+    56
+   ],
+   "text": "Known tumour PD-L1 expression status defined as TC ≥ 50%",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b6",
+   "flags": [],
+   "id": "5d7d01b4-feb2-5fd2-8134-a96ebedeb5d7",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    639,
+    744
+   ],
+   "subtype": "unclassified narrative",
+   "text": "At least one lesion, not previously irradiated that qualifies as a RECIST 1.1 target lesion at baseline",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": {
+     "code_system_uri": "http://loinc.org",
+     "concept_id": "cm:ecog",
+     "label": "ECOG performance status",
+     "primary": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "LOINC"
+     },
+     "semantic_role": "observation"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "code": "89247-1",
+      "display": "ECOG Performance Status score",
+      "system": "http://loinc.org"
+     },
+     "omop": {
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative",
+      "status": "requires site vocabulary snapshot"
+     }
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "named ECOG scale",
+     "direction": "source_to_target",
+     "relationship": "equivalent"
+    },
+    "provenance": {
+     "confidence": "medium",
+     "mapper": "pattern match (seed bundle)",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "b0deae96-c8dc-5fb5-a4d9-3a20a096ed51",
+     "document_span": [
+      745,
+      780
+     ],
+     "inherited_context": [],
+     "phrase": "ECOG",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Inc-b7",
+   "extraction_coverage": 1.0,
+   "flags": [],
+   "id": "b0deae96-c8dc-5fb5-a4d9-3a20a096ed51",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b7.p0",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "predicate": {
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "kind": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "code": "89247-1",
+     "relationship": "equivalent",
+     "status": "proposed_unreviewed",
+     "system": "LOINC"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    745,
+    780
+   ],
+   "sub_span": [
+    0,
+    33
+   ],
+   "text": "ECOG performance status of 0 or 1",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Inc-b8",
+   "flags": [],
+   "id": "7f0ae0b4-583a-54fe-92f2-826bb88ec53d",
+   "origin": "interpreted_rule_based",
+   "path": "/inc/b8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    781,
+    830
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Adequate bone marrow reserve and organ function",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-b1",
+   "flags": [],
+   "id": "665712cb-9d35-5966-8afb-f247d1057b67",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    853,
+    908
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Prior systemic therapy for advanced/metastatic NSCLC.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-b2",
+   "flags": [],
+   "id": "5ec38ea4-e380-578d-bdbe-657489e1d97d",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    909,
+    1051
+   ],
+   "subtype": "unclassified narrative",
+   "text": "Squamous cell histology, or predominantly squamous cell histology NSCLC; mixed small cell lung cancer; NSCLC histology, sarcomatoid variant.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "display_number": "Exc-b3",
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "id": "16da3e5a-dedc-52fa-9a23-a9a98592057c",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1052,
+    1106
+   ],
+   "subtype": "unclassified narrative",
+   "text": "History of another primary malignancy within 3 years",
+   "time_window": {
+    "anchor": "unspecified",
+    "anchor_text": null,
+    "direction": "lookback",
+    "span": [
+     38,
+     52
+    ],
+    "status": "anchor_missing_or_unrecognised",
+    "unit": "year",
+    "value": 3.0
+   },
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "autoimmune"
+   ],
+   "display_number": "Exc-b4",
+   "exceptions": [
+    {
+     "keyword": "with exceptions",
+     "span": [
+      64,
+      81
+     ],
+     "status": "unparsed",
+     "text": ""
+    }
+   ],
+   "flags": [],
+   "id": "83d1e790-cf8d-5b75-9118-165c73e91820",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1107,
+    1190
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Active or prior documented autoimmune or inflammatory disorders (with exceptions)",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Exc-b5",
+   "flags": [],
+   "id": "d381fb7f-b72c-555f-b0f2-66df02c52273",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1191,
+    1368
+   ],
+   "subtype": "investigator judgement",
+   "text": "Any evidence of severe or uncontrolled disease that makes it undesirable for the participant to participate in the study or that would jeopardies compliance with the protocol.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "pleural effusion"
+   ],
+   "display_number": "Exc-b6",
+   "flags": [],
+   "id": "2cc6cf2d-34ff-5456-96ed-dfe8c4956f67",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1369,
+    1499
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Has clinically significant third-space fluid retention (for example pleural effusion) and is not amenable for repeated drainage.",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "ild",
+    "pneumonitis"
+   ],
+   "display_number": "Exc-b7",
+   "exceptions": [
+    {
+     "keyword": "apart from",
+     "span": [
+      64,
+      128
+     ],
+     "status": "unparsed",
+     "text": "radiation pneumonitis that did not require steroids"
+    }
+   ],
+   "flags": [],
+   "id": "f17cb35f-98be-5a93-98ee-8baebf045f51",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1500,
+    1755
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "History of any ILD/pneumonitis, including radiation pneumonitis (apart from radiation pneumonitis that did not require steroids), or drug-induced ILD/pneumonitis, has current or suspected ILD/pneumonitis that cannot be ruled out by imaging at screening.",
+   "type": "narrative"
+  },
+  {
+   "computability": "human_judgment",
+   "display_number": "Exc-b8",
+   "flags": [],
+   "id": "3efc976f-7fbb-5916-8f68-1eac728668f2",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1756,
+    1838
+   ],
+   "subtype": "investigator judgement",
+   "text": "Has significant pulmonary function compromise, as determined by the investigator",
+   "type": "narrative"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "brain metastas",
+    "spinal cord compression"
+   ],
+   "display_number": "Exc-b9",
+   "exceptions": [
+    {
+     "keyword": "unless",
+     "span": [
+      44,
+      191
+     ],
+     "status": "unparsed",
+     "text": "participant treated and no longer symptomatic, radiologically stable, and who require no treatment with corticosteroids or anticonvulsants"
+    }
+   ],
+   "flags": [],
+   "id": "935f137a-455e-5a4a-9f52-7596649cd8fa",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b9",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    1839,
+    2032
+   ],
+   "subtype": "prior therapy / medication",
+   "text": "Spinal cord compression, or brain metastases unless participant treated and no longer symptomatic, radiologically stable, and who require no treatment with corticosteroids or anticonvulsants.",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "45e3493d-130a-50a1-92a1-e0ddc7163107",
+     "document_span": [
+      2033,
+      2075
+     ],
+     "inherited_context": [],
+     "phrase": "leptomeningeal",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-b10",
+   "flags": [
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "45e3493d-130a-50a1-92a1-e0ddc7163107",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b10",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "predicate": {
+    "concept": "leptomeningeal",
+    "key": "condition:leptomeningeal",
+    "kind": "condition",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2033,
+    2075
+   ],
+   "sub_span": [
+    0,
+    40
+   ],
+   "text": "History of leptomeningeal carcinomatosis",
+   "type": "predicate"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
+     "document_span": [
+      2076,
+      2122
+     ],
+     "inherited_context": [],
+     "phrase": "corneal disease",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-b11",
+   "flags": [
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "0baf13e7-5ccd-54c4-8a01-58b168fd5761",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b11",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "predicate": {
+    "concept": "corneal disease",
+    "key": "condition:corneal_disease",
+    "kind": "condition",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2076,
+    2122
+   ],
+   "sub_span": [
+    0,
+    44
+   ],
+   "text": "Known clinically significant corneal disease",
+   "type": "predicate"
+  },
+  {
+   "computability": "text_dependent",
+   "concept_hits": [
+    "hiv"
+   ],
+   "display_number": "Exc-b12",
+   "flags": [],
+   "id": "2944475d-c2cf-5b6b-b712-ac51fd53ccd6",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b12",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2123,
+    2224
+   ],
+   "subtype": "clinical condition (terminology unbound)",
+   "text": "Active infection with TB, HBV, HCV, Hepatitis A, or known HIV infection that is not well controlled",
+   "type": "narrative"
+  },
+  {
+   "binding": {
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "lifecycle": {
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true,
+     "valid_from": "2026-10-06"
+    },
+    "mapping_semantics": {
+     "context": "no seeded concept",
+     "direction": "source_to_target",
+     "relationship": "no-map"
+    },
+    "provenance": {
+     "confidence": null,
+     "mapper": "pattern match",
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped",
+     "tool": "eligibility-cer/terminology 0.1.0"
+    },
+    "source_evidence": {
+     "criterion_node": "19ab1039-8efb-5d46-8325-17d1194c087a",
+     "document_span": [
+      2225,
+      2269
+     ],
+     "inherited_context": [],
+     "phrase": "immunodeficiency",
+     "source_code": null
+    },
+    "value_set": null
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-b13",
+   "flags": [
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "id": "19ab1039-8efb-5d46-8325-17d1194c087a",
+   "origin": "interpreted_rule_based",
+   "path": "/exc/b13",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "predicate": {
+    "concept": "immunodeficiency",
+    "key": "condition:immunodeficiency",
+    "kind": "condition",
+    "terminology": {
+     "relationship": "no-map",
+     "status": "unmapped"
+    }
+   },
+   "review": {},
+   "review_status": "needs_review",
+   "scope": [],
+   "source_span": [
+    2225,
+    2269
+   ],
+   "sub_span": [
+    0,
+    42
+   ],
+   "text": "History of active primary immunodeficiency",
+   "type": "predicate"
+  }
+ ],
+ "ctrp_biomarker_contract": {
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text.",
+  "status": "not_supplied"
+ },
+ "inventory": {
+  "criteria_total": 22,
+  "exclusion": 13,
+  "flagged_nodes": 10,
+  "inclusion": 9,
+  "leaf_nodes": 25,
+  "leaves_by_computability": {
+   "human_judgment": 2,
+   "structured_computable": 9,
+   "text_dependent": 14
+  },
+  "typed_predicates": 9
+ },
+ "lifecycle": {
+  "note": "Draft only: not reviewed; not executable for screening.",
+  "status": "draft"
+ },
+ "llm_applied": [],
+ "review_summary": {
+  "criteria": 22,
+  "open_conflicts": [],
+  "orphaned_decisions": [],
+  "pending": [
+   "Demo-min-age",
+   "Inc-b1",
+   "Inc-b2",
+   "Inc-b3",
+   "Inc-b4",
+   "Inc-b5",
+   "Inc-b6",
+   "Inc-b7",
+   "Inc-b8",
+   "Exc-b1",
+   "Exc-b2",
+   "Exc-b3",
+   "Exc-b4",
+   "Exc-b5",
+   "Exc-b6",
+   "Exc-b7",
+   "Exc-b8",
+   "Exc-b9",
+   "Exc-b10",
+   "Exc-b11",
+   "Exc-b12",
+   "Exc-b13"
+  ],
+  "stale_decisions": [],
+  "unpinned_decisions": [],
+  "validated": 0
+ },
+ "schema_version": "cer-draft-0.1",
+ "scope_items": [],
+ "scopes": [
+  []
+ ],
+ "source": {
+  "content_sha256": "e9341b774e5cc8adbc6574f0dce5753c0d33cf3f174a3cdcea14beebc48f241c",
+  "demographics": {
+   "healthy_volunteers": false,
+   "maximum_age": null,
+   "minimum_age": "18 Years",
+   "sex": "ALL"
+  },
+  "nct_id": "NCT06357533",
+  "overall_status": "RECRUITING",
+  "protocol_baseline": "registry_excerpt",
+  "registry": "ClinicalTrials.gov",
+  "retrieved_at": "2026-10-06T01:30:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "source_type": "B",
+  "text_normalized": "Inclusion Criteria:\n\n* Histologically or cytologically documented non-squamous NSCLC.\n* Stage IIIB or IIIC or Stage IV metastatic NSCLC (according to Edition 8 of the AJCC staging manual) not amenable to curative surgery or definitive chemoradiation.\n* Absence of sensitising EGFR mutations, and ALK and ROS1 rearrangements, and absence of documented local test result for any other known genomic alteration for which there are locally approved and available targeted first-line therapies.\n* Must provide tumor sample to determine PD-L1 status, TROP2 status and other biomarkers.\n* Known tumour PD-L1 expression status defined as TC ≥ 50%\n* At least one lesion, not previously irradiated that qualifies as a RECIST 1.1 target lesion at baseline\n* ECOG performance status of 0 or 1\n* Adequate bone marrow reserve and organ function\n\nExclusion Criteria:\n\n* Prior systemic therapy for advanced/metastatic NSCLC.\n* Squamous cell histology, or predominantly squamous cell histology NSCLC; mixed small cell lung cancer; NSCLC histology, sarcomatoid variant.\n* History of another primary malignancy within 3 years\n* Active or prior documented autoimmune or inflammatory disorders (with exceptions)\n* Any evidence of severe or uncontrolled disease that makes it undesirable for the participant to participate in the study or that would jeopardies compliance with the protocol.\n* Has clinically significant third-space fluid retention (for example pleural effusion) and is not amenable for repeated drainage.\n* History of any ILD/pneumonitis, including radiation pneumonitis (apart from radiation pneumonitis that did not require steroids), or drug-induced ILD/pneumonitis, has current or suspected ILD/pneumonitis that cannot be ruled out by imaging at screening.\n* Has significant pulmonary function compromise, as determined by the investigator\n* Spinal cord compression, or brain metastases unless participant treated and no longer symptomatic, radiologically stable, and who require no treatment with corticosteroids or anticonvulsants.\n* History of leptomeningeal carcinomatosis\n* Known clinically significant corneal disease\n* Active infection with TB, HBV, HCV, Hepatitis A, or known HIV infection that is not well controlled\n* History of active primary immunodeficiency",
+  "title": "Phase III, Open-label, Study of First-line Dato-DXd in Combination With Rilvegostomig for Advanced Non-squamous NSCLC With High PD-L1 Expression (TC ≥ 50%) and Without Actionable Genomic Alterations"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "licenses": {
+   "HGNC": "CC0",
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "UCUM": "UCUM licence (free)"
+  },
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "stats": {
+   "bound": 4,
+   "by_relationship": {
+    "equivalent": 1,
+    "no-map": 4,
+    "related": 3
+   },
+   "unmapped": 4
+  },
+  "status": "UNREVIEWED_SEED",
+  "value_sets": {},
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty."
+ },
+ "validation": {
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion.",
+  "problems": [],
+  "structure_ok": true
+ }
+}

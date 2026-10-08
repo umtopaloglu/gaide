@@ -1,0 +1,11 @@
+{
+ "nct_id": "NCT06838273",
+ "releases": [
+  {
+   "release_id": "9253f5f95fbfe0aec38fad6a0c9f0f21ea189da791adfbf58def6b147d3c4c89",
+   "status": "candidate",
+   "created": "2026-10-07T02:43:22+00:00",
+   "cer_content_sha256": "6b43ff31aca3c19b85d2de36d07845c92f3ae56b7e9c1b9e7891aab943747b07"
+  }
+ ]
+}

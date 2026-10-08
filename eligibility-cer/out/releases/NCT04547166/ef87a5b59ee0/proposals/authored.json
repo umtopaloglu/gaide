@@ -1,0 +1,107 @@
+{
+ "Inc-7": {
+  "p": {
+   "kind": "ecog",
+   "allowed_values": [
+    0,
+    1
+   ]
+  },
+  "tw": {
+   "value": 7,
+   "unit": "day",
+   "anchor": "first dose"
+  }
+ },
+ "Exc-1": {
+  "p": {
+   "kind": "biomarker",
+   "analyte": "MSI",
+   "alteration": "microsatellite instability",
+   "required_state": "high",
+   "qualifier_gaps": [
+    "assay (source says 'gene test')",
+    "local vs central"
+   ]
+  }
+ },
+ "Exc-3": {
+  "op": "ANY",
+  "of": [
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "CNS metastases"
+    }
+   },
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "leptomeningeal metastases"
+    }
+   }
+  ]
+ },
+ "Exc-6": {
+  "p": {
+   "kind": "condition",
+   "concept": "major surgery"
+  },
+  "tw": {
+   "value": 28,
+   "unit": "day",
+   "anchor": "randomisation"
+  }
+ },
+ "Exc-8": {
+  "op": "ANY",
+  "note": "'defined as' clause read as the operational definition of uncontrolled hypertension; 'despite clinical treatment' not captured",
+  "of": [
+   {
+    "p": {
+     "kind": "measurement",
+     "analyte": "Systolic blood pressure",
+     "comparator": ">=",
+     "value": 150,
+     "unit": "mm[Hg]"
+    }
+   },
+   {
+    "p": {
+     "kind": "measurement",
+     "analyte": "Diastolic blood pressure",
+     "comparator": ">=",
+     "value": 100,
+     "unit": "mm[Hg]"
+    }
+   }
+  ]
+ },
+ "Exc-10": {
+  "op": "ANY",
+  "of": [
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "significant/severe hemorrhage"
+    },
+    "tw": {
+     "value": 1,
+     "unit": "month",
+     "anchor": "randomisation"
+    }
+   },
+   {
+    "p": {
+     "kind": "condition",
+     "concept": "blood transfusion"
+    },
+    "tw": {
+     "value": 2,
+     "unit": "week",
+     "anchor": "randomisation"
+    }
+   }
+  ]
+ }
+}

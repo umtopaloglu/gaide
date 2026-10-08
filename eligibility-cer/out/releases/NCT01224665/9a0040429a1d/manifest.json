@@ -1,0 +1,45 @@
+{
+ "release_id": "9a0040429a1deb46d1d8e9d745db470c5ebcdf53367c4661c7d0185d59e2b3a8",
+ "nct_id": "NCT01224665",
+ "status": "candidate",
+ "usable_for_screening": false,
+ "blocking_reasons": [
+  "lifecycle is 'draft', not 'released'",
+  "18 criteria not dual-approved",
+  "terminology bundle is an unreviewed seed"
+ ],
+ "cer_content_sha256": "e35717329f7f2512a60fac098ee1621b4ae91a9319f25bf04ebd7c0fa7ab898f",
+ "lifecycle": "draft",
+ "graph_canonical_sha256": "e7f54b9898ec7710f0019557d215f7689fa5c1c90711b5f1f18198f935c14ecc",
+ "backend_capability": {
+  "EligibilityCER_NCT01224665": "unavailable"
+ },
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "status": "UNREVIEWED_SEED",
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "previous_release_id": null,
+ "rollback_target": null,
+ "effective_interval": {
+  "from": null,
+  "to": null
+ },
+ "created": "2026-10-07T02:43:15+00:00",
+ "files": {
+  "cer.json": "1a796618688cfb33b606f11b5a9ca79a6258f16130433b271c7684d43b5213ca",
+  "cql/EligibilityCER_NCT01224665.cql": "b900754bdb2a167b475238875dba82e8245af5f7b1e33821d49a931acaf41eed",
+  "cql/EligibilityCER_NCT01224665.manifest.json": "a16c4d78724f07972163f7087cfbf1aeee68d3399c7bf36e8c82da4b0a9b8c03",
+  "graph.release.jsonld": "1f5fee5aa7fa0c95ab7b568cbd55e87ce3caf587c167e33051c5f1bba4d84fbb",
+  "source/ctgov.json": "6f454126631dd9887aff3ea608c9ebe28255c2465bf99b2384a7599eca1e50ff",
+  "terminology/bundle.json": "48518465a3a151c852a8a0402a4504e191fd6db83f8a771d43c006b2c1280238"
+ },
+ "note": "Files are immutable; any change produces a new release id. Patient data is never included."
+}

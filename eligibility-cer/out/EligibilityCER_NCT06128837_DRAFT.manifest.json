@@ -1,0 +1,459 @@
+{
+ "library": "EligibilityCER_NCT06128837_DRAFT",
+ "capability": {
+  "trial_backend_label": "partial",
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "nodes": {
+   "supported": 9,
+   "conditionally_supported": 7,
+   "unsupported": 37
+  },
+  "leaves": {
+   "supported": 8,
+   "conditionally_supported": 4,
+   "unsupported": 35
+  },
+  "per_node": {
+   "e800d2a1-0103-5f8a-8bc6-1c35ce07ef9f": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "3d6d2e48-ee34-586d-81df-c43c90e1516b": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "b1fd9e9a-dac7-54d4-9914-31431785600c": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "4fb2b6e8-0fb9-5b2f-b460-1e41240eec67": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "5bb83ae0-5b62-547a-878c-3b5017339e55": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "434a0ea0-090c-5d9d-919a-881478253cab": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "3b482930-cf1f-574e-bb77-6ea47e473e60": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "99060239-f203-58e8-a9d7-47cee6977a14": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "40587813-4ab2-507b-8e66-e6195608fb7d": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "b42d05f8-d3a7-509a-afbf-ce78b9fd2948": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "ccda739d-675f-5a5c-b623-bc068e1c3262": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "a4f132d3-9281-5fc2-a406-d0b0b47c1686": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "d3efe146-58eb-5774-abdd-0a3a4b1748e6": {
+    "status": "supported",
+    "reason": "group over operands: supported"
+   },
+   "2abf7f13-8d0f-561a-9606-68f9a48a24b0": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "fc854f4f-b1a7-557f-a7aa-8bd0a2b8347c": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "bbd8f320-ac1f-5bd8-a99d-2e9e05ef2b2f": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e": {
+    "status": "unsupported",
+    "reason": "conditional applicability needs an explicit applicability fact"
+   },
+   "203edb5a-ee0d-59bd-a61a-6379a6427ff9": {
+    "status": "unsupported",
+    "reason": "conditional applicability needs an explicit applicability fact"
+   },
+   "81d8071f-6c74-5f1e-8862-a8f1108492b1": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "7ccb9a12-be2d-5f9c-a0e9-a0b6be147e0f": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, supported, unsupported"
+   },
+   "343260a4-f48d-5992-b152-5c9c98bc8214": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "51ad51fe-4cd7-536b-a55f-dea0ada244d9": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "1e756cbb-f140-59e1-939c-ce57f9d6a7cd": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, supported"
+   },
+   "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0": {
+    "status": "unsupported",
+    "reason": "unit missing or not UCUM-like"
+   },
+   "d82c5508-8219-52dd-9c5d-f15db85e2ccc": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, supported, unsupported"
+   },
+   "475f0e55-840b-5115-922b-41e4eeaeeafa": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   },
+   "2ca6766e-600a-5ea1-afec-a6f3f2dd2176": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   },
+   "f6a151f1-1e06-571d-b425-4c5acb115433": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "d933ec44-ee54-58fd-9934-9ba2408b41b6": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "267f280d-bbd7-50ea-8472-d3ec4b3acb33": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "96b63c73-ccdb-5d89-93d4-b1b7708a5c2c": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "25740300-47a7-57fb-a45e-52e28035c769": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "a5db7f0d-ea41-5224-b565-b5fc0ec8d8c4": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "437a0205-2faf-52b8-9880-a0df0a2652fc": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "23fd1405-12d9-545d-8046-7b57dd897655": {
+    "status": "unsupported",
+    "reason": "condition 'arrhythmia' has no terminology binding"
+   },
+   "8b557516-ead0-5980-a8cb-833bbd7660ba": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "aaf382c6-a243-5046-bdb5-873382b4c654": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "66b3e1e0-995f-5f0f-819a-e8a92f6aa90f": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "f489c7a4-c9af-5bef-85c2-ada538c3193e": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "a6845d16-1730-59fc-a5b1-9978cadb7423": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "e39491dc-6e02-5871-9db1-29ebfa4e3b4d": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "cb141b13-a02a-56de-9520-53385f084f13": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "874710d4-0306-5bc5-b29d-92c5800f1479": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   },
+   "e64db985-39e8-5cbd-babd-78552dcbabac": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "8b73a64f-b760-573d-bc65-cea68a4c87ee": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "f71a57f3-49b5-5099-bf01-da0966695eff": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "076724b4-a652-5f79-a3ef-f3a562ba14cf": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "e2243e65-f121-5ac1-b470-db90847ca2a8": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "a335b653-5cf6-5833-ab82-d82343082790": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "1754f7a0-8521-503a-877e-143513f49190": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "34fa272d-3dca-5d10-a2b2-d25560e30348": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "5031ef13-2951-5739-b795-b2df5fe81715": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   },
+   "ab2c3291-5d90-5086-a965-7bc007f69724": {
+    "status": "unsupported",
+    "reason": "human_judgment: investigator judgement"
+   }
+  },
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "overall_assertion_allowed": false,
+  "approval": null,
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."
+ },
+ "scope": null,
+ "gated": false,
+ "criteria": 32,
+ "executable_typed_leaves": 12,
+ "unsupported": [
+  {
+   "criterion": "Inc-2",
+   "node": "b1fd9e9a-dac7-54d4-9914-31431785600c",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients with histologically and/or cytologically confirmed small cell lung cancer;"
+  },
+  {
+   "criterion": "Inc-3",
+   "node": "4fb2b6e8-0fb9-5b2f-b460-1e41240eec67",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Disease progression (CTFI ≥ 30 days and ≤ 6 months) occurred after at least 4 cycles of fi"
+  },
+  {
+   "criterion": "Inc-4",
+   "node": "5bb83ae0-5b62-547a-878c-3b5017339e55",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "At least one evaluable lesion (according to RECIST 1.1 criteria);"
+  },
+  {
+   "criterion": "Inc-5",
+   "node": "434a0ea0-090c-5d9d-919a-881478253cab",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Expected survival time ≥ 3 months;"
+  },
+  {
+   "criterion": "Inc-7",
+   "node": "99060239-f203-58e8-a9d7-47cee6977a14",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients who received no liver metastasis; or the number of liver metastases was ≤ 3 and t"
+  },
+  {
+   "criterion": "Inc-8",
+   "node": "40587813-4ab2-507b-8e66-e6195608fb7d",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Patients with brain metastasis at baseline should meet all the following conditions: lesio"
+  },
+  {
+   "criterion": "Inc-9",
+   "node": "5486b2ca-1ee9-5a43-ac08-0373c8eeab4e",
+   "reason": "conditional applicability needs an explicit applicability fact",
+   "text": "AST and ALT ≤ 3 × ULN"
+  },
+  {
+   "criterion": "Inc-9",
+   "node": "203edb5a-ee0d-59bd-a61a-6379a6427ff9",
+   "reason": "conditional applicability needs an explicit applicability fact",
+   "text": "AST and ALT ≤ 3 × ULN"
+  },
+  {
+   "criterion": "Inc-9",
+   "node": "9c29b86b-971e-598b-8bc4-fe5ad5cf8dd0",
+   "reason": "unit missing or not UCUM-like",
+   "text": "Coagulation function: Prothrombin time - international normalized ratio (PT-INR) < 1.5"
+  },
+  {
+   "criterion": "Inc-10",
+   "node": "475f0e55-840b-5115-922b-41e4eeaeeafa",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Has fully understood and voluntarily signed a written informed consent form for this study"
+  },
+  {
+   "criterion": "Inc-11",
+   "node": "2ca6766e-600a-5ea1-afec-a6f3f2dd2176",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Female subjects of childbearing potential and male subjects with partners of childbearing "
+  },
+  {
+   "criterion": "Exc-1",
+   "node": "f6a151f1-1e06-571d-b425-4c5acb115433",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Pathological diagnosis of compound small cell lung cancer;"
+  },
+  {
+   "criterion": "Exc-2",
+   "node": "d933ec44-ee54-58fd-9934-9ba2408b41b6",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Patients with meningeal metastasis, spinal cord tumor invasion, spinal cord compression sy"
+  },
+  {
+   "criterion": "Exc-3",
+   "node": "267f280d-bbd7-50ea-8472-d3ec4b3acb33",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Superior vena cava syndrome with symptoms or significantly aggravated imaging, which may r"
+  },
+  {
+   "criterion": "Exc-4",
+   "node": "96b63c73-ccdb-5d89-93d4-b1b7708a5c2c",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Active infection (including tuberculosis infection) requiring systemic anti-bacterial, ant"
+  },
+  {
+   "criterion": "Exc-5",
+   "node": "25740300-47a7-57fb-a45e-52e28035c769",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Recurrent symptomatic poorly controlled chronic obstructive pulmonary disease, extensive i"
+  },
+  {
+   "criterion": "Exc-6",
+   "node": "a5db7f0d-ea41-5224-b565-b5fc0ec8d8c4",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Extensive radiation pneumonitis, pulmonary embolism or active massive hemoptysis; Patients"
+  },
+  {
+   "criterion": "Exc-7",
+   "node": "437a0205-2faf-52b8-9880-a0df0a2652fc",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "patients with unstable hypertension (systolic blood pressure ≥ 160 mmHg and/or diastolic b"
+  },
+  {
+   "criterion": "Exc-7",
+   "node": "23fd1405-12d9-545d-8046-7b57dd897655",
+   "reason": "condition 'arrhythmia' has no terminology binding",
+   "text": "patients with unstable severe arrhythmia;"
+  },
+  {
+   "criterion": "Exc-7",
+   "node": "8b557516-ead0-5980-a8cb-833bbd7660ba",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "patients with the following cardiovascular and cerebrovascular diseases within 6 months: m"
+  },
+  {
+   "criterion": "Exc-8",
+   "node": "66b3e1e0-995f-5f0f-819a-e8a92f6aa90f",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "positive hepatitis B virus surface antigen (HBsAg) test,And peripheral blood hepatitis B v"
+  },
+  {
+   "criterion": "Exc-8",
+   "node": "f489c7a4-c9af-5bef-85c2-ada538c3193e",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "hepatitis C virus antibody (HCV-Ab) positive, and hepatitis C virus ribonucleic acid (HCV-"
+  },
+  {
+   "criterion": "Exc-8",
+   "node": "a6845d16-1730-59fc-a5b1-9978cadb7423",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "human immunodeficiency virus antibody (HIV-Ab) detection positive;"
+  },
+  {
+   "criterion": "Exc-9",
+   "node": "cb141b13-a02a-56de-9520-53385f084f13",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Other malignancies within 5 years before screening (except cured stage IB or lower cervica"
+  },
+  {
+   "criterion": "Exc-10",
+   "node": "874710d4-0306-5bc5-b29d-92c5800f1479",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Patients with primary diseases of other important organs (such as nervous system, cardiova"
+  },
+  {
+   "criterion": "Exc-11",
+   "node": "e64db985-39e8-5cbd-babd-78552dcbabac",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Previous treatment with irinotecan or irinotecan modified, topotecan or other topoisomeras"
+  },
+  {
+   "criterion": "Exc-12",
+   "node": "8b73a64f-b760-573d-bc65-cea68a4c87ee",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Known hypersensitivity to irinotecan hydrochloride liposomes or its excipients, structural"
+  },
+  {
+   "criterion": "Exc-13",
+   "node": "f71a57f3-49b5-5099-bf01-da0966695eff",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Those who have been vaccinated with live vaccine or live attenuated vaccine before screeni"
+  },
+  {
+   "criterion": "Exc-14",
+   "node": "076724b4-a652-5f79-a3ef-f3a562ba14cf",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Patients who have received systemic anti-tumor therapy in 4 weeks before randomization;"
+  },
+  {
+   "criterion": "Exc-15",
+   "node": "e2243e65-f121-5ac1-b470-db90847ca2a8",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Patients who have applied other clinical trial drugs/devices before randomization;"
+  },
+  {
+   "criterion": "Exc-16",
+   "node": "a335b653-5cf6-5833-ab82-d82343082790",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Patients who have used strong inducers or strong inhibitors of CYP3A4 and strong inhibitor"
+  },
+  {
+   "criterion": "Exc-17",
+   "node": "1754f7a0-8521-503a-877e-143513f49190",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Adverse reactions caused by previous anti-tumor treatment are not recovered to grade 1 or "
+  },
+  {
+   "criterion": "Exc-18",
+   "node": "34fa272d-3dca-5d10-a2b2-d25560e30348",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "History of drug abuse, drug abuse and/or alcoholism;"
+  },
+  {
+   "criterion": "Exc-19",
+   "node": "5031ef13-2951-5739-b795-b2df5fe81715",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Pregnant or lactating women;"
+  },
+  {
+   "criterion": "Exc-20",
+   "node": "ab2c3291-5d90-5086-a965-7bc007f69724",
+   "reason": "human_judgment: investigator judgement",
+   "text": "Other conditions (including but not limited to unstable nervous system diseases and mental"
+  }
+ ],
+ "parameters": [
+  "LabMaxAgeDays",
+  "ScreeningDate"
+ ],
+ "cql_sha256": "b00ade5732ee161258f115c570dd961078e218c12c43ed5ce5acd13936939639",
+ "cer_content_sha256": "4a73219730ffaf2a1b918d9426bc7b5da1d433fc2c0375c70253d04881da4510",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}

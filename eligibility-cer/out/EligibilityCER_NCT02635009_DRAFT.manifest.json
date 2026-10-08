@@ -1,0 +1,196 @@
+{
+ "library": "EligibilityCER_NCT02635009_DRAFT",
+ "capability": {
+  "trial_backend_label": "partial",
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "nodes": {
+   "supported": 1,
+   "conditionally_supported": 3,
+   "unsupported": 15
+  },
+  "leaves": {
+   "supported": 1,
+   "conditionally_supported": 1,
+   "unsupported": 14
+  },
+  "per_node": {
+   "e2a9bc30-b34b-519b-9599-ea03f1daa3fa": {
+    "status": "supported",
+    "reason": "ok"
+   },
+   "3b180955-5013-51a7-9fc2-853db758d411": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "c5538dbd-b3f2-577f-92e0-94deb38bde5a": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "b9a95056-6cb1-5bd3-98f1-d748d3d242ac": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "48718212-29fb-5f17-947a-d9c68288e9c1": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "48c30d17-a9aa-5062-be57-5153f653c3fa": {
+    "status": "unsupported",
+    "reason": "group over operands: unsupported"
+   },
+   "37306c4c-0b70-5252-abf0-956954a6f7fb": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "eb184992-b3a0-5628-99e2-7015e98fddde": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "462cc110-8f12-53a9-8518-2acfe1450b43": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "18574456-704d-5918-bb6f-fbccbf48a690": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "da02252f-94f3-521b-a96b-28adac928bf7": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "25026dca-5c7b-5676-a930-7174b026ce44": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "6d9773df-0746-5085-b8b3-fe38ccf58ad5": {
+    "status": "unsupported",
+    "reason": "text_dependent: unclassified narrative"
+   },
+   "8447b856-ad09-5f7c-b6de-5a0c33318ee0": {
+    "status": "unsupported",
+    "reason": "text_dependent: clinical condition (terminology unbound)"
+   },
+   "ab80a5c4-cbd8-5750-abdb-7a1b7a241286": {
+    "status": "unsupported",
+    "reason": "text_dependent: prior therapy / medication"
+   },
+   "96b4f838-61d8-59e7-97c2-97ba652f354c": {
+    "status": "conditionally_supported",
+    "reason": "needs site parameter / result reference range / evidence adequacy"
+   },
+   "e7bf4128-2445-5683-874b-a7037b24c009": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, unsupported"
+   },
+   "667a1572-5e25-5de4-ae72-0a78c546effd": {
+    "status": "conditionally_supported",
+    "reason": "group over operands: conditionally_supported, unsupported"
+   },
+   "a4e46c66-7d9d-5e4b-aeba-812bf27aa51d": {
+    "status": "unsupported",
+    "reason": "human_judgment: consent / contraception / pregnancy workflow"
+   }
+  },
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "overall_assertion_allowed": false,
+  "approval": null,
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path."
+ },
+ "scope": null,
+ "gated": false,
+ "criteria": 9,
+ "executable_typed_leaves": 2,
+ "unsupported": [
+  {
+   "criterion": "Exc-b1",
+   "node": "3b180955-5013-51a7-9fc2-853db758d411",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Prior radiotherapy to the head or neck (except for T1 glottic cancer), resulting in overla"
+  },
+  {
+   "criterion": "Exc-b2",
+   "node": "c5538dbd-b3f2-577f-92e0-94deb38bde5a",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Radiographic evidence of central nervous system (CNS) metastases"
+  },
+  {
+   "criterion": "Exc-b3",
+   "node": "b9a95056-6cb1-5bd3-98f1-d748d3d242ac",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Radiographic evidence of hydrocephalus or other architectural distortion of the ventricula"
+  },
+  {
+   "criterion": "Exc-b4",
+   "node": "48718212-29fb-5f17-947a-d9c68288e9c1",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Concurrent atezolizumab permitted"
+  },
+  {
+   "criterion": "Exc-b5",
+   "node": "37306c4c-0b70-5252-abf0-956954a6f7fb",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Concomitant invasive malignancy or invasive malignancy within the past five years other th"
+  },
+  {
+   "criterion": "Exc-b6",
+   "node": "eb184992-b3a0-5628-99e2-7015e98fddde",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Contraindication to MR imaging, such as implanted metal devices or foreign bodies or sever"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "462cc110-8f12-53a9-8518-2acfe1450b43",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Unstable angina and/or congestive heart failure requiring hospitalization within the last "
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "18574456-704d-5918-bb6f-fbccbf48a690",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Transmural myocardial infarction within the last 6 months"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "da02252f-94f3-521b-a96b-28adac928bf7",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Acute bacterial or fungal infection requiring intravenous antibiotics at the time of regis"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "25026dca-5c7b-5676-a930-7174b026ce44",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Hepatic insufficiency resulting in clinical jaundice and/or coagulation defects"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "6d9773df-0746-5085-b8b3-fe38ccf58ad5",
+   "reason": "text_dependent: unclassified narrative",
+   "text": "Chronic obstructive pulmonary disease exacerbation or other respiratory illness requiring "
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "8447b856-ad09-5f7c-b6de-5a0c33318ee0",
+   "reason": "text_dependent: clinical condition (terminology unbound)",
+   "text": "Uncontrolled, clinically significant cardiac arrhythmias"
+  },
+  {
+   "criterion": "Exc-b7",
+   "node": "ab80a5c4-cbd8-5750-abdb-7a1b7a241286",
+   "reason": "text_dependent: prior therapy / medication",
+   "text": "Note: Patients who are HIV positive are eligible, provided they are under treatment with h"
+  },
+  {
+   "criterion": "Exc-b8",
+   "node": "a4e46c66-7d9d-5e4b-aeba-812bf27aa51d",
+   "reason": "human_judgment: consent / contraception / pregnancy workflow",
+   "text": "Pregnant or lactating women or women of childbearing potential and male participants who a"
+  }
+ ],
+ "parameters": [
+  "ConditionCoverageComplete"
+ ],
+ "cql_sha256": "4d627abb106f852b5031ae9904cc79400c2b49e8ba4c8cbc8e022346e4e84e7c",
+ "cer_content_sha256": "5c49cfbd66c16fe37501a0b5d5f4a3e939753da3c81778c23e82d736c66e3ef5",
+ "translator_validated": false,
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site"
+}

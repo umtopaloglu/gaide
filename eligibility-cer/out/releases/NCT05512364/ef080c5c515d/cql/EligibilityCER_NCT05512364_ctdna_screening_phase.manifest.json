@@ -1,0 +1,468 @@
+{
+ "capability": {
+  "approval": null,
+  "backend": "CQL/ELM (FHIR 4.0.1)",
+  "fallback": "unsupported leaf -> result stays unresolved, candidate retained, criterion routed to Tier 2 (narrative) or Tier 3 (human)",
+  "leaves": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 46
+  },
+  "nodes": {
+   "conditionally_supported": 0,
+   "supported": 0,
+   "unsupported": 53
+  },
+  "note": "A site may use the supported subset for prioritisation but cannot assert eligibility/ineligibility through an unsupported path.",
+  "overall_assertion_allowed": false,
+  "per_node": {
+   "1a2c9ca4-2d22-5375-a32a-4cd6f3603c3b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "1ed31b9b-9803-5bd7-a3a0-ca940b4b033d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "1fdfb3cf-3eca-5920-9553-a1fbe4ef54ee": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "24800ceb-f9c2-50db-b2b4-cccaf4c171ae": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "27225a9b-de50-5a8d-b74e-917948d20e11": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "2dd90b83-4fa1-51a0-a873-d5c7a1e4ab24": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "30fbda21-cee4-53a8-8775-bafd22797fd9": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "34c3af87-fff7-598a-ad29-fdd22f73bfef": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "356e5c44-79b4-5b19-857c-02d853fd956c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "39534205-be54-56f0-a02f-8e4507c6b1ad": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3c2055a2-c976-51f3-be9f-0f474f5af42b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3d8336a3-9aa9-5954-b201-577bd44b9da5": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3deb4226-3277-59ae-b7de-e788950b68f3": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "3fe1126e-961a-5629-90bb-462beb18dc4d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5037890a-7149-5ce5-bc28-aa8d41ff8ce8": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "51f7650c-e806-5171-9153-fc17d95ee3fa": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "58466cdb-3836-5e20-941a-fb89113eed81": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5c1ca295-486e-5953-83d3-c6b329e687cf": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "5fe34165-a7b6-5944-b29e-c6924e0371e4": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "604c3772-7cdf-5d24-984a-41c129d0b1cb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "6c697789-3079-5142-8275-fb634e8e277b": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "741690e2-e214-5d18-b6d9-8b57d52067cb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7a796cdf-cea0-5bca-9553-e7b23a718afd": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7bb4d585-0966-542f-91f8-e17b9b9e00a1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7dfbe381-bd0d-5ff4-ac01-06c0a34ad363": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "7f5cf59a-9d8a-56fb-855f-80ce04002c8d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "81d93a00-d844-5056-ad2a-92ae0b8b7c2e": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "878d843d-be91-5c82-ba7e-263e50a7e6cb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "8b98ca5f-bdda-5a31-8c27-0a514b722911": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "9118ad5a-328a-596e-bde9-6cb139e8a1bb": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "967b16b2-4eec-5f7c-8445-0276e1514da7": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a2ad012c-efd9-53ab-afd9-acc7feede0de": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a3a69b8a-96c9-5d36-8d48-d0b89f3b6ee0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a43bb309-15f9-5acc-bcdc-96f102733321": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "a71c94bf-e2d8-57aa-bae3-9c4a7cb6ec6d": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "acb2ba36-840a-5f44-a7b0-087c146c14b8": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b073560d-1960-521f-8851-6c32ff5bbead": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b5593eea-5806-5d56-b044-94c033c3ac23": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "b7615ea4-3d81-5d2c-bb16-dbfd502631e9": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "bf6f23b0-5ca0-5e8d-bebe-701acf665be0": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c158fbcd-3a65-5e25-b87f-f320336d9448": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c3245096-0199-5fae-bf22-4f92c674af49": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c4ee467f-8e7f-5070-ae3b-07ac8e1edd39": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "c7706806-a9ed-5af5-b4fb-477d238cbf81": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d323db21-2216-5378-88f6-380654334965": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "d6e3a8b7-61bd-56ba-9a6a-e71ebe94f1df": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "dbeda5df-71a7-5a0e-911f-d54922d8ef31": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e035368b-8fea-5cbb-a896-50e741164f5c": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e22209e4-b799-568b-8f1f-c059a4f126f1": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "e50b646f-7c83-5d20-bda5-b78bbcbcc174": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "f5b854a5-b88d-567c-8cf3-86682a7b122a": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   },
+   "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183": {
+    "reason": "gated (not validated)",
+    "status": "unsupported"
+   }
+  },
+  "trial_backend_label": "unavailable"
+ },
+ "cer_content_sha256": "7f692e2377ccc92b83760ef86163b40051027e467458449ca3628ec7c70bbcad",
+ "cql_sha256": "0a2b912796484ba6050b14fe6f5da30ae5b997db301133445c73eb11a4991130",
+ "criteria": 37,
+ "executable_typed_leaves": 0,
+ "gated": true,
+ "library": "EligibilityCER_NCT05512364_ctdna_screening_phase",
+ "parameters": [],
+ "pin": "FHIR 4.0.1 / FHIRHelpers 4.0.1 / CQL-to-ELM translator + engine: to be pinned & tested by the site",
+ "scope": "ctDNA screening phase",
+ "translator_validated": false,
+ "unsupported": [
+  {
+   "criterion": "Demo-min-age",
+   "node": "9118ad5a-328a-596e-bde9-6cb139e8a1bb",
+   "reason": "not validated (gated)",
+   "text": "minimumAge: 18 Years"
+  },
+  {
+   "criterion": "Inc-1.b1.b1",
+   "node": "e035368b-8fea-5cbb-a896-50e741164f5c",
+   "reason": "not validated (gated)",
+   "text": "Female (both pre- and postmenopausal) or male patients with histologically confirmed ER po"
+  },
+  {
+   "criterion": "Inc-1.b1.b2",
+   "node": "a43bb309-15f9-5acc-bcdc-96f102733321",
+   "reason": "not validated (gated)",
+   "text": "ER-positive defined as \u2265 10% of cells staining positive for ER or Allred proportion score "
+  },
+  {
+   "criterion": "Inc-1.b1.b3",
+   "node": "e50b646f-7c83-5d20-bda5-b78bbcbcc174",
+   "reason": "not validated (gated)",
+   "text": "HER2-negative defined as a score of 0, 1+ by immunohistochemistry (IHC) or a negative in s"
+  },
+  {
+   "criterion": "Inc-1.b1.b4",
+   "node": "d6e3a8b7-61bd-56ba-9a6a-e71ebe94f1df",
+   "reason": "not validated (gated)",
+   "text": "Intermediate to high risk of recurrence after definitive treatment for early breast cancer"
+  },
+  {
+   "criterion": "Inc-1.b1.b5",
+   "node": "acb2ba36-840a-5f44-a7b0-087c146c14b8",
+   "reason": "not validated (gated)",
+   "text": "Any patient with \u2265 4 positive axillary lymph nodes (stage pN2-3)."
+  },
+  {
+   "criterion": "Inc-1.b1.b6",
+   "node": "51f7650c-e806-5171-9153-fc17d95ee3fa",
+   "reason": "not validated (gated)",
+   "text": "1-3 positive axillary lymph nodes (stage pN1) and either:"
+  },
+  {
+   "criterion": "Inc-1.b1.b7",
+   "node": "c7706806-a9ed-5af5-b4fb-477d238cbf81",
+   "reason": "not validated (gated)",
+   "text": "Tumour size \u2265 5 cm or/and"
+  },
+  {
+   "criterion": "Inc-1.b1.b8",
+   "node": "7f5cf59a-9d8a-56fb-855f-80ce04002c8d",
+   "reason": "not validated (gated)",
+   "text": "Histologic grade 3 or/and"
+  },
+  {
+   "criterion": "Inc-1.b1.b9",
+   "node": "fc79e9ce-c6b0-5c88-9aa9-c1f5ef769183",
+   "reason": "not validated (gated)",
+   "text": "Ki67\u226520% or/and"
+  },
+  {
+   "criterion": "Inc-1.b1.b10",
+   "node": "58466cdb-3836-5e20-941a-fb89113eed81",
+   "reason": "not validated (gated)",
+   "text": "High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Pros"
+  },
+  {
+   "criterion": "Inc-1.b1.b11",
+   "node": "3deb4226-3277-59ae-b7de-e788950b68f3",
+   "reason": "not validated (gated)",
+   "text": "Negative axillary lymph nodes (stage pN0) and tumour size \u2265 2 cm and either"
+  },
+  {
+   "criterion": "Inc-1.b1.b12",
+   "node": "bf6f23b0-5ca0-5e8d-bebe-701acf665be0",
+   "reason": "not validated (gated)",
+   "text": "Histologic grade 3 a or/and"
+  },
+  {
+   "criterion": "Inc-1.b1.b13",
+   "node": "a4d37c9d-3d5f-5add-a2e7-4c016dd78daa",
+   "reason": "not validated (gated)",
+   "text": "Ki67\u226520% and/or"
+  },
+  {
+   "criterion": "Inc-1.b1.b14",
+   "node": "30fbda21-cee4-53a8-8775-bafd22797fd9",
+   "reason": "not validated (gated)",
+   "text": "High genomic risk defined as Oncotype Dx Recurrence Score >=26, Mammaprint high risk, Pros"
+  },
+  {
+   "criterion": "Inc-1.b1.b15",
+   "node": "b5593eea-5806-5d56-b044-94c033c3ac23",
+   "reason": "not validated (gated)",
+   "text": "Patient may have received neoadjuvant endocrine therapy or neoadjuvant chemotherapy provid"
+  },
+  {
+   "criterion": "Inc-1.b1.b16",
+   "node": "dbeda5df-71a7-5a0e-911f-d54922d8ef31",
+   "reason": "not validated (gated)",
+   "text": "The initial tumour and/or the tumour after surgery meet the criteria above defined for pat"
+  },
+  {
+   "criterion": "Inc-1.b1.b17",
+   "node": "81d93a00-d844-5056-ad2a-92ae0b8b7c2e",
+   "reason": "not validated (gated)",
+   "text": "There is no pathological complete response, defined as no invasive disease in the breast a"
+  },
+  {
+   "criterion": "Inc-1.b1.b18",
+   "node": "e22209e4-b799-568b-8f1f-c059a4f126f1",
+   "reason": "not validated (gated)",
+   "text": "Age \u226518 years"
+  },
+  {
+   "criterion": "Inc-1.b1.b19",
+   "node": "d323db21-2216-5378-88f6-380654334965",
+   "reason": "not validated (gated)",
+   "text": "Patients must have received at least 1 year and up to 7.5 years of ET and planned to conti"
+  },
+  {
+   "criterion": "Inc-1.b1.b20",
+   "node": "7dfbe381-bd0d-5ff4-ac01-06c0a34ad363",
+   "reason": "not validated (gated)",
+   "text": "Previous adjuvant CDK4/6 inhibitor or PARP-inhibitor treatment is allowed provided it is c"
+  },
+  {
+   "criterion": "Inc-1.b1.b21",
+   "node": "a71c94bf-e2d8-57aa-bae3-9c4a7cb6ec6d",
+   "reason": "not validated (gated)",
+   "text": "Invasive multicentric / multifocal disease is allowed provided that all the tested foci ar"
+  },
+  {
+   "criterion": "Inc-1.b1.b22",
+   "node": "5c1ca295-486e-5953-83d3-c6b329e687cf",
+   "reason": "not validated (gated)",
+   "text": "Available tumour sample from resected or biopsied tissue, with a tumour content of \u226520% (3"
+  },
+  {
+   "criterion": "Inc-1.b1.b23",
+   "node": "b7615ea4-3d81-5d2c-bb16-dbfd502631e9",
+   "reason": "not validated (gated)",
+   "text": "Core Needle Biopsies (CNB): recommended minimum of four (4) cores per block"
+  },
+  {
+   "criterion": "Inc-1.b1.b24",
+   "node": "27225a9b-de50-5a8d-b74e-917948d20e11",
+   "reason": "not validated (gated)",
+   "text": "Fine Needle Aspirates (FNA) are not accepted"
+  },
+  {
+   "criterion": "Inc-1.b1.b25",
+   "node": "604c3772-7cdf-5d24-984a-41c129d0b1cb",
+   "reason": "not validated (gated)",
+   "text": "The following sample types are acceptable:"
+  },
+  {
+   "criterion": "Inc-1.b1.b26",
+   "node": "c158fbcd-3a65-5e25-b87f-f320336d9448",
+   "reason": "not validated (gated)",
+   "text": "6-10 unstained slides (charged and unbaked) of 10\u03bcm each (or 12-19 unstained slides at 5 \u03bc"
+  },
+  {
+   "criterion": "Inc-1.b1.b27",
+   "node": "f5b854a5-b88d-567c-8cf3-86682a7b122a",
+   "reason": "not validated (gated)",
+   "text": "FFPE tissue block with 25mm2 minimum surface area"
+  },
+  {
+   "criterion": "Inc-1.b1.b28",
+   "node": "967b16b2-4eec-5f7c-8445-0276e1514da7",
+   "reason": "not validated (gated)",
+   "text": "Written informed consent must be given according to ICH/GCP, and national/local regulation"
+  },
+  {
+   "criterion": "Inc-1.b2.b1",
+   "node": "1fdfb3cf-3eca-5920-9553-a1fbe4ef54ee",
+   "reason": "not validated (gated)",
+   "text": "Suspected recurrent disease or known conflicts with the inclusion and exclusion criteria f"
+  },
+  {
+   "criterion": "Inc-1.b2.b2",
+   "node": "3fe1126e-961a-5629-90bb-462beb18dc4d",
+   "reason": "not validated (gated)",
+   "text": "Prior treatment with any SERD or investigational ER antagonist"
+  },
+  {
+   "criterion": "Inc-1.b2.b3",
+   "node": "1a2c9ca4-2d22-5375-a32a-4cd6f3603c3b",
+   "reason": "not validated (gated)",
+   "text": "Previous history of invasive breast cancer"
+  },
+  {
+   "criterion": "Inc-1.b2.b4",
+   "node": "c4ee467f-8e7f-5070-ae3b-07ac8e1edd39",
+   "reason": "not validated (gated)",
+   "text": "Previous history of any other malignancy within the last 5 years, except for adequately tr"
+  },
+  {
+   "criterion": "Inc-1.b2.b5",
+   "node": "5037890a-7149-5ce5-bc28-aa8d41ff8ce8",
+   "reason": "not validated (gated)",
+   "text": "Previous history of bone marrow and/or organ transplant"
+  },
+  {
+   "criterion": "Inc-1.b2.b6",
+   "node": "741690e2-e214-5d18-b6d9-8b57d52067cb",
+   "reason": "not validated (gated)",
+   "text": "Bilateral invasive breast cancer"
+  },
+  {
+   "criterion": "Inc-1.b2.b7",
+   "node": "356e5c44-79b4-5b19-857c-02d853fd956c",
+   "reason": "not validated (gated)",
+   "text": "Participation in another clinical study, with the exception of the SURVIVE study and obser"
+  },
+  {
+   "criterion": "Inc-1.b2.b8",
+   "node": "7a796cdf-cea0-5bca-9553-e7b23a718afd",
+   "reason": "not validated (gated)",
+   "text": "Blood transfusion within 3 months prior to registration or during the screening."
+  }
+ ]
+}

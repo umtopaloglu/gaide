@@ -1,0 +1,2230 @@
+{
+ "schema_version": "cer-draft-0.1",
+ "lifecycle": {
+  "status": "draft",
+  "note": "Draft only: not reviewed; not executable for screening."
+ },
+ "source": {
+  "source_type": "B",
+  "source_role": "Source B: ClinicalTrials.gov eligibility text (designated as the Source B document by the program owner)",
+  "registry": "ClinicalTrials.gov",
+  "nct_id": "NCT06838273",
+  "title": "BL-B01D1 + Osimertinib vs Osimertinib, EGFR-mutated NSCLC (PANKU-Lung04)",
+  "overall_status": "RECRUITING",
+  "retrieved_at": "2026-10-06T02:00:00Z",
+  "retrieved_via": "mcp:Clinical_Trials.get_trial_details",
+  "content_sha256": "6b43ff31aca3c19b85d2de36d07845c92f3ae56b7e9c1b9e7891aab943747b07",
+  "protocol_baseline": "registry_excerpt",
+  "demographics": {
+   "minimum_age": "18 Years",
+   "maximum_age": null,
+   "sex": "ALL",
+   "healthy_volunteers": false
+  },
+  "text_normalized": "Inclusion Criteria:\n\n1. Sign the informed consent form voluntarily and follow the protocol requirements;\n2. Age ≥18 years old;\n3. Expected survival time ≥3 months;\n4. Patients with unresectable or radical radiotherapy for locally advanced non-small cell lung cancer;\n5. Documentation of EGFR sensitive mutations detected from tumor tissue or blood samples;\n6. Consent to provide archived tumor tissue samples or fresh tissue samples of primary or metastatic lesions at or after diagnosis for testing, including EGFR mutation type;\n7. At least one measurable lesion meeting the RECIST v1.1 definition was required;\n8. ECOG 0 or 1;\n9. The toxicity of previous antineoplastic therapy has returned to ≤ grade 1 as defined by NCI-CTCAE v5.0;\n10. No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;\n11. The organ function level must meet the requirements on the premise that blood transfusion and colony-stimulating factor are not allowed within 14 days before the screening period;\n12. Urinary protein ≤2+ or < 1000mg/24h;\n13. For premenopausal women of childbearing potential, a pregnancy test must be performed within 7 days before the initiation of treatment, serum pregnancy must be negative, and the patient must not be lactating; All enrolled patients (male or female) were advised to use adequate barrier contraception throughout the treatment cycle and for 6 months after the end of treatment.\n\nExclusion Criteria:\n\n1. Previous histologic or cytological evidence of small cell or mixed small/non-small cell components;\n2. Patients with previous systemic therapy;\n3. Patients had received EGFR-TKI therapy;\n4. Studies received radical radiotherapy, major surgery, and large area radiotherapy within 4 weeks before randomization;\n5. History of severe heart disease and cerebrovascular disease;\n6. Unstable thrombotic events requiring therapeutic intervention within 6 months before screening; Infusion-related thrombosis was excluded;\n7. QT prolongation, complete left bundle branch block, III degree atrioventricular block, frequent and uncontrollable arrhythmia;\n8. Were diagnosed with active malignancy within 3 years before randomization;\n9. Hypertension poorly controlled by two antihypertensive drugs (systolic blood pressure > 150 mmHg or diastolic blood pressure > 100 mmHg);\n10. Patients with poor glycemic control;\n11. A history of ILD requiring steroid therapy, or current ILD or grade ≥2 radiation pneumonitis, or a suspicion of such disease;\n12. Complicated with pulmonary diseases leading to clinically severe respiratory function impairment;\n13. Patients with active central nervous system metastasis;\n14. Had a severe infection within 4 weeks before randomization;\n15. Patients with massive or symptomatic effusions or poorly controlled effusions;\n16. Imaging examination showed that the tumor had invaded or enveloped the large blood vessels in the abdomen, chest, neck, and pharynx;\n17. Serious unhealed wound, ulcer, or fracture within 4 weeks before signing the informed consent;\n18. Subjects with clinically significant bleeding or obvious bleeding tendency within 4 weeks before signing the informed consent;\n19. Patients with a history of inflammatory bowel disease, extensive bowel resection, immune enteritis, intestinal obstruction or chronic diarrhea;\n20. Patients with a history of allergy to recombinant humanized antibodies or to any of the excipients of BL-B01D1;\n21. Had autologous or allogeneic stem cell transplantation history;\n22. Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C virus infection;\n23. A history of severe neurological or psychiatric illness;\n24. Received other unmarketed investigational drugs or treatments within 4 weeks before randomization;\n25. Subjects scheduled for vaccination or who received live vaccine within 28 days before study randomization;\n26. Other circumstances in which the investigator considered it inappropriate to participate in the trial because of complications or other circumstances."
+ },
+ "completeness_disclosure": "Source B input is the ClinicalTrials.gov eligibility section. It can omit protocol definitions, appendices, lab tables and amendment detail, so criteria referring to content outside this text stay unresolved.",
+ "ctrp_biomarker_contract": {
+  "status": "not_supplied",
+  "note": "No CTRP structured biomarker object ingested -> registry biomarker coverage is UNKNOWN, not 'no biomarker restriction'. Biomarker predicates below are interpreted from free text."
+ },
+ "scopes": [
+  []
+ ],
+ "criteria": [
+  {
+   "id": "04b85c18-e913-5bed-a6e8-b23c145194bb",
+   "path": "/demo/min-age",
+   "type": "predicate",
+   "text": "minimumAge: 18 Years",
+   "source_span": [
+    0,
+    0
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "imported_structured",
+   "display_number": "Demo-min-age",
+   "polarity": "inclusion",
+   "polarity_source": "ct.gov structured field",
+   "scope": [],
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "90cc09ce-3319-5ddc-a15d-6fc8fa5c4664",
+   "path": "/inc/1",
+   "type": "narrative",
+   "text": "Sign the informed consent form voluntarily and follow the protocol requirements;",
+   "source_span": [
+    21,
+    104
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "display_number": "Inc-1",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "9cb65054-7f18-5f50-b149-bb2842605e31",
+   "path": "/inc/2.p0",
+   "type": "predicate",
+   "text": "Age ≥18 years old;",
+   "source_span": [
+    105,
+    126
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "age",
+    "comparator": ">=",
+    "value": 18.0,
+    "unit": "a",
+    "key": "age",
+    "terminology": {
+     "status": "n/a"
+    }
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    0,
+    13
+   ],
+   "extraction_coverage": 0.67,
+   "display_number": "Inc-2",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "8cd1ab60-a9a5-5ef2-b9f3-56b6bf05e845",
+   "path": "/inc/3",
+   "type": "narrative",
+   "text": "Expected survival time ≥3 months;",
+   "source_span": [
+    127,
+    163
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-3",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "19577e9c-949c-50e7-807c-9a9c18ad9624",
+   "path": "/inc/4",
+   "type": "narrative",
+   "text": "Patients with unresectable or radical radiotherapy for locally advanced non-small cell lung cancer;",
+   "source_span": [
+    164,
+    266
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-4",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "1227897b-b13b-5eb0-a09c-fb23e1c74181",
+   "path": "/inc/5.g",
+   "text": "Documentation of EGFR sensitive mutations detected from tumor tissue or blood samples;",
+   "source_span": [
+    267,
+    356
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ALL",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "1227897b-b13b-5eb0-a09c-fb23e1c74181#a2",
+     "path": "/inc/5.g.0",
+     "text": "Documentation of EGFR sensitive mutations detected from tumor tissue or blood samples;",
+     "source_span": [
+      267,
+      356
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound",
+      "biomarker qualifiers not stated: variant list defining 'sensitive', assay, local vs central",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "biomarker",
+      "analyte": "EGFR",
+      "alteration": "sensitising mutation",
+      "required_state": "present",
+      "qualifier_gaps": [
+       "variant list defining 'sensitive'",
+       "assay",
+       "local vs central"
+      ],
+      "specimen": [
+       "tumour tissue",
+       "blood"
+      ],
+      "key": "biomarker:egfr",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:3236"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "EGFR",
+       "document_span": [
+        267,
+        356
+       ],
+       "criterion_node": "1227897b-b13b-5eb0-a09c-fb23e1c74181#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-egfr",
+       "semantic_role": "biomarker",
+       "label": "EGFR",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    }
+   ],
+   "display_number": "Inc-5",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "f6a440da-855d-5265-9ac0-cee990e9d8ee",
+   "path": "/inc/6.g",
+   "type": "group",
+   "text": "Consent to provide archived tumor tissue samples or fresh tissue samples of primary or metastatic lesions at or after diagnosis for testing, including EGFR mutation type;",
+   "source_span": [
+    357,
+    530
+   ],
+   "flags": [
+    "~15% of the statement's content words are typed; residual kept as narrative requirement"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "op": "ALL",
+   "children": [
+    {
+     "id": "099344a2-d866-5735-9f15-5470dc9fdca3",
+     "path": "/inc/6.p0",
+     "type": "predicate",
+     "text": "Consent to provide archived tumor tissue samples or fresh tissue samples of primary or metastatic lesions at or after diagnosis for testing, including EGFR mutation type;",
+     "source_span": [
+      357,
+      530
+     ],
+     "flags": [
+      "biomarker qualifiers not stated in text: assay, specimen/tumour context, local vs central, variant class detail",
+      "mapping relationship 'related': gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT "
+     ],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "predicate": {
+      "kind": "biomarker",
+      "analyte": "EGFR",
+      "alteration": "mutation",
+      "required_state": "present",
+      "key": "biomarker:egfr",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "related",
+       "system": "HGNC",
+       "code": "HGNC:3236"
+      },
+      "qualifier_gaps": [
+       "assay",
+       "specimen/tumour context",
+       "local vs central",
+       "variant class detail"
+      ]
+     },
+     "computability": "structured_computable",
+     "sub_span": [
+      151,
+      164
+     ],
+     "extraction_coverage": 0.15,
+     "binding": {
+      "source_evidence": {
+       "phrase": "EGFR",
+       "document_span": [
+        357,
+        530
+       ],
+       "criterion_node": "099344a2-d866-5735-9f15-5470dc9fdca3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:gene-egfr",
+       "semantic_role": "biomarker",
+       "label": "EGFR",
+       "primary": {
+        "system": "HGNC",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "code_system_uri": "http://www.genenames.org"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://www.genenames.org",
+        "code": "HGNC:3236",
+        "display": "EGFR"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "related",
+       "direction": "source_to_target",
+       "context": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "medium",
+       "rationale": "gene identifier only: alteration class, variant (HGVS + reference sequence/assembly), assay, specimen and state are NOT carried by this binding",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    },
+    {
+     "id": "ba4575aa-cd4f-547e-927f-211fd3cfc5d3",
+     "path": "/inc/6.r",
+     "type": "narrative",
+     "text": "Consent to provide archived tumor tissue samples or fresh tissue samples of primary or metastatic lesions at or after diagnosis for testing, including EGFR mutation type;",
+     "source_span": [
+      357,
+      530
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "interpreted_rule_based",
+     "computability": "text_dependent",
+     "subtype": "residual text not covered by typed predicates"
+    }
+   ],
+   "logic_basis": "residual_added",
+   "display_number": "Inc-6",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "2cd30e4e-6a08-5390-ba3e-610e4fbb8e87",
+   "path": "/inc/7",
+   "type": "narrative",
+   "text": "At least one measurable lesion meeting the RECIST v1.1 definition was required;",
+   "source_span": [
+    531,
+    613
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-7",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "ddaa28e7-c019-5eb9-b23f-5860956f8c5b",
+   "path": "/inc/8.p0",
+   "type": "predicate",
+   "text": "ECOG 0 or 1;",
+   "source_span": [
+    614,
+    629
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "ecog",
+    "allowed_values": [
+     0,
+     1
+    ],
+    "key": "ecog",
+    "scale": "ECOG",
+    "terminology": {
+     "status": "proposed_unreviewed",
+     "relationship": "equivalent",
+     "system": "LOINC",
+     "code": "89247-1"
+    }
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    0,
+    11
+   ],
+   "extraction_coverage": 1.0,
+   "display_number": "Inc-8",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "binding": {
+    "source_evidence": {
+     "phrase": "ECOG",
+     "document_span": [
+      614,
+      629
+     ],
+     "criterion_node": "ddaa28e7-c019-5eb9-b23f-5860956f8c5b",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": {
+     "concept_id": "cm:ecog",
+     "semantic_role": "observation",
+     "label": "ECOG performance status",
+     "primary": {
+      "system": "LOINC",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "code_system_uri": "http://loinc.org"
+    },
+    "cross_terminology_links": {
+     "NCIt": null,
+     "UMLS_CUI": null
+    },
+    "execution_binding": {
+     "fhir": {
+      "system": "http://loinc.org",
+      "code": "89247-1",
+      "display": "ECOG Performance Status score"
+     },
+     "omop": {
+      "status": "requires site vocabulary snapshot",
+      "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+     }
+    },
+    "mapping_semantics": {
+     "relationship": "equivalent",
+     "direction": "source_to_target",
+     "context": "named ECOG scale"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match (seed bundle)",
+     "confidence": "medium",
+     "rationale": "named ECOG scale",
+     "reviewer": null,
+     "status": "proposed_unreviewed"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
+   "review": {}
+  },
+  {
+   "id": "07c0ba3c-779a-5b1b-a4db-65ea5896c011",
+   "path": "/inc/9",
+   "type": "narrative",
+   "text": "The toxicity of previous antineoplastic therapy has returned to ≤ grade 1 as defined by NCI-CTCAE v5.0;",
+   "source_span": [
+    630,
+    736
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Inc-9",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "5b93c057-97bb-5902-8fdc-4e320021aec1",
+   "path": "/inc/10",
+   "text": "No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;",
+   "source_span": [
+    737,
+    812
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ALL",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "5b93c057-97bb-5902-8fdc-4e320021aec1#a2",
+     "path": "/inc/10.0",
+     "text": "No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;",
+     "source_span": [
+      737,
+      812
+     ],
+     "flags": [],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "narrative",
+     "computability": "human_judgment",
+     "subtype": "'no severe cardiac dysfunction' (undefined)"
+    },
+    {
+     "id": "5b93c057-97bb-5902-8fdc-4e320021aec1#a3",
+     "path": "/inc/10.1",
+     "text": "No severe cardiac dysfunction, left ventricular ejection fraction ≥50%;",
+     "source_span": [
+      737,
+      812
+     ],
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "measurement",
+      "analyte": "LVEF",
+      "comparator": ">=",
+      "value": 50,
+      "unit": "%",
+      "key": "measurement:lvef",
+      "uln_multiple": false,
+      "terminology": {
+       "status": "unmapped",
+       "relationship": "no-map"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "LVEF",
+       "document_span": [
+        737,
+        812
+       ],
+       "criterion_node": "5b93c057-97bb-5902-8fdc-4e320021aec1#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    }
+   ],
+   "display_number": "Inc-10",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "a51f898d-7040-52fb-b261-eff46bd99ec3",
+   "path": "/inc/11",
+   "type": "narrative",
+   "text": "The organ function level must meet the requirements on the premise that blood transfusion and colony-stimulating factor are not allowed within 14 days before the screening period;",
+   "source_span": [
+    813,
+    996
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 14.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "screening",
+    "anchor_text": "screening period",
+    "span": [
+     136,
+     178
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Inc-11",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6",
+   "path": "/inc/12",
+   "text": "Urinary protein ≤2+ or < 1000mg/24h;",
+   "source_span": [
+    997,
+    1037
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ANY",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a2",
+     "path": "/inc/12.0",
+     "text": "Urinary protein ≤2+ or < 1000mg/24h;",
+     "source_span": [
+      997,
+      1037
+     ],
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "measurement",
+      "analyte": "Urinary protein (dipstick)",
+      "comparator": "<=",
+      "value": 2,
+      "unit": "+ (ordinal)",
+      "key": "measurement:urinary_protein_dipstick",
+      "uln_multiple": false,
+      "terminology": {
+       "status": "unmapped",
+       "relationship": "no-map"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "Urinary protein (dipstick)",
+       "document_span": [
+        997,
+        1037
+       ],
+       "criterion_node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    },
+    {
+     "id": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3",
+     "path": "/inc/12.1",
+     "text": "Urinary protein ≤2+ or < 1000mg/24h;",
+     "source_span": [
+      997,
+      1037
+     ],
+     "flags": [
+      "terminology unmapped (no-map) -> not executable until bound"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "measurement",
+      "analyte": "Urinary protein (24h)",
+      "comparator": "<",
+      "value": 1000,
+      "unit": "mg/(24.h)",
+      "key": "measurement:urinary_protein_24h",
+      "uln_multiple": false,
+      "terminology": {
+       "status": "unmapped",
+       "relationship": "no-map"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "Urinary protein (24h)",
+       "document_span": [
+        997,
+        1037
+       ],
+       "criterion_node": "d9d17e14-8a37-5559-bfd2-e7f4f70ab8a6#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": null,
+      "cross_terminology_links": {},
+      "execution_binding": {
+       "fhir": null,
+       "omop": null
+      },
+      "mapping_semantics": {
+       "relationship": "no-map",
+       "direction": "source_to_target",
+       "context": "no seeded concept"
+      },
+      "value_set": null,
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match",
+       "confidence": null,
+       "rationale": "no seed concept matched; requires terminology-lead mapping",
+       "reviewer": null,
+       "status": "unmapped"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    }
+   ],
+   "display_number": "Inc-12",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "cfb18df7-06b9-5eed-9553-a9f4713bdb3b",
+   "path": "/inc/13",
+   "type": "narrative",
+   "text": "For premenopausal women of childbearing potential, a pregnancy test must be performed within 7 days before the initiation of treatment, serum pregnancy must be negative, and the patient must not be lactating; All enrolled patients (male or female) were advised to use adequate barrier contraception throughout the treatment cycle and for 6 months after the end of treatment.",
+   "source_span": [
+    1038,
+    1416
+   ],
+   "flags": [
+    "temporal anchor missing or unrecognised -> evaluate as unknown until resolved"
+   ],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "concept_hits": [
+    "ild"
+   ],
+   "time_window": {
+    "value": 7.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "initiation of treatment",
+    "anchor_text": "initiation of treatment",
+    "span": [
+     86,
+     134
+    ],
+    "status": "anchor_missing_or_unrecognised"
+   },
+   "display_number": "Inc-13",
+   "polarity": "inclusion",
+   "polarity_source": "section 'inclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "ef790db3-63cc-5cb5-a49b-9941f48a3bd1",
+   "path": "/exc/1",
+   "type": "narrative",
+   "text": "Previous histologic or cytological evidence of small cell or mixed small/non-small cell components;",
+   "source_span": [
+    1439,
+    1541
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-1",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "6cc147fb-a5c8-5190-9e87-cc3d5d45b6ef",
+   "path": "/exc/2",
+   "text": "Patients with previous systemic therapy;",
+   "source_span": [
+    1542,
+    1585
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "condition",
+    "concept": "previous systemic therapy",
+    "key": "condition:previous_systemic_therapy",
+    "terminology": {
+     "status": "unmapped",
+     "relationship": "no-map"
+    }
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-2",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "previous systemic therapy",
+     "document_span": [
+      1542,
+      1585
+     ],
+     "criterion_node": "6cc147fb-a5c8-5190-9e87-cc3d5d45b6ef",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
+   "review": {}
+  },
+  {
+   "id": "b0fb0760-1de1-545c-9d20-cdbbca912ba0",
+   "path": "/exc/3.p0",
+   "text": "Patients had received EGFR-TKI therapy;",
+   "source_span": [
+    1586,
+    1628
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "condition",
+    "concept": "prior EGFR-TKI therapy",
+    "key": "condition:prior_egfr_tki_therapy",
+    "terminology": {
+     "status": "unmapped",
+     "relationship": "no-map"
+    }
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-3",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "prior EGFR-TKI therapy",
+     "document_span": [
+      1586,
+      1628
+     ],
+     "criterion_node": "b0fb0760-1de1-545c-9d20-cdbbca912ba0",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
+   "review": {}
+  },
+  {
+   "id": "5e3226db-ace2-5609-ba5b-d7a57823fe49",
+   "path": "/exc/4",
+   "type": "narrative",
+   "text": "Studies received radical radiotherapy, major surgery, and large area radiotherapy within 4 weeks before randomization;",
+   "source_span": [
+    1629,
+    1750
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "prior therapy / medication",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     82,
+     117
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-4",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "57e14932-28b8-5140-b4dc-5519289ce8bf",
+   "path": "/exc/5",
+   "type": "narrative",
+   "text": "History of severe heart disease and cerebrovascular disease;",
+   "source_span": [
+    1751,
+    1814
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-5",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "7a055c96-3c09-5bbb-96fa-dcb1dd566b10",
+   "path": "/exc/6",
+   "type": "narrative",
+   "text": "Unstable thrombotic events requiring therapeutic intervention within 6 months before screening; Infusion-related thrombosis was excluded;",
+   "source_span": [
+    1815,
+    1955
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 6.0,
+    "unit": "month",
+    "direction": "lookback",
+    "anchor": "screening",
+    "anchor_text": "screening",
+    "span": [
+     62,
+     94
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-6",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "de62af5a-6110-5b12-a0f8-4e6d1620271c",
+   "path": "/exc/7",
+   "type": "narrative",
+   "text": "QT prolongation, complete left bundle branch block, III degree atrioventricular block, frequent and uncontrollable arrhythmia;",
+   "source_span": [
+    1956,
+    2085
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "arrhythmia"
+   ],
+   "display_number": "Exc-7",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "7bba3412-15ef-5686-87a3-e3c8c69c42d7",
+   "path": "/exc/8",
+   "text": "Were diagnosed with active malignancy within 3 years before randomization;",
+   "source_span": [
+    2086,
+    2163
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "condition",
+    "concept": "active malignancy",
+    "key": "condition:active_malignancy",
+    "terminology": {
+     "status": "unmapped",
+     "relationship": "no-map"
+    }
+   },
+   "computability": "structured_computable",
+   "time_window": {
+    "value": 3,
+    "unit": "year",
+    "anchor": "randomisation",
+    "direction": "lookback",
+    "status": "parsed"
+   },
+   "display_number": "Exc-8",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active malignancy",
+     "document_span": [
+      2086,
+      2163
+     ],
+     "criterion_node": "7bba3412-15ef-5686-87a3-e3c8c69c42d7",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
+   "review": {}
+  },
+  {
+   "id": "fe460644-6327-5f92-997a-2f15e1f5756e",
+   "path": "/exc/9",
+   "type": "narrative",
+   "text": "Hypertension poorly controlled by two antihypertensive drugs (systolic blood pressure > 150 mmHg or diastolic blood pressure > 100 mmHg);",
+   "source_span": [
+    2164,
+    2304
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "hypertension"
+   ],
+   "display_number": "Exc-9",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "0bdbd669-2f91-5e8b-b3bb-b0bf28e0ffcc",
+   "path": "/exc/10",
+   "type": "narrative",
+   "text": "Patients with poor glycemic control;",
+   "source_span": [
+    2305,
+    2345
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-10",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "90e518ad-256a-531c-abb1-c324cf1d7873",
+   "path": "/exc/11",
+   "type": "narrative",
+   "text": "A history of ILD requiring steroid therapy, or current ILD or grade ≥2 radiation pneumonitis, or a suspicion of such disease;",
+   "source_span": [
+    2346,
+    2475
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "ild",
+    "pneumonitis"
+   ],
+   "display_number": "Exc-11",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "5ea0aff4-45fa-53ec-b83e-9d72723befdf",
+   "path": "/exc/12",
+   "type": "narrative",
+   "text": "Complicated with pulmonary diseases leading to clinically severe respiratory function impairment;",
+   "source_span": [
+    2476,
+    2577
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-12",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "56a459d8-73d2-532f-a9b7-0c8dac20db70",
+   "path": "/exc/13",
+   "text": "Patients with active central nervous system metastasis;",
+   "source_span": [
+    2578,
+    2637
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review",
+    "terminology unmapped (no-map) -> not executable until bound"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "predicate",
+   "predicate": {
+    "kind": "condition",
+    "concept": "active CNS metastasis",
+    "key": "condition:active_cns_metastasis",
+    "terminology": {
+     "status": "unmapped",
+     "relationship": "no-map"
+    }
+   },
+   "computability": "structured_computable",
+   "display_number": "Exc-13",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "binding": {
+    "source_evidence": {
+     "phrase": "active CNS metastasis",
+     "document_span": [
+      2578,
+      2637
+     ],
+     "criterion_node": "56a459d8-73d2-532f-a9b7-0c8dac20db70",
+     "source_code": null,
+     "inherited_context": []
+    },
+    "canonical_binding": null,
+    "cross_terminology_links": {},
+    "execution_binding": {
+     "fhir": null,
+     "omop": null
+    },
+    "mapping_semantics": {
+     "relationship": "no-map",
+     "direction": "source_to_target",
+     "context": "no seeded concept"
+    },
+    "value_set": null,
+    "provenance": {
+     "tool": "eligibility-cer/terminology 0.1.0",
+     "mapper": "pattern match",
+     "confidence": null,
+     "rationale": "no seed concept matched; requires terminology-lead mapping",
+     "reviewer": null,
+     "status": "unmapped"
+    },
+    "lifecycle": {
+     "valid_from": "2026-10-06",
+     "deprecated": null,
+     "impacted_releases": [],
+     "requires_re_review": true
+    }
+   },
+   "review": {}
+  },
+  {
+   "id": "424fc492-00cc-593e-b944-a059e13333b9",
+   "path": "/exc/14",
+   "type": "narrative",
+   "text": "Had a severe infection within 4 weeks before randomization;",
+   "source_span": [
+    2638,
+    2701
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     23,
+     58
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-14",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "683a9f7a-0267-5c0f-ba10-c36438bfe36e",
+   "path": "/exc/15",
+   "type": "narrative",
+   "text": "Patients with massive or symptomatic effusions or poorly controlled effusions;",
+   "source_span": [
+    2702,
+    2784
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-15",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "104b80ed-e999-5c3a-a4d9-7c821fa948f9",
+   "path": "/exc/16",
+   "type": "narrative",
+   "text": "Imaging examination showed that the tumor had invaded or enveloped the large blood vessels in the abdomen, chest, neck, and pharynx;",
+   "source_span": [
+    2785,
+    2921
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-16",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "100b380f-82f3-57d6-ae43-f88ef5305c25",
+   "path": "/exc/17",
+   "type": "narrative",
+   "text": "Serious unhealed wound, ulcer, or fracture within 4 weeks before signing the informed consent;",
+   "source_span": [
+    2922,
+    3020
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "consent",
+    "anchor_text": "signing the informed consent",
+    "span": [
+     43,
+     93
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-17",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "c9fec08b-f290-51d9-b8f1-912b333da0fe",
+   "path": "/exc/18",
+   "type": "narrative",
+   "text": "Subjects with clinically significant bleeding or obvious bleeding tendency within 4 weeks before signing the informed consent;",
+   "source_span": [
+    3021,
+    3151
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "consent / contraception / pregnancy workflow",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "consent",
+    "anchor_text": "signing the informed consent",
+    "span": [
+     75,
+     125
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-18",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "c9953a9f-70df-5a70-945a-ff78b8752685",
+   "path": "/exc/19",
+   "type": "narrative",
+   "text": "Patients with a history of inflammatory bowel disease, extensive bowel resection, immune enteritis, intestinal obstruction or chronic diarrhea;",
+   "source_span": [
+    3152,
+    3299
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-19",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "9df515ec-ec72-5925-912f-c92a4a1c8373",
+   "path": "/exc/20",
+   "type": "narrative",
+   "text": "Patients with a history of allergy to recombinant humanized antibodies or to any of the excipients of BL-B01D1;",
+   "source_span": [
+    3300,
+    3415
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-20",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "52411238-23c1-5bff-965d-184807478f20",
+   "path": "/exc/21",
+   "type": "narrative",
+   "text": "Had autologous or allogeneic stem cell transplantation history;",
+   "source_span": [
+    3416,
+    3483
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "clinical condition (terminology unbound)",
+   "concept_hits": [
+    "transplant"
+   ],
+   "display_number": "Exc-21",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8",
+   "path": "/exc/22",
+   "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C virus infection;",
+   "source_span": [
+    3484,
+    3602
+   ],
+   "flags": [
+    "authored proposal replaces rule-based parse -> requires clinical + informatics review"
+   ],
+   "review_status": "needs_review",
+   "origin": "authored_proposal",
+   "type": "group",
+   "op": "ANY",
+   "logic_basis": "authored",
+   "children": [
+    {
+     "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a2",
+     "path": "/exc/22.0",
+     "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C virus infection;",
+     "source_span": [
+      3484,
+      3602
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': protocol often means antibody/PCR positivity; condition concept is broader than a test result"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "HIV antibody positive",
+      "key": "condition:hiv_antibody_positive",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "86406008"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "HIV antibody positive",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a2",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hiv",
+       "semantic_role": "condition",
+       "label": "HIV infection",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "86406008",
+        "display": "Human immunodeficiency virus infection"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "86406008",
+        "display": "Human immunodeficiency virus infection",
+        "valueSet": "vs:cond-hiv"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "protocol often means antibody/PCR positivity; condition concept is broader than a test result"
+      },
+      "value_set": {
+       "id": "vs:cond-hiv",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "86406008"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|86406008"
+        ],
+        "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "protocol often means antibody/PCR positivity; condition concept is broader than a test result",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    },
+    {
+     "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3",
+     "path": "/exc/22.1",
+     "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C virus infection;",
+     "source_span": [
+      3484,
+      3602
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': 'active infection' vs lifetime diagnosis not distinguished by the code"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "active hepatitis B infection",
+      "key": "condition:active_hepatitis_b_infection",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "66071002"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "active hepatitis B infection",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a3",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hepatitis-b",
+       "semantic_role": "condition",
+       "label": "Hepatitis B",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "66071002",
+        "display": "Type B viral hepatitis"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "66071002",
+        "display": "Type B viral hepatitis",
+        "valueSet": "vs:cond-hepatitis-b"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "'active infection' vs lifetime diagnosis not distinguished by the code"
+      },
+      "value_set": {
+       "id": "vs:cond-hepatitis-b",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "66071002"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|66071002"
+        ],
+        "sha256": "351485cabc75d62be158047fed58943bfcbb0fefbeca413f4a6e76b94a97eed2",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "'active infection' vs lifetime diagnosis not distinguished by the code",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    },
+    {
+     "id": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4",
+     "path": "/exc/22.2",
+     "text": "Human immunodeficiency virus antibody positive, active hepatitis B virus infection or hepatitis C virus infection;",
+     "source_span": [
+      3484,
+      3602
+     ],
+     "flags": [
+      "terminology unmapped -> not executable until bound",
+      "mapping relationship 'inexact': 'active' vs resolved not distinguished by the code"
+     ],
+     "review_status": "needs_review",
+     "origin": "authored_proposal",
+     "type": "predicate",
+     "predicate": {
+      "kind": "condition",
+      "concept": "active hepatitis C infection",
+      "key": "condition:active_hepatitis_c_infection",
+      "terminology": {
+       "status": "proposed_unreviewed",
+       "relationship": "inexact",
+       "system": "SNOMED CT",
+       "code": "50711007"
+      }
+     },
+     "computability": "structured_computable",
+     "binding": {
+      "source_evidence": {
+       "phrase": "active hepatitis C infection",
+       "document_span": [
+        3484,
+        3602
+       ],
+       "criterion_node": "0a94ccba-7fa9-5868-a769-bfea7db42cd8#a4",
+       "source_code": null,
+       "inherited_context": []
+      },
+      "canonical_binding": {
+       "concept_id": "cm:cond-hepatitis-c",
+       "semantic_role": "condition",
+       "label": "Hepatitis C",
+       "primary": {
+        "system": "SNOMED CT",
+        "code": "50711007",
+        "display": "Viral hepatitis C"
+       },
+       "code_system_uri": "http://snomed.info/sct"
+      },
+      "cross_terminology_links": {
+       "NCIt": null,
+       "UMLS_CUI": null
+      },
+      "execution_binding": {
+       "fhir": {
+        "system": "http://snomed.info/sct",
+        "code": "50711007",
+        "display": "Viral hepatitis C",
+        "valueSet": "vs:cond-hepatitis-c"
+       },
+       "omop": {
+        "status": "requires site vocabulary snapshot",
+        "note": "map to Standard Concept at the site; concept id 0 / unmapped = unresolved, not negative"
+       }
+      },
+      "mapping_semantics": {
+       "relationship": "inexact",
+       "direction": "source_to_target",
+       "context": "'active' vs resolved not distinguished by the code"
+      },
+      "value_set": {
+       "id": "vs:cond-hepatitis-c",
+       "version": "0.1.0",
+       "compose": [
+        {
+         "system": "SNOMED CT",
+         "codes": [
+          "50711007"
+         ]
+        }
+       ],
+       "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+       "frozen_expansion": {
+        "members": [
+         "SNOMED CT|50711007"
+        ],
+        "sha256": "c67e5002a12240afb7e4958bca38cfc2251a21cd03683b0fc74911955212ce0b",
+        "date": "2026-10-06"
+       },
+       "excluded": []
+      },
+      "provenance": {
+       "tool": "eligibility-cer/terminology 0.1.0",
+       "mapper": "pattern match (seed bundle)",
+       "confidence": "low",
+       "rationale": "'active' vs resolved not distinguished by the code",
+       "reviewer": null,
+       "status": "proposed_unreviewed"
+      },
+      "lifecycle": {
+       "valid_from": "2026-10-06",
+       "deprecated": null,
+       "impacted_releases": [],
+       "requires_re_review": true
+      }
+     }
+    }
+   ],
+   "display_number": "Exc-22",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "supersedes_origin": "interpreted_rule_based",
+   "review": {}
+  },
+  {
+   "id": "dffa4538-39bd-566e-8ccc-7767d09f582d",
+   "path": "/exc/23",
+   "type": "narrative",
+   "text": "A history of severe neurological or psychiatric illness;",
+   "source_span": [
+    3603,
+    3663
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "display_number": "Exc-23",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "247b046c-4407-5d6a-8f2e-e7f85f009252",
+   "path": "/exc/24",
+   "type": "narrative",
+   "text": "Received other unmarketed investigational drugs or treatments within 4 weeks before randomization;",
+   "source_span": [
+    3664,
+    3766
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "text_dependent",
+   "subtype": "unclassified narrative",
+   "time_window": {
+    "value": 4.0,
+    "unit": "week",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "randomization",
+    "span": [
+     62,
+     97
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-24",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  },
+  {
+   "id": "962501fb-331f-5fc4-9385-8dc5d8cb20af",
+   "path": "/exc/25.p0",
+   "type": "predicate",
+   "text": "Subjects scheduled for vaccination or who received live vaccine within 28 days before study randomization;",
+   "source_span": [
+    3767,
+    3877
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "predicate": {
+    "kind": "performance_status",
+    "scale": "Who",
+    "allowed_values": [
+     28
+    ],
+    "key": "ps:who",
+    "terminology": {
+     "status": "n/a"
+    },
+    "note": "scale-specific: no assumed equivalence to ECOG"
+   },
+   "computability": "structured_computable",
+   "sub_span": [
+    38,
+    73
+   ],
+   "extraction_coverage": 0.54,
+   "time_window": {
+    "value": 28.0,
+    "unit": "day",
+    "direction": "lookback",
+    "anchor": "randomisation",
+    "anchor_text": "study randomization",
+    "span": [
+     64,
+     105
+    ],
+    "status": "parsed"
+   },
+   "display_number": "Exc-25",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "binding": null,
+   "review": {}
+  },
+  {
+   "id": "c48739a0-de74-5f42-a2eb-465a0fad6ce8",
+   "path": "/exc/26",
+   "type": "narrative",
+   "text": "Other circumstances in which the investigator considered it inappropriate to participate in the trial because of complications or other circumstances.",
+   "source_span": [
+    3878,
+    4032
+   ],
+   "flags": [],
+   "review_status": "needs_review",
+   "origin": "interpreted_rule_based",
+   "computability": "human_judgment",
+   "subtype": "investigator judgement",
+   "display_number": "Exc-26",
+   "polarity": "exclusion",
+   "polarity_source": "section 'exclusion'",
+   "scope": [],
+   "review": {}
+  }
+ ],
+ "scope_items": [],
+ "inventory": {
+  "criteria_total": 40,
+  "inclusion": 14,
+  "exclusion": 26,
+  "leaf_nodes": 42,
+  "leaves_by_computability": {
+   "structured_computable": 7,
+   "human_judgment": 5,
+   "text_dependent": 30
+  },
+  "typed_predicates": 7,
+  "flagged_nodes": 6
+ },
+ "validation": {
+  "structure_ok": true,
+  "problems": [],
+  "meaning": "NOT validated: clinical + informatics review still required for every executable criterion."
+ },
+ "authored_applied": [
+  "Inc-5",
+  "Inc-12",
+  "Inc-10",
+  "Exc-2",
+  "Exc-3",
+  "Exc-8",
+  "Exc-13",
+  "Exc-22"
+ ],
+ "llm_applied": [],
+ "terminology": {
+  "bundle_id": "seed-terminology",
+  "bundle_version": "0.1.0",
+  "sha256": "fa5ef26b2322757a279fea5a51b0271d5a982816f5dedcfd3c45b088adb99f02",
+  "status": "UNREVIEWED_SEED",
+  "warning": "SNOMED CT codes verified active against the US Edition 20261001 (existence/status only; mapping meaning and relationship still need terminology-lead review). LOINC and HGNC codes remain UNVERIFIED seed values. NCIt and UMLS CUI links are empty.",
+  "stats": {
+   "bound": 6,
+   "unmapped": 7,
+   "by_relationship": {
+    "related": 2,
+    "equivalent": 1,
+    "no-map": 7,
+    "inexact": 3
+   }
+  },
+  "value_sets": {
+   "vs:cond-hiv": {
+    "id": "vs:cond-hiv",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "86406008"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|86406008"
+     ],
+     "sha256": "7c8fbe6e078b7bede40cfb94c5d3dc7782f02fd77b9a6a5d8bab340857150ed4",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-hepatitis-b": {
+    "id": "vs:cond-hepatitis-b",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "66071002"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|66071002"
+     ],
+     "sha256": "351485cabc75d62be158047fed58943bfcbb0fefbeca413f4a6e76b94a97eed2",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   },
+   "vs:cond-hepatitis-c": {
+    "id": "vs:cond-hepatitis-c",
+    "version": "0.1.0",
+    "compose": [
+     {
+      "system": "SNOMED CT",
+      "codes": [
+       "50711007"
+      ]
+     }
+    ],
+    "hierarchy_policy": "exact code only (descendant expansion needs a licensed SNOMED release) -> recall may be lower than the clinical intent",
+    "frozen_expansion": {
+     "members": [
+      "SNOMED CT|50711007"
+     ],
+     "sha256": "c67e5002a12240afb7e4958bca38cfc2251a21cd03683b0fc74911955212ce0b",
+     "date": "2026-10-06"
+    },
+    "excluded": []
+   }
+  },
+  "licenses": {
+   "LOINC": "LOINC licence (free, attribution)",
+   "SNOMED CT": "SNOMED CT affiliate/US NLM licence required; do not redistribute outside authorised boundary",
+   "HGNC": "CC0",
+   "UCUM": "UCUM licence (free)"
+  }
+ },
+ "conflicts": [],
+ "review_summary": {
+  "open_conflicts": [],
+  "stale_decisions": [],
+  "orphaned_decisions": [],
+  "unpinned_decisions": [],
+  "criteria": 40,
+  "validated": 0,
+  "pending": [
+   "Demo-min-age",
+   "Inc-1",
+   "Inc-2",
+   "Inc-3",
+   "Inc-4",
+   "Inc-5",
+   "Inc-6",
+   "Inc-7",
+   "Inc-8",
+   "Inc-9",
+   "Inc-10",
+   "Inc-11",
+   "Inc-12",
+   "Inc-13",
+   "Exc-1",
+   "Exc-2",
+   "Exc-3",
+   "Exc-4",
+   "Exc-5",
+   "Exc-6",
+   "Exc-7",
+   "Exc-8",
+   "Exc-9",
+   "Exc-10",
+   "Exc-11",
+   "Exc-12",
+   "Exc-13",
+   "Exc-14",
+   "Exc-15",
+   "Exc-16",
+   "Exc-17",
+   "Exc-18",
+   "Exc-19",
+   "Exc-20",
+   "Exc-21",
+   "Exc-22",
+   "Exc-23",
+   "Exc-24",
+   "Exc-25",
+   "Exc-26"
+  ]
+ }
+}
